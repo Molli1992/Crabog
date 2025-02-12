@@ -59,6 +59,16 @@ export default function Header() {
           scrolling || pathname !== "/" || openMenu ? "none" : "1px solid gray",
       }}
     >
+      <div className={styles.responsiveContainerIcons}>
+        <Image
+          src={language === "spanish" ? flagGranBretaña : flagArgentina}
+          alt="Flag"
+          style={{ cursor: "pointer" }}
+          onClick={onClickFlag}
+          className={styles.responsiveFlag}
+        />
+      </div>
+
       <div className={styles.containerLogo}>
         <Link href="/">
           <Image src={logoCrabog} alt="Logo" className={styles.whiteImage} />
@@ -212,6 +222,11 @@ export default function Header() {
             <p className={styles.textMenu}>{headerTranslations.contacts}</p>
             <MdArrowOutward className={styles.textMenu} />
           </Link>
+
+          <div className={styles.containerSocialNetworks}>
+            <FaLinkedinIn className={styles.icons} />
+            <FaInstagram className={styles.icons} />
+          </div>
         </div>
       ) : null}
     </div>
