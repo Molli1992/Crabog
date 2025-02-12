@@ -3,14 +3,13 @@ import React, { useState, useEffect } from "react";
 import styles from "./page.module.css";
 import { motion } from "framer-motion";
 import useLanguageStore from "@/zustand/useLanguageStore";
+import homeImg1 from "../../public/home-crabog-1.jpg";
+import homeImg2 from "../../public/home-crabog-2.jpg";
+import homeImg3 from "../../public/home-crabog-3.jpg";
+import homeImg4 from "../../public/home-crabog-4.jpg";
 
 export default function Home() {
-  const arrayImages = [
-    "http://afensor.like-themes.com/wp-content/uploads/2023/04/SLIDE_01.jpg",
-    "http://afensor.like-themes.com/wp-content/uploads/2023/04/SLIDE_02.jpg",
-    "http://afensor.like-themes.com/wp-content/uploads/2023/04/SLIDE_03.jpg",
-    "http://afensor.like-themes.com/wp-content/uploads/2023/04/SLIDE_04.jpg",
-  ];
+  const arrayImages = [homeImg1, homeImg2, homeImg3, homeImg4];
   const [currentIndex, setCurrentIndex] = useState(0);
   const { homeTranslations } = useLanguageStore();
 
@@ -26,7 +25,7 @@ export default function Home() {
     <div className={styles.body}>
       <div
         className={styles.containerImage}
-        style={{ backgroundImage: `url('${arrayImages[currentIndex]}')` }}
+        style={{ backgroundImage: `url('${arrayImages[currentIndex].src}')` }}
       >
         <motion.h1
           key={currentIndex}
