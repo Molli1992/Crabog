@@ -12,6 +12,7 @@ const useLanguageStore = create((set, get) => ({
       AboutUsTranslations: get().getAboutUsTranslations(newLanguage),
       BlogTranslations: get().getBlogTranslations(newLanguage),
       ContactTranslations: get().getContactTranslations(newLanguage),
+      FooterTranslations: get().getFooterTranslations(newLanguage),
     }),
 
   getHeaderTranslations: (lang) => ({
@@ -72,6 +73,29 @@ const useLanguageStore = create((set, get) => ({
   }),
   ContactTranslations: {
     titleImg: "Contacto",
+  },
+
+  getFooterTranslations: (lang) => ({
+    phone: lang === "spanish" ? "Telefono:" : "Phone:",
+    address: lang === "spanish" ? "Dirección:" : "Address:",
+    email: lang === "spanish" ? "Mail:" : "Email:",
+    hours: lang === "spanish" ? "Horas de trabajo:" : "Working Hours:",
+
+    addressText:
+      lang === "spanish"
+        ? "Maipú 1252, Piso 8º, C.A.B.A."
+        : "Maipú 1252, 8th Floor, C.A.B.A.",
+    hoursText:
+      lang === "spanish" ? "Lun a vie: 8am. a 4pm" : "Mon-Fri: 8am - 4pm",
+  }),
+  FooterTranslations: {
+    phone: "Telefono:",
+    address: "Dirección:",
+    email: "Mail:",
+    hours: "Horas de trabajo:",
+
+    addressText: "Maipú 1252, Piso 8º, C.A.B.A.",
+    hoursText: "Lun a vie: 8am. a 4pm",
   },
 }));
 

@@ -10,6 +10,7 @@ export default function AboutUs() {
   return (
     <div>
       <HeroSection imgSrc={aboutUsImg} title={AboutUsTranslations.titleImg} />
+      <div style={{ width: "100%", height: "100vh" }}></div>
     </div>
   );
 }

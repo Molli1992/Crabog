@@ -10,6 +10,7 @@ export default function Contact() {
   return (
     <div>
       <HeroSection imgSrc={contactImg} title={ContactTranslations.titleImg} />
+      <div style={{ width: "100%", height: "100vh" }}></div>
     </div>
   );
 }

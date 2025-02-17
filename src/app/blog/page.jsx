@@ -10,6 +10,7 @@ export default function Blog() {
   return (
     <div>
       <HeroSection imgSrc={blogImg} title={BlogTranslations.titleImg} />
+      <div style={{ width: "100%", height: "100vh" }}></div>
     </div>
   );
 }

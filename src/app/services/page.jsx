@@ -10,6 +10,7 @@ export default function Services() {
   return (
     <div>
       <HeroSection imgSrc={serviceImg} title={ServiceTranslations.titleImg} />
+      <div style={{ width: "100%", height: "100vh" }}></div>
     </div>
   );
 }
