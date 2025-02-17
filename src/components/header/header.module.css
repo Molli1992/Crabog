@@ -36,14 +36,11 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  width: fit-content;
 }
 
 .text {
   font-size: 20px;
-}
-
-.containerText:hover {
-  color: #cc4643;
 }
 
 .containerIcons {
