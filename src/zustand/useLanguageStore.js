@@ -105,10 +105,10 @@ const useLanguageStore = create((set, get) => ({
       lang === "spanish" ? "Lun a vie: 8am. a 4pm" : "Mon-Fri: 8am - 4pm",
   }),
   FooterTranslations: {
-    phone: "Telefono:",
-    address: "Dirección:",
-    email: "Mail:",
-    hours: "Horas de trabajo:",
+    phone: "Telefono",
+    address: "Dirección",
+    email: "Mail",
+    hours: "Horas de trabajo",
 
     addressText: "Maipú 1252, Piso 8º, C.A.B.A.",
     hoursText: "Lun a vie: 8am. a 4pm",

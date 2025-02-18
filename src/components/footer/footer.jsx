@@ -28,7 +28,7 @@ export default function Footer() {
         <div className={styles.item}>
           <BiPhoneCall className={styles.icons} />
           <div className={styles.containerText}>
-            <p className={styles.text}>{FooterTranslations.phone}</p>
+            <p className={styles.text}>{FooterTranslations.phone}:</p>
             <p className={styles.text} style={{ color: "#ffffff99" }}>
               +54 911 4021-7000
             </p>
@@ -38,7 +38,7 @@ export default function Footer() {
         <div className={styles.item}>
           <SlLocationPin className={styles.icons} />
           <div className={styles.containerText}>
-            <p className={styles.text}>{FooterTranslations.address}</p>
+            <p className={styles.text}>{FooterTranslations.address}:</p>
             <p className={styles.text} style={{ color: "#ffffff99" }}>
               {FooterTranslations.addressText}
             </p>
@@ -48,7 +48,7 @@ export default function Footer() {
         <div className={styles.item}>
           <HiOutlineMailOpen className={styles.icons} />
           <div className={styles.containerText}>
-            <p className={styles.text}>{FooterTranslations.email}</p>
+            <p className={styles.text}>{FooterTranslations.email}:</p>
             <p className={styles.text} style={{ color: "#ffffff99" }}>
               secretarias@crabog.com
             </p>
@@ -58,7 +58,7 @@ export default function Footer() {
         <div className={styles.item}>
           <LuAlarmClock className={styles.icons} />
           <div className={styles.containerText}>
-            <p className={styles.text}>{FooterTranslations.hours}</p>
+            <p className={styles.text}>{FooterTranslations.hours}:</p>
             <p className={styles.text} style={{ color: "#ffffff99" }}>
               {FooterTranslations.hoursText}
             </p>
