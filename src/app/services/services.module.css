@@ -1,0 +1,107 @@
+.body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #192d2f;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 30%;
+}
+
+.image {
+  max-width: 100%;
+  height: 500px;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.spanElement {
+  color: #b79e63;
+}
+
+.description {
+  color: #ffffff82;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icons {
+  color: #b79e63;
+  font-size: 40px;
+}
+
+@media (max-width: 1350px) {
+  .section {
+    padding: 50px 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .container {
+    width: 350px;
+  }
+
+  .containerImage {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .containerTitle {
+    width: 400px;
+    text-align: center;
+  }
+
+  .item {
+    width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .containerTitle {
+    width: 100%;
+  }
+
+  .item {
+    width: 100%;
+  }
+}

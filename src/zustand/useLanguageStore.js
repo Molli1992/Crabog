@@ -72,9 +72,40 @@ const useLanguageStore = create((set, get) => ({
 
   getServiceTranslations: (lang) => ({
     titleImg: lang === "spanish" ? "Servicios" : "Services",
+    serviceTitle:
+      lang === "spanish"
+        ? "Nuestros abogados brindan servicios centrados en el cliente"
+        : "Our Lawyers Provide Customer Centric",
+    serviceSpan:
+      lang === "spanish" ? "a las corporaciones" : "Advice to Corporations",
+    serviceDescription:
+      lang === "spanish"
+        ? "En el panorama legal complejo y en constante cambio actual, tener un asesor legal confiable a su lado puede marcar la diferencia."
+        : "In todays complex and ever-changing legal landscape, having atrusted legal advisor by your side can make all the difference.",
+
+    serviceListTitle:
+      lang === "spanish"
+        ? "Los abogados están capacitados para analizar cuestiones legales y redactar"
+        : "Attorneys are trained to analyze legal issues and draft",
+    serviceListSpan:
+      lang === "spanish" ? "documentos legales" : "legal documents",
+    serviceListDescription:
+      lang === "spanish"
+        ? "Uno de los principales beneficios de contratar un bufete de abogados es la experiencia y los conocimientos que aportan."
+        : "One of the primary benefits of hiring a law firm is the expertise and experience that they bring to the table.",
   }),
   ServiceTranslations: {
     titleImg: "Servicios",
+    serviceTitle: "Nuestros abogados brindan servicios centrados en el cliente",
+    serviceSpan: "a las corporaciones",
+    serviceDescription:
+      "En el panorama legal complejo y en constante cambio actual, tener un asesor legal confiable a su lado puede marcar la diferencia.",
+
+    serviceListTitle:
+      "Los abogados están capacitados para analizar cuestiones legales y redactar",
+    serviceListSpan: "documentos legales",
+    serviceListDescription:
+      "Uno de los principales beneficios de contratar un bufete de abogados es la experiencia y los conocimientos que aportan.",
   },
 
   // AboutUs ---------------------------------------------------------------------------------------------------------------------

@@ -79,7 +79,7 @@ export default function Contact() {
               {isInfoWindowOpen && (
                 <InfoWindow
                   position={markerLocation}
-                  onCloseClick={() => setIsInfoWindowOpen(false)} // Cerrar al hacer clic en "X"
+                  onCloseClick={() => setIsInfoWindowOpen(false)}
                 >
                   <div className={styles.containerInforWindow}>
                     <p className={styles.infoWindowTitle}>
