@@ -84,9 +84,31 @@ const useLanguageStore = create((set, get) => ({
 
   getContactTranslations: (lang) => ({
     titleImg: lang === "spanish" ? "Contacto" : "Contacts",
+    infoWindow: lang === "spanish" ? "Ubicación" : "Location",
+    formTitle: lang === "spanish" ? "Enviar Mensaje" : "Send Message",
+    formDescription:
+      lang === "spanish"
+        ? "Complete este formulario y nuestros especialistas se comunicarán con usted en breve para una consulta detallada."
+        : "Fill out this form and our specialists will contact you shortly for detailed consultation.",
+    formName: lang === "spanish" ? "Nombre" : "Your name",
+    formLastName: lang === "spanish" ? "Apellido" : "Your last name",
+    formEmail: lang === "spanish" ? "Mail" : "Email",
+    formPhone: lang === "spanish" ? "Telefono" : "Phone",
+    formMessage: lang === "spanish" ? "Mensaje" : "Message",
+    formButton: lang === "spanish" ? "Enviar" : "Submit",
   }),
   ContactTranslations: {
     titleImg: "Contacto",
+    infoWindow: "Ubicación",
+    formTitle: "Enviar Mensaje",
+    formDescription:
+      "Complete este formulario y nuestros especialistas se comunicarán con usted en breve para una consulta detallada.",
+    formName: "Nombre",
+    formLastName: "Apellido",
+    formEmail: "Mail",
+    formPhone: "Telefono",
+    formMessage: "Mensaje",
+    formButton: "Enviar",
   },
 
   // Footer ---------------------------------------------------------------------------------------------------------------------

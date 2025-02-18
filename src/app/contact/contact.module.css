@@ -12,7 +12,7 @@
   grid-template-columns: repeat(4, 1fr);
   place-items: center;
   gap: 30px;
-  padding: 50px 10px;
+  padding: 100px 10px;
   box-sizing: border-box;
 }
 
@@ -39,11 +39,47 @@
   font-size: 16px;
 }
 
+.containerMap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  width: 100%;
+}
+
+.containerInforWindow {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.infoWindowTitle {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.textInfoWindow {
+  margin: 0px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.containerForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 75px 10px;
+}
+
 @media (max-width: 950px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-    padding: 70px 10px;
   }
 }
 
