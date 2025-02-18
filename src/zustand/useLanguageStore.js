@@ -15,6 +15,8 @@ const useLanguageStore = create((set, get) => ({
       FooterTranslations: get().getFooterTranslations(newLanguage),
     }),
 
+  // HEADER -----------------------------------------------------------------------------------------------------------------
+
   getHeaderTranslations: (lang) => ({
     home: lang === "spanish" ? "Inicio" : "Home",
     aboutUs: lang === "spanish" ? "Nosotros" : "About Us",
@@ -30,6 +32,8 @@ const useLanguageStore = create((set, get) => ({
     contacts: "Contacto",
   },
 
+  // Home --------------------------------------------------------------------------------------------------------------------
+
   getHomeTranslations: (lang) => ({
     titleImage:
       lang === "spanish"
@@ -40,12 +44,16 @@ const useLanguageStore = create((set, get) => ({
     titleImage: "Servicios jurídicos confiables y especializados",
   },
 
+  // HeroSection ----------------------------------------------------------------------------------------------------------------
+
   getHeroSectionTranslations: (lang) => ({
     link: lang === "spanish" ? "Inicio" : "Home",
   }),
   HeroSectionTranslations: {
     link: "Inicio",
   },
+
+  // Service ---------------------------------------------------------------------------------------------------------------------
 
   getServiceTranslations: (lang) => ({
     titleImg: lang === "spanish" ? "Servicios" : "Services",
@@ -54,12 +62,16 @@ const useLanguageStore = create((set, get) => ({
     titleImg: "Servicios",
   },
 
+  // AboutUs ---------------------------------------------------------------------------------------------------------------------
+
   getAboutUsTranslations: (lang) => ({
     titleImg: lang === "spanish" ? "Nostros" : "About Us",
   }),
   AboutUsTranslations: {
     titleImg: "Nostros",
   },
+
+  // Blog ---------------------------------------------------------------------------------------------------------------------
 
   getBlogTranslations: (lang) => ({
     titleImg: lang === "spanish" ? "Foro" : "Blog",
@@ -68,12 +80,16 @@ const useLanguageStore = create((set, get) => ({
     titleImg: "Foro",
   },
 
+  // Contact ---------------------------------------------------------------------------------------------------------------------
+
   getContactTranslations: (lang) => ({
     titleImg: lang === "spanish" ? "Contacto" : "Contacts",
   }),
   ContactTranslations: {
     titleImg: "Contacto",
   },
+
+  // Footer ---------------------------------------------------------------------------------------------------------------------
 
   getFooterTranslations: (lang) => ({
     phone: lang === "spanish" ? "Telefono:" : "Phone:",
