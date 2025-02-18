@@ -39,9 +39,24 @@ const useLanguageStore = create((set, get) => ({
       lang === "spanish"
         ? "Servicios jurídicos confiables y especializados"
         : "Reliable and specialized legal services",
+    titleImage2:
+      lang === "spanish"
+        ? "Enfoque especial para cada caso"
+        : "Special approach for each case",
+    titleImage3:
+      lang === "spanish"
+        ? "Experiencia en la que puedes confiar"
+        : "Experience you can trust",
+    titleImage4:
+      lang === "spanish"
+        ? "Abogado de confianza para tus necesidades"
+        : "Trusted lawyer for your needs",
   }),
   homeTranslations: {
     titleImage: "Servicios jurídicos confiables y especializados",
+    titleImage2: "Enfoque especial para cada caso",
+    titleImage3: "Experiencia en la que puedes confiar",
+    titleImage4: "Abogado de confianza para tus necesidades",
   },
 
   // HeroSection ----------------------------------------------------------------------------------------------------------------

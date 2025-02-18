@@ -9,9 +9,15 @@ import homeImg3 from "../../public/home-crabog-3.jpg";
 import homeImg4 from "../../public/home-crabog-4.jpg";
 
 export default function Home() {
-  const arrayImages = [homeImg1, homeImg2, homeImg3, homeImg4];
-  const [currentIndex, setCurrentIndex] = useState(0);
   const { homeTranslations } = useLanguageStore();
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const arrayImages = [homeImg1, homeImg2, homeImg3, homeImg4];
+  const arrayTitles = [
+    homeTranslations.titleImage,
+    homeTranslations.titleImage2,
+    homeTranslations.titleImage3,
+    homeTranslations.titleImage4,
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -34,7 +40,7 @@ export default function Home() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          {homeTranslations.titleImage}
+          {arrayTitles[currentIndex]}
         </motion.h1>
       </div>
       <div style={{ width: "100%", height: "100vh" }}></div>
