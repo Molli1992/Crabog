@@ -13,7 +13,7 @@
 .whiteImage {
   filter: brightness(0) saturate(100%) invert(1);
   height: 40px;
-  width: 200px;
+  width: 220px;
 }
 
 .containerLogo {
@@ -58,7 +58,7 @@
 }
 
 .icons:hover {
-  color: #cc4643;
+  color: #b79e63;
 }
 
 .menu {

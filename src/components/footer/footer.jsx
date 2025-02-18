@@ -12,7 +12,7 @@ import useLanguageStore from "@/zustand/useLanguageStore";
 export default function Footer() {
   const { FooterTranslations } = useLanguageStore();
 
-  const onClickUrl = (url) => {
+  const onClickOpenUrl = (url) => {
     window.open(url, "_blank");
   };
 
@@ -72,15 +72,19 @@ export default function Footer() {
         <p className={styles.text}>
           <span
             className={styles.text}
-            style={{ color: "#cc4643", cursor: "pointer" }}
-            onClick={() => onClickUrl("https://github.com/Molli1992/Crabog")}
+            style={{ color: "#b79e63", cursor: "pointer" }}
+            onClick={() =>
+              onClickOpenUrl("https://github.com/Molli1992/Crabog")
+            }
           >
             Github
           </span>{" "}
           © All Rights Reserved - 2025 -{" "}
           <span
-            style={{ color: "#cc4643", cursor: "pointer" }}
-            onClick={() => onClickUrl("https://felipeblaksley.netlify.app/")}
+            style={{ color: "#b79e63", cursor: "pointer" }}
+            onClick={() =>
+              onClickOpenUrl("https://felipeblaksley.netlify.app/")
+            }
           >
             Felipe Blaksley
           </span>

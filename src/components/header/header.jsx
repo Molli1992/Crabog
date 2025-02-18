@@ -19,6 +19,10 @@ export default function Header() {
   const { language, setLanguage, headerTranslations } = useLanguageStore();
   const [openMenu, setOpenMenu] = useState(false);
 
+  const onClickOpenUrl = (url) => {
+    window.open(url, "_blank");
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -82,7 +86,7 @@ export default function Header() {
         <Link
           href="/"
           className={styles.containerText}
-          style={{ color: pathname === "/" ? "#cc4643" : "#ffffff" }}
+          style={{ color: pathname === "/" ? "#b79e63" : "#ffffff" }}
         >
           <p className={styles.text}>{headerTranslations.home}</p>
           <MdArrowOutward className={styles.text} />
@@ -91,7 +95,7 @@ export default function Header() {
         <Link
           href="/aboutUs"
           className={styles.containerText}
-          style={{ color: pathname === "/aboutUs" ? "#cc4643" : "#ffffff" }}
+          style={{ color: pathname === "/aboutUs" ? "#b79e63" : "#ffffff" }}
         >
           <p className={styles.text}>{headerTranslations.aboutUs}</p>
           <MdArrowOutward className={styles.text} />
@@ -100,7 +104,7 @@ export default function Header() {
         <Link
           href="/services"
           className={styles.containerText}
-          style={{ color: pathname === "/services" ? "#cc4643" : "#ffffff" }}
+          style={{ color: pathname === "/services" ? "#b79e63" : "#ffffff" }}
         >
           <p className={styles.text}>{headerTranslations.services}</p>
           <MdArrowOutward className={styles.text} />
@@ -109,7 +113,7 @@ export default function Header() {
         <Link
           href="/blog"
           className={styles.containerText}
-          style={{ color: pathname === "/blog" ? "#cc4643" : "#ffffff" }}
+          style={{ color: pathname === "/blog" ? "#b79e63" : "#ffffff" }}
         >
           <p className={styles.text}>{headerTranslations.blog}</p>
           <MdArrowOutward className={styles.text} />
@@ -118,7 +122,7 @@ export default function Header() {
         <Link
           href="/contact"
           className={styles.containerText}
-          style={{ color: pathname === "/contact" ? "#cc4643" : "#ffffff" }}
+          style={{ color: pathname === "/contact" ? "#b79e63" : "#ffffff" }}
         >
           <p className={styles.text}>{headerTranslations.contacts}</p>
           <MdArrowOutward className={styles.text} />
@@ -133,14 +137,24 @@ export default function Header() {
           className={styles.containerIcons}
           style={{ borderRight: "1px solid gray" }}
         >
-          <FaLinkedinIn className={styles.icons} />
+          <FaLinkedinIn
+            className={styles.icons}
+            onClick={() => {
+              onClickOpenUrl("https://www.linkedin.com");
+            }}
+          />
         </div>
 
         <div
           className={styles.containerIcons}
           style={{ borderRight: "1px solid gray" }}
         >
-          <FaInstagram className={styles.icons} />
+          <FaInstagram
+            className={styles.icons}
+            onClick={() => {
+              onClickOpenUrl("https://www.instagram.com");
+            }}
+          />
         </div>
 
         <div className={styles.containerIcons}>
@@ -175,7 +189,7 @@ export default function Header() {
             href="/"
             className={styles.containerText}
             style={{
-              color: pathname === "/" ? "#cc4643" : "#ffffff",
+              color: pathname === "/" ? "#b79e63" : "#ffffff",
             }}
             onClick={() => setOpenMenu(false)}
           >
@@ -186,7 +200,7 @@ export default function Header() {
           <Link
             href="/aboutUs"
             className={styles.containerText}
-            style={{ color: pathname === "/aboutUs" ? "#cc4643" : "#ffffff" }}
+            style={{ color: pathname === "/aboutUs" ? "#b79e63" : "#ffffff" }}
             onClick={() => setOpenMenu(false)}
           >
             <p className={styles.textMenu}>{headerTranslations.aboutUs}</p>
@@ -196,7 +210,7 @@ export default function Header() {
           <Link
             href="/services"
             className={styles.containerText}
-            style={{ color: pathname === "/services" ? "#cc4643" : "#ffffff" }}
+            style={{ color: pathname === "/services" ? "#b79e63" : "#ffffff" }}
             onClick={() => setOpenMenu(false)}
           >
             <p className={styles.textMenu}>{headerTranslations.services}</p>
@@ -206,7 +220,7 @@ export default function Header() {
           <Link
             href="/blog"
             className={styles.containerText}
-            style={{ color: pathname === "/blog" ? "#cc4643" : "#ffffff" }}
+            style={{ color: pathname === "/blog" ? "#b79e63" : "#ffffff" }}
             onClick={() => setOpenMenu(false)}
           >
             <p className={styles.textMenu}>{headerTranslations.blog}</p>
@@ -216,7 +230,7 @@ export default function Header() {
           <Link
             href="/contact"
             className={styles.containerText}
-            style={{ color: pathname === "/contact" ? "#cc4643" : "#ffffff" }}
+            style={{ color: pathname === "/contact" ? "#b79e63" : "#ffffff" }}
             onClick={() => setOpenMenu(false)}
           >
             <p className={styles.textMenu}>{headerTranslations.contacts}</p>
@@ -224,8 +238,18 @@ export default function Header() {
           </Link>
 
           <div className={styles.containerSocialNetworks}>
-            <FaLinkedinIn className={styles.icons} />
-            <FaInstagram className={styles.icons} />
+            <FaLinkedinIn
+              className={styles.icons}
+              onClick={() => {
+                onClickOpenUrl("https://www.linkedin.com");
+              }}
+            />
+            <FaInstagram
+              className={styles.icons}
+              onClick={() => {
+                onClickOpenUrl("https://www.instagram.com");
+              }}
+            />
           </div>
         </div>
       ) : null}
