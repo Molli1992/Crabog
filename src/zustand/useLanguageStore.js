@@ -129,10 +129,10 @@ const useLanguageStore = create((set, get) => ({
   // Footer ---------------------------------------------------------------------------------------------------------------------
 
   getFooterTranslations: (lang) => ({
-    phone: lang === "spanish" ? "Telefono:" : "Phone:",
-    address: lang === "spanish" ? "Dirección:" : "Address:",
-    email: lang === "spanish" ? "Mail:" : "Email:",
-    hours: lang === "spanish" ? "Horas de trabajo:" : "Working Hours:",
+    phone: lang === "spanish" ? "Telefono" : "Phone",
+    address: lang === "spanish" ? "Dirección" : "Address",
+    email: lang === "spanish" ? "Mail" : "Email",
+    hours: lang === "spanish" ? "Horas de trabajo" : "Working Hours",
 
     addressText:
       lang === "spanish"
