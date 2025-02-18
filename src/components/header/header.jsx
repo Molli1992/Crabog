@@ -140,7 +140,7 @@ export default function Header() {
           <FaLinkedinIn
             className={styles.icons}
             onClick={() => {
-              onClickOpenUrl("https://www.linkedin.com");
+              onClickOpenUrl("https://www.linkedin.com/company/cangueiro-ruiz-abogados/");
             }}
           />
         </div>
@@ -152,7 +152,7 @@ export default function Header() {
           <FaInstagram
             className={styles.icons}
             onClick={() => {
-              onClickOpenUrl("https://www.instagram.com");
+              onClickOpenUrl("https://www.instagram.com/crabog_/");
             }}
           />
         </div>
@@ -241,13 +241,13 @@ export default function Header() {
             <FaLinkedinIn
               className={styles.icons}
               onClick={() => {
-                onClickOpenUrl("https://www.linkedin.com");
+                onClickOpenUrl("https://www.linkedin.com/company/cangueiro-ruiz-abogados/");
               }}
             />
             <FaInstagram
               className={styles.icons}
               onClick={() => {
-                onClickOpenUrl("https://www.instagram.com");
+                onClickOpenUrl("https://www.instagram.com/crabog_/");
               }}
             />
           </div>
