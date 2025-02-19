@@ -9,6 +9,13 @@ import Image from "next/image";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { FaAward } from "react-icons/fa6";
 import { FaComments } from "react-icons/fa";
+import Slider from "@/components/slider/slider";
+import imgSlider1 from "../../../public/img-slider-1.jpg";
+import imgSlider2 from "../../../public/img-slider-2.jpg";
+import imgSlider3 from "../../../public/img-slider-3.jpg";
+import imgSlider4 from "../../../public/img-slider-4.jpg";
+import imgSlider5 from "../../../public/img-slider-5.jpg";
+import imgSlider6 from "../../../public/img-slider-6.jpg";
 
 export default function Services() {
   const { ServiceTranslations, language } = useLanguageStore();
@@ -26,6 +33,50 @@ export default function Services() {
     language === "spanish"
       ? "Los despachos de abogados tienen acceso a tecnología de punta"
       : "Law firms often have access to cutting-edge technology",
+  ];
+
+  const sliderData = [
+    {
+      id: "services-slider-data-1",
+      img: imgSlider1,
+      desc:
+        language === "spanish"
+          ? "Contratos Empresariales"
+          : "Businesses Contracts",
+    },
+    {
+      id: "services-slider-data-2",
+      img: imgSlider2,
+      desc:
+        language === "spanish" ? "Problemas migratorios" : "Migration Issues",
+    },
+    {
+      id: "services-slider-data-3",
+      img: imgSlider3,
+      desc:
+        language === "spanish" ? "Asuntos Corporativos" : "Corporate Matters",
+    },
+    {
+      id: "services-slider-data-4",
+      img: imgSlider4,
+      desc: language === "spanish" ? "Cumplimiento legal" : "Legal Compliance",
+    },
+    {
+      id: "services-slider-data-5",
+      img: imgSlider5,
+      desc:
+        language === "spanish"
+          ? "Protección de la propiedad intelectual"
+          : "Intellectual Property Protection",
+    },
+    {
+      id: "services-slider-data-6",
+      img: imgSlider6,
+      desc:
+        language === "spanish"
+          ? "Asesoría en Derecho Tributario"
+          : "Tax Law Advisory",
+    },
   ];
 
   return (
@@ -81,7 +132,22 @@ export default function Services() {
           </div>
         </div>
       </div>
+
       <ServicesList />
+
+      <div className={styles.containerSlider}>
+        <div className={`${styles.containerH1}`}>
+          <h1 className={styles.title}>
+            {ServiceTranslations.sliderTitle}{" "}
+            <span className={styles.spanElement}>
+              {ServiceTranslations.sliderSpan}{" "}
+            </span>
+            {ServiceTranslations.sliderText}
+          </h1>
+        </div>
+
+        <Slider array={sliderData} />
+      </div>
     </div>
   );
 }

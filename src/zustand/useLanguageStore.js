@@ -93,6 +93,18 @@ const useLanguageStore = create((set, get) => ({
       lang === "spanish"
         ? "Uno de los principales beneficios de contratar un bufete de abogados es la experiencia y los conocimientos que aportan."
         : "One of the primary benefits of hiring a law firm is the expertise and experience that they bring to the table.",
+    sliderTitle:
+      lang === "spanish"
+        ? "Además, los bufetes de abogados suelen contar con personal de apoyo,"
+        : "In addition, law firms typically have a support staff,",
+    sliderSpan:
+      lang === "spanish"
+        ? "incluidos asistentes legales y asistentes"
+        : "including paralegals and administrative",
+    sliderText:
+      lang === "spanish"
+        ? "administrativos"
+        : "assistants",
   }),
   ServiceTranslations: {
     titleImg: "Servicios",
@@ -106,6 +118,10 @@ const useLanguageStore = create((set, get) => ({
     serviceListSpan: "documentos legales",
     serviceListDescription:
       "Uno de los principales beneficios de contratar un bufete de abogados es la experiencia y los conocimientos que aportan.",
+    sliderTitle:
+      "Además, los bufetes de abogados suelen contar con personal de apoyo,",
+    sliderSpan: "incluidos asistentes legales y asistentes",
+    sliderText: "administrativos",
   },
 
   // AboutUs ---------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,24 @@
+.cardServices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+
+.sliderImg {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.sliderImg:hover {
+  scale: 1.05;
+}
+
+.desc {
+  color: #ffffff;
+  font-size: 24px;
+}
