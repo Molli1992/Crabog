@@ -21,6 +21,7 @@ export default function Header() {
 
   const onClickOpenUrl = (url) => {
     window.open(url, "_blank");
+    setOpenMenu(false);
   };
 
   useEffect(() => {
@@ -140,7 +141,9 @@ export default function Header() {
           <FaLinkedinIn
             className={styles.icons}
             onClick={() => {
-              onClickOpenUrl("https://www.linkedin.com/company/cangueiro-ruiz-abogados/");
+              onClickOpenUrl(
+                "https://www.linkedin.com/company/cangueiro-ruiz-abogados/"
+              );
             }}
           />
         </div>
@@ -241,7 +244,9 @@ export default function Header() {
             <FaLinkedinIn
               className={styles.icons}
               onClick={() => {
-                onClickOpenUrl("https://www.linkedin.com/company/cangueiro-ruiz-abogados/");
+                onClickOpenUrl(
+                  "https://www.linkedin.com/company/cangueiro-ruiz-abogados/"
+                );
               }}
             />
             <FaInstagram
