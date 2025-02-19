@@ -5,9 +5,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
-import CardServices from "../cardServices/cardServices";
+import CardServices from "../cards/cardServices/cardServices";
 
-export default function Slider({ array }) {
+export default function Slider({ arrayServices }) {
   return (
     <div className={styles.sliderContainer}>
       <Swiper
@@ -33,8 +33,8 @@ export default function Slider({ array }) {
           "--swiper-pagination-color": "#ffffff",
         }}
       >
-        {array &&
-          array.map((data) => {
+        {arrayServices &&
+          arrayServices.map((data) => {
             return (
               <SwiperSlide key={data.id}>
                 <CardServices data={data} />

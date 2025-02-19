@@ -146,7 +146,7 @@ export default function Services() {
           </h1>
         </div>
 
-        <Slider array={sliderData} />
+        <Slider arrayServices={sliderData} />
       </div>
     </div>
   );
