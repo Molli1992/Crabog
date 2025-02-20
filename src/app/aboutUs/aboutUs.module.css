@@ -35,16 +35,6 @@
   min-width: 400px;
 }
 
-.containerSlider {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  background-color: #f5f3f0;
-  padding: 50px 15px;
-  text-align: center;
-}
-
 @media (max-width: 950px) {
   .container {
     flex-direction: column;

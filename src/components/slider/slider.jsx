@@ -13,6 +13,7 @@ export default function Slider({ arrayServices, arrayLawyers }) {
     "--swiper-navigation-color": arrayLawyers ? "#192d2f" : "#ffffff",
     "--swiper-pagination-color": arrayLawyers ? "#192d2f" : "#ffffff",
   };
+
   let breakpoints;
 
   if (arrayServices) {
@@ -63,7 +64,7 @@ export default function Slider({ arrayServices, arrayLawyers }) {
         {arrayServices &&
           arrayServices.map((data) => {
             return (
-              <SwiperSlide key={data.id}>
+              <SwiperSlide key={data.id} className={styles.centeredSlide}>
                 <CardServices data={data} />
               </SwiperSlide>
             );
@@ -72,7 +73,7 @@ export default function Slider({ arrayServices, arrayLawyers }) {
         {arrayLawyers &&
           arrayLawyers.map((data) => {
             return (
-              <SwiperSlide key={data.id}>
+              <SwiperSlide key={data.id} className={styles.centeredSlide}>
                 <CardLawyers data={data} />
               </SwiperSlide>
             );

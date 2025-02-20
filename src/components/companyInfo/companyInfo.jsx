@@ -1,4 +1,3 @@
-"use client";
 import styles from "./companyInfo.module.css";
 import Image from "next/image";
 import aboutUs2Img from "../../../public/aboutUs-2-img.jpg";

@@ -4,12 +4,11 @@ import aboutUsImg from "../../../public/aboutUs-img.jpg";
 import HeroSection from "@/components/heroSection/heroSection";
 import useLanguageStore from "@/zustand/useLanguageStore";
 import CompanyInfo from "@/components/companyInfo/companyInfo";
-import Slider from "@/components/slider/slider";
-import { arrayLawyers } from "@/data/data";
 import Image from "next/image";
 import aboutUsImg3 from "../../../public/aboutUs-3-img.jpg";
 import Title from "@/components/texts/title/title";
 import Description from "@/components/texts/description/description";
+import Lawyers from "@/components/lawyers/lawyers";
 
 export default function AboutUs() {
   const { language } = useLanguageStore();
@@ -25,21 +24,7 @@ export default function AboutUs() {
         <CompanyInfo />
       </div>
 
-      <div className={styles.containerSlider}>
-        <div className={`${styles.containerH1}`}>
-          <Title
-            value={
-              language === "spanish"
-                ? "Conoce a nuestros Abogados"
-                : "Meet our Lawyers"
-            }
-            fontSize="36px"
-            color="#192d2f"
-          />
-        </div>
-
-        <Slider arrayLawyers={arrayLawyers} />
-      </div>
+      <Lawyers />
 
       <div className={styles.container}>
         <div className={styles.containerLeft}>

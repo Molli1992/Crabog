@@ -1,4 +1,3 @@
-"use client";
 import styles from "./heroSection.module.css";
 import Link from "next/link";
 import useLanguageStore from "@/zustand/useLanguageStore";

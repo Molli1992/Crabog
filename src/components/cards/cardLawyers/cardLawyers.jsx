@@ -1,4 +1,3 @@
-"use client";
 import styles from "./cardLawyers.module.css";
 import Title from "@/components/texts/title/title";
 import Description from "@/components/texts/description/description";
@@ -25,7 +24,7 @@ export default function CardLawyers({ data }) {
       >
         <div
           className={styles.containerIcons}
-          style={{ top: "20px", right: "55px" }}
+          style={{ top: "20px", right: "10px" }}
         >
           <FaLinkedinIn
             className={styles.icons}
@@ -37,7 +36,7 @@ export default function CardLawyers({ data }) {
 
         <div
           className={styles.containerIcons}
-          style={{ top: "55px", right: "55px" }}
+          style={{ top: "55px", right: "10px" }}
         >
           <FaInstagram
             className={styles.icons}
