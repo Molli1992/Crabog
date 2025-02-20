@@ -6,6 +6,16 @@
 
 .container {
   width: 100%;
-  display: flex;
   background-color: #192d2f;
+  display: flex;
+}
+
+.containerSlider {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #f5f3f0;
+  padding: 50px 15px;
+  text-align: center;
 }
