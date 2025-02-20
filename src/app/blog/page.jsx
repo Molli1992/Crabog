@@ -8,7 +8,7 @@ export default function Blog() {
   const { language } = useLanguageStore();
 
   return (
-    <div>
+    <div className={styles.body}>
       <HeroSection
         imgSrc={blogImg}
         title={language === "spanish" ? "Foro" : "Blog"}
