@@ -1,4 +1,3 @@
-"use client";
 import styles from "./cardLawyers.module.css";
 import Title from "@/components/texts/title/title";
 import Description from "@/components/texts/description/description";

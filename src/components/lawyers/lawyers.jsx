@@ -1,4 +1,3 @@
-"use client";
 import styles from "./lawyers.module.css";
 import Title from "@/components/texts/title/title";
 import Slider from "@/components/slider/slider";
