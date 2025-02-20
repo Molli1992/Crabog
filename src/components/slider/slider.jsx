@@ -10,9 +10,10 @@ import "swiper/css/scrollbar";
 import CardServices from "../cards/cardServices/cardServices";
 import CardLawyers from "../cards/cardLawyers/cardLawyers";
 import CardReviews from "../cards/cardReviews/cardReviews";
+import { ClipLoader } from "react-spinners";
 
 export default function Slider({ arrayServices, arrayLawyers, arrayReviews }) {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenWidth, setScreenWidth] = useState(false);
   const swiperStyles = {
     "--swiper-navigation-color":
       arrayLawyers || arrayReviews ? "#192d2f" : "#ffffff",
@@ -21,13 +22,17 @@ export default function Slider({ arrayServices, arrayLawyers, arrayReviews }) {
   };
 
   useEffect(() => {
-    const handleResize = () => setScreenWidth(window.innerWidth);
+    if (!screenWidth) {
+      setScreenWidth(window.innerWidth);
+    } else {
+      const handleResize = () => setScreenWidth(window.innerWidth);
 
-    window.addEventListener("resize", handleResize);
+      window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
   }, []);
 
   let breakpoints;
@@ -68,42 +73,52 @@ export default function Slider({ arrayServices, arrayLawyers, arrayReviews }) {
     };
   }
 
-  return (
-    <div className={styles.sliderContainer}>
-      <Swiper
-        breakpoints={breakpoints}
-        navigation={screenWidth <= 850 && arrayReviews ? false : true}
-        pagination={{ clickable: true }}
-        modules={[Pagination, Navigation]}
-        style={swiperStyles}
-      >
-        {arrayServices &&
-          arrayServices.map((data) => {
-            return (
-              <SwiperSlide key={data.id} className={styles.centeredSlide}>
-                <CardServices data={data} />
-              </SwiperSlide>
-            );
-          })}
+  if (screenWidth) {
+    return (
+      <div className={styles.sliderContainer}>
+        <Swiper
+          breakpoints={breakpoints}
+          navigation={
+            screenWidth && screenWidth <= 850 && arrayReviews ? false : true
+          }
+          pagination={{ clickable: true }}
+          modules={[Pagination, Navigation]}
+          style={swiperStyles}
+        >
+          {arrayServices &&
+            arrayServices.map((data) => {
+              return (
+                <SwiperSlide key={data.id} className={styles.centeredSlide}>
+                  <CardServices data={data} />
+                </SwiperSlide>
+              );
+            })}
 
-        {arrayLawyers &&
-          arrayLawyers.map((data) => {
-            return (
-              <SwiperSlide key={data.id} className={styles.centeredSlide}>
-                <CardLawyers data={data} />
-              </SwiperSlide>
-            );
-          })}
+          {arrayLawyers &&
+            arrayLawyers.map((data) => {
+              return (
+                <SwiperSlide key={data.id} className={styles.centeredSlide}>
+                  <CardLawyers data={data} />
+                </SwiperSlide>
+              );
+            })}
 
-        {arrayReviews &&
-          arrayReviews.map((data) => {
-            return (
-              <SwiperSlide key={data.id} className={styles.centeredSlide}>
-                <CardReviews data={data} />
-              </SwiperSlide>
-            );
-          })}
-      </Swiper>
-    </div>
-  );
+          {arrayReviews &&
+            arrayReviews.map((data) => {
+              return (
+                <SwiperSlide key={data.id} className={styles.centeredSlide}>
+                  <CardReviews data={data} />
+                </SwiperSlide>
+              );
+            })}
+        </Swiper>
+      </div>
+    );
+  } else {
+    return (
+      <div className={styles.containerLoader}>
+        <ClipLoader color="#192d2f" size={100} />
+      </div>
+    );
+  }
 }
