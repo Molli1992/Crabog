@@ -11,6 +11,7 @@ import useLanguageStore from "@/zustand/useLanguageStore";
 
 export default function CompanyInfo() {
   const { language } = useLanguageStore();
+
   const arrayList = [
     language === "spanish" ? "Reclamaciones de seguros" : "Insurance Claims",
     language === "spanish" ? "Consultoría Empresarial" : "Business Consulting",
@@ -27,35 +28,40 @@ export default function CompanyInfo() {
       : "Law firms often have access to cutting-edge technology",
   ];
 
+  const arrayHistory = [
+    language === "spanish"
+      ? "Conformado por profesionales altamente calificados en el ejercicio de la abogacía, el Estudio se destaca por acompañar a sus clientes proveyendo servicios jurídicos confiables y especializados, involucrando en forma permanente a sus Socios y el equipo que cada uno de ellos lidera para proveer soluciones legales prácticas e innovadoras."
+      : "Composed of highly qualified professionals in the practice of law, the Firm stands out for accompanying its clients by providing reliable and specialized legal services, permanently involving its Partners and the team that each of them leads to provide practical and innovative legal solutions.",
+    language === "spanish"
+      ? "Nuestro objetivo primordial es el trabajo en equipo en donde cada integrante de CANGUEIRO RUIZ ABOGADOS es una pieza fundamental del engranaje del Estudio. "
+      : "Our primary objective is teamwork where each member of CANGUEIRO RUIZ ABOGADOS is a fundamental piece of the gear of the Firm.",
+    language === "spanish"
+      ? "Con amplio reconocimiento entre sus pares, nuestro Estudio ha proyectado su crecimiento en distintos países de la región, donde algunos de nuestros clientes nos han elegido para acompañarlos liderando la implementación de proyectos de inversión y financiamiento en sus distintos países."
+      : "Widely recognized among its peers, our Firm has projected its growth in different countries of the region, where some of our clients have chosen us to accompany them leading the implementation of projects of investment and financing in their different countries.",
+  ];
+
   return (
     <div className={styles.body}>
       <div className={styles.container}>
         <div className={styles.containerTitle}>
           <Title
-            value="Lorem ipsum, dolor sit amet consectetur"
-            span="adipisicing elit."
+            value={
+              language === "spanish"
+                ? "Brindamos a nuestros clientes servicios"
+                : "We provide our clients with innovative"
+            }
+            span={
+              language === "spanish"
+                ? "jurídicos innovadores"
+                : "legal services"
+            }
           />
 
-          <Description
-            value="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
-          totam dolore corrupti optio accusamus quos ducimus sint, vel natus
-          ipsa quibusdam repudiandae quae molestias dolor perferendis quo.
-          Obcaecati, non voluptate."
-          />
+          <Description value={arrayHistory[0]} />
 
-          <Description
-            value="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
-          totam dolore corrupti optio accusamus quos ducimus sint, vel natus
-          ipsa quibusdam repudiandae quae molestias dolor perferendis quo.
-          Obcaecati, non voluptate."
-          />
+          <Description value={arrayHistory[1]} />
 
-          <Description
-            value="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
-          totam dolore corrupti optio accusamus quos ducimus sint, vel natus
-          ipsa quibusdam repudiandae quae molestias dolor perferendis quo.
-          Obcaecati, non voluptate."
-          />
+          <Description value={arrayHistory[2]} />
         </div>
       </div>
 
