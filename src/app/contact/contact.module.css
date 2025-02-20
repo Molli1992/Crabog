@@ -1,8 +1,6 @@
 .body {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 
@@ -19,7 +17,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   color: #192d2f;
   gap: 20px;
@@ -51,8 +48,6 @@
 
 .containerMap {
   display: flex;
-  align-items: center;
-  justify-content: center;
   height: 60vh;
   width: 100%;
 }
@@ -81,7 +76,6 @@
 
 .containerForm {
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: 75px 10px;
 }

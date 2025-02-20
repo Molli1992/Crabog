@@ -1,7 +1,5 @@
 .body {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   padding: 50px;
   background-color: #f5f3f0;
@@ -9,22 +7,9 @@
   gap: 40px;
 }
 
-.title {
-  font-size: 36px;
-  font-weight: 400;
-  color: #192d2f;
-}
-
-.description {
-  font-size: 15px;
-  color: #1f242c;
-}
-
 .containerInput {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 30px;
 }
 
@@ -45,8 +30,6 @@
 .containerButton {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: left;
 }
 
 .formButton {

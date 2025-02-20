@@ -206,7 +206,9 @@ export default function Header() {
             }}
             onClick={() => setOpenMenu(false)}
           >
-            <p className={styles.textMenu}>{headerTranslations.home}</p>
+            <p className={styles.textMenu}>
+              {language === "spanish" ? "Inicio" : "Home"}
+            </p>
             <MdArrowOutward className={styles.textMenu} />
           </Link>
 
@@ -216,7 +218,9 @@ export default function Header() {
             style={{ color: pathname === "/aboutUs" ? "#b79e63" : "#ffffff" }}
             onClick={() => setOpenMenu(false)}
           >
-            <p className={styles.textMenu}>{headerTranslations.aboutUs}</p>
+            <p className={styles.textMenu}>
+              {language === "spanish" ? "Nosotros" : "About Us"}
+            </p>
             <MdArrowOutward className={styles.textMenu} />
           </Link>
 
@@ -226,7 +230,9 @@ export default function Header() {
             style={{ color: pathname === "/services" ? "#b79e63" : "#ffffff" }}
             onClick={() => setOpenMenu(false)}
           >
-            <p className={styles.textMenu}>{headerTranslations.services}</p>
+            <p className={styles.textMenu}>
+              {language === "spanish" ? "Servicios" : "Services"}
+            </p>
             <MdArrowOutward className={styles.textMenu} />
           </Link>
 
@@ -236,7 +242,9 @@ export default function Header() {
             style={{ color: pathname === "/blog" ? "#b79e63" : "#ffffff" }}
             onClick={() => setOpenMenu(false)}
           >
-            <p className={styles.textMenu}>{headerTranslations.blog}</p>
+            <p className={styles.textMenu}>
+              {language === "spanish" ? "Foro" : "Blog"}
+            </p>
             <MdArrowOutward className={styles.textMenu} />
           </Link>
 
@@ -246,7 +254,9 @@ export default function Header() {
             style={{ color: pathname === "/contact" ? "#b79e63" : "#ffffff" }}
             onClick={() => setOpenMenu(false)}
           >
-            <p className={styles.textMenu}>{headerTranslations.contacts}</p>
+            <p className={styles.textMenu}>
+              {language === "spanish" ? "Contacto" : "Contacts"}
+            </p>
             <MdArrowOutward className={styles.textMenu} />
           </Link>
 

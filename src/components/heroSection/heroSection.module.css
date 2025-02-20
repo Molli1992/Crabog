@@ -23,12 +23,11 @@
 .container {
   z-index: 9;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   color: #ffffff;
   font-size: 20px;
   gap: 20px;
+  align-items: center;
 }
 
 .title {
