@@ -20,7 +20,7 @@ import Title from "@/components/texts/title/title";
 import Description from "@/components/texts/description/description";
 
 export default function Services() {
-  const { ServiceTranslations, language } = useLanguageStore();
+  const { language } = useLanguageStore();
   const arrayList = [
     language === "spanish" ? "Reclamaciones de seguros" : "Insurance Claims",
     language === "spanish" ? "Consultoría Empresarial" : "Business Consulting",
@@ -83,7 +83,10 @@ export default function Services() {
 
   return (
     <div className={styles.body}>
-      <HeroSection imgSrc={serviceImg} title={ServiceTranslations.titleImg} />
+      <HeroSection
+        imgSrc={serviceImg}
+        title={language === "spanish" ? "Servicios" : "Services"}
+      />
       <div className={styles.section}>
         <div className={`${styles.container} ${styles.containerImage}`}>
           <Image src={lawyerImg} alt="Lawyer" className={styles.image} />
@@ -91,11 +94,25 @@ export default function Services() {
 
         <div className={`${styles.container} ${styles.containerTitle}`}>
           <Title
-            value={ServiceTranslations.serviceTitle}
-            span={ServiceTranslations.serviceSpan}
+            value={
+              language === "spanish"
+                ? "Nuestros abogados brindan servicios centrados en el cliente"
+                : "Our Lawyers Provide Customer Centric"
+            }
+            span={
+              language === "spanish"
+                ? "a las corporaciones"
+                : "Advice to Corporations"
+            }
           />
 
-          <Description value={ServiceTranslations.serviceDescription} />
+          <Description
+            value={
+              language === "spanish"
+                ? "En el panorama legal complejo y en constante cambio actual, tener un asesor legal confiable a su lado puede marcar la diferencia."
+                : "In todays complex and ever-changing legal landscape, having atrusted legal advisor by your side can make all the difference."
+            }
+          />
         </div>
 
         <div className={styles.container}>
@@ -139,8 +156,16 @@ export default function Services() {
       <div className={styles.containerSlider}>
         <div className={`${styles.containerH1}`}>
           <Title
-            value={ServiceTranslations.sliderTitle}
-            span={ServiceTranslations.sliderSpan}
+            value={
+              language === "spanish"
+                ? "Además, los bufetes de abogados suelen contar con personal de apoyo,"
+                : "In addition, law firms typically have a support staff,"
+            }
+            span={
+              language === "spanish"
+                ? "incluidos asistentes legales y asistentes administrativos"
+                : "including paralegals and administrative assistants"
+            }
           />
         </div>
 

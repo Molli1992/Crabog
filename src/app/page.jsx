@@ -9,20 +9,31 @@ import homeImg3 from "../../public/home-crabog-3.jpg";
 import homeImg4 from "../../public/home-crabog-4.jpg";
 
 export default function Home() {
-  const { homeTranslations } = useLanguageStore();
+  const { language } = useLanguageStore();
   const [currentIndex, setCurrentIndex] = useState(0);
   const arrayImages = [homeImg1, homeImg2, homeImg3, homeImg4];
   const arrayTitles = [
-    homeTranslations.titleImage,
-    homeTranslations.titleImage2,
-    homeTranslations.titleImage3,
-    homeTranslations.titleImage4,
+    language === "spanish"
+      ? "Servicios jurídicos confiables y especializados"
+      : "Reliable and specialized legal services",
+
+    language === "spanish"
+      ? "Enfoque especial para cada caso"
+      : "Special approach for each case",
+
+    language === "spanish"
+      ? "Experiencia en la que puedes confiar"
+      : "Experience you can trust",
+
+    language === "spanish"
+      ? "Abogado de confianza para tus necesidades"
+      : "Trusted lawyer for your needs",
   ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % arrayImages.length);
-    }, 5000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);

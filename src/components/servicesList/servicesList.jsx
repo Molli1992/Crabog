@@ -13,7 +13,7 @@ import Title from "@/components/texts/title/title";
 import Description from "@/components/texts/description/description";
 
 export default function ServicesList() {
-  const { ServiceTranslations, language } = useLanguageStore();
+  const { language } = useLanguageStore();
   const serviceList = [
     language === "spanish" ? "Violencia Doméstica" : "Domestic Violence",
     language === "spanish" ? "Delitos juveniles" : "Juvenile Crimes",
@@ -43,15 +43,25 @@ export default function ServicesList() {
       <div className={styles.containerLeft}>
         <div className={styles.conatinerTitle}>
           <Title
-            value={ServiceTranslations.serviceListTitle}
-            span={ServiceTranslations.serviceListSpan}
+            value={
+              language === "spanish"
+                ? "Los abogados están capacitados para analizar cuestiones legales y redactar"
+                : "Lawyers are trained to analyze legal issues and draft "
+            }
+            span={
+              language === "spanish" ? "documentos legales" : "legal documents"
+            }
             color="#192d2f"
           />
         </div>
 
         <div className={styles.conatinerDescription}>
           <Description
-            value={ServiceTranslations.serviceListDescription}
+            value={
+              language === "spanish"
+                ? "Uno de los principales beneficios de contratar un bufete de abogados es la experiencia y los conocimientos que aportan."
+                : "One of the primary benefits of hiring a law firm is the expertise and experience that they bring to the table."
+            }
             color="#1d2939b8"
           />
         </div>

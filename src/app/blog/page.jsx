@@ -5,11 +5,14 @@ import HeroSection from "@/components/heroSection/heroSection";
 import useLanguageStore from "@/zustand/useLanguageStore";
 
 export default function Blog() {
-  const { BlogTranslations } = useLanguageStore();
+  const { language } = useLanguageStore();
 
   return (
     <div>
-      <HeroSection imgSrc={blogImg} title={BlogTranslations.titleImg} />
+      <HeroSection
+        imgSrc={blogImg}
+        title={language === "spanish" ? "Foro" : "Blog"}
+      />
       <div style={{ width: "100%", height: "100vh" }}></div>
     </div>
   );

@@ -18,7 +18,7 @@ import FormContact from "@/components/formContact/formContact";
 import { ClipLoader } from "react-spinners";
 
 export default function Contact() {
-  const { ContactTranslations, FooterTranslations } = useLanguageStore();
+  const { language } = useLanguageStore();
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
@@ -37,30 +37,50 @@ export default function Contact() {
 
   return (
     <div className={styles.body}>
-      <HeroSection imgSrc={contactImg} title={ContactTranslations.titleImg} />
+      <HeroSection
+        imgSrc={contactImg}
+        title={language === "spanish" ? "Contacto" : "Contacts"}
+      />
       <div className={styles.container}>
         <div className={styles.item}>
           <SlLocationPin className={styles.icons} />
-          <h1 className={styles.itemTitle}>{FooterTranslations.address}</h1>
-          <p className={styles.itemText}>{FooterTranslations.addressText}</p>
+          <h1 className={styles.itemTitle}>
+            {language === "spanish" ? "Dirección" : "Address"}
+          </h1>
+          <p className={styles.itemText}>
+            {language === "spanish"
+              ? "Maipú 1252, Piso 8º, C.A.B.A."
+              : "Maipú 1252, 8th Floor, C.A.B.A."}
+          </p>
         </div>
 
         <div className={styles.item}>
           <BiPhoneCall className={styles.icons} />
-          <h1 className={styles.itemTitle}>{FooterTranslations.phone}</h1>
+          <h1 className={styles.itemTitle}>
+            {" "}
+            {language === "spanish" ? "Telefono" : "Phone"}
+          </h1>
           <p className={styles.itemText}>+54 911 4021-7000</p>
         </div>
 
         <div className={styles.item}>
           <HiOutlineMailOpen className={styles.icons} />
-          <h1 className={styles.itemTitle}>{FooterTranslations.email}</h1>
+          <h1 className={styles.itemTitle}>
+            {language === "spanish" ? "Mail" : "Email"}
+          </h1>
           <p className={styles.itemText}>secretarias@crabog.com</p>
         </div>
 
         <div className={styles.item}>
           <LuAlarmClock className={styles.icons} />
-          <h1 className={styles.itemTitle}>{FooterTranslations.hours}</h1>
-          <p className={styles.itemText}>{FooterTranslations.hoursText}</p>
+          <h1 className={styles.itemTitle}>
+            {language === "spanish" ? "Horas de trabajo" : "Working Hours"}
+          </h1>
+          <p className={styles.itemText}>
+            {language === "spanish"
+              ? "Lun a vie: 9hs a 18hs"
+              : "Mon-Fri: 9am - 6pm"}
+          </p>
         </div>
       </div>
 
@@ -83,10 +103,12 @@ export default function Contact() {
                 >
                   <div className={styles.containerInforWindow}>
                     <p className={styles.infoWindowTitle}>
-                      {ContactTranslations.infoWindow}
+                      {language === "spanish" ? "Ubicación" : "Location"}
                     </p>
                     <p className={styles.textInfoWindow}>
-                      {FooterTranslations.addressText}
+                      {language === "spanish"
+                        ? "Maipú 1252, Piso 8º, C.A.B.A."
+                        : "Maipú 1252, 8th Floor, C.A.B.A."}
                     </p>
                     <p className={styles.textInfoWindow}>
                       Buenos Aires, Argentina

@@ -6,11 +6,14 @@ import useLanguageStore from "@/zustand/useLanguageStore";
 import CompanyInfo from "@/components/companyInfo/companyInfo";
 
 export default function AboutUs() {
-  const { AboutUsTranslations } = useLanguageStore();
+  const { language } = useLanguageStore();
 
   return (
     <div className={styles.body}>
-      <HeroSection imgSrc={aboutUsImg} title={AboutUsTranslations.titleImg} />
+      <HeroSection
+        imgSrc={aboutUsImg}
+        title={language === "spanish" ? "Nostros" : "About Us"}
+      />
       <div className={styles.container}>
         <CompanyInfo />
       </div>

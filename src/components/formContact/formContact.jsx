@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 import { ClipLoader } from "react-spinners";
 
 export default function FormContact() {
-  const { ContactTranslations, language } = useLanguageStore();
+  const { language } = useLanguageStore();
   const [loader, setLoader] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -84,22 +84,27 @@ export default function FormContact() {
 
   return (
     <div className={styles.body}>
-      <h1 className={styles.title}>{ContactTranslations.formTitle}</h1>
+      <h1 className={styles.title}>
+        {language === "spanish" ? "Enviar Mensaje" : "Send Message"}
+      </h1>
+
       <p className={styles.description}>
-        {ContactTranslations.formDescription}
+        {language === "spanish"
+          ? "Complete este formulario y nuestros especialistas se comunicarán con usted en breve para una consulta detallada."
+          : "Fill out this form and our specialists will contact you shortly for detailed consultation."}
       </p>
 
       <div className={styles.containerInput}>
         <input
           className={styles.formInput}
-          placeholder={`${ContactTranslations.formName}`}
+          placeholder={language === "spanish" ? "Nombre" : "Your name"}
           value={formData.name}
           onChange={onChangeFormData}
           name="name"
         />
         <input
           className={styles.formInput}
-          placeholder={`${ContactTranslations.formLastName}`}
+          placeholder={language === "spanish" ? "Apellido" : "Your last name"}
           value={formData.lastName}
           onChange={onChangeFormData}
           name="lastName"
@@ -109,14 +114,14 @@ export default function FormContact() {
       <div className={styles.containerInput}>
         <input
           className={styles.formInput}
-          placeholder={`${ContactTranslations.formEmail}`}
+          placeholder={language === "spanish" ? "Mail" : "Email"}
           value={formData.email}
           onChange={onChangeFormData}
           name="email"
         />
         <input
           className={styles.formInput}
-          placeholder={`${ContactTranslations.formPhone}`}
+          placeholder={language === "spanish" ? "Telefono" : "Phone"}
           value={formData.phone}
           onChange={onChangeFormData}
           name="phone"
@@ -127,7 +132,7 @@ export default function FormContact() {
       <textarea
         style={{ width: "100%", height: "100px" }}
         className={styles.formInput}
-        placeholder={`${ContactTranslations.formMessage}`}
+        placeholder={language === "spanish" ? "Mensaje" : "Message"}
         value={formData.message}
         onChange={onChangeFormData}
         name="message"
@@ -137,8 +142,10 @@ export default function FormContact() {
         <button className={styles.formButton} onClick={onSubmit}>
           {loader ? (
             <ClipLoader color="#192d2f" size={15} />
+          ) : language === "spanish" ? (
+            "Enviar"
           ) : (
-            ContactTranslations.formButton
+            "Submit"
           )}
         </button>
       </div>

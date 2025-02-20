@@ -16,7 +16,7 @@ import useLanguageStore from "@/zustand/useLanguageStore";
 export default function Header() {
   const [scrolling, setScrolling] = useState(false);
   const pathname = usePathname();
-  const { language, setLanguage, headerTranslations } = useLanguageStore();
+  const { language, setLanguage } = useLanguageStore();
   const [openMenu, setOpenMenu] = useState(false);
 
   const onClickOpenUrl = (url) => {
@@ -89,7 +89,9 @@ export default function Header() {
           className={styles.containerText}
           style={{ color: pathname === "/" ? "#b79e63" : "#ffffff" }}
         >
-          <p className={styles.text}>{headerTranslations.home}</p>
+          <p className={styles.text}>
+            {language === "spanish" ? "Inicio" : "Home"}
+          </p>
           <MdArrowOutward className={styles.text} />
         </Link>
 
@@ -98,7 +100,9 @@ export default function Header() {
           className={styles.containerText}
           style={{ color: pathname === "/aboutUs" ? "#b79e63" : "#ffffff" }}
         >
-          <p className={styles.text}>{headerTranslations.aboutUs}</p>
+          <p className={styles.text}>
+            {language === "spanish" ? "Nosotros" : "About Us"}
+          </p>
           <MdArrowOutward className={styles.text} />
         </Link>
 
@@ -107,7 +111,9 @@ export default function Header() {
           className={styles.containerText}
           style={{ color: pathname === "/services" ? "#b79e63" : "#ffffff" }}
         >
-          <p className={styles.text}>{headerTranslations.services}</p>
+          <p className={styles.text}>
+            {language === "spanish" ? "Servicios" : "Services"}
+          </p>
           <MdArrowOutward className={styles.text} />
         </Link>
 
@@ -116,7 +122,9 @@ export default function Header() {
           className={styles.containerText}
           style={{ color: pathname === "/blog" ? "#b79e63" : "#ffffff" }}
         >
-          <p className={styles.text}>{headerTranslations.blog}</p>
+          <p className={styles.text}>
+            {language === "spanish" ? "Foro" : "Blog"}
+          </p>
           <MdArrowOutward className={styles.text} />
         </Link>
 
@@ -125,7 +133,9 @@ export default function Header() {
           className={styles.containerText}
           style={{ color: pathname === "/contact" ? "#b79e63" : "#ffffff" }}
         >
-          <p className={styles.text}>{headerTranslations.contacts}</p>
+          <p className={styles.text}>
+            {language === "spanish" ? "Contacto" : "Contacts"}
+          </p>
           <MdArrowOutward className={styles.text} />
         </Link>
       </div>
