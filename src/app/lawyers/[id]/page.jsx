@@ -1,3 +1,4 @@
+"use client";
 import styles from "./lawyersProfile.module.css";
 import { arrayLawyers } from "@/data/data";
 
