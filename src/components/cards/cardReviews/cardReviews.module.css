@@ -1,0 +1,44 @@
+.cardReviews {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #192d2f;
+  gap: 30px;
+  padding-bottom: 50px;
+  cursor: pointer;
+}
+
+.icon {
+  color: #b79e63;
+  font-size: 40px;
+}
+
+.description {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user {
+  font-size: 18px;
+}
+
+@media (max-width: 700px) {
+  .cardReviews {
+    width: 95%;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .user {
+    font-size: 16px;
+  }
+}

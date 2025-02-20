@@ -9,6 +9,7 @@ import aboutUsImg3 from "../../../public/aboutUs-3-img.jpg";
 import Title from "@/components/texts/title/title";
 import Description from "@/components/texts/description/description";
 import Lawyers from "@/components/lawyers/lawyers";
+import Reviews from "@/components/reviews/reviews";
 
 export default function AboutUs() {
   const { language } = useLanguageStore();
@@ -68,6 +69,8 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
+
+      <Reviews />
     </div>
   );
 }

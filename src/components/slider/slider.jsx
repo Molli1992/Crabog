@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import styles from "./slider.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
@@ -7,12 +8,26 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import CardServices from "../cards/cardServices/cardServices";
 import CardLawyers from "../cards/cardLawyers/cardLawyers";
+import CardReviews from "../cards/cardReviews/cardReviews";
 
-export default function Slider({ arrayServices, arrayLawyers }) {
+export default function Slider({ arrayServices, arrayLawyers, arrayReviews }) {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const swiperStyles = {
-    "--swiper-navigation-color": arrayLawyers ? "#192d2f" : "#ffffff",
-    "--swiper-pagination-color": arrayLawyers ? "#192d2f" : "#ffffff",
+    "--swiper-navigation-color":
+      arrayLawyers || arrayReviews ? "#192d2f" : "#ffffff",
+    "--swiper-pagination-color":
+      arrayLawyers || arrayReviews ? "#192d2f" : "#ffffff",
   };
+
+  useEffect(() => {
+    const handleResize = () => setScreenWidth(window.innerWidth);
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   let breakpoints;
 
@@ -56,7 +71,7 @@ export default function Slider({ arrayServices, arrayLawyers }) {
     <div className={styles.sliderContainer}>
       <Swiper
         breakpoints={breakpoints}
-        navigation
+        navigation={screenWidth <= 850 && arrayReviews ? false : true}
         pagination={{ clickable: true }}
         modules={[Pagination, Navigation]}
         style={swiperStyles}
@@ -75,6 +90,15 @@ export default function Slider({ arrayServices, arrayLawyers }) {
             return (
               <SwiperSlide key={data.id} className={styles.centeredSlide}>
                 <CardLawyers data={data} />
+              </SwiperSlide>
+            );
+          })}
+
+        {arrayReviews &&
+          arrayReviews.map((data) => {
+            return (
+              <SwiperSlide key={data.id} className={styles.centeredSlide}>
+                <CardReviews data={data} />
               </SwiperSlide>
             );
           })}

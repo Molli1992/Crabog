@@ -2,6 +2,7 @@ import styles from "./reviews.module.css";
 import Title from "@/components/texts/title/title";
 import Slider from "@/components/slider/slider";
 import useLanguageStore from "@/zustand/useLanguageStore";
+import { arrayReviewsSpanish, arrayReviewsEnglish } from "@/data/data";
 
 export default function Reviews() {
   const { language } = useLanguageStore();
@@ -16,7 +17,11 @@ export default function Reviews() {
         color="#192d2f"
       />
 
-      <Slider arrayLawyers={[]} />
+      <Slider
+        arrayReviews={
+          language === "spanish" ? arrayReviewsSpanish : arrayReviewsEnglish
+        }
+      />
     </div>
   );
 }
