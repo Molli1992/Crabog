@@ -9,6 +9,8 @@ import {
   TbArrowNarrowRightDashed,
   TbArrowNarrowLeftDashed,
 } from "react-icons/tb";
+import Title from "@/components/texts/title/title";
+import Description from "@/components/texts/description/description";
 
 export default function ServicesList() {
   const { ServiceTranslations, language } = useLanguageStore();
@@ -39,16 +41,20 @@ export default function ServicesList() {
   return (
     <div className={styles.body}>
       <div className={styles.containerLeft}>
-        <h1 className={styles.title}>
-          {ServiceTranslations.serviceListTitle}{" "}
-          <span className={styles.spanElement}>
-            {ServiceTranslations.serviceListSpan}
-          </span>
-        </h1>
+        <div className={styles.conatinerTitle}>
+          <Title
+            value={ServiceTranslations.serviceListTitle}
+            span={ServiceTranslations.serviceListSpan}
+            color="#192d2f"
+          />
+        </div>
 
-        <p className={styles.description}>
-          {ServiceTranslations.serviceListDescription}
-        </p>
+        <div className={styles.conatinerDescription}>
+          <Description
+            value={ServiceTranslations.serviceListDescription}
+            color="#1d2939b8"
+          />
+        </div>
 
         <Image
           src={serviceListImg}

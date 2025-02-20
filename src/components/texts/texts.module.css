@@ -1,0 +1,21 @@
+.title {
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.spanElement {
+  color: #b79e63;
+}
+
+.description {
+  color: #ffffff82;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (max-width: 650px) {
+  .title {
+    font-size: 30px;
+  }
+}

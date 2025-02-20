@@ -16,6 +16,8 @@ import imgSlider3 from "../../../public/img-slider-3.jpg";
 import imgSlider4 from "../../../public/img-slider-4.jpg";
 import imgSlider5 from "../../../public/img-slider-5.jpg";
 import imgSlider6 from "../../../public/img-slider-6.jpg";
+import Title from "@/components/texts/title/title";
+import Description from "@/components/texts/description/description";
 
 export default function Services() {
   const { ServiceTranslations, language } = useLanguageStore();
@@ -88,46 +90,36 @@ export default function Services() {
         </div>
 
         <div className={`${styles.container} ${styles.containerTitle}`}>
-          <h1 className={styles.title}>
-            {ServiceTranslations.serviceTitle}{" "}
-            <span className={styles.spanElement}>
-              {" "}
-              {ServiceTranslations.serviceSpan}
-            </span>
-          </h1>
-          <p className={styles.description}>
-            {ServiceTranslations.serviceDescription}
-          </p>
+          <Title
+            value={ServiceTranslations.serviceTitle}
+            span={ServiceTranslations.serviceSpan}
+          />
+
+          <Description value={ServiceTranslations.serviceDescription} />
         </div>
 
         <div className={styles.container}>
           <div className={styles.item}>
             <FaAward className={styles.icons} />
             <div className={styles.containerText}>
-              <h1 className={styles.title} style={{ fontSize: "24px" }}>
-                {arrayList[0]}
-              </h1>
-              <p className={styles.description}>{arrayList[3]}</p>
+              <Title fontSize="24px" value={arrayList[0]} />
+              <Description value={arrayList[3]} />
             </div>
           </div>
 
           <div className={styles.item}>
             <RiCustomerService2Fill className={styles.icons} />
             <div className={styles.containerText}>
-              <h1 className={styles.title} style={{ fontSize: "24px" }}>
-                {arrayList[1]}
-              </h1>
-              <p className={styles.description}>{arrayList[4]}</p>
+              <Title fontSize="24px" value={arrayList[1]} />
+              <Description value={arrayList[4]} />
             </div>
           </div>
 
           <div className={styles.item}>
             <FaComments className={styles.icons} />
             <div className={styles.containerText}>
-              <h1 className={styles.title} style={{ fontSize: "24px" }}>
-                {arrayList[2]}
-              </h1>
-              <p className={styles.description}>{arrayList[5]}</p>
+              <Title fontSize="24px" value={arrayList[2]} />
+              <Description value={arrayList[5]} />
             </div>
           </div>
         </div>
@@ -137,13 +129,10 @@ export default function Services() {
 
       <div className={styles.containerSlider}>
         <div className={`${styles.containerH1}`}>
-          <h1 className={styles.title}>
-            {ServiceTranslations.sliderTitle}{" "}
-            <span className={styles.spanElement}>
-              {ServiceTranslations.sliderSpan}{" "}
-            </span>
-            {ServiceTranslations.sliderText}
-          </h1>
+          <Title
+            value={ServiceTranslations.sliderTitle}
+            span={ServiceTranslations.sliderSpan}
+          />
         </div>
 
         <Slider arrayServices={sliderData} />
