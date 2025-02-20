@@ -1,3 +1,4 @@
+"use client";
 import styles from "./reviews.module.css";
 import Title from "@/components/texts/title/title";
 import Slider from "@/components/slider/slider";

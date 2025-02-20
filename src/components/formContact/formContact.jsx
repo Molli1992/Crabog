@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import styles from "./formContact.module.css";
 import useLanguageStore from "@/zustand/useLanguageStore";

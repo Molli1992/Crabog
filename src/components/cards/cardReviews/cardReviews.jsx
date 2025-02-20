@@ -1,6 +1,5 @@
 import styles from "./cardReviews.module.css";
 import { FaQuoteLeft } from "react-icons/fa";
-import { FaRegUserCircle } from "react-icons/fa";
 import Image from "next/image";
 
 export default function CardReviews({ data }) {
