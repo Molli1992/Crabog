@@ -3,14 +3,22 @@ import styles from "./cardLawyers.module.css";
 import Title from "@/components/texts/title/title";
 import Description from "@/components/texts/description/description";
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 export default function CardLawyers({ data }) {
-  const onClickOpenUrl = (url) => {
+  const router = useRouter();
+
+  const onClickOpenUrl = (e, url) => {
     window.open(url, "_blank");
+
+    e.stopPropagation();
   };
 
   return (
-    <div className={styles.cardLawyers}>
+    <div
+      className={styles.cardLawyers}
+      onClick={() => router.push(`/lawyers/${data.id}`)}
+    >
       <div
         className={styles.image}
         style={{ backgroundImage: `url('${data.img.src}')` }}
@@ -21,8 +29,8 @@ export default function CardLawyers({ data }) {
         >
           <FaLinkedinIn
             className={styles.icons}
-            onClick={() => {
-              onClickOpenUrl(data.linkedin);
+            onClick={(e) => {
+              onClickOpenUrl(e, data.linkedin);
             }}
           />
         </div>
@@ -33,8 +41,8 @@ export default function CardLawyers({ data }) {
         >
           <FaInstagram
             className={styles.icons}
-            onClick={() => {
-              onClickOpenUrl(data.instagram);
+            onClick={(e) => {
+              onClickOpenUrl(e, data.instagram);
             }}
           />
         </div>

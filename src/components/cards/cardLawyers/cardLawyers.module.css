@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   transition: transform 0.8s ease, box-shadow 0.8s ease;
+  cursor: pointer;
 }
 
 .cardLawyers:hover {
@@ -23,6 +24,7 @@
   width: 30px;
   height: 30px;
   background-color: #ffffff;
+  color: #192d2f;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -39,8 +41,12 @@
   transform: translateY(0);
 }
 
+.containerIcons:hover {
+  background-color: #192d2f;
+  color: #ffffff;
+}
+
 .icons {
-  color: #192d2f;
   font-size: 14px;
 }
 

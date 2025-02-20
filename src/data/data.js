@@ -1,0 +1,68 @@
+import LawyerOneImg from "../../public/lawyer-1.jpg";
+
+export const arrayLawyers = [
+  {
+    id: "arrayLawyers-1",
+    img: LawyerOneImg,
+    name: "Dawson Timms",
+    experience: "Junior Lasyer",
+    linkedin: "https://www.linkedin.com",
+    instagram: "https://www.instagram.com",
+  },
+  {
+    id: "arrayLawyers-2",
+    img: LawyerOneImg,
+    name: "Dawson Timms",
+    experience: "Junior Lasyer",
+    linkedin: "https://www.linkedin.com",
+    instagram: "https://www.instagram.com",
+  },
+  {
+    id: "arrayLawyers-3",
+    img: LawyerOneImg,
+    name: "Dawson Timms",
+    experience: "Junior Lasyer",
+    linkedin: "https://www.linkedin.com",
+    instagram: "https://www.instagram.com",
+  },
+  {
+    id: "arrayLawyers-4",
+    img: LawyerOneImg,
+    name: "Dawson Timms",
+    experience: "Junior Lasyer",
+    linkedin: "https://www.linkedin.com",
+    instagram: "https://www.instagram.com",
+  },
+  {
+    id: "arrayLawyers-5",
+    img: LawyerOneImg,
+    name: "Dawson Timms",
+    experience: "Junior Lasyer",
+    linkedin: "https://www.linkedin.com",
+    instagram: "https://www.instagram.com",
+  },
+  {
+    id: "arrayLawyers-6",
+    img: LawyerOneImg,
+    name: "Dawson Timms",
+    experience: "Junior Lasyer",
+    linkedin: "https://www.linkedin.com",
+    instagram: "https://www.instagram.com",
+  },
+  {
+    id: "arrayLawyers-7",
+    img: LawyerOneImg,
+    name: "Dawson Timms",
+    experience: "Junior Lasyer",
+    linkedin: "https://www.linkedin.com",
+    instagram: "https://www.instagram.com",
+  },
+  {
+    id: "arrayLawyers-8",
+    img: LawyerOneImg,
+    name: "Dawson Timms",
+    experience: "Junior Lasyer",
+    linkedin: "https://www.linkedin.com",
+    instagram: "https://www.instagram.com",
+  },
+];
