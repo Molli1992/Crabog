@@ -100,24 +100,33 @@ export default function Services() {
 
         <div className={styles.container}>
           <div className={styles.item}>
-            <FaAward className={styles.icons} />
-            <div className={styles.containerText}>
+            <div>
+              <FaAward className={styles.icons} />
+            </div>
+
+            <div>
               <Title fontSize="24px" value={arrayList[0]} />
               <Description value={arrayList[3]} />
             </div>
           </div>
 
           <div className={styles.item}>
-            <RiCustomerService2Fill className={styles.icons} />
-            <div className={styles.containerText}>
+            <div>
+              <RiCustomerService2Fill className={styles.icons} />
+            </div>
+
+            <div>
               <Title fontSize="24px" value={arrayList[1]} />
               <Description value={arrayList[4]} />
             </div>
           </div>
 
           <div className={styles.item}>
-            <FaComments className={styles.icons} />
-            <div className={styles.containerText}>
+            <div>
+              <FaComments className={styles.icons} />
+            </div>
+
+            <div>
               <Title fontSize="24px" value={arrayList[2]} />
               <Description value={arrayList[5]} />
             </div>
