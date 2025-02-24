@@ -1,12 +1,194 @@
 "use client";
+import React, { useState } from "react";
 import styles from "./lawyersProfile.module.css";
-import { arrayLawyers } from "@/data/data";
+import HeroSection from "@/components/heroSection/heroSection";
+import tribunalImg from "../../../../public/tribunal-vacio.jpg";
+import useLanguageStore from "@/zustand/useLanguageStore";
+import { arrayLawyers, arrayLawyersSpanish } from "@/data/data";
+import { useParams } from "next/navigation";
+import Title from "@/components/texts/title/title";
+import Description from "@/components/texts/description/description";
+import { FaPhoneVolume } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { ClipLoader } from "react-spinners";
+import Swal from "sweetalert2";
 
 export default function LawyersProfile() {
-  console.log(arrayLawyers);
+  const { language } = useLanguageStore();
+  const params = useParams();
+  
+  const arrayData = language === "spanish" ? arrayLawyersSpanish : arrayLawyers;
+  const profileData = arrayData.filter((lawyer) => {
+    return lawyer.id === params.id;
+  });
+
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    message: "",
+  });
+    const [loader, setLoader] = useState(false);
+
+  const onClickOpenUrl = (url) => {
+    window.open(url, "_blank");
+
+    e.stopPropagation();
+  };
+
+  const onChangeFormData = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const onSubmit = async () => {
+    setLoader(true);
+    try {
+      if (!formData.name || !formData.phone || !formData.message) {
+        Swal.fire({
+          title: "Info!",
+          text:
+            language === "spanish"
+              ? "Completar todos los campos"
+              : "Complete all fields",
+          icon: "info",
+          confirmButtonText: "OK",
+        });
+      } else {
+        Swal.fire({
+          title: language === "spanish" ? "Exito!" : "Success!",
+          text:
+            language === "spanish"
+              ? "Mensaje enviado correctamente"
+              : "Message sent successfully",
+          icon: "success",
+          confirmButtonText: "OK",
+        });
+      }
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoader(false);
+      setFormData({
+        name: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+    }
+  };
+
   return (
     <div className={styles.body}>
-      <h1>Profile</h1>
+      <HeroSection
+        imgSrc={tribunalImg}
+        title={profileData[0].name}
+        desc={profileData[0].experience}
+      />
+
+      <div className={styles.container}>
+        <div
+          style={{ backgroundImage: `url('${profileData[0].img.src}')` }}
+          className={styles.profileImg}
+          alt="Profile IMG"
+        />
+
+        <div className={styles.infoProfile}>
+          <Title value={profileData[0].name} color="#192d2f" />
+
+          <Description
+            value={profileData[0].experience}
+            color="#b79e63"
+            fontSize="18px"
+          />
+
+          <p className={styles.description}>
+            {profileData[0].description} {profileData[0].description}
+          </p>
+
+          <div className={styles.flexContainer}>
+            <FaPhoneVolume className={styles.icons} />
+            <Description
+              value={profileData[0].phone}
+              color="#192d2f"
+              fontSize="18px"
+            />
+          </div>
+
+          <div className={styles.flexContainer}>
+            <MdEmail className={styles.icons} />
+            <Description
+              value={profileData[0].email}
+              color="#192d2f"
+              fontSize="18px"
+            />
+          </div>
+
+          <div className={styles.flexContainer}>
+            <FaLinkedinIn
+              className={styles.icons}
+              style={{ color: "#192d2f", cursor: "pointer" }}
+              onClick={() => {
+                onClickOpenUrl(profileData[0].linkedin);
+              }}
+            />
+
+            <FaInstagram
+              className={styles.icons}
+              style={{ color: "#192d2f", cursor: "pointer" }}
+              onClick={() => {
+                onClickOpenUrl(profileData[0].instagram);
+              }}
+            />
+          </div>
+        </div>
+
+        <div className={styles.formProfile}>
+          <Title
+            value={language === "spanish" ? "Contactame" : "Contact Me"}
+            color="#192d2f"
+          />
+
+          <input
+            className={styles.formInput}
+            placeholder={language === "spanish" ? "Nombre" : "Name"}
+            value={formData.name}
+            onChange={onChangeFormData}
+            name="name"
+          />
+
+          <input
+            className={styles.formInput}
+            placeholder={language === "spanish" ? "Telefono" : "Phone"}
+            value={formData.phone}
+            onChange={onChangeFormData}
+            name="phone"
+            type="number"
+          />
+
+          <textarea
+            style={{ height: "100px" }}
+            className={styles.formInput}
+            placeholder={language === "spanish" ? "Mensaje" : "Message"}
+            value={formData.message}
+            onChange={onChangeFormData}
+            name="message"
+          />
+
+          <button className={styles.formButton} onClick={onSubmit}>
+            {loader ? (
+              <ClipLoader color="#192d2f" size={15} />
+            ) : language === "spanish" ? (
+              "Enviar"
+            ) : (
+              "Submit"
+            )}
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

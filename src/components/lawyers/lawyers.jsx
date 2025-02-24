@@ -1,7 +1,7 @@
 import styles from "./lawyers.module.css";
 import Title from "@/components/texts/title/title";
 import Slider from "@/components/slider/slider";
-import { arrayLawyers } from "@/data/data";
+import { arrayLawyers, arrayLawyersSpanish } from "@/data/data";
 import useLanguageStore from "@/zustand/useLanguageStore";
 
 export default function Lawyers() {
@@ -19,7 +19,11 @@ export default function Lawyers() {
         color="#192d2f"
       />
 
-      <Slider arrayLawyers={arrayLawyers} />
+      <Slider
+        arrayLawyers={
+          language === "spanish" ? arrayLawyersSpanish : arrayLawyers
+        }
+      />
     </div>
   );
 }

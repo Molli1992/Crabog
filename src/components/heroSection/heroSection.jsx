@@ -2,7 +2,7 @@ import styles from "./heroSection.module.css";
 import Link from "next/link";
 import useLanguageStore from "@/zustand/useLanguageStore";
 
-export default function HeroSection({ imgSrc, title }) {
+export default function HeroSection({ imgSrc, title, desc }) {
   const { language } = useLanguageStore();
 
   return (
@@ -16,7 +16,7 @@ export default function HeroSection({ imgSrc, title }) {
           <Link href="/" className={styles.link}>
             {language === "spanish" ? "Inicio" : "Home"}
           </Link>
-          {" / "} {title}
+          {" / "} {desc ? desc : title}
         </p>
       </div>
     </div>
