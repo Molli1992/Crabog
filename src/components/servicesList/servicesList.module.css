@@ -32,9 +32,15 @@
   width: 50%;
 }
 
-.itemList {
+.itemContainer {
   border-bottom: 1px solid #192d2f;
   padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.itemList {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -42,13 +48,31 @@
   color: #192d2f;
 }
 
+.itemList:hover {
+  color: #b79e63;
+}
+
 .service {
   font-size: 24px;
   font-weight: 400;
 }
 
-.itemList:hover {
-  color: #b79e63;
+.serviceDescription {
+  font-size: 14px;
+  color: #1d2939b8;
+  opacity: 0;
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .pagination {

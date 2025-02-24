@@ -13,20 +13,73 @@ import Description from "@/components/texts/description/description";
 
 export default function ServicesList() {
   const { language } = useLanguageStore();
+
   const serviceList = [
-    language === "spanish" ? "Violencia Doméstica" : "Domestic Violence",
-    language === "spanish" ? "Delitos juveniles" : "Juvenile Crimes",
-    language === "spanish"
-      ? "Audiencias Administrativas"
-      : "Administrative Hearings",
-    language === "spanish" ? "Ley de Propiedad" : "Property Law",
-    language === "spanish" ? "Delitos de conducción" : "Driving Crimes",
-    language === "spanish" ? "Delitos de drogas" : "Drug Crimes",
-    language === "spanish" ? "Divorcios y Custodia" : "Divorce & Custody",
-    language === "spanish" ? "Defensa Penal" : "Criminal Defense",
-    language === "spanish" ? "Accidentes de Tráfico" : "Traffic Accidents",
-    language === "spanish" ? "Testamentos y Herencias" : "Wills & Inheritance",
+    {
+      serviceName:
+        language === "spanish" ? "Violencia Doméstica" : "Domestic Violence",
+      serviceDescription:
+        " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+    },
+    {
+      serviceName:
+        language === "spanish" ? "Delitos juveniles" : "Juvenile Crimes",
+      serviceDescription:
+        " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+    },
+    {
+      serviceName:
+        language === "spanish"
+          ? "Audiencias Administrativas"
+          : "Administrative Hearings",
+      serviceDescription:
+        " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+    },
+    {
+      serviceName: language === "spanish" ? "Ley de Propiedad" : "Property Law",
+      serviceDescription:
+        " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+    },
+    {
+      serviceName:
+        language === "spanish" ? "Delitos de conducción" : "Driving Crimes",
+      serviceDescription:
+        " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+    },
+    {
+      serviceName: language === "spanish" ? "Delitos de drogas" : "Drug Crimes",
+      serviceDescription:
+        " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+    },
+    {
+      serviceName:
+        language === "spanish" ? "Divorcios y Custodia" : "Divorce & Custody",
+      serviceDescription:
+        " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+    },
+    {
+      serviceName:
+        language === "spanish" ? "Defensa Penal" : "Criminal Defense",
+      serviceDescription:
+        " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+    },
+    {
+      serviceName:
+        language === "spanish" ? "Accidentes de Tráfico" : "Traffic Accidents",
+      serviceDescription:
+        " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+    },
+    {
+      serviceName:
+        language === "spanish"
+          ? "Testamentos y Herencias"
+          : "Wills & Inheritance",
+      serviceDescription:
+        " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+    },
   ];
+
+  const [selectedItemIndex, setSelectedItemIndex] = useState(null);
 
   const itemsPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);
@@ -36,6 +89,10 @@ export default function ServicesList() {
   const currentItems = serviceList.slice(startIndex, endIndex);
 
   const totalPages = Math.ceil(serviceList.length / itemsPerPage);
+
+  const handleItemClick = (index) => {
+    setSelectedItemIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
 
   return (
     <div className={styles.body}>
@@ -74,9 +131,21 @@ export default function ServicesList() {
 
       <div className={styles.containerRight}>
         {currentItems.map((item, index) => (
-          <div key={index} className={styles.itemList}>
-            <h1 className={styles.service}>{item}</h1>
-            <MdArrowOutward className={styles.service} />
+          <div
+            key={index}
+            className={styles.itemContainer}
+            onClick={() => handleItemClick(index)}
+          >
+            <div className={styles.itemList}>
+              <h1 className={styles.service}>{item.serviceName}</h1>
+              <MdArrowOutward className={styles.service} />
+            </div>
+
+            {selectedItemIndex === index && (
+              <p className={styles.serviceDescription}>
+                {item.serviceDescription}
+              </p>
+            )}
           </div>
         ))}
 
