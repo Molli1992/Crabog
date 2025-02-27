@@ -12,6 +12,7 @@ import Reviews from "@/components/reviews/reviews";
 import ServicesList from "@/components/servicesList/servicesList";
 import CompanyInfo from "@/components/companyInfo/companyInfo";
 import Lawyers from "@/components/lawyers/lawyers";
+import CompanyInfo2 from "@/components/compnayInfo2/companyInfo2";
 
 export default function Home() {
   const { language } = useLanguageStore();
@@ -71,6 +72,8 @@ export default function Home() {
       </div>
 
       <Reviews />
+
+      <CompanyInfo2 />
 
       <div className={styles.containerForm}>
         <FormContact />
