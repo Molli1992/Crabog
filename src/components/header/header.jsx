@@ -38,6 +38,12 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (window.scrollY > 0) {
+      setScrolling(true);
+    }
+  }, []);
+
   const onClickFlag = () => {
     if (language === "spanish") {
       setLanguage("english");
