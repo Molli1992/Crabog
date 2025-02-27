@@ -23,11 +23,12 @@ export default function Blog() {
   useEffect(() => {
     if (language === "spanish") {
       setTypes("Todas");
-      setFilterArrayBlog(dataBlog);
+      setFilterArrayBlog(dataBlogCastellano);
     } else {
       setTypes("All");
-      setFilterArrayBlog(dataBlogCastellano);
+      setFilterArrayBlog(dataBlog);
     }
+    setValueInput("");
   }, [language]);
 
   const dataBlog = [
@@ -259,6 +260,7 @@ export default function Blog() {
   const arrayBlog = language === "spanish" ? dataBlogCastellano : dataBlog;
   const arrayTypes = language === "spanish" ? dataCastellano : dataTypes;
   const [filterArrayBlog, setFilterArrayBlog] = useState(arrayBlog);
+  const [valueInput, setValueInput] = useState("");
 
   const onClickTypes = (name) => {
     if (name === "Todas" || name === "All") {
@@ -288,6 +290,7 @@ export default function Blog() {
     setFilterArrayBlog(filterBlog);
     setTypes(language === "spanish" ? "Todas" : "All");
     setCurrentPage(1);
+    setValueInput(e.target.value);
   };
 
   const itemsPerPage = 8;
@@ -307,6 +310,55 @@ export default function Blog() {
       />
 
       <div className={styles.container}>
+        <div className={styles.conatinerBlog}>
+          {currentItems &&
+            currentItems.map((data) => {
+              return (
+                <BlogCard
+                  data={data}
+                  key={data.id}
+                  OnClick={() => {
+                    window.open(data.link, "_blank");
+                  }}
+                />
+              );
+            })}
+
+          <div className={styles.pagination}>
+            {currentPage === 1 ? null : (
+              <TbArrowNarrowLeftDashed
+                onClick={() => {
+                  setCurrentPage((prev) => Math.max(prev - 1, 1));
+                  window.scroll(0, 400);
+                }}
+                className={styles.icon}
+                style={{ left: "0px" }}
+              />
+            )}
+
+            {currentPage === totalPages || filterArrayBlog.length < 9 ? null : (
+              <TbArrowNarrowRightDashed
+                onClick={() => {
+                  setCurrentPage((prev) => Math.min(prev + 1, totalPages));
+                  window.scroll(0, 400);
+                }}
+                className={styles.icon}
+                style={{ right: "0px" }}
+              />
+            )}
+
+            {filterArrayBlog.length === 0 ? (
+              <div className={styles.nanElementsContainer}>
+                <h1 className={styles.titleNanElements}>
+                  {language === "spanish"
+                    ? "No hay elementos encontrados"
+                    : "No items found"}
+                </h1>
+              </div>
+            ) : null}
+          </div>
+        </div>
+
         <div className={styles.conatinerSidebar}>
           <div className={styles.inputContainer}>
             <input
@@ -314,6 +366,7 @@ export default function Blog() {
               placeholder={placeholder}
               className={styles.inputSearch}
               onChange={(e) => searchBlog(e)}
+              value={valueInput}
             />
             <CiSearch className={styles.searchIcon} />
           </div>
@@ -361,45 +414,6 @@ export default function Blog() {
               {language === "spanish" ? "Leer más" : "Read More"}
               <MdArrowOutward className={styles.iconButton} />
             </button>
-          </div>
-        </div>
-
-        <div className={styles.conatinerBlog}>
-          {currentItems &&
-            currentItems.map((data) => {
-              return (
-                <BlogCard
-                  data={data}
-                  key={data.id}
-                  OnClick={() => {
-                    window.open(data.link, "_blank");
-                  }}
-                />
-              );
-            })}
-
-          <div className={styles.pagination}>
-            {currentPage === 1 ? null : (
-              <TbArrowNarrowLeftDashed
-                onClick={() => {
-                  setCurrentPage((prev) => Math.max(prev - 1, 1));
-                  window.scroll(0, 400);
-                }}
-                className={styles.icon}
-                style={{ left: "0px" }}
-              />
-            )}
-
-            {currentPage === totalPages ? null : (
-              <TbArrowNarrowRightDashed
-                onClick={() => {
-                  setCurrentPage((prev) => Math.min(prev + 1, totalPages));
-                  window.scroll(0, 400);
-                }}
-                className={styles.icon}
-                style={{ right: "0px" }}
-              />
-            )}
           </div>
         </div>
       </div>
