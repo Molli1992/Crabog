@@ -275,7 +275,11 @@ export default function Blog() {
 
     setTypes(name);
     setCurrentPage(1);
-    window.scroll(0, 400);
+    window.scrollTo({
+      top: 400,
+      left: 0,
+      behavior: "smooth",
+    });
   };
 
   const searchBlog = (e) => {
@@ -327,7 +331,11 @@ export default function Blog() {
               <TbArrowNarrowLeftDashed
                 onClick={() => {
                   setCurrentPage((prev) => Math.max(prev - 1, 1));
-                  window.scroll(0, 400);
+                  window.scrollTo({
+                    top: 400,
+                    left: 0,
+                    behavior: "smooth",
+                  });
                 }}
                 className={styles.icon}
                 style={{ left: "0px" }}
@@ -338,7 +346,11 @@ export default function Blog() {
               <TbArrowNarrowRightDashed
                 onClick={() => {
                   setCurrentPage((prev) => Math.min(prev + 1, totalPages));
-                  window.scroll(0, 400);
+                  window.scrollTo({
+                    top: 400,
+                    left: 0,
+                    behavior: "smooth",
+                  });
                 }}
                 className={styles.icon}
                 style={{ right: "0px" }}
