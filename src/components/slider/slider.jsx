@@ -11,13 +11,22 @@ import CardLawyers from "../cards/cardLawyers/cardLawyers";
 import CardReviews from "../cards/cardReviews/cardReviews";
 import { ClipLoader } from "react-spinners";
 
-export default function Slider({ arrayServices, arrayLawyers, arrayReviews }) {
+export default function Slider({
+  arrayServices,
+  arrayLawyers,
+  arrayReviews,
+  colorWhite,
+}) {
   const [screenWidth, setScreenWidth] = useState(false);
   const swiperStyles = {
     "--swiper-navigation-color":
-      arrayLawyers || arrayReviews ? "#192d2f" : "#ffffff",
+      (!colorWhite && arrayLawyers) || (!colorWhite && arrayReviews)
+        ? "#192d2f"
+        : "#ffffff",
     "--swiper-pagination-color":
-      arrayLawyers || arrayReviews ? "#192d2f" : "#ffffff",
+      (!colorWhite && arrayLawyers) || (!colorWhite && arrayReviews)
+        ? "#192d2f"
+        : "#ffffff",
   };
 
   useEffect(() => {

@@ -4,11 +4,14 @@ import Slider from "@/components/slider/slider";
 import { arrayLawyers, arrayLawyersSpanish } from "@/data/data";
 import useLanguageStore from "@/zustand/useLanguageStore";
 
-export default function Lawyers() {
+export default function Lawyers({ backgroundColor, colorWhite }) {
   const { language } = useLanguageStore();
 
   return (
-    <div className={styles.containerSlider}>
+    <div
+      className={styles.containerSlider}
+      style={{ backgroundColor: backgroundColor ? backgroundColor : "" }}
+    >
       <Title
         value={
           language === "spanish"
@@ -16,10 +19,11 @@ export default function Lawyers() {
             : "Meet our Lawyers"
         }
         fontSize="42px"
-        color="#192d2f"
+        color={backgroundColor ? "" : "#192d2f"}
       />
 
       <Slider
+        colorWhite={colorWhite ? true : false}
         arrayLawyers={
           language === "spanish" ? arrayLawyersSpanish : arrayLawyers
         }

@@ -7,6 +7,11 @@ import homeImg1 from "../../public/home-crabog-1.jpg";
 import homeImg2 from "../../public/home-crabog-2.jpg";
 import homeImg3 from "../../public/home-crabog-3.jpg";
 import homeImg4 from "../../public/home-crabog-4.jpg";
+import FormContact from "@/components/formContact/formContact";
+import Reviews from "@/components/reviews/reviews";
+import ServicesList from "@/components/servicesList/servicesList";
+import CompanyInfo from "@/components/companyInfo/companyInfo";
+import Lawyers from "@/components/lawyers/lawyers";
 
 export default function Home() {
   const { language } = useLanguageStore();
@@ -54,7 +59,22 @@ export default function Home() {
           {arrayTitles[currentIndex]}
         </motion.h1>
       </div>
-      <div style={{ width: "100%", height: "100vh" }}></div>
+
+      <div className={styles.container}>
+        <CompanyInfo />
+      </div>
+
+      <ServicesList />
+
+      <div className={styles.container}>
+        <Lawyers backgroundColor="#192d2f" colorWhite={true} />
+      </div>
+
+      <Reviews />
+
+      <div className={styles.containerForm}>
+        <FormContact />
+      </div>
     </div>
   );
 }
