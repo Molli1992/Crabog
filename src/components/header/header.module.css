@@ -10,7 +10,7 @@
 
 .whiteImage {
   filter: brightness(0) saturate(100%) invert(1);
-  height: 40px;
+  height: 35px;
   width: 220px;
 }
 
@@ -109,7 +109,7 @@
   }
 
   .whiteImage {
-    height: 50px;
+    height: 40px;
     width: 250px;
   }
 
@@ -137,15 +137,8 @@
   }
 
   .whiteImage {
-    height: 40px;
+    height: 32px;
     width: 200px;
-  }
-}
-
-@media (max-width: 380px) {
-  .whiteImage {
-    height: 40px;
-    width: 175px;
   }
 
   .responsiveFlag {
@@ -155,5 +148,12 @@
 
   .burgerIcon {
     font-size: 25px;
+  }
+}
+
+@media (max-width: 380px) {
+  .whiteImage {
+    height: 28px;
+    width: 175px;
   }
 }
