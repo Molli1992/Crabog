@@ -13,11 +13,16 @@ import { MdEmail } from "react-icons/md";
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { ClipLoader } from "react-spinners";
 import Swal from "sweetalert2";
+import { MdArrowOutward } from "react-icons/md";
+import {
+  TbArrowNarrowRightDashed,
+  TbArrowNarrowLeftDashed,
+} from "react-icons/tb";
 
 export default function LawyersProfile() {
   const { language } = useLanguageStore();
   const params = useParams();
-  
+
   const arrayData = language === "spanish" ? arrayLawyersSpanish : arrayLawyers;
   const profileData = arrayData.filter((lawyer) => {
     return lawyer.id === params.id;
@@ -28,7 +33,22 @@ export default function LawyersProfile() {
     phone: "",
     message: "",
   });
-    const [loader, setLoader] = useState(false);
+  const [loader, setLoader] = useState(false);
+
+  const [selectedItemIndex, setSelectedItemIndex] = useState(null);
+
+  const itemsPerPage = 6;
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentItems = profileData[0].cv.slice(startIndex, endIndex);
+
+  const totalPages = Math.ceil(profileData[0].cv.length / itemsPerPage);
+
+  const handleItemClick = (index) => {
+    setSelectedItemIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
 
   const onClickOpenUrl = (url) => {
     window.open(url, "_blank");
@@ -187,6 +207,47 @@ export default function LawyersProfile() {
               "Submit"
             )}
           </button>
+        </div>
+      </div>
+
+      <div className={styles.listSection}>
+        <div className={styles.containerList}>
+          {currentItems.map((item, index) => (
+            <div
+              key={index}
+              className={styles.itemContainer}
+              onClick={() => handleItemClick(index)}
+            >
+              <div className={styles.itemList}>
+                <h1 className={styles.service}>{item.name}</h1>
+                <MdArrowOutward className={styles.service} />
+              </div>
+
+              {selectedItemIndex === index && (
+                <p className={styles.serviceDescription}>{item.desc}</p>
+              )}
+            </div>
+          ))}
+
+          <div className={styles.pagination}>
+            {currentPage === 1 ? null : (
+              <TbArrowNarrowLeftDashed
+                onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+                className={styles.icon}
+                style={{ left: "0px" }}
+              />
+            )}
+
+            {currentPage === totalPages ? null : (
+              <TbArrowNarrowRightDashed
+                onClick={() =>
+                  setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+                }
+                className={styles.icon}
+                style={{ right: "0px" }}
+              />
+            )}
+          </div>
         </div>
       </div>
     </div>
