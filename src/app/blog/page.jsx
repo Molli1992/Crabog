@@ -275,9 +275,7 @@ export default function Blog() {
 
     setTypes(name);
     setCurrentPage(1);
-    if (window.innerWidth > 800) {
-      window.scroll(0, 400);
-    }
+    window.scroll(0, 400);
   };
 
   const searchBlog = (e) => {
