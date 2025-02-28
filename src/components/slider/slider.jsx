@@ -27,6 +27,10 @@ export default function Slider({
       (!colorWhite && arrayLawyers) || (!colorWhite && arrayReviews)
         ? "#192d2f"
         : "#ffffff",
+    "--swiper-pagination-bullet-inactive-color":
+      (!colorWhite && arrayLawyers) || (!colorWhite && arrayReviews)
+        ? "#192d2f"
+        : "#ffffff",
   };
 
   useEffect(() => {
