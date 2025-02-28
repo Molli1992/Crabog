@@ -45,7 +45,7 @@ export default function CardLawyers({ data }) {
 
       <div className={styles.containerInfo}>
         <Title value={data.name} fontSize="24px" color="#192d2f" />
-        <Description value={data.experience} color="#b79e63" />
+        <Description value={data.experience} color="#cc4643" />
       </div>
     </Link>
   );

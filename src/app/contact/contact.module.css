@@ -78,6 +78,7 @@
   display: flex;
   justify-content: center;
   padding: 75px 10px;
+  background-color: #f5f3f0;
 }
 
 @media (max-width: 1150px) {
