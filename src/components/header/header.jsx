@@ -14,7 +14,6 @@ import flagGranBretaña from "../../../public/flag-Gran-Bretaña.png";
 import useLanguageStore from "@/zustand/useLanguageStore";
 
 export default function Header() {
-  const [scrolling, setScrolling] = useState(false);
   const pathname = usePathname();
   const { language, setLanguage } = useLanguageStore();
   const [openMenu, setOpenMenu] = useState(false);
@@ -23,26 +22,6 @@ export default function Header() {
     window.open(url, "_blank");
     setOpenMenu(false);
   };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  useEffect(() => {
-    if (window.scrollY > 0) {
-      setScrolling(true);
-    }
-  }, []);
 
   const onClickFlag = () => {
     if (language === "spanish") {
@@ -61,15 +40,7 @@ export default function Header() {
   };
 
   return (
-    <div
-      className={styles.body}
-      style={{
-        backgroundColor:
-          scrolling || pathname !== "/" || openMenu ? "#2e2e2e" : "transparent",
-        borderBottom:
-          scrolling || pathname !== "/" || openMenu ? "none" : "1px solid gray",
-      }}
-    >
+    <div className={styles.body}>
       <div className={styles.responsiveContainerIcons}>
         <Image
           src={language === "spanish" ? flagGranBretaña : flagArgentina}
@@ -82,7 +53,7 @@ export default function Header() {
 
       <div className={styles.containerLogo}>
         <Link href="/">
-          <Image src={logoCrabog} alt="Logo" className={styles.whiteImage} />
+          <Image src={logoCrabog} alt="Logo" className={styles.logo} />
         </Link>
       </div>
 
@@ -93,7 +64,7 @@ export default function Header() {
         <Link
           href="/"
           className={styles.containerText}
-          style={{ color: pathname === "/" ? "#b79e63" : "#ffffff" }}
+          style={{ color: pathname === "/" ? "#cc4643" : "#192d2f" }}
         >
           <p className={styles.text}>
             {language === "spanish" ? "Inicio" : "Home"}
@@ -104,7 +75,7 @@ export default function Header() {
         <Link
           href="/aboutUs"
           className={styles.containerText}
-          style={{ color: pathname === "/aboutUs" ? "#b79e63" : "#ffffff" }}
+          style={{ color: pathname === "/aboutUs" ? "#cc4643" : "#192d2f" }}
         >
           <p className={styles.text}>
             {language === "spanish" ? "Nosotros" : "About Us"}
@@ -115,7 +86,7 @@ export default function Header() {
         <Link
           href="/services"
           className={styles.containerText}
-          style={{ color: pathname === "/services" ? "#b79e63" : "#ffffff" }}
+          style={{ color: pathname === "/services" ? "#cc4643" : "#192d2f" }}
         >
           <p className={styles.text}>
             {language === "spanish" ? "Servicios" : "Services"}
@@ -126,7 +97,7 @@ export default function Header() {
         <Link
           href="/blog"
           className={styles.containerText}
-          style={{ color: pathname === "/blog" ? "#b79e63" : "#ffffff" }}
+          style={{ color: pathname === "/blog" ? "#cc4643" : "#192d2f" }}
         >
           <p className={styles.text}>
             {language === "spanish" ? "Foro" : "Blog"}
@@ -137,7 +108,7 @@ export default function Header() {
         <Link
           href="/contact"
           className={styles.containerText}
-          style={{ color: pathname === "/contact" ? "#b79e63" : "#ffffff" }}
+          style={{ color: pathname === "/contact" ? "#cc4643" : "#192d2f" }}
         >
           <p className={styles.text}>
             {language === "spanish" ? "Contacto" : "Contacts"}
@@ -208,7 +179,7 @@ export default function Header() {
             href="/"
             className={styles.containerText}
             style={{
-              color: pathname === "/" ? "#b79e63" : "#ffffff",
+              color: pathname === "/" ? "#cc4643" : "#192d2f",
             }}
             onClick={() => setOpenMenu(false)}
           >
@@ -221,7 +192,7 @@ export default function Header() {
           <Link
             href="/aboutUs"
             className={styles.containerText}
-            style={{ color: pathname === "/aboutUs" ? "#b79e63" : "#ffffff" }}
+            style={{ color: pathname === "/aboutUs" ? "#cc4643" : "#192d2f" }}
             onClick={() => setOpenMenu(false)}
           >
             <p className={styles.textMenu}>
@@ -233,7 +204,7 @@ export default function Header() {
           <Link
             href="/services"
             className={styles.containerText}
-            style={{ color: pathname === "/services" ? "#b79e63" : "#ffffff" }}
+            style={{ color: pathname === "/services" ? "#cc4643" : "#192d2f" }}
             onClick={() => setOpenMenu(false)}
           >
             <p className={styles.textMenu}>
@@ -245,7 +216,7 @@ export default function Header() {
           <Link
             href="/blog"
             className={styles.containerText}
-            style={{ color: pathname === "/blog" ? "#b79e63" : "#ffffff" }}
+            style={{ color: pathname === "/blog" ? "#cc4643" : "#192d2f" }}
             onClick={() => setOpenMenu(false)}
           >
             <p className={styles.textMenu}>
@@ -257,7 +228,7 @@ export default function Header() {
           <Link
             href="/contact"
             className={styles.containerText}
-            style={{ color: pathname === "/contact" ? "#b79e63" : "#ffffff" }}
+            style={{ color: pathname === "/contact" ? "#cc4643" : "#192d2f" }}
             onClick={() => setOpenMenu(false)}
           >
             <p className={styles.textMenu}>

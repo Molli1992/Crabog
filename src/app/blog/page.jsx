@@ -394,7 +394,7 @@ export default function Blog() {
                     <p
                       className={styles.type}
                       style={{
-                        color: types === type.name ? "#b79e63" : "",
+                        color: types === type.name ? "#cc4643" : "",
                       }}
                       onClick={() => onClickTypes(type.name)}
                     >

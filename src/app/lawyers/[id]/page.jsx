@@ -121,7 +121,7 @@ export default function LawyersProfile() {
 
           <Description
             value={profileData[0].experience}
-            color="#b79e63"
+            color="#cc4643"
             fontSize="18px"
           />
 

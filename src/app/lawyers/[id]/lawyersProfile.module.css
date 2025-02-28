@@ -38,7 +38,7 @@
 }
 
 .icons {
-  color: #b79e63;
+  color: #cc4643;
   font-size: 22px;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .formInput:focus {
-  border-bottom: 1px solid #b79e63;
+  border-bottom: 1px solid #cc4643;
 }
 
 .formButton {
@@ -104,7 +104,7 @@
 }
 
 .itemList:hover {
-  color: #b79e63;
+  color: #cc4643;
 }
 
 .service {
@@ -146,7 +146,7 @@
 }
 
 .icon:hover {
-  color: #b79e63;
+  color: #cc4643;
 }
 
 @media (max-width: 1350px) {
