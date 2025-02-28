@@ -31,7 +31,7 @@ export default function Footer() {
             <p className={styles.text}>
               {language === "spanish" ? "Telefono" : "Phone"}:
             </p>
-            <p className={styles.text} style={{ color: "#ffffff99" }}>
+            <p className={styles.text} style={{ color: "#1d2939b8" }}>
               +54 911 4021-7000
             </p>
           </div>
@@ -43,7 +43,7 @@ export default function Footer() {
             <p className={styles.text}>
               {language === "spanish" ? "Dirección" : "Address"}:
             </p>
-            <p className={styles.text} style={{ color: "#ffffff99" }}>
+            <p className={styles.text} style={{ color: "#1d2939b8" }}>
               {language === "spanish"
                 ? "Maipú 1252, Piso 8º, C.A.B.A."
                 : "Maipú 1252, 8th Floor, C.A.B.A."}
@@ -57,7 +57,7 @@ export default function Footer() {
             <p className={styles.text}>
               {language === "spanish" ? "Mail" : "Email"}:
             </p>
-            <p className={styles.text} style={{ color: "#ffffff99" }}>
+            <p className={styles.text} style={{ color: "#1d2939b8" }}>
               secretarias@crabog.com
             </p>
           </div>
@@ -69,7 +69,7 @@ export default function Footer() {
             <p className={styles.text}>
               {language === "spanish" ? "Horas de trabajo" : "Working Hours"}:
             </p>
-            <p className={styles.text} style={{ color: "#ffffff99" }}>
+            <p className={styles.text} style={{ color: "#1d2939b8" }}>
               {language === "spanish"
                 ? "Lun a vie: 9hs a 18hs"
                 : "Mon-Fri: 9am - 6pm"}
@@ -84,7 +84,7 @@ export default function Footer() {
         <p className={styles.text}>
           <span
             className={styles.text}
-            style={{ color: "#b79e63", cursor: "pointer" }}
+            style={{ color: "#cc4643", cursor: "pointer" }}
             onClick={() =>
               onClickOpenUrl("https://github.com/Molli1992/Crabog")
             }
@@ -93,7 +93,7 @@ export default function Footer() {
           </span>{" "}
           © All Rights Reserved - 2025 -{" "}
           <span
-            style={{ color: "#b79e63", cursor: "pointer" }}
+            style={{ color: "#cc4643", cursor: "pointer" }}
             onClick={() =>
               onClickOpenUrl("https://felipeblaksley.netlify.app/")
             }
