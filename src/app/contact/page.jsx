@@ -57,7 +57,6 @@ export default function Contact() {
         <div className={styles.item}>
           <BiPhoneCall className={styles.icons} />
           <h1 className={styles.itemTitle}>
-            {" "}
             {language === "spanish" ? "Telefono" : "Phone"}
           </h1>
           <p className={styles.itemText}>+54 911 4021-7000</p>

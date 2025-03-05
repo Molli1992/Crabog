@@ -12,11 +12,14 @@ import logoCrabog from "../../../public/logo_crabog.png";
 import flagArgentina from "../../../public/flag-Argentina.png";
 import flagGranBretaña from "../../../public/flag-Gran-Bretaña.png";
 import useLanguageStore from "@/zustand/useLanguageStore";
+import { motion } from "framer-motion";
 
 export default function Header() {
   const pathname = usePathname();
   const { language, setLanguage } = useLanguageStore();
   const [openMenu, setOpenMenu] = useState(false);
+  const [showLinksAboutsUs, setShowLinksAboutsUs] = useState(false);
+  const [showLinksServices, setShowLinksServices] = useState(false);
 
   const onClickOpenUrl = (url) => {
     window.open(url, "_blank");
@@ -38,6 +41,8 @@ export default function Header() {
       setOpenMenu(true);
     }
   };
+
+  console.log(showLinksAboutsUs);
 
   return (
     <div className={styles.body}>
@@ -72,35 +77,115 @@ export default function Header() {
           <MdArrowOutward className={styles.text} />
         </Link>
 
-        <Link
-          href="/aboutUs"
-          className={styles.containerText}
-          style={{ color: pathname === "/aboutUs" ? "#cc4643" : "#192d2f" }}
+        <div
+          className={styles.containerOpenLinks}
+          onMouseEnter={() => setShowLinksAboutsUs(true)}
+          onMouseLeave={() => setShowLinksAboutsUs(false)}
         >
-          <p className={styles.text}>
-            {language === "spanish" ? "Nosotros" : "About Us"}
-          </p>
-          <MdArrowOutward className={styles.text} />
-        </Link>
+          <div
+            className={styles.containerText}
+            style={{ color: pathname === "/aboutUs" ? "#cc4643" : "#192d2f" }}
+          >
+            <p className={styles.text}>
+              {language === "spanish" ? "Nuestra Esencia" : "Our essence"}
+            </p>
+            <MdArrowOutward className={styles.text} />
+          </div>
+
+          {showLinksAboutsUs && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+              className={styles.opneLinks}
+            >
+              <Link
+                href="/team"
+                className={styles.containerText}
+                style={{
+                  color: pathname === "/team" ? "#cc4643" : "#192d2f",
+                }}
+              >
+                <p className={styles.textLink}>
+                  {language === "spanish" ? "Equipo" : "Team"}
+                </p>
+              </Link>
+
+              <Link
+                href="/aboutUs"
+                className={styles.containerText}
+                style={{
+                  color: pathname === "/aboutUs" ? "#cc4643" : "#192d2f",
+                }}
+              >
+                <p className={styles.textLink}>
+                  {language === "spanish" ? "Nuestra Esencia" : "Our essence"}
+                </p>
+              </Link>
+            </motion.div>
+          )}
+        </div>
+
+        <div
+          className={styles.containerOpenLinks}
+          onMouseEnter={() => setShowLinksServices(true)}
+          onMouseLeave={() => setShowLinksServices(false)}
+        >
+          <div
+            className={styles.containerText}
+            style={{ color: pathname === "/services" ? "#cc4643" : "#192d2f" }}
+          >
+            <p className={styles.text}>
+              {language === "spanish" ? "Areas de Practica" : "Practice Areas"}
+            </p>
+            <MdArrowOutward className={styles.text} />
+          </div>
+
+          {showLinksServices && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+              className={styles.opneLinks}
+            >
+              <Link
+                href="/international"
+                className={styles.containerText}
+                style={{
+                  color: pathname === "/international" ? "#cc4643" : "#192d2f",
+                }}
+              >
+                <p className={styles.textLink}>
+                  {language === "spanish" ? "Internacional" : "International"}
+                </p>
+              </Link>
+
+              <Link
+                href="/services"
+                className={styles.containerText}
+                style={{
+                  color: pathname === "/services" ? "#cc4643" : "#192d2f",
+                }}
+              >
+                <p className={styles.textLink}>
+                  {language === "spanish"
+                    ? "Areas de Practica"
+                    : "Practice Areas"}
+                </p>
+              </Link>
+            </motion.div>
+          )}
+        </div>
 
         <Link
-          href="/services"
+          href="/news"
           className={styles.containerText}
-          style={{ color: pathname === "/services" ? "#cc4643" : "#192d2f" }}
+          style={{ color: pathname === "/news" ? "#cc4643" : "#192d2f" }}
         >
           <p className={styles.text}>
-            {language === "spanish" ? "Servicios" : "Services"}
-          </p>
-          <MdArrowOutward className={styles.text} />
-        </Link>
-
-        <Link
-          href="/blog"
-          className={styles.containerText}
-          style={{ color: pathname === "/blog" ? "#cc4643" : "#192d2f" }}
-        >
-          <p className={styles.text}>
-            {language === "spanish" ? "Foro" : "Blog"}
+            {language === "spanish" ? "Noticias" : "News"}
           </p>
           <MdArrowOutward className={styles.text} />
         </Link>
@@ -111,7 +196,7 @@ export default function Header() {
           style={{ color: pathname === "/contact" ? "#cc4643" : "#192d2f" }}
         >
           <p className={styles.text}>
-            {language === "spanish" ? "Contacto" : "Contacts"}
+            {language === "spanish" ? "Contacto" : "Contact"}
           </p>
           <MdArrowOutward className={styles.text} />
         </Link>
@@ -196,7 +281,7 @@ export default function Header() {
             onClick={() => setOpenMenu(false)}
           >
             <p className={styles.textMenu}>
-              {language === "spanish" ? "Nosotros" : "About Us"}
+              {language === "spanish" ? "Nuestra Esencia" : "Our essence"}
             </p>
             <MdArrowOutward className={styles.textMenu} />
           </Link>
@@ -208,19 +293,45 @@ export default function Header() {
             onClick={() => setOpenMenu(false)}
           >
             <p className={styles.textMenu}>
-              {language === "spanish" ? "Servicios" : "Services"}
+              {language === "spanish" ? "Areas de Practica" : "Practice Areas"}
             </p>
             <MdArrowOutward className={styles.textMenu} />
           </Link>
 
           <Link
-            href="/blog"
+            href="/international"
             className={styles.containerText}
-            style={{ color: pathname === "/blog" ? "#cc4643" : "#192d2f" }}
+            style={{
+              color: pathname === "/international" ? "#cc4643" : "#192d2f",
+            }}
             onClick={() => setOpenMenu(false)}
           >
             <p className={styles.textMenu}>
-              {language === "spanish" ? "Foro" : "Blog"}
+              {language === "spanish" ? "Internacional" : "International"}
+            </p>
+            <MdArrowOutward className={styles.textMenu} />
+          </Link>
+
+          <Link
+            href="/team"
+            className={styles.containerText}
+            style={{ color: pathname === "/team" ? "#cc4643" : "#192d2f" }}
+            onClick={() => setOpenMenu(false)}
+          >
+            <p className={styles.textMenu}>
+              {language === "spanish" ? "Equipo" : "Team"}
+            </p>
+            <MdArrowOutward className={styles.textMenu} />
+          </Link>
+
+          <Link
+            href="/news"
+            className={styles.containerText}
+            style={{ color: pathname === "/news" ? "#cc4643" : "#192d2f" }}
+            onClick={() => setOpenMenu(false)}
+          >
+            <p className={styles.textMenu}>
+              {language === "spanish" ? "Noticias" : "News"}
             </p>
             <MdArrowOutward className={styles.textMenu} />
           </Link>
@@ -232,7 +343,7 @@ export default function Header() {
             onClick={() => setOpenMenu(false)}
           >
             <p className={styles.textMenu}>
-              {language === "spanish" ? "Contacto" : "Contacts"}
+              {language === "spanish" ? "Contacto" : "Contact"}
             </p>
             <MdArrowOutward className={styles.textMenu} />
           </Link>
