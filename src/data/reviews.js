@@ -1,4 +1,4 @@
-import reviewImg from "../../public/rewiewImg.jpg";
+import reviewImg from "../../public/reviews-img/rewiewImg.jpg";
 
 export const arrayReviewsSpanish = [
     {

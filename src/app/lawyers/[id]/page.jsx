@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from "./lawyersProfile.module.css";
 import HeroSection from "@/components/heroSection/heroSection";
-import tribunalImg from "../../../../public/tribunal-vacio.jpg";
+import tribunalImg from "../../../../public/lawyers-img/tribunal-vacio.jpg";
 import useLanguageStore from "@/zustand/useLanguageStore";
 import { arrayLawyers, arrayLawyersSpanish } from "@/data/lawyers";
 import { useParams } from "next/navigation";

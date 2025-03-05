@@ -1,4 +1,4 @@
-import LawyerOneImg from "../../public/lawyer-1.jpg";
+import LawyerOneImg from "../../public/lawyers-img/lawyer-1.jpg";
 
 export const arrayLawyers = [
   {

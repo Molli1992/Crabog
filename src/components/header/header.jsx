@@ -9,8 +9,8 @@ import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiCloseLargeLine } from "react-icons/ri";
 import logoCrabog from "../../../public/logo_crabog.png";
-import flagArgentina from "../../../public/flag-Argentina.png";
-import flagGranBretaña from "../../../public/flag-Gran-Bretaña.png";
+import flagArgentina from "../../../public/headerImgs/flag-Argentina.png";
+import flagGranBretaña from "../../../public/headerImgs/flag-Gran-Bretaña.png";
 import useLanguageStore from "@/zustand/useLanguageStore";
 import { motion } from "framer-motion";
 

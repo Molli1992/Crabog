@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import styles from "./blog.module.css";
-import blogImg from "../../../public/blog-img.jpg";
+import blogImg from "../../../public/news-img/blog-img.jpg";
 import HeroSection from "@/components/heroSection/heroSection";
 import useLanguageStore from "@/zustand/useLanguageStore";
 import BlogCard from "@/components/cards/blogCard/blogCard";

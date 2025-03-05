@@ -1,6 +1,6 @@
 "use client";
 import styles from "./aboutUs.module.css";
-import aboutUsImg from "../../../public/aboutUs-img.jpg";
+import aboutUsImg from "../../../public/aboutUs-img/aboutUs-img.jpg";
 import HeroSection from "@/components/heroSection/heroSection";
 import useLanguageStore from "@/zustand/useLanguageStore";
 import CompanyInfo from "@/components/companyInfo/companyInfo";

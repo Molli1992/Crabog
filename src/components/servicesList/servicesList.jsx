@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./servicesList.module.css";
 import Image from "next/image";
-import serviceListImg from "../../../public/serviceListImg.jpg";
+import serviceListImg from "../../../public/services-img/serviceListImg.jpg";
 import { MdArrowOutward } from "react-icons/md";
 import useLanguageStore from "@/zustand/useLanguageStore";
 import Title from "@/components/texts/title/title";
@@ -58,7 +58,7 @@ export default function ServicesList() {
         {arrayList &&
           arrayList.map((item, index) => (
             <div
-              key={index}
+              key={item.id}
               className={styles.itemContainer}
               onClick={() => handleItemClick(index)}
             >

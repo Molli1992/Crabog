@@ -1,6 +1,6 @@
 import styles from "./companyInfo2.module.css";
 import Image from "next/image";
-import aboutUsImg3 from "../../../public/aboutUs-3-img.jpg";
+import aboutUsImg3 from "../../../public/aboutUs-img/aboutUs-3-img.jpg";
 import Title from "@/components/texts/title/title";
 import Description from "@/components/texts/description/description";
 import useLanguageStore from "@/zustand/useLanguageStore";

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import styles from "./contact.module.css";
-import contactImg from "../../../public/contactUs-img.jpg";
+import contactImg from "../../../public/contact-img/contactUs-img.jpg";
 import HeroSection from "@/components/heroSection/heroSection";
 import useLanguageStore from "@/zustand/useLanguageStore";
 import { BiPhoneCall } from "react-icons/bi";
