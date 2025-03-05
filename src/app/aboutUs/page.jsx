@@ -5,9 +5,7 @@ import HeroSection from "@/components/heroSection/heroSection";
 import useLanguageStore from "@/zustand/useLanguageStore";
 import CompanyInfo from "@/components/companyInfo/companyInfo";
 import CompanyInfo2 from "@/components/compnayInfo2/companyInfo2";
-
 import Lawyers from "@/components/lawyers/lawyers";
-import Reviews from "@/components/reviews/reviews";
 
 export default function AboutUs() {
   const { language } = useLanguageStore();
@@ -26,8 +24,6 @@ export default function AboutUs() {
       <Lawyers />
 
       <CompanyInfo2 />
-
-      <Reviews />
     </div>
   );
 }
