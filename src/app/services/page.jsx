@@ -8,8 +8,8 @@ import { FaHandshake } from "react-icons/fa";
 import { BsBank2 } from "react-icons/bs";
 import { FaShieldAlt } from "react-icons/fa";
 import Slider from "@/components/slider/slider";
-import serviceImg from "../../../public/services-img/service-img.png";
-import lawyerImg from "../../../public/services-img/lawyer-img.jpg";
+import serviceImg from "../../../public/services-img/img-con-logo-2.jpg";
+import librosImg from "../../../public/services-img/libros-img.jpeg";
 import imgSlider1 from "../../../public/services-img/img-slider-1.jpg";
 import imgSlider2 from "../../../public/services-img/img-slider-2.jpg";
 import imgSlider3 from "../../../public/services-img/img-slider-3.jpg";
@@ -97,7 +97,7 @@ export default function Services() {
           : "Banking and Financial Law",
     },
     {
-      id: "services-slider-data-6",
+      id: "services-slider-data-7",
       img: imgSlider7,
       desc: language === "spanish" ? "Derecho Inmobiliario" : "Real Estate Law",
     },
@@ -111,7 +111,7 @@ export default function Services() {
       />
       <div className={styles.section}>
         <div className={`${styles.container} ${styles.containerImage}`}>
-          <Image src={lawyerImg} alt="Lawyer" className={styles.image} />
+          <Image src={librosImg} alt="Lawyer" className={styles.image} />
         </div>
 
         <div className={`${styles.container} ${styles.containerTitle}`}>
