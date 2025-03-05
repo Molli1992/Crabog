@@ -47,6 +47,7 @@
   align-items: center;
   justify-content: space-between;
   color: #192d2f;
+  gap: 10px;
 }
 
 .itemList:hover {

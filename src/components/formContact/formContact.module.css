@@ -18,9 +18,9 @@
   background-color: #ffffff;
   outline: none;
   border: none;
-  border-bottom: 1px solid #2e2e2e;
+  border-bottom: 1px solid #192d2f;
   padding-bottom: 12px;
-  color: #2e2e2e;
+  color: #192d2f;
 }
 
 .formInput:focus {
@@ -42,7 +42,7 @@
 }
 
 .formButton:hover {
-  background-color: #2e2e2e;
+  background-color: #192d2f;
   color: #ffffff;
 }
 

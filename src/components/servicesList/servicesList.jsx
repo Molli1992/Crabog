@@ -6,48 +6,12 @@ import { MdArrowOutward } from "react-icons/md";
 import useLanguageStore from "@/zustand/useLanguageStore";
 import Title from "@/components/texts/title/title";
 import Description from "@/components/texts/description/description";
+import { serviceList, serviceListSpanish } from "@/data/services";
 
 export default function ServicesList() {
   const { language } = useLanguageStore();
 
-  const serviceList = [
-    {
-      serviceName:
-        language === "spanish" ? "Violencia Doméstica" : "Domestic Violence",
-      serviceDescription:
-        " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
-    },
-    {
-      serviceName:
-        language === "spanish" ? "Delitos juveniles" : "Juvenile Crimes",
-      serviceDescription:
-        " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
-    },
-    {
-      serviceName:
-        language === "spanish"
-          ? "Audiencias Administrativas"
-          : "Administrative Hearings",
-      serviceDescription:
-        " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
-    },
-    {
-      serviceName: language === "spanish" ? "Ley de Propiedad" : "Property Law",
-      serviceDescription:
-        " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
-    },
-    {
-      serviceName:
-        language === "spanish" ? "Delitos de conducción" : "Driving Crimes",
-      serviceDescription:
-        " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
-    },
-    {
-      serviceName: language === "spanish" ? "Delitos de drogas" : "Drug Crimes",
-      serviceDescription:
-        " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
-    },
-  ];
+  const arrayList = language === "spanish" ? serviceListSpanish : serviceList;
 
   const [selectedItemIndex, setSelectedItemIndex] = useState(false);
 
@@ -91,8 +55,8 @@ export default function ServicesList() {
       </div>
 
       <div className={styles.containerRight}>
-        {serviceList &&
-          serviceList.map((item, index) => (
+        {arrayList &&
+          arrayList.map((item, index) => (
             <div
               key={index}
               className={styles.itemContainer}
@@ -100,7 +64,9 @@ export default function ServicesList() {
             >
               <div className={styles.itemList}>
                 <h1 className={styles.service}>{item.serviceName}</h1>
-                <MdArrowOutward className={styles.service} />
+                <div>
+                  <MdArrowOutward className={styles.service} />
+                </div>
               </div>
 
               {selectedItemIndex === index && (

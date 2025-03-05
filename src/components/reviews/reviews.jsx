@@ -2,7 +2,7 @@ import styles from "./reviews.module.css";
 import Title from "@/components/texts/title/title";
 import Slider from "@/components/slider/slider";
 import useLanguageStore from "@/zustand/useLanguageStore";
-import { arrayReviewsSpanish, arrayReviewsEnglish } from "@/data/data";
+import { arrayReviewsSpanish, arrayReviewsEnglish } from "@/data/reviews";
 
 export default function Reviews() {
   const { language } = useLanguageStore();

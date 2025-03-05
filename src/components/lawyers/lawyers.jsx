@@ -1,7 +1,7 @@
 import styles from "./lawyers.module.css";
 import Title from "@/components/texts/title/title";
 import Slider from "@/components/slider/slider";
-import { arrayLawyers, arrayLawyersSpanish } from "@/data/data";
+import { arrayLawyers, arrayLawyersSpanish } from "@/data/lawyers";
 import useLanguageStore from "@/zustand/useLanguageStore";
 
 export default function Lawyers({ backgroundColor, colorWhite }) {

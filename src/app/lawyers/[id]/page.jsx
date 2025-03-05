@@ -4,7 +4,7 @@ import styles from "./lawyersProfile.module.css";
 import HeroSection from "@/components/heroSection/heroSection";
 import tribunalImg from "../../../../public/tribunal-vacio.jpg";
 import useLanguageStore from "@/zustand/useLanguageStore";
-import { arrayLawyers, arrayLawyersSpanish } from "@/data/data";
+import { arrayLawyers, arrayLawyersSpanish } from "@/data/lawyers";
 import { useParams } from "next/navigation";
 import Title from "@/components/texts/title/title";
 import Description from "@/components/texts/description/description";
