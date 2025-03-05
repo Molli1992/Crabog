@@ -37,7 +37,7 @@ export default function LawyersProfile() {
 
   const [selectedItemIndex, setSelectedItemIndex] = useState(null);
 
-  const itemsPerPage = 6;
+  const itemsPerPage = 3;
   const [currentPage, setCurrentPage] = useState(1);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -125,11 +125,58 @@ export default function LawyersProfile() {
             fontSize="18px"
           />
 
-          <p className={styles.description}>
-            {profileData[0].description} {profileData[0].description}
-          </p>
+          <div className={styles.listSection}>
+            <div className={styles.containerList}>
+              {currentItems.map((item, index) => (
+                <div
+                  key={index}
+                  className={styles.itemContainer}
+                  onClick={() => handleItemClick(index)}
+                  style={{
+                    color: selectedItemIndex === index ? "#cc4643" : "",
+                  }}
+                >
+                  <div className={styles.itemList}>
+                    <h1 className={styles.service}>{item.name}</h1>
+                    <MdArrowOutward className={styles.service} />
+                  </div>
 
-          <div className={styles.flexContainer}>
+                  {selectedItemIndex === index && (
+                    <p className={styles.serviceDescription}>{item.desc}</p>
+                  )}
+                </div>
+              ))}
+
+              <div
+                className={styles.pagination}
+                style={{
+                  justifyContent: currentPage === 1 ? "right" : "space-between",
+                }}
+              >
+                {currentPage === 1 ? null : (
+                  <TbArrowNarrowLeftDashed
+                    onClick={() =>
+                      setCurrentPage((prev) => Math.max(prev - 1, 1))
+                    }
+                    className={styles.icon}
+                    style={{ left: "0px" }}
+                  />
+                )}
+
+                {currentPage === totalPages ? null : (
+                  <TbArrowNarrowRightDashed
+                    onClick={() =>
+                      setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+                    }
+                    className={styles.icon}
+                    style={{ right: "0px" }}
+                  />
+                )}
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.flexContainer} style={{ marginTop: "0px" }}>
             <FaPhoneVolume className={styles.icons} />
             <Description
               value={profileData[0].phone}
@@ -207,47 +254,6 @@ export default function LawyersProfile() {
               "Submit"
             )}
           </button>
-        </div>
-      </div>
-
-      <div className={styles.listSection}>
-        <div className={styles.containerList}>
-          {currentItems.map((item, index) => (
-            <div
-              key={index}
-              className={styles.itemContainer}
-              onClick={() => handleItemClick(index)}
-            >
-              <div className={styles.itemList}>
-                <h1 className={styles.service}>{item.name}</h1>
-                <MdArrowOutward className={styles.service} />
-              </div>
-
-              {selectedItemIndex === index && (
-                <p className={styles.serviceDescription}>{item.desc}</p>
-              )}
-            </div>
-          ))}
-
-          <div className={styles.pagination}>
-            {currentPage === 1 ? null : (
-              <TbArrowNarrowLeftDashed
-                onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-                className={styles.icon}
-                style={{ left: "0px" }}
-              />
-            )}
-
-            {currentPage === totalPages ? null : (
-              <TbArrowNarrowRightDashed
-                onClick={() =>
-                  setCurrentPage((prev) => Math.min(prev + 1, totalPages))
-                }
-                className={styles.icon}
-                style={{ right: "0px" }}
-              />
-            )}
-          </div>
         </div>
       </div>
     </div>

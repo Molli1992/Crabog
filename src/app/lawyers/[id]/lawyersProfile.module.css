@@ -24,13 +24,6 @@
   width: 400px;
 }
 
-.description {
-  margin-top: 25px;
-  font-size: 15px;
-  color: #1d2939b8;
-  line-height: 25px;
-}
-
 .flexContainer {
   display: flex;
   gap: 20px;
@@ -44,6 +37,7 @@
 
 .formProfile {
   width: 400px;
+  height: 500px;
   background-color: #f5f3f0;
   display: flex;
   flex-direction: column;
@@ -78,13 +72,12 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 0px 0px 75px 0px;
 }
 
 .containerList {
   display: flex;
   flex-direction: column;
-  width: 1250px;
+  width: 100%;
 }
 
 .itemContainer {
@@ -93,6 +86,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  color: #192d2f;
 }
 
 .itemList {
@@ -100,10 +94,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #192d2f;
 }
 
-.itemList:hover {
+.itemContainer:hover {
   color: #cc4643;
 }
 
@@ -131,15 +124,13 @@
 }
 
 .pagination {
-  position: relative;
   width: 100%;
   display: flex;
   gap: 30px;
-  margin: 30px 0px;
+  margin: 20px 0px;
 }
 
 .icon {
-  position: absolute;
   font-size: 50px;
   cursor: pointer;
   color: #192d2f;
@@ -164,16 +155,6 @@
 
   .formProfile {
     width: 33%;
-  }
-
-  .listSection {
-    padding: 0px 15px 75px 15px;
-  }
-
-  .containerList {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
   }
 }
 
