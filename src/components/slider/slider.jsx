@@ -115,10 +115,7 @@ export default function Slider({
         <Swiper
           breakpoints={breakpoints}
           navigation={
-            (screenWidth && screenWidth <= 850 && arrayReviews) ||
-            (screenWidth && screenWidth < 900 && arrayTeam)
-              ? false
-              : true
+            screenWidth && screenWidth <= 850 && arrayReviews ? false : true
           }
           pagination={{ clickable: true }}
           modules={[Pagination, Navigation]}
