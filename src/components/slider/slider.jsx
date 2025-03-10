@@ -9,26 +9,35 @@ import "swiper/css/scrollbar";
 import CardServices from "../cards/cardServices/cardServices";
 import CardLawyers from "../cards/cardLawyers/cardLawyers";
 import CardReviews from "../cards/cardReviews/cardReviews";
+import TeamCard from "../cards/teamCard/teamCard";
 import { ClipLoader } from "react-spinners";
 
 export default function Slider({
   arrayServices,
   arrayLawyers,
   arrayReviews,
+  arrayTeam,
   colorWhite,
 }) {
+  const [activeIndex, setActiveIndex] = useState(0);
   const [screenWidth, setScreenWidth] = useState(false);
   const swiperStyles = {
     "--swiper-navigation-color":
-      (!colorWhite && arrayLawyers) || (!colorWhite && arrayReviews)
+      (!colorWhite && arrayLawyers) ||
+      (!colorWhite && arrayReviews) ||
+      arrayTeam
         ? "#192d2f"
         : "#ffffff",
     "--swiper-pagination-color":
-      (!colorWhite && arrayLawyers) || (!colorWhite && arrayReviews)
+      (!colorWhite && arrayLawyers) ||
+      (!colorWhite && arrayReviews) ||
+      arrayTeam
         ? "#192d2f"
         : "#ffffff",
     "--swiper-pagination-bullet-inactive-color":
-      (!colorWhite && arrayLawyers) || (!colorWhite && arrayReviews)
+      (!colorWhite && arrayLawyers) ||
+      (!colorWhite && arrayReviews) ||
+      arrayTeam
         ? "#192d2f"
         : "#ffffff",
   };
@@ -49,7 +58,22 @@ export default function Slider({
 
   let breakpoints;
 
-  if (arrayServices) {
+  if (arrayTeam) {
+    breakpoints = {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      900: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      1320: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+    };
+  } else if (arrayServices || arrayTeam) {
     breakpoints = {
       320: {
         slidesPerView: 1,
@@ -91,11 +115,16 @@ export default function Slider({
         <Swiper
           breakpoints={breakpoints}
           navigation={
-            screenWidth && screenWidth <= 850 && arrayReviews ? false : true
+            (screenWidth && screenWidth <= 850 && arrayReviews) ||
+            (screenWidth && screenWidth < 900 && arrayTeam)
+              ? false
+              : true
           }
           pagination={{ clickable: true }}
           modules={[Pagination, Navigation]}
           style={swiperStyles}
+          onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+          centeredSlides={arrayTeam ? true : false}
         >
           {arrayServices &&
             arrayServices.map((data) => {
@@ -123,6 +152,25 @@ export default function Slider({
                 </SwiperSlide>
               );
             })}
+
+          {arrayTeam &&
+            arrayTeam.map((data, index) => (
+              <SwiperSlide
+                key={data.id}
+                style={{
+                  height: "85vh",
+                  width: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <TeamCard
+                  data={data}
+                  height={index === activeIndex ? "80vh" : "60vh"}
+                />
+              </SwiperSlide>
+            ))}
         </Swiper>
       </div>
     );
