@@ -141,9 +141,24 @@ export default function LawyersProfile() {
                     <MdArrowOutward className={styles.service} />
                   </div>
 
-                  {selectedItemIndex === index && (
+                  {selectedItemIndex === index &&
+                    Array.isArray(item.desc) &&
+                    item.desc.map((descItem) => {
+                      return (
+                        <div key={`${index}-CV`}>
+                          <h2 className={styles.serviceTitle}>
+                            {descItem.title}
+                          </h2>
+                          <p className={styles.serviceDescription}>
+                            {descItem.desc}
+                          </p>
+                        </div>
+                      );
+                    })}
+
+                  {selectedItemIndex === index && !Array.isArray(item.desc) ? (
                     <p className={styles.serviceDescription}>{item.desc}</p>
-                  )}
+                  ) : null}
                 </div>
               ))}
 

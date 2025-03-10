@@ -17,8 +17,8 @@ export const arrayLawyers = [
   {
     id: "arrayLawyers-1",
     img: LawyerIMG1,
-    name: "Dawson Timms",
-    experience: "Junior Lawyer",
+    name: "Marcelo J. Ruiz",
+    experience: "Partner",
     linkedin: "https://www.linkedin.com",
     instagram: "https://www.instagram.com",
     phone: "(54) 9 11 2458 6710",
@@ -26,15 +26,75 @@ export const arrayLawyers = [
     cv: [
       {
         name: "Studies",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "London School of Economics and Political Science",
+            desc: "LLM - Master of Laws International Buisness Law 1996 - 1998",
+          },
+          {
+            title: "Harvard University, Boston",
+            desc: "Programme of Insctruction for Lawyers 1991",
+          },
+          {
+            title:
+              "Stetson University, College of Law, St. Petersburg, Florida",
+            desc: "Buisness Associations, International Law Symposium, International Contracts 1991",
+          },
+          {
+            title: "Universidad Notarial Argentina, Buenos Aires",
+            desc: "Specialization in Business Advisory 1990",
+          },
+          {
+            title: "Universidad Católica Argentina",
+            desc: "Lawyer 1984 - 1989",
+          },
+          {
+            title: "Colegio San Agustín",
+            desc: "High School Diploma 1979 - 1983",
+          },
+        ],
       },
       {
         name: "Work Experiencie",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "Ministry of Justice - Republic of Argentina",
+            desc: "Advisor to the Minister of Justice / 2023 - Present",
+          },
+          {
+            title: "Cangueiro - Ruiz LAWYERS",
+            desc: "Founding Partner / 2004 - Present",
+          },
+          {
+            title: "Anzorreguy - Ruiz & Associates",
+            desc: "Founding Partner / 1999 - 2003",
+          },
+          {
+            title: "Argentine Embassy in the United Kingdom of Great Britain",
+            desc: "Embassy Counselor, Consul General / 1996 - 1999",
+          },
+          {
+            title: "Arthur Andersen - Norte Sabino - Legal Advisors",
+            desc: "Founding Partner - Manager / 1994 - 1996",
+          },
+          {
+            title: "Cárdenas, Cassagne & Associates",
+            desc: "Junior Lawyer / 1991 - 1994",
+          },
+        ],
       },
       {
         name: "Languages",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
       },
     ],
   },
@@ -65,8 +125,8 @@ export const arrayLawyers = [
   {
     id: "arrayLawyers-3",
     img: LawyerIMG3,
-    name: "Dawson Timms",
-    experience: "Junior Lawyer",
+    name: "Marcelo Cangueiro",
+    experience: "Partner",
     linkedin: "https://www.linkedin.com",
     instagram: "https://www.instagram.com",
     phone: "(54) 9 11 2458 6710",
@@ -305,8 +365,8 @@ export const arrayLawyers = [
   {
     id: "arrayLawyers-13",
     img: LawyerIMG13,
-    name: "Dawson Timms",
-    experience: "Junior Lawyer",
+    name: "Milagros Ruiz",
+    experience: "Criminal lawyer",
     linkedin: "https://www.linkedin.com",
     instagram: "https://www.instagram.com",
     phone: "(54) 9 11 2458 6710",
@@ -358,8 +418,8 @@ export const arrayLawyersSpanish = [
   {
     id: "arrayLawyers-1",
     img: LawyerIMG1,
-    name: "Dawson Timms",
-    experience: "Abogada Junior",
+    name: "Marcelo J. Ruiz",
+    experience: "Socio",
     linkedin: "https://www.linkedin.com",
     instagram: "https://www.instagram.com",
     phone: "(54) 9 11 2458 6710",
@@ -367,15 +427,75 @@ export const arrayLawyersSpanish = [
     cv: [
       {
         name: "Estudios",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "London School of Economics and Political Science",
+            desc: "LLM - Máster en Derecho (International Business Law) 1996 - 1998",
+          },
+          {
+            title: "Harvard University, Boston",
+            desc: "Programa de Instrucción para Abogados 1991",
+          },
+          {
+            title:
+              "Stetson University, College of Law, St. Petersburg, Florida",
+            desc: "Asociaciones Empresariales, Simposio de Derecho Internacional, Contratos Internacionales 1991",
+          },
+          {
+            title: "Universidad Notarial Argentina, Buenos Aires",
+            desc: "Especialización en Asesoramiento de Empresas 1990",
+          },
+          {
+            title: "Universidad Católica Argentina",
+            desc: "Abogado 1984 - 1989",
+          },
+          {
+            title: "Colegio San Agustín",
+            desc: "Bachiller 1979 - 1983",
+          },
+        ],
       },
       {
         name: "Experiencia Laboral",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "Ministerio de Justicia - Republica Argentina",
+            desc: "Asesor Ministro de justicia / 2023 - a la fecha ",
+          },
+          {
+            title: "Cangueiro - Ruiz ABOGADOS",
+            desc: "Socio Fundador / 2004 - a la fecha",
+          },
+          {
+            title: "Anzorreguy - Ruiz & Asociados",
+            desc: "Socio Fundador / 1999 - 2003",
+          },
+          {
+            title: "Embajada Argentina en el Reino Unido de Gran Bretaña",
+            desc: "Consejero de Embajada, Consúl General / 1996 - 1999",
+          },
+          {
+            title: "Arthur Andersen - Norte Sabino - Asesores Legales",
+            desc: "Socio Fundador - Gerente / 1994 - 1996",
+          },
+          {
+            title: "Cárdenas, Cassagne & Asociados",
+            desc: "Abogado Junior / 1991 - 1994",
+          },
+        ],
       },
       {
         name: "Idiomas",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
       },
     ],
   },
@@ -406,8 +526,8 @@ export const arrayLawyersSpanish = [
   {
     id: "arrayLawyers-3",
     img: LawyerIMG3,
-    name: "Dawson Timms",
-    experience: "Abogada Junior",
+    name: "Marcelo Cangueiro",
+    experience: "Socio",
     linkedin: "https://www.linkedin.com",
     instagram: "https://www.instagram.com",
     phone: "(54) 9 11 2458 6710",
@@ -646,8 +766,8 @@ export const arrayLawyersSpanish = [
   {
     id: "arrayLawyers-13",
     img: LawyerIMG13,
-    name: "Dawson Timms",
-    experience: "Abogada Junior",
+    name: "Milagros Ruiz",
+    experience: "Penalista",
     linkedin: "https://www.linkedin.com",
     instagram: "https://www.instagram.com",
     phone: "(54) 9 11 2458 6710",
