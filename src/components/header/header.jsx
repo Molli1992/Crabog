@@ -42,8 +42,6 @@ export default function Header() {
     }
   };
 
-  console.log(showLinksAboutsUs);
-
   return (
     <div className={styles.body}>
       <div className={styles.responsiveContainerIcons}>
@@ -84,7 +82,13 @@ export default function Header() {
         >
           <div
             className={styles.containerText}
-            style={{ color: pathname === "/aboutUs" ? "#cc4643" : "#192d2f" }}
+            style={{
+              cursor: "default",
+              color:
+                pathname === "/aboutUs" || pathname === "/team"
+                  ? "#cc4643"
+                  : "#192d2f",
+            }}
           >
             <p className={styles.text}>
               {language === "spanish" ? "Nuestra Esencia" : "Our essence"}
@@ -134,7 +138,13 @@ export default function Header() {
         >
           <div
             className={styles.containerText}
-            style={{ color: pathname === "/services" ? "#cc4643" : "#192d2f" }}
+            style={{
+              cursor: "default",
+              color:
+                pathname === "/services" || pathname === "/international"
+                  ? "#cc4643"
+                  : "#192d2f",
+            }}
           >
             <p className={styles.text}>
               {language === "spanish" ? "Areas de Practica" : "Practice Areas"}
