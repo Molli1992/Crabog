@@ -1,5 +1,4 @@
 "use client";
-import React, { useState, useEffect } from "react";
 import styles from "./team.module.css";
 import useLanguageStore from "@/zustand/useLanguageStore";
 import { arrayLawyers, arrayLawyersSpanish } from "@/data/lawyers";
@@ -10,8 +9,8 @@ import Slider from "@/components/slider/slider";
 export default function Team() {
   const { language } = useLanguageStore();
   const arrayData = language === "spanish" ? arrayLawyersSpanish : arrayLawyers;
-  const [titleFontSize, setTitleFontSize] = useState("60px");
-  const [descriptionFontSize, setDescriptionFontSize] = useState("22px");
+  const titleFontSize = "60px";
+  const descriptionFontSize = "22px";
 
   return (
     <div className={styles.body}>
@@ -21,7 +20,7 @@ export default function Team() {
             value={language === "spanish" ? "Equipo" : "Team"}
             color="#192d2f"
             fontSize={titleFontSize}
-          />{" "}
+          />
         </div>
 
         <div className={styles.containerDescription}>
