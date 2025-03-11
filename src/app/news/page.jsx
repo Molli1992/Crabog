@@ -12,6 +12,8 @@ import {
   TbArrowNarrowRightDashed,
   TbArrowNarrowLeftDashed,
 } from "react-icons/tb";
+import Swal from "sweetalert2";
+import { ClipLoader } from "react-spinners";
 
 export default function Blog() {
   const router = useRouter();
@@ -20,246 +22,9 @@ export default function Blog() {
     language === "spanish" ? "Buscar por titulo" : "Search by title";
   const [types, setTypes] = useState(language === "spanish" ? "Todas" : "All");
 
-  useEffect(() => {
-    if (language === "spanish") {
-      setTypes("Todas");
-      setFilterArrayBlog(dataBlogCastellano);
-    } else {
-      setTypes("All");
-      setFilterArrayBlog(dataBlog);
-    }
-    setValueInput("");
-  }, [language]);
-
-  const dataBlog = [
-    {
-      id: "blog-1",
-      link: "https://www.linkedin.com/feed/",
-      type: "ATTORNEY",
-      date: "MAY 19, 2021",
-      views: 243,
-      title: "The Impact of Technology on the Legal System",
-      desc: "Law and justice are fundamental pillars of society. They govern how we interact with one another and ensure that everyone is treated fairly and equally. However, the legal system is often complex and difficult to navigate, leading to a lack of access to justice for many. In this article, we’ll explore the importance of law and justice, how the legal system works, and what can be done to improve access to justice for all. “Equal justice under law is not merely a caption on the facade of the Supreme Court …",
-    },
-    {
-      id: "blog-2",
-      link: "https://www.linkedin.com/feed/",
-      type: "COURT",
-      date: "MAY 19, 2021",
-      views: 243,
-      title: "The Impact of Technology on the Legal System",
-      desc: "Law and justice are fundamental pillars of society. They govern how we interact with one another and ensure that everyone is treated fairly and equally. However, the legal system is often complex and difficult to navigate, leading to a lack of access to justice for many. In this article, we’ll explore the importance of law and justice, how the legal system works, and what can be done to improve access to justice for all. “Equal justice under law is not merely a caption on the facade of the Supreme Court …",
-    },
-    {
-      id: "blog-3",
-      link: "https://www.linkedin.com/feed/",
-      type: "CRIMINAL",
-      date: "MAY 19, 2021",
-      views: 243,
-      title: "The Impact of Technology on the Legal System",
-      desc: "Law and justice are fundamental pillars of society. They govern how we interact with one another and ensure that everyone is treated fairly and equally. However, the legal system is often complex and difficult to navigate, leading to a lack of access to justice for many. In this article, we’ll explore the importance of law and justice, how the legal system works, and what can be done to improve access to justice for all. “Equal justice under law is not merely a caption on the facade of the Supreme Court …",
-    },
-    {
-      id: "blog-4",
-      link: "https://www.linkedin.com/feed/",
-      type: "INDEPENDENCE",
-      date: "MAY 19, 2021",
-      views: 243,
-      title: "The Impact of Technology on the Legal System",
-      desc: "Law and justice are fundamental pillars of society. They govern how we interact with one another and ensure that everyone is treated fairly and equally. However, the legal system is often complex and difficult to navigate, leading to a lack of access to justice for many. In this article, we’ll explore the importance of law and justice, how the legal system works, and what can be done to improve access to justice for all. “Equal justice under law is not merely a caption on the facade of the Supreme Court …",
-    },
-    {
-      id: "blog-5",
-      link: "https://www.linkedin.com/feed/",
-      type: "JUSTICE",
-      date: "MAY 19, 2021",
-      views: 243,
-      title: "The Impact of Technology on the Legal System",
-      desc: "Law and justice are fundamental pillars of society. They govern how we interact with one another and ensure that everyone is treated fairly and equally. However, the legal system is often complex and difficult to navigate, leading to a lack of access to justice for many. In this article, we’ll explore the importance of law and justice, how the legal system works, and what can be done to improve access to justice for all. “Equal justice under law is not merely a caption on the facade of the Supreme Court …",
-    },
-    {
-      id: "blog-6",
-      link: "https://www.linkedin.com/feed/",
-      type: "LAW",
-      date: "MAY 19, 2021",
-      views: 243,
-      title: "The Impact of Technology on the Legal System",
-      desc: "Law and justice are fundamental pillars of society. They govern how we interact with one another and ensure that everyone is treated fairly and equally. However, the legal system is often complex and difficult to navigate, leading to a lack of access to justice for many. In this article, we’ll explore the importance of law and justice, how the legal system works, and what can be done to improve access to justice for all. “Equal justice under law is not merely a caption on the facade of the Supreme Court …",
-    },
-    {
-      id: "blog-7",
-      link: "https://www.linkedin.com/feed/",
-      type: "SCIENCE",
-      date: "MAY 19, 2021",
-      views: 243,
-      title: "The Impact of Technology on the Legal System",
-      desc: "Law and justice are fundamental pillars of society. They govern how we interact with one another and ensure that everyone is treated fairly and equally. However, the legal system is often complex and difficult to navigate, leading to a lack of access to justice for many. In this article, we’ll explore the importance of law and justice, how the legal system works, and what can be done to improve access to justice for all. “Equal justice under law is not merely a caption on the facade of the Supreme Court …",
-    },
-    {
-      id: "blog-8",
-      link: "https://www.linkedin.com/feed/",
-      type: "SCIENCE",
-      date: "MAY 19, 2021",
-      views: 243,
-      title: "The Impact of Technology on the Legal System",
-      desc: "Law and justice are fundamental pillars of society. They govern how we interact with one another and ensure that everyone is treated fairly and equally. However, the legal system is often complex and difficult to navigate, leading to a lack of access to justice for many. In this article, we’ll explore the importance of law and justice, how the legal system works, and what can be done to improve access to justice for all. “Equal justice under law is not merely a caption on the facade of the Supreme Court …",
-    },
-    {
-      id: "blog-9",
-      link: "https://www.linkedin.com/feed/",
-      type: "SCIENCE",
-      date: "MAY 19, 2021",
-      views: 243,
-      title: "The Impact of Technology on the Legal System",
-      desc: "Law and justice are fundamental pillars of society. They govern how we interact with one another and ensure that everyone is treated fairly and equally. However, the legal system is often complex and difficult to navigate, leading to a lack of access to justice for many. In this article, we’ll explore the importance of law and justice, how the legal system works, and what can be done to improve access to justice for all. “Equal justice under law is not merely a caption on the facade of the Supreme Court …",
-    },
-    {
-      id: "blog-10",
-      link: "https://www.linkedin.com/feed/",
-      type: "SCIENCE",
-      date: "MAY 19, 2021",
-      views: 243,
-      title: "The Impact of Technology on the Legal System",
-      desc: "Law and justice are fundamental pillars of society. They govern how we interact with one another and ensure that everyone is treated fairly and equally. However, the legal system is often complex and difficult to navigate, leading to a lack of access to justice for many. In this article, we’ll explore the importance of law and justice, how the legal system works, and what can be done to improve access to justice for all. “Equal justice under law is not merely a caption on the facade of the Supreme Court …",
-    },
-    {
-      id: "blog-11",
-      link: "https://www.linkedin.com/feed/",
-      type: "SCIENCE",
-      date: "MAY 19, 2021",
-      views: 243,
-      title: "The Impact of Technology on the Legal System",
-      desc: "Law and justice are fundamental pillars of society. They govern how we interact with one another and ensure that everyone is treated fairly and equally. However, the legal system is often complex and difficult to navigate, leading to a lack of access to justice for many. In this article, we’ll explore the importance of law and justice, how the legal system works, and what can be done to improve access to justice for all. “Equal justice under law is not merely a caption on the facade of the Supreme Court …",
-    },
-  ];
-
-  const dataBlogCastellano = [
-    {
-      id: "blog-1",
-      link: "https://www.linkedin.com/feed/",
-      type: "ABOGADOS",
-      date: "19 MAYO 2021",
-      views: 243,
-      title: "El Impacto de la Tecnología en el Sistema Legal",
-      desc: "El derecho y la justicia son pilares fundamentales de la sociedad. Regulan cómo interactuamos entre nosotros y garantizan que todos sean tratados de manera justa e igualitaria. Sin embargo, el sistema legal suele ser complejo y difícil de navegar, lo que genera una falta de acceso a la justicia para muchos. En este artículo, exploraremos la importancia del derecho y la justicia, cómo funciona el sistema legal y qué se puede hacer para mejorar el acceso a la justicia para todos. 'La justicia igualitaria bajo la ley no es solo un lema en la fachada de la Corte Suprema...'",
-    },
-    {
-      id: "blog-2",
-      link: "https://www.linkedin.com/feed/",
-      type: "TRIBUNAL",
-      date: "19 MAYO 2021",
-      views: 243,
-      title: "El Impacto de la Tecnología en el Sistema Legal",
-      desc: "El derecho y la justicia son pilares fundamentales de la sociedad. Regulan cómo interactuamos entre nosotros y garantizan que todos sean tratados de manera justa e igualitaria. Sin embargo, el sistema legal suele ser complejo y difícil de navegar, lo que genera una falta de acceso a la justicia para muchos. En este artículo, exploraremos la importancia del derecho y la justicia, cómo funciona el sistema legal y qué se puede hacer para mejorar el acceso a la justicia para todos. 'La justicia igualitaria bajo la ley no es solo un lema en la fachada de la Corte Suprema...'",
-    },
-    {
-      id: "blog-3",
-      link: "https://www.linkedin.com/feed/",
-      type: "CRIMINAL",
-      date: "19 MAYO 2021",
-      views: 243,
-      title: "El Impacto de la Tecnología en el Sistema Legal",
-      desc: "El derecho y la justicia son pilares fundamentales de la sociedad. Regulan cómo interactuamos entre nosotros y garantizan que todos sean tratados de manera justa e igualitaria. Sin embargo, el sistema legal suele ser complejo y difícil de navegar, lo que genera una falta de acceso a la justicia para muchos. En este artículo, exploraremos la importancia del derecho y la justicia, cómo funciona el sistema legal y qué se puede hacer para mejorar el acceso a la justicia para todos. 'La justicia igualitaria bajo la ley no es solo un lema en la fachada de la Corte Suprema...'",
-    },
-    {
-      id: "blog-4",
-      link: "https://www.linkedin.com/feed/",
-      type: "INDEPENDENCIA",
-      date: "19 MAYO 2021",
-      views: 243,
-      title: "El Impacto de la Tecnología en el Sistema Legal",
-      desc: "El derecho y la justicia son pilares fundamentales de la sociedad. Regulan cómo interactuamos entre nosotros y garantizan que todos sean tratados de manera justa e igualitaria. Sin embargo, el sistema legal suele ser complejo y difícil de navegar, lo que genera una falta de acceso a la justicia para muchos. En este artículo, exploraremos la importancia del derecho y la justicia, cómo funciona el sistema legal y qué se puede hacer para mejorar el acceso a la justicia para todos. 'La justicia igualitaria bajo la ley no es solo un lema en la fachada de la Corte Suprema...'",
-    },
-    {
-      id: "blog-5",
-      link: "https://www.linkedin.com/feed/",
-      type: "JUSTICIA",
-      date: "19 MAYO 2021",
-      views: 243,
-      title: "El Impacto de la Tecnología en el Sistema Legal",
-      desc: "El derecho y la justicia son pilares fundamentales de la sociedad. Regulan cómo interactuamos entre nosotros y garantizan que todos sean tratados de manera justa e igualitaria. Sin embargo, el sistema legal suele ser complejo y difícil de navegar, lo que genera una falta de acceso a la justicia para muchos. En este artículo, exploraremos la importancia del derecho y la justicia, cómo funciona el sistema legal y qué se puede hacer para mejorar el acceso a la justicia para todos. 'La justicia igualitaria bajo la ley no es solo un lema en la fachada de la Corte Suprema...'",
-    },
-    {
-      id: "blog-6",
-      link: "https://www.linkedin.com/feed/",
-      type: "DERECHO",
-      date: "19 MAYO 2021",
-      views: 243,
-      title: "El Impacto de la Tecnología en el Sistema Legal",
-      desc: "El derecho y la justicia son pilares fundamentales de la sociedad. Regulan cómo interactuamos entre nosotros y garantizan que todos sean tratados de manera justa e igualitaria. Sin embargo, el sistema legal suele ser complejo y difícil de navegar, lo que genera una falta de acceso a la justicia para muchos. En este artículo, exploraremos la importancia del derecho y la justicia, cómo funciona el sistema legal y qué se puede hacer para mejorar el acceso a la justicia para todos. 'La justicia igualitaria bajo la ley no es solo un lema en la fachada de la Corte Suprema...'",
-    },
-    {
-      id: "blog-7",
-      link: "https://www.linkedin.com/feed/",
-      type: "CIENCIA",
-      date: "19 MAYO 2021",
-      views: 243,
-      title: "El Impacto de la Tecnología en el Sistema Legal",
-      desc: "El derecho y la justicia son pilares fundamentales de la sociedad. Regulan cómo interactuamos entre nosotros y garantizan que todos sean tratados de manera justa e igualitaria. Sin embargo, el sistema legal suele ser complejo y difícil de navegar, lo que genera una falta de acceso a la justicia para muchos. En este artículo, exploraremos la importancia del derecho y la justicia, cómo funciona el sistema legal y qué se puede hacer para mejorar el acceso a la justicia para todos. 'La justicia igualitaria bajo la ley no es solo un lema en la fachada de la Corte Suprema...'",
-    },
-    {
-      id: "blog-8",
-      link: "https://www.linkedin.com/feed/",
-      type: "CIENCIA",
-      date: "19 MAYO 2021",
-      views: 243,
-      title: "El Impacto de la Tecnología en el Sistema Legal",
-      desc: "El derecho y la justicia son pilares fundamentales de la sociedad. Regulan cómo interactuamos entre nosotros y garantizan que todos sean tratados de manera justa e igualitaria. Sin embargo, el sistema legal suele ser complejo y difícil de navegar, lo que genera una falta de acceso a la justicia para muchos. En este artículo, exploraremos la importancia del derecho y la justicia, cómo funciona el sistema legal y qué se puede hacer para mejorar el acceso a la justicia para todos. 'La justicia igualitaria bajo la ley no es solo un lema en la fachada de la Corte Suprema...'",
-    },
-    {
-      id: "blog-9",
-      link: "https://www.linkedin.com/feed/",
-      type: "CIENCIA",
-      date: "19 MAYO 2021",
-      views: 243,
-      title: "El Impacto de la Tecnología en el Sistema Legal",
-      desc: "El derecho y la justicia son pilares fundamentales de la sociedad. Regulan cómo interactuamos entre nosotros y garantizan que todos sean tratados de manera justa e igualitaria. Sin embargo, el sistema legal suele ser complejo y difícil de navegar, lo que genera una falta de acceso a la justicia para muchos. En este artículo, exploraremos la importancia del derecho y la justicia, cómo funciona el sistema legal y qué se puede hacer para mejorar el acceso a la justicia para todos. 'La justicia igualitaria bajo la ley no es solo un lema en la fachada de la Corte Suprema...'",
-    },
-    {
-      id: "blog-10",
-      link: "https://www.linkedin.com/feed/",
-      type: "CIENCIA",
-      date: "19 MAYO 2021",
-      views: 243,
-      title: "El Impacto de la Tecnología en el Sistema Legal",
-      desc: "El derecho y la justicia son pilares fundamentales de la sociedad. Regulan cómo interactuamos entre nosotros y garantizan que todos sean tratados de manera justa e igualitaria. Sin embargo, el sistema legal suele ser complejo y difícil de navegar, lo que genera una falta de acceso a la justicia para muchos. En este artículo, exploraremos la importancia del derecho y la justicia, cómo funciona el sistema legal y qué se puede hacer para mejorar el acceso a la justicia para todos. 'La justicia igualitaria bajo la ley no es solo un lema en la fachada de la Corte Suprema...'",
-    },
-    {
-      id: "blog-11",
-      link: "https://www.linkedin.com/feed/",
-      type: "CIENCIA",
-      date: "19 MAYO 2021",
-      views: 243,
-      title: "El Impacto de la Tecnología en el Sistema Legal",
-      desc: "El derecho y la justicia son pilares fundamentales de la sociedad. Regulan cómo interactuamos entre nosotros y garantizan que todos sean tratados de manera justa e igualitaria. Sin embargo, el sistema legal suele ser complejo y difícil de navegar, lo que genera una falta de acceso a la justicia para muchos. En este artículo, exploraremos la importancia del derecho y la justicia, cómo funciona el sistema legal y qué se puede hacer para mejorar el acceso a la justicia para todos. 'La justicia igualitaria bajo la ley no es solo un lema en la fachada de la Corte Suprema...'",
-    },
-  ];
-
-  const dataTypes = [
-    { name: "All", id: "type-1" },
-    { name: "Attorney", id: "type-2" },
-    { name: "Court", id: "type-3" },
-    { name: "Criminal", id: "type-4" },
-    { name: "Independence", id: "type-5" },
-    { name: "Justice", id: "type-6" },
-    { name: "Law", id: "type-7" },
-    { name: "Science", id: "type-8" },
-  ];
-
-  const dataCastellano = [
-    { name: "Todas", id: "type-1" },
-    { name: "Abogados", id: "type-2" },
-    { name: "Tribunal", id: "type-3" },
-    { name: "Criminal", id: "type-4" },
-    { name: "Independencia", id: "type-5" },
-    { name: "Justicia", id: "type-6" },
-    { name: "Derecho", id: "type-7" },
-    { name: "Ciencia", id: "type81" },
-  ];
-
-  const arrayBlog = language === "spanish" ? dataBlogCastellano : dataBlog;
-  const arrayTypes = language === "spanish" ? dataCastellano : dataTypes;
-  const [filterArrayBlog, setFilterArrayBlog] = useState(arrayBlog);
+  const [arrayBlog, setArrayBlog] = useState(false);
+  const [arrayTypes, setArrayTypes] = useState(false);
+  const [filterArrayBlog, setFilterArrayBlog] = useState(false);
   const [valueInput, setValueInput] = useState("");
 
   const onClickTypes = (name) => {
@@ -295,138 +60,206 @@ export default function Blog() {
     setValueInput(e.target.value);
   };
 
-  const itemsPerPage = 8;
   const [currentPage, setCurrentPage] = useState(1);
+  var itemsPerPage;
+  var startIndex;
+  var endIndex;
+  var currentItems;
+  var totalPages;
 
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  const currentItems = filterArrayBlog.slice(startIndex, endIndex);
+  if (filterArrayBlog) {
+    itemsPerPage = 8;
+    startIndex = (currentPage - 1) * itemsPerPage;
+    endIndex = startIndex + itemsPerPage;
+    currentItems = filterArrayBlog.slice(startIndex, endIndex);
+    totalPages = Math.ceil(filterArrayBlog.length / itemsPerPage);
+  }
 
-  const totalPages = Math.ceil(filterArrayBlog.length / itemsPerPage);
+  const fetchNews = async () => {
+    try {
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/news/get`
+      );
+
+      const data = await response.json();
+      setArrayBlog(data.news);
+      setFilterArrayBlog(data.news);
+    } catch (error) {
+      Swal.fire({
+        title: "Error!",
+        text: error.message ? error.message : "Error interno del servidor",
+        icon: "error",
+        confirmButtonText: "OK",
+      });
+    }
+  };
+
+  const fetchTypes = async () => {
+    try {
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/types/get`
+      );
+
+      const data = await response.json();
+      setArrayTypes([{ id: 0, name: "Todas" }, ...data.types]);
+    } catch (error) {
+      Swal.fire({
+        title: "Error!",
+        text: error.message ? error.message : "Error interno del servidor",
+        icon: "error",
+        confirmButtonText: "OK",
+      });
+    }
+  };
+
+  useEffect(() => {
+    fetchNews();
+    fetchTypes();
+  }, []);
+
+  useEffect(() => {
+    if (language === "spanish") {
+      setTypes("Todas");
+    } else {
+      setTypes("All");
+    }
+
+    if (arrayBlog) {
+      setFilterArrayBlog(arrayBlog);
+    }
+
+    setValueInput("");
+  }, [language]);
 
   return (
     <div className={styles.body}>
       <HeroSection
         imgSrc={blogImg}
-        title={language === "spanish" ? "Foro" : "Blog"}
+        title={language === "spanish" ? "Noticias" : "News"}
       />
 
-      <div className={styles.container}>
-        <div className={styles.conatinerBlog}>
-          {currentItems &&
-            currentItems.map((data) => {
-              return (
-                <BlogCard
-                  data={data}
-                  key={data.id}
-                  OnClick={() => {
-                    window.open(data.link, "_blank");
-                  }}
-                />
-              );
-            })}
-
-          <div className={styles.pagination}>
-            {currentPage === 1 ? null : (
-              <TbArrowNarrowLeftDashed
-                onClick={() => {
-                  setCurrentPage((prev) => Math.max(prev - 1, 1));
-                  window.scrollTo({
-                    top: 400,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                }}
-                className={styles.icon}
-                style={{ left: "0px" }}
-              />
-            )}
-
-            {currentPage === totalPages || filterArrayBlog.length < 9 ? null : (
-              <TbArrowNarrowRightDashed
-                onClick={() => {
-                  setCurrentPage((prev) => Math.min(prev + 1, totalPages));
-                  window.scrollTo({
-                    top: 400,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                }}
-                className={styles.icon}
-                style={{ right: "0px" }}
-              />
-            )}
-
-            {filterArrayBlog.length === 0 ? (
-              <div className={styles.nanElementsContainer}>
-                <h1 className={styles.titleNanElements}>
-                  {language === "spanish"
-                    ? "No hay elementos encontrados"
-                    : "No items found"}
-                </h1>
-              </div>
-            ) : null}
-          </div>
+      {!arrayBlog || !arrayTypes || !filterArrayBlog ? (
+        <div className={styles.containerLoader}>
+          <ClipLoader color="#192d2f" size={100} />
         </div>
-
-        <div className={styles.conatinerSidebar}>
-          <div className={styles.inputContainer}>
-            <input
-              type="text"
-              placeholder={placeholder}
-              className={styles.inputSearch}
-              onChange={(e) => searchBlog(e)}
-              value={valueInput}
-            />
-            <CiSearch className={styles.searchIcon} />
-          </div>
-
-          <div className={styles.containerCategories}>
-            <h1 className={styles.titleCategories}>
-              {language === "spanish" ? "Categorias" : "Categories"}
-            </h1>
-
-            {arrayTypes &&
-              arrayTypes.map((type) => {
+      ) : (
+        <div className={styles.container}>
+          <div className={styles.conatinerBlog}>
+            {currentItems &&
+              currentItems.map((data) => {
                 return (
-                  <div className={styles.containerType} key={type.id}>
-                    <MdArrowOutward className={styles.iconArrow} />
-                    <p
-                      className={styles.type}
-                      style={{
-                        color: types === type.name ? "#cc4643" : "",
-                      }}
-                      onClick={() => onClickTypes(type.name)}
-                    >
-                      {type.name}
-                    </p>
-                  </div>
+                  <BlogCard
+                    data={data}
+                    key={data.id}
+                    OnClick={() => {
+                      window.open(data.link, "_blank");
+                    }}
+                  />
                 );
               })}
+
+            <div className={styles.pagination}>
+              {currentPage === 1 ? null : (
+                <TbArrowNarrowLeftDashed
+                  onClick={() => {
+                    setCurrentPage((prev) => Math.max(prev - 1, 1));
+                    window.scrollTo({
+                      top: 400,
+                      left: 0,
+                      behavior: "smooth",
+                    });
+                  }}
+                  className={styles.icon}
+                  style={{ left: "0px" }}
+                />
+              )}
+
+              {currentPage === totalPages ||
+              filterArrayBlog.length < 9 ? null : (
+                <TbArrowNarrowRightDashed
+                  onClick={() => {
+                    setCurrentPage((prev) => Math.min(prev + 1, totalPages));
+                    window.scrollTo({
+                      top: 400,
+                      left: 0,
+                      behavior: "smooth",
+                    });
+                  }}
+                  className={styles.icon}
+                  style={{ right: "0px" }}
+                />
+              )}
+
+              {filterArrayBlog.length === 0 ? (
+                <div className={styles.nanElementsContainer}>
+                  <h1 className={styles.titleNanElements}>
+                    {language === "spanish"
+                      ? "No hay elementos encontrados"
+                      : "No items found"}
+                  </h1>
+                </div>
+              ) : null}
+            </div>
           </div>
 
-          <div className={styles.containerCategories}>
-            <h1 className={styles.titleCategories}>
-              {language === "spanish" ? "Nosotros" : "About Us"}
-            </h1>
+          <div className={styles.conatinerSidebar}>
+            <div className={styles.inputContainer}>
+              <input
+                type="text"
+                placeholder={placeholder}
+                className={styles.inputSearch}
+                onChange={(e) => searchBlog(e)}
+                value={valueInput}
+              />
+              <CiSearch className={styles.searchIcon} />
+            </div>
 
-            <p className={styles.aboutUs}>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptate omnis quaerat, ipsum dolores rem quos fugit totam
-              reprehenderit, commodi porro corrupti cupiditate error, optio
-              nostrum repellendus tempora! Corporis, ratione aliquid!
-            </p>
+            <div className={styles.containerCategories}>
+              <h1 className={styles.titleCategories}>
+                {language === "spanish" ? "Categorias" : "Categories"}
+              </h1>
 
-            <button
-              className={styles.button}
-              onClick={() => router.push("/aboutUs")}
-            >
-              {language === "spanish" ? "Leer más" : "Read More"}
-              <MdArrowOutward className={styles.iconButton} />
-            </button>
+              {arrayTypes &&
+                arrayTypes.map((type) => {
+                  return (
+                    <div className={styles.containerType} key={type.id}>
+                      <MdArrowOutward className={styles.iconArrow} />
+                      <p
+                        className={styles.type}
+                        style={{
+                          color: types === type.name ? "#cc4643" : "",
+                        }}
+                        onClick={() => onClickTypes(type.name)}
+                      >
+                        {type.name}
+                      </p>
+                    </div>
+                  );
+                })}
+            </div>
+
+            <div className={styles.containerCategories}>
+              <h1 className={styles.titleCategories}>
+                {language === "spanish" ? "Nuestra Esencia" : "Our essence"}
+              </h1>
+
+              <p className={styles.aboutUs}>
+                {language === "spanish"
+                  ? "Conformado por profesionales altamente calificados en el ejercicio de la abogacía, el Estudio se destaca por acompañar a sus clientes proveyendo servicios jurídicos confiables y especializados, involucrando en forma permanente a sus Socios y el equipo que cada uno de ellos lidera para proveer soluciones legales prácticas e innovadoras."
+                  : "Composed of highly qualified professionals in the practice of law, the Firm stands out for accompanying its clients by providing reliable and specialized legal services, permanently involving its Partners and the team that each of them leads to provide practical and innovative legal solutions."}
+              </p>
+
+              <button
+                className={styles.button}
+                onClick={() => router.push("/aboutUs")}
+              >
+                {language === "spanish" ? "Leer más" : "Read More"}
+                <MdArrowOutward className={styles.iconButton} />
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
