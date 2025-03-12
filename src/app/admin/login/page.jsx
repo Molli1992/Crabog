@@ -68,7 +68,6 @@ export default function Login() {
           navigate.push("/admin/dashboard");
         });
       } catch (error) {
-        console.log(error);
         Swal.fire({
           title: "Info!",
           text: error.message ? error.message : "Error interno del servidor",
