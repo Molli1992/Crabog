@@ -8,18 +8,36 @@ export default function Dashboard() {
   const [userData, setUserData] = useState(false);
   const navigate = useRouter();
 
+  const fetchUser = async (dataParsed) => {
+    try {
+      const response = await fetch(
+        `${
+          process.env.NEXT_PUBLIC_API_URL
+        }/api/users/getUser/${encodeURIComponent(
+          dataParsed.id
+        )}/${encodeURIComponent(dataParsed.email)}`
+      );
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || "Error de validacion de usuario");
+      }
+
+      setUserData(dataParsed);
+    } catch (error) {
+      navigate.push("/admin/login");
+    }
+  };
+
   useEffect(() => {
     const storedData = sessionStorage.getItem("User/Login/Information");
-    console.log(storedData);
-    if (!storedData) {
+    const parsedData = JSON.parse(storedData);
+    if (!parsedData) {
       navigate.push("/admin/login");
     } else {
-      const parsedData = JSON.parse(storedData);
-      setUserData(parsedData);
+      fetchUser(parsedData);
     }
   }, []);
-
-  console.log(userData);
 
   if (!userData) {
     return (
