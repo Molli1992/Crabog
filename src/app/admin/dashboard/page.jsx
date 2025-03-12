@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./dashboard.module.css";
 import { useRouter } from "next/navigation";
 import { ClipLoader } from "react-spinners";
+import Title from "@/components/texts/title/title";
 
 export default function Dashboard() {
   const [userData, setUserData] = useState(false);
@@ -42,14 +43,39 @@ export default function Dashboard() {
 
   if (!userData) {
     return (
-      <div className={styles.body}>
+      <div
+        className={styles.body}
+        style={{ alignItems: "center", justifyContent: "center" }}
+      >
         <ClipLoader color="#192d2f" size={100} />
       </div>
     );
   } else {
     return (
       <div className={styles.body}>
-        <h1>Dashboard</h1>
+        <div className={styles.sideBar}>
+          <div>
+            <Title value="Noticias" color="#192d2f" />
+            <p className={styles.text}>Crear noticia</p>
+            <p className={styles.text}>Modificar noticia</p>
+            <p className={styles.text}>Eliminar noticia</p>
+          </div>
+
+          <div>
+            <Title value="Generos" color="#192d2f" />
+            <p className={styles.text}>Crear genero</p>
+            <p className={styles.text}>Modificar genero</p>
+            <p className={styles.text}>Eliminar genero</p>
+          </div>
+
+          <div>
+            <Title value="Usuario" color="#192d2f" />
+            <p className={styles.text}>Modificar usuario</p>
+            <p className={styles.text}>Eliminar usuario</p>
+          </div>
+        </div>
+
+        <div className={styles.container}></div>
       </div>
     );
   }
