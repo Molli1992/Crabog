@@ -59,6 +59,11 @@ export default function Login() {
 
         const data = await response.json();
 
+        sessionStorage.setItem(
+          "User/Login/Information",
+          JSON.stringify(data.user)
+        );
+
         Swal.fire({
           title: "Exito!",
           text: data.message ? data.message : "Te has logeado correctamente!",
