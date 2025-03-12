@@ -25,6 +25,7 @@ export default function Dashboard() {
 
       setUserData(dataParsed);
     } catch (error) {
+      sessionStorage.removeItem("User/Login/Information");
       navigate.push("/admin/login");
     }
   };
