@@ -5,9 +5,11 @@ import Swal from "sweetalert2";
 import { useRouter } from "next/navigation";
 import Title from "@/components/texts/title/title";
 import Description from "@/components/texts/description/description";
+import { ClipLoader } from "react-spinners";
 
 export default function Register() {
   const navigate = useRouter();
+  const [loaderSumbit, setLoaderSubmit] = useState(false);
   const [register, setRegister] = useState({
     name: "",
     email: "",
@@ -22,28 +24,89 @@ export default function Register() {
     });
   };
 
-  const onSubmit = () => {
+  const onSubmit = async () => {
     if (
-      register.name &&
-      register.email &&
-      register.password &&
-      register.repeatPassword
+      !register.name ||
+      !register.email ||
+      !register.password ||
+      !register.repeatPassword
     ) {
-      Swal.fire({
-        title: "Exito!",
-        text: "Te has registrado correctamente!",
-        icon: "success",
-        confirmButtonText: "Ok",
-      }).then(() => {
-        navigate.push("/admin/login");
-      });
-    } else {
       Swal.fire({
         title: "Info!",
         text: "Completar todos los campos!",
         icon: "info",
         confirmButtonText: "Ok",
       });
+    } else if (!/\S+@\S+\.\S+/.test(register.email)) {
+      Swal.fire({
+        title: "Info!",
+        text: "Por favor, ingresa un correo electrónico válido!",
+        icon: "info",
+        confirmButtonText: "Ok",
+      });
+    } else if (!/(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}/.test(register.password)) {
+      Swal.fire({
+        title: "Info!",
+        text: "La contraseña debe tener al menos 8 caracteres, una mayúscula, una minúscula y un número!",
+        icon: "info",
+        confirmButtonText: "Ok",
+      });
+    } else if (register.password !== register.repeatPassword) {
+      Swal.fire({
+        title: "Info!",
+        text: "Las contraseñas no coinciden!",
+        icon: "info",
+        confirmButtonText: "Ok",
+      });
+    } else {
+      setLoaderSubmit(true);
+      try {
+        const dataRegister = {
+          name: encodeURIComponent(register.name),
+          email: encodeURIComponent(register.email),
+          password: encodeURIComponent(register.password),
+        };
+
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/users/post`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(dataRegister),
+          }
+        );
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(
+            errorData.message || "Hubo un problema al registrar el usuario"
+          );
+        }
+
+        const data = await response.json();
+
+        Swal.fire({
+          title: "Exito!",
+          text: data.message
+            ? data.message
+            : "Te has registrado correctamente!",
+          icon: "success",
+          confirmButtonText: "Ok",
+        }).then(() => {
+          navigate.push("/admin/login");
+        });
+      } catch (error) {
+        Swal.fire({
+          title: "Error!",
+          text: error.message ? error.message : "Error interno del servidor",
+          icon: "error",
+          confirmButtonText: "Ok",
+        });
+      } finally {
+        setLoaderSubmit(false);
+      }
     }
   };
 
@@ -130,7 +193,11 @@ export default function Register() {
                 onSubmit();
               }}
             >
-              Submit
+              {loaderSumbit ? (
+                <ClipLoader color="#ffffff" size={30} />
+              ) : (
+                "Submit"
+              )}
             </button>
           </div>
         </div>

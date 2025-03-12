@@ -6,9 +6,11 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Title from "@/components/texts/title/title";
 import Description from "@/components/texts/description/description";
+import { ClipLoader } from "react-spinners";
 
 export default function Login() {
   const navigate = useRouter();
+  const [loaderSumbit, setLoaderSubmit] = useState(false);
   const [login, setLogin] = useState({
     email: "",
     password: "",
@@ -21,23 +23,61 @@ export default function Login() {
     });
   };
 
-  const onSubmit = () => {
-    if (login.email && login.password) {
-      Swal.fire({
-        title: "Exito!",
-        text: "Te has logeado correctamente!",
-        icon: "success",
-        confirmButtonText: "Ok",
-      }).then(() => {
-        navigate.push("/admin/dashboard");
-      });
-    } else {
+  const onSubmit = async () => {
+    if (!login.email && login.password) {
       Swal.fire({
         title: "Info!",
         text: "Completar todos los campos!",
         icon: "info",
         confirmButtonText: "Ok",
       });
+    } else {
+      setLoaderSubmit(true);
+      try {
+        const dataLogin = {
+          email: encodeURIComponent(login.email),
+          password: encodeURIComponent(login.password),
+        };
+
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/users/loginUser`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(dataLogin),
+          }
+        );
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(
+            errorData.message || "Hubo un problema al logear el usuario"
+          );
+        }
+
+        const data = await response.json();
+
+        Swal.fire({
+          title: "Exito!",
+          text: data.message ? data.message : "Te has logeado correctamente!",
+          icon: "success",
+          confirmButtonText: "Ok",
+        }).then(() => {
+          navigate.push("/admin/dashboard");
+        });
+      } catch (error) {
+        console.log(error);
+        Swal.fire({
+          title: "Info!",
+          text: error.message ? error.message : "Error interno del servidor",
+          icon: "info",
+          confirmButtonText: "Ok",
+        });
+      } finally {
+        setLoaderSubmit(false);
+      }
     }
   };
 
@@ -82,7 +122,7 @@ export default function Login() {
               onSubmit();
             }}
           >
-            Login
+            {loaderSumbit ? <ClipLoader color="#ffffff" size={30} /> : "Login"}
           </button>
 
           <div className={styles.containerElements}>
