@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import styles from "./createDialog.module.css";
-import { Button } from "primereact/button";
+import PrimaryButton from "../buttons/primaryButton";
 
 export default function CreateDialog({
   Visible,
@@ -34,16 +34,14 @@ export default function CreateDialog({
               <div
                 style={{ width: CancelLabel && AcceptLabel ? "50%" : "100%" }}
               >
-                <Button
-                  className={styles.button}
-                  style={{ backgroundColor: "blueviolet" }}
+                <PrimaryButton
+                  bgColor="blueviolet"
                   OnClick={() => {
                     OnCancel();
                   }}
-                  loading={LoaderCancel}
-                >
-                  {CancelLabel ? CancelLabel : "Cancel"}
-                </Button>
+                  Loader={LoaderCancel}
+                  Value={CancelLabel ? CancelLabel : "Cancel"}
+                />
               </div>
             ) : null}
 
@@ -51,15 +49,13 @@ export default function CreateDialog({
               <div
                 style={{ width: CancelLabel && AcceptLabel ? "50%" : "100%" }}
               >
-                <Button
-                  className={styles.button}
+                <PrimaryButton
                   OnClick={() => {
                     OnSubmit();
                   }}
-                  loading={LoaderAccept}
-                >
-                  {AcceptLabel ? AcceptLabel : "Submit"}
-                </Button>
+                  Loader={LoaderAccept}
+                  Value={AcceptLabel ? AcceptLabel : "Submit"}
+                />
               </div>
             ) : null}
           </div>

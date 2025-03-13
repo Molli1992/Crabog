@@ -5,7 +5,8 @@ import Title from "@/components/texts/title/title";
 import Description from "@/components/texts/description/description";
 import Swal from "sweetalert2";
 import { useRouter } from "next/navigation";
-import { ClipLoader } from "react-spinners";
+import PrimaryButton from "@/components/buttons/primaryButton";
+import PrimaryInput from "@/components/inputs/primaryInput";
 
 export default function ResetPassword() {
   const navigate = useRouter();
@@ -85,7 +86,7 @@ export default function ResetPassword() {
 
         <div className={styles.containerElements}>
           <Description value="Email" color="#192d2f" fontSize="18px" />
-          <input
+          <PrimaryInput
             value={email}
             className={styles.loginInput}
             onChange={(e) => {
@@ -95,24 +96,21 @@ export default function ResetPassword() {
         </div>
 
         <div className={styles.containerButtons}>
-          <button
-            className={styles.buttonLogin}
-            onClick={() => {
+          <PrimaryButton
+            OnClick={() => {
               navigate.push("/admin/login");
             }}
-            style={{ background: "blueviolet" }}
-          >
-            Volver
-          </button>
+            Value="Volver"
+            bgColor="blueviolet"
+          />
 
-          <button
-            className={styles.buttonLogin}
-            onClick={() => {
+          <PrimaryButton
+            OnClick={() => {
               onSubmit();
             }}
-          >
-            {loaderSumbit ? <ClipLoader color="#ffffff" size={30} /> : "Enviar"}
-          </button>
+            Value="Enviar"
+            Loader={loaderSumbit}
+          />
         </div>
       </div>
     </div>

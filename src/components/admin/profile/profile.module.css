@@ -1,0 +1,38 @@
+.body {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #192d2f;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.containerTitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.containerInputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #192d2f;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f5f3f0;
+}

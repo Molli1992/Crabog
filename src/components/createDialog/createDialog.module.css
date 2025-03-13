@@ -64,30 +64,8 @@
   gap: 10px;
 }
 
-.button {
-  width: 100%;
-  border-radius: 10px;
-  font-size: 22px;
-  border: none;
-  padding: 12px 16px;
-  color: #ffffff;
-  background-color: #192d2f;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button:hover {
-  background-color: gray;
-}
-
 @media (max-width: 650px) {
   .modal {
     width: 95%;
-  }
-
-  .button {
-    font-size: 16px;
   }
 }

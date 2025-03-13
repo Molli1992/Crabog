@@ -5,7 +5,8 @@ import Swal from "sweetalert2";
 import { useRouter } from "next/navigation";
 import Title from "@/components/texts/title/title";
 import Description from "@/components/texts/description/description";
-import { ClipLoader } from "react-spinners";
+import PrimaryButton from "@/components/buttons/primaryButton";
+import PrimaryInput from "@/components/inputs/primaryInput";
 
 export default function Register() {
   const navigate = useRouter();
@@ -124,7 +125,7 @@ export default function Register() {
               color="#192d2f"
               fontSize="18px"
             />
-            <input
+            <PrimaryInput
               value={register.name}
               name="name"
               className={styles.loginInput}
@@ -136,7 +137,7 @@ export default function Register() {
 
           <div className={styles.containerElements}>
             <Description value="Email" color="#192d2f" fontSize="18px" />
-            <input
+            <PrimaryInput
               value={register.email}
               name="email"
               className={styles.loginInput}
@@ -148,7 +149,7 @@ export default function Register() {
 
           <div className={styles.containerElements}>
             <Description value="Contraseña" color="#192d2f" fontSize="18px" />
-            <input
+            <PrimaryInput
               value={register.password}
               name="password"
               type="password"
@@ -165,7 +166,7 @@ export default function Register() {
               color="#192d2f"
               fontSize="18px"
             />
-            <input
+            <PrimaryInput
               value={register.repeatPassword}
               name="repeatPassword"
               type="password"
@@ -177,28 +178,21 @@ export default function Register() {
           </div>
 
           <div className={styles.containerButtons}>
-            <button
-              className={styles.buttonLogin}
-              onClick={() => {
+            <PrimaryButton
+              OnClick={() => {
                 navigate.push("/admin/login");
               }}
-              style={{ background: "blueviolet" }}
-            >
-              Volver
-            </button>
+              bgColor="blueviolet"
+              Value="Volver"
+            />
 
-            <button
-              className={styles.buttonLogin}
-              onClick={() => {
-                onSubmit();
+            <PrimaryButton
+              OnClick={() => {
+                navigate.push("/admin/login");
               }}
-            >
-              {loaderSumbit ? (
-                <ClipLoader color="#ffffff" size={30} />
-              ) : (
-                "Submit"
-              )}
-            </button>
+              Value="Submit"
+              Loader={loaderSumbit}
+            />
           </div>
         </div>
       </div>

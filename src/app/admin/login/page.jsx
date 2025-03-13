@@ -6,7 +6,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Title from "@/components/texts/title/title";
 import Description from "@/components/texts/description/description";
-import { ClipLoader } from "react-spinners";
+import PrimaryButton from "@/components/buttons/primaryButton";
+import PrimaryInput from "@/components/inputs/primaryInput";
 
 export default function Login() {
   const navigate = useRouter();
@@ -96,10 +97,9 @@ export default function Login() {
           <div className={styles.containerInputs}>
             <div className={styles.containerElements}>
               <Description value="Email" color="#192d2f" fontSize="18px" />
-              <input
+              <PrimaryInput
                 value={login.email}
                 name="email"
-                className={styles.loginInput}
                 onChange={(e) => {
                   onChange(e);
                 }}
@@ -108,11 +108,10 @@ export default function Login() {
 
             <div className={styles.containerElements}>
               <Description value="Contraseña" color="#192d2f" fontSize="18px" />
-              <input
+              <PrimaryInput
                 value={login.password}
                 name="password"
                 type="password"
-                className={styles.loginInput}
                 onChange={(e) => {
                   onChange(e);
                 }}
@@ -120,14 +119,14 @@ export default function Login() {
             </div>
           </div>
 
-          <button
-            className={styles.buttonLogin}
-            onClick={() => {
+          <PrimaryButton
+            OnClick={() => {
               onSubmit();
             }}
-          >
-            {loaderSumbit ? <ClipLoader color="#ffffff" size={30} /> : "Login"}
-          </button>
+            Loader={loaderSumbit}
+            Value="Login"
+            Width="fit-content"
+          />
 
           <div className={styles.containerElements}>
             <Description
