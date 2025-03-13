@@ -106,7 +106,7 @@ export const arrayLawyers = [
     linkedin: "https://www.linkedin.com",
     instagram: "https://www.instagram.com",
     phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    email: "felipe.blaksley@hotmail.com",
     cv: [
       {
         name: "Studies",
@@ -507,7 +507,7 @@ export const arrayLawyersSpanish = [
     linkedin: "https://www.linkedin.com",
     instagram: "https://www.instagram.com",
     phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    email: "felipe.blaksley@hotmail.com",
     cv: [
       {
         name: "Estudios",

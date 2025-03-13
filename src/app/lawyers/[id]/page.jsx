@@ -29,9 +29,10 @@ export default function LawyersProfile() {
   });
 
   const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    message: "",
+    clientName: "",
+    clientEmail: "",
+    clientPhone: "",
+    clientMessage: "",
   });
   const [loader, setLoader] = useState(false);
 
@@ -63,20 +64,68 @@ export default function LawyersProfile() {
     });
   };
 
+  const validateEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+  };
+
   const onSubmit = async () => {
-    setLoader(true);
-    try {
-      if (!formData.name || !formData.phone || !formData.message) {
-        Swal.fire({
-          title: "Info!",
-          text:
-            language === "spanish"
-              ? "Completar todos los campos"
-              : "Complete all fields",
-          icon: "info",
-          confirmButtonText: "OK",
-        });
-      } else {
+    if (
+      !formData.clientName ||
+      !formData.clientEmail ||
+      !formData.clientPhone ||
+      !formData.clientMessage
+    ) {
+      Swal.fire({
+        title: "Info!",
+        text:
+          language === "spanish"
+            ? "Completar todos los campos"
+            : "Complete all fields",
+        icon: "info",
+        confirmButtonText: "OK",
+      });
+    } else if (!validateEmail(formData.clientEmail)) {
+      Swal.fire({
+        title: "Info!",
+        text:
+          language === "spanish"
+            ? "Formato de email incorrecto"
+            : "Incorrect email format",
+        icon: "info",
+        confirmButtonText: "OK",
+      });
+    } else {
+      setLoader(true);
+      try {
+        const dataClientEmail = {
+          lawyerEmail: encodeURIComponent(profileData[0].email),
+          clientName: encodeURIComponent(formData.clientName),
+          clientEmail: encodeURIComponent(formData.clientEmail),
+          clientPhone: encodeURIComponent(formData.clientPhone),
+          clientMessage: encodeURIComponent(formData.clientMessage),
+        };
+
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/emails/lawyerEmail`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(dataClientEmail),
+          }
+        );
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(
+            errorData.message || language === "spanish"
+              ? "Error enviando mensaje"
+              : "Error sending message"
+          );
+        }
+
         Swal.fire({
           title: language === "spanish" ? "Exito!" : "Success!",
           text:
@@ -86,18 +135,25 @@ export default function LawyersProfile() {
           icon: "success",
           confirmButtonText: "OK",
         });
+      } catch (error) {
+        Swal.fire({
+          title: "Error!",
+          text:
+            language === "spanish"
+              ? "Error enviando mensaje, intentar luego mas tarde o ponerse en contacto con el servidro. Disculpe las molestias."
+              : "Error sending message, please try again later or contact the server. We apologize for the inconvenience.",
+          icon: "error",
+          confirmButtonText: "Ok",
+        });
+      } finally {
+        setLoader(false);
+        setFormData({
+          clientName: "",
+          clientEmail: "",
+          clientPhone: "",
+          clientMessage: "",
+        });
       }
-    } catch (error) {
-      console.log(error);
-    } finally {
-      setLoader(false);
-      setFormData({
-        name: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
     }
   };
 
@@ -237,17 +293,25 @@ export default function LawyersProfile() {
           <input
             className={styles.formInput}
             placeholder={language === "spanish" ? "Nombre" : "Name"}
-            value={formData.name}
+            value={formData.clientName}
             onChange={onChangeFormData}
-            name="name"
+            name="clientName"
+          />
+
+          <input
+            className={styles.formInput}
+            placeholder={language === "spanish" ? "Mail" : "Email"}
+            value={formData.clientEmail}
+            onChange={onChangeFormData}
+            name="clientEmail"
           />
 
           <input
             className={styles.formInput}
             placeholder={language === "spanish" ? "Telefono" : "Phone"}
-            value={formData.phone}
+            value={formData.clientPhone}
             onChange={onChangeFormData}
-            name="phone"
+            name="clientPhone"
             type="number"
           />
 
@@ -255,14 +319,14 @@ export default function LawyersProfile() {
             style={{ height: "100px" }}
             className={styles.formInput}
             placeholder={language === "spanish" ? "Mensaje" : "Message"}
-            value={formData.message}
+            value={formData.clientMessage}
             onChange={onChangeFormData}
-            name="message"
+            name="clientMessage"
           />
 
           <button className={styles.formButton} onClick={onSubmit}>
             {loader ? (
-              <ClipLoader color="#192d2f" size={15} />
+              <ClipLoader color="#ffffff" size={20} />
             ) : language === "spanish" ? (
               "Enviar"
             ) : (
