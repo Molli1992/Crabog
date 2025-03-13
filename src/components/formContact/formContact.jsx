@@ -10,11 +10,11 @@ export default function FormContact() {
   const { language } = useLanguageStore();
   const [loader, setLoader] = useState(false);
   const [formData, setFormData] = useState({
-    name: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    message: "",
+    clientName: "",
+    clientLastName: "",
+    clientEmail: "",
+    clientPhone: "",
+    clientMessage: "",
   });
 
   const onChangeFormData = (e) => {
@@ -30,35 +30,63 @@ export default function FormContact() {
   };
 
   const onSubmit = async () => {
-    setLoader(true);
-    try {
-      if (
-        !formData.name ||
-        !formData.lastName ||
-        !formData.email ||
-        !formData.phone ||
-        !formData.message
-      ) {
-        Swal.fire({
-          title: "Info!",
-          text:
-            language === "spanish"
-              ? "Completar todos los campos"
-              : "Complete all fields",
-          icon: "info",
-          confirmButtonText: "OK",
-        });
-      } else if (!validateEmail(formData.email)) {
-        Swal.fire({
-          title: "Info!",
-          text:
-            language === "spanish"
-              ? "Formato de email incorrecto"
-              : "Incorrect email format",
-          icon: "info",
-          confirmButtonText: "OK",
-        });
-      } else {
+    if (
+      !formData.clientName ||
+      !formData.clientLastName ||
+      !formData.clientEmail ||
+      !formData.clientPhone ||
+      !formData.clientMessage
+    ) {
+      Swal.fire({
+        title: "Info!",
+        text:
+          language === "spanish"
+            ? "Completar todos los campos"
+            : "Complete all fields",
+        icon: "info",
+        confirmButtonText: "OK",
+      });
+    } else if (!validateEmail(formData.clientEmail)) {
+      Swal.fire({
+        title: "Info!",
+        text:
+          language === "spanish"
+            ? "Formato de email incorrecto"
+            : "Incorrect email format",
+        icon: "info",
+        confirmButtonText: "OK",
+      });
+    } else {
+      setLoader(true);
+      try {
+        const dataClientEmail = {
+          clientName: encodeURIComponent(formData.clientName),
+          clientLastName: encodeURIComponent(formData.clientLastName),
+          clientEmail: encodeURIComponent(formData.clientEmail),
+          clientPhone: encodeURIComponent(formData.clientPhone),
+          clientMessage: encodeURIComponent(formData.clientMessage),
+        };
+
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/emails/contactEmail`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(dataClientEmail),
+          }
+        );
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(
+            errorData.message || language === "spanish"
+              ? "Error enviando mensaje"
+              : "Error sending message"
+          );
+        }
+
         Swal.fire({
           title: language === "spanish" ? "Exito!" : "Success!",
           text:
@@ -68,18 +96,26 @@ export default function FormContact() {
           icon: "success",
           confirmButtonText: "OK",
         });
+      } catch (error) {
+        Swal.fire({
+          title: "Error!",
+          text:
+            language === "spanish"
+              ? "Error enviando mensaje, intentar luego mas tarde o ponerse en contacto con el servidro. Disculpe las molestias."
+              : "Error sending message, please try again later or contact the server. We apologize for the inconvenience.",
+          icon: "error",
+          confirmButtonText: "Ok",
+        });
+      } finally {
+        setLoader(false);
+        setFormData({
+          clientName: "",
+          clientLastName: "",
+          clientEmail: "",
+          clientPhone: "",
+          clientMessage: "",
+        });
       }
-    } catch (error) {
-      console.log(error);
-    } finally {
-      setLoader(false);
-      setFormData({
-        name: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
     }
   };
 
@@ -104,16 +140,16 @@ export default function FormContact() {
         <input
           className={styles.formInput}
           placeholder={language === "spanish" ? "Nombre" : "Your name"}
-          value={formData.name}
+          value={formData.clientName}
           onChange={onChangeFormData}
-          name="name"
+          name="clientName"
         />
         <input
           className={styles.formInput}
           placeholder={language === "spanish" ? "Apellido" : "Your last name"}
-          value={formData.lastName}
+          value={formData.clientLastName}
           onChange={onChangeFormData}
-          name="lastName"
+          name="clientLastName"
         />
       </div>
 
@@ -121,16 +157,16 @@ export default function FormContact() {
         <input
           className={styles.formInput}
           placeholder={language === "spanish" ? "Mail" : "Email"}
-          value={formData.email}
+          value={formData.clientEmail}
           onChange={onChangeFormData}
-          name="email"
+          name="clientEmail"
         />
         <input
           className={styles.formInput}
           placeholder={language === "spanish" ? "Telefono" : "Phone"}
-          value={formData.phone}
+          value={formData.clientPhone}
           onChange={onChangeFormData}
-          name="phone"
+          name="clientPhone"
           type="number"
         />
       </div>
@@ -139,15 +175,15 @@ export default function FormContact() {
         style={{ width: "100%", height: "100px" }}
         className={styles.formInput}
         placeholder={language === "spanish" ? "Mensaje" : "Message"}
-        value={formData.message}
+        value={formData.clientMessage}
         onChange={onChangeFormData}
-        name="message"
+        name="clientMessage"
       />
 
       <div className={styles.containerButton}>
         <button className={styles.formButton} onClick={onSubmit}>
           {loader ? (
-            <ClipLoader color="#192d2f" size={15} />
+            <ClipLoader color="#ffffff" size={20} />
           ) : language === "spanish" ? (
             "Enviar"
           ) : (
