@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-const useLanguageStore = create((set, get) => ({
+const useLanguageStore = create((set) => ({
   language: "spanish",
   setLanguage: (newLanguage) =>
     set({

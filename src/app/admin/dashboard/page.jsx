@@ -7,10 +7,11 @@ import Title from "@/components/texts/title/title";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiCloseLargeLine } from "react-icons/ri";
 import Profile from "@/components/admin/profile/profile";
+import userLoginStore from "@/zustand/userLoginStore";
 
 export default function Dashboard() {
   const navigate = useRouter();
-  const [userData, setUserData] = useState(false);
+  const { user, setUser } = userLoginStore();
   const [activeSection, setActiveSection] = useState("Perfil");
   const [openMenu, setOpenMenu] = useState(window.innerWidth > 850);
 
@@ -24,6 +25,9 @@ export default function Dashboard() {
 
   const changeSection = (section) => {
     setActiveSection(section);
+    if (window.innerWidth <= 850) {
+      setOpenMenu(false);
+    }
   };
 
   const fetchUser = async (dataParsed) => {
@@ -41,7 +45,7 @@ export default function Dashboard() {
         throw new Error(errorData.message || "Error de validacion de usuario");
       }
 
-      setUserData(dataParsed);
+      setUser(dataParsed);
     } catch (error) {
       sessionStorage.removeItem("User/Login/Information");
       navigate.push("/admin/login");
@@ -72,7 +76,7 @@ export default function Dashboard() {
     };
   }, []);
 
-  if (!userData) {
+  if (!user) {
     return (
       <div
         className={styles.body}
@@ -86,7 +90,7 @@ export default function Dashboard() {
       <div className={styles.body}>
         <div
           className={styles.menu}
-          style={{ left: openMenu ? " 200px" : "10px" }}
+          style={{ left: openMenu ? " 200px" : "20px" }}
         >
           {!openMenu ? (
             <RxHamburgerMenu

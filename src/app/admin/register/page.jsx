@@ -188,7 +188,7 @@ export default function Register() {
 
             <PrimaryButton
               OnClick={() => {
-                navigate.push("/admin/login");
+                onSubmit();
               }}
               Value="Submit"
               Loader={loaderSumbit}

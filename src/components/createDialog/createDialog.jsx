@@ -2,10 +2,11 @@
 import React from "react";
 import styles from "./createDialog.module.css";
 import PrimaryButton from "../buttons/primaryButton";
+import Title from "../texts/title/title"
 
 export default function CreateDialog({
   Visible,
-  Title,
+  TitleModal,
   Children,
   AcceptLabel,
   LoaderAccept,
@@ -25,7 +26,7 @@ export default function CreateDialog({
       <div className={styles.body} onClick={handleBodyClick}>
         <div className={`${styles.modal}  ${styles.fadeInUp}`}>
           <i className={`${styles.icon} pi pi-times`} onClick={OnCancel} />
-          <h1 className={styles.title}>{Title ? Title : "Title"}</h1>
+          <Title value={TitleModal ? TitleModal : "Title"} color="#192d2f" />
 
           <div className={styles.container}>{Children}</div>
 
