@@ -4,10 +4,27 @@ import styles from "./dashboard.module.css";
 import { useRouter } from "next/navigation";
 import { ClipLoader } from "react-spinners";
 import Title from "@/components/texts/title/title";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { RiCloseLargeLine } from "react-icons/ri";
+import Profile from "@/components/admin/profile/profile";
 
 export default function Dashboard() {
-  const [userData, setUserData] = useState(false);
   const navigate = useRouter();
+  const [userData, setUserData] = useState(false);
+  const [activeSection, setActiveSection] = useState("Perfil");
+  const [openMenu, setOpenMenu] = useState(window.innerWidth > 850);
+
+  const onClickMenu = () => {
+    if (openMenu) {
+      setOpenMenu(false);
+    } else {
+      setOpenMenu(true);
+    }
+  };
+
+  const changeSection = (section) => {
+    setActiveSection(section);
+  };
 
   const fetchUser = async (dataParsed) => {
     try {
@@ -41,6 +58,20 @@ export default function Dashboard() {
     }
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setOpenMenu(window.innerWidth > 850);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   if (!userData) {
     return (
       <div
@@ -53,29 +84,122 @@ export default function Dashboard() {
   } else {
     return (
       <div className={styles.body}>
-        <div className={styles.sideBar}>
-          <div>
-            <Title value="Noticias" color="#192d2f" />
-            <p className={styles.text}>Crear noticia</p>
-            <p className={styles.text}>Modificar noticia</p>
-            <p className={styles.text}>Eliminar noticia</p>
-          </div>
-
-          <div>
-            <Title value="Generos" color="#192d2f" />
-            <p className={styles.text}>Crear genero</p>
-            <p className={styles.text}>Modificar genero</p>
-            <p className={styles.text}>Eliminar genero</p>
-          </div>
-
-          <div>
-            <Title value="Usuario" color="#192d2f" />
-            <p className={styles.text}>Modificar usuario</p>
-            <p className={styles.text}>Eliminar usuario</p>
-          </div>
+        <div
+          className={styles.menu}
+          style={{ left: openMenu ? " 200px" : "10px" }}
+        >
+          {!openMenu ? (
+            <RxHamburgerMenu
+              className={styles.burgerIcon}
+              onClick={onClickMenu}
+            />
+          ) : (
+            <RiCloseLargeLine
+              className={styles.burgerIcon}
+              onClick={onClickMenu}
+            />
+          )}
         </div>
 
-        <div className={styles.container}></div>
+        {openMenu ? (
+          <div className={styles.sideBar}>
+            <div>
+              <h1 className={styles.title}>Menú</h1>
+              <Title value="Noticias" color="#192d2f" />
+              <p
+                className={styles.text}
+                style={{
+                  color: activeSection === "Crear noticias" ? "gray" : "",
+                }}
+                onClick={() => changeSection("Crear noticias")}
+              >
+                Crear noticias
+              </p>
+              <p
+                className={styles.text}
+                style={{
+                  color: activeSection === "Modificar noticias" ? "gray" : "",
+                }}
+                onClick={() => changeSection("Modificar noticias")}
+              >
+                Modificar noticias
+              </p>
+              <p
+                className={styles.text}
+                style={{
+                  color: activeSection === "Eliminar noticias" ? "gray" : "",
+                }}
+                onClick={() => changeSection("Eliminar noticias")}
+              >
+                Eliminar noticias
+              </p>
+            </div>
+
+            <div>
+              <Title value="Generos" color="#192d2f" />
+              <p
+                className={styles.text}
+                style={{
+                  color: activeSection === "Crear generos" ? "gray" : "",
+                }}
+                onClick={() => changeSection("Crear generos")}
+              >
+                Crear generos
+              </p>
+              <p
+                className={styles.text}
+                style={{
+                  color: activeSection === "Modificar generos" ? "gray" : "",
+                }}
+                onClick={() => changeSection("Modificar generos")}
+              >
+                Modificar generos
+              </p>
+              <p
+                className={styles.text}
+                style={{
+                  color: activeSection === "Eliminar generos" ? "gray" : "",
+                }}
+                onClick={() => changeSection("Eliminar generos")}
+              >
+                Eliminar generos
+              </p>
+            </div>
+
+            <div>
+              <Title value="Usuario" color="#192d2f" />
+              <p
+                className={styles.text}
+                style={{ color: activeSection === "Perfil" ? "gray" : "" }}
+                onClick={() => changeSection("Perfil")}
+              >
+                Perfil
+              </p>
+              <p
+                className={styles.text}
+                style={{
+                  color: activeSection === "Modificar usuarios" ? "gray" : "",
+                }}
+                onClick={() => changeSection("Modificar usuarios")}
+              >
+                Modificar usuarios
+              </p>
+              <p
+                className={styles.text}
+                style={{
+                  color: activeSection === "Eliminar usuarios" ? "gray" : "",
+                }}
+                onClick={() => changeSection("Eliminar usuarios")}
+              >
+                Eliminar usuarios
+              </p>
+            </div>
+          </div>
+        ) : null}
+
+        <div className={styles.container}>
+          {activeSection === "Perfil" ? <Profile /> : null}
+        </div>
       </div>
     );
   }
