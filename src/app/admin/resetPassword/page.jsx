@@ -111,7 +111,7 @@ export default function ResetPassword() {
               onSubmit();
             }}
           >
-            {loaderSumbit ? <ClipLoader color="#ffffff" size={30} /> : "Submit"}
+            {loaderSumbit ? <ClipLoader color="#ffffff" size={30} /> : "Enviar"}
           </button>
         </div>
       </div>
