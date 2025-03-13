@@ -84,12 +84,14 @@ export default function Profile() {
             : "Usuario modificado correctamente!",
           icon: "success",
           confirmButtonText: "Ok",
+        }).then(() => {
+          setVisible(false);
         });
       } catch (error) {
         Swal.fire({
-          title: "Error!",
+          title: "Info!",
           text: error.message,
-          icon: "error",
+          icon: "info",
           confirmButtonText: "Ok",
         });
       } finally {

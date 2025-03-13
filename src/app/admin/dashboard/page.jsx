@@ -6,8 +6,10 @@ import { ClipLoader } from "react-spinners";
 import Title from "@/components/texts/title/title";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiCloseLargeLine } from "react-icons/ri";
-import Profile from "@/components/admin/profile/profile";
 import userLoginStore from "@/zustand/userLoginStore";
+import Profile from "@/components/admin/users/profile/profile";
+import UpdateUsers from "@/components/admin/users/updateUser/updateUser";
+import PrimaryButton from "@/components/buttons/primaryButton";
 
 export default function Dashboard() {
   const navigate = useRouter();
@@ -48,6 +50,7 @@ export default function Dashboard() {
       setUser(dataParsed);
     } catch (error) {
       sessionStorage.removeItem("User/Login/Information");
+      setUser(false);
       navigate.push("/admin/login");
     }
   };
@@ -126,16 +129,7 @@ export default function Dashboard() {
                 }}
                 onClick={() => changeSection("Modificar noticias")}
               >
-                Modificar noticias
-              </p>
-              <p
-                className={styles.text}
-                style={{
-                  color: activeSection === "Eliminar noticias" ? "gray" : "",
-                }}
-                onClick={() => changeSection("Eliminar noticias")}
-              >
-                Eliminar noticias
+                Tabla de noticias
               </p>
             </div>
 
@@ -157,16 +151,7 @@ export default function Dashboard() {
                 }}
                 onClick={() => changeSection("Modificar generos")}
               >
-                Modificar generos
-              </p>
-              <p
-                className={styles.text}
-                style={{
-                  color: activeSection === "Eliminar generos" ? "gray" : "",
-                }}
-                onClick={() => changeSection("Eliminar generos")}
-              >
-                Eliminar generos
+                Tabla de generos
               </p>
             </div>
 
@@ -186,23 +171,26 @@ export default function Dashboard() {
                 }}
                 onClick={() => changeSection("Modificar usuarios")}
               >
-                Modificar usuarios
-              </p>
-              <p
-                className={styles.text}
-                style={{
-                  color: activeSection === "Eliminar usuarios" ? "gray" : "",
-                }}
-                onClick={() => changeSection("Eliminar usuarios")}
-              >
-                Eliminar usuarios
+                Tabla de usuarios
               </p>
             </div>
+
+            <PrimaryButton
+              OnClick={() => {
+                sessionStorage.removeItem("User/Login/Information");
+                setUser(false);
+                navigate.push("/admin/login");
+              }}
+              Value="Logout"
+              Width="fit-content"
+            />
           </div>
         ) : null}
 
         <div className={styles.container}>
           {activeSection === "Perfil" ? <Profile /> : null}
+
+          {activeSection === "Modificar usuarios" ? <UpdateUsers /> : null}
         </div>
       </div>
     );

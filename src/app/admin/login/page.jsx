@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./login.module.css";
 import Swal from "sweetalert2";
 import Link from "next/link";
@@ -85,6 +85,13 @@ export default function Login() {
       }
     }
   };
+
+  useEffect(() => {
+    const storedData = sessionStorage.getItem("User/Login/Information");
+    if (storedData) {
+      navigate.push("/admin/dashboard");
+    }
+  }, []);
 
   return (
     <div className={styles.body}>
