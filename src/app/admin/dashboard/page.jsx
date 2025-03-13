@@ -15,7 +15,7 @@ export default function Dashboard() {
   const navigate = useRouter();
   const { user, setUser } = userLoginStore();
   const [activeSection, setActiveSection] = useState("Perfil");
-  const [openMenu, setOpenMenu] = useState(window.innerWidth > 850);
+  const [openMenu, setOpenMenu] = useState(true);
 
   const onClickMenu = () => {
     if (openMenu) {
