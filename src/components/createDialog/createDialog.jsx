@@ -2,7 +2,8 @@
 import React from "react";
 import styles from "./createDialog.module.css";
 import PrimaryButton from "../buttons/primaryButton";
-import Title from "../texts/title/title"
+import Title from "../texts/title/title";
+import { IoMdClose } from "react-icons/io";
 
 export default function CreateDialog({
   Visible,
@@ -15,17 +16,11 @@ export default function CreateDialog({
   LoaderCancel,
   OnCancel,
 }) {
-  const handleBodyClick = (event) => {
-    if (event.target === event.currentTarget) {
-      OnCancel();
-    }
-  };
-
   if (Visible) {
     return (
-      <div className={styles.body} onClick={handleBodyClick}>
+      <div className={styles.body}>
         <div className={`${styles.modal}  ${styles.fadeInUp}`}>
-          <i className={`${styles.icon} pi pi-times`} onClick={OnCancel} />
+          <IoMdClose className={styles.icon} onClick={OnCancel} />
           <Title value={TitleModal ? TitleModal : "Title"} color="#192d2f" />
 
           <div className={styles.container}>{Children}</div>

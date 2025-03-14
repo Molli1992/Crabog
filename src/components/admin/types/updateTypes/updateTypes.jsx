@@ -73,8 +73,26 @@ export default function UpdateTypes() {
           prevRows.map((row) =>
             row.id === typeID
               ? {
-                  ...row,
+                  id: typeID,
                   name: typeName,
+                  update: (
+                    <PrimaryButton
+                      Value="Modificar"
+                      OnClick={() => {
+                        setTypeID(typeID);
+                        setVisible(true);
+                        setTypeName(typeName);
+                      }}
+                      Width="fit-content"
+                      fontSize="16px"
+                    />
+                  ),
+                  delete: (
+                    <FaTrashAlt
+                      onClick={() => deleteType(typeID)}
+                      style={{ cursor: "pointer" }}
+                    />
+                  ),
                 }
               : row
           )
