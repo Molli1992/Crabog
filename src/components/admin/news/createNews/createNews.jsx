@@ -44,11 +44,27 @@ export default function CreateNews() {
     }
   };
 
+  function isValidURL(string) {
+    try {
+      const url = new URL(string);
+      return url.protocol === "http:" || url.protocol === "https:";
+    } catch (err) {
+      return false;
+    }
+  }
+
   const onSubmit = async () => {
     if (!news.title || !news.description || !news.link || !news.type) {
       Swal.fire({
         title: "Info!",
         text: "Completar todos los campos!",
+        icon: "info",
+        confirmButtonText: "Ok",
+      });
+    } else if (!isValidURL(news.link)) {
+      Swal.fire({
+        title: "Info!",
+        text: "La url del campo link es invalida!",
         icon: "info",
         confirmButtonText: "Ok",
       });
@@ -203,7 +219,11 @@ export default function CreateNews() {
               <option className={styles.option}>Selecciona un genero</option>
               {types &&
                 types.map((type) => {
-                  return <option className={styles.option}>{type.name}</option>;
+                  return (
+                    <option key={type.name} className={styles.option}>
+                      {type.name}
+                    </option>
+                  );
                 })}
             </select>
           </div>
