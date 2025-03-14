@@ -26,22 +26,11 @@ export default function CreateNews() {
   };
 
   const onChangeSelect = (e) => {
-    if (e.target.value === "Selecciona un genero") {
-      setNews({
-        ...news,
-        type: "",
-        typeName: e.target.value,
-      });
-    } else {
-      const filterType = types.filter((type) => {
-        return type.name === e.target.value;
-      });
-      setNews({
-        ...news,
-        type: filterType[0].id,
-        typeName: e.target.value,
-      });
-    }
+    setNews({
+      ...news,
+      type: e.target.value === "Selecciona un genero" ? "" : e.target.value,
+      typeName: e.target.value,
+    });
   };
 
   function isValidURL(string) {
@@ -120,6 +109,7 @@ export default function CreateNews() {
         setNews({
           title: "",
           description: "",
+          link: "",
           type: "",
           typeName: "Selecciona un genero",
         });

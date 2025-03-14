@@ -11,12 +11,12 @@ export default function BlogCard({ data, OnClick }) {
         {"|"}
         <div className={styles.flexContainer} style={{ gap: "5px" }}>
           <FaEye className={styles.icon} />
-          <p>{data.views}</p>
+          <p>{data.seen}</p>
         </div>
       </div>
 
       <h1 className={styles.title}>{data.title}</h1>
-      <p className={styles.desc}>{data.desc}</p>
+      <p className={styles.desc}>{data.description}</p>
     </div>
   );
 }
