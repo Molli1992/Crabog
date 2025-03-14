@@ -31,10 +31,10 @@ export default function UpdateUsers() {
     []
   );
 
-  const activeUser = async (id, active) => {
+  const activeUser = async (code, active) => {
     try {
       const putData = {
-        id: encodeURIComponent(id),
+        code: encodeURIComponent(code),
         isActive: active === 0 ? true : false,
       };
 
@@ -60,14 +60,14 @@ export default function UpdateUsers() {
 
       setRows((prevRows) =>
         prevRows.map((row) =>
-          row.id === id
+          row.code === code
             ? {
                 ...row,
                 active: (
                   <Switch
                     Checked={data.user.isActive === 0 ? false : true}
                     OnChange={() =>
-                      activeUser(data.user.id, data.user.isActive)
+                      activeUser(data.user.code, data.user.isActive)
                     }
                   />
                 ),
@@ -85,10 +85,10 @@ export default function UpdateUsers() {
     }
   };
 
-  const deleteUser = async (id) => {
+  const deleteUser = async (code) => {
     try {
       const deleteData = {
-        id: encodeURIComponent(id),
+        code: encodeURIComponent(code),
       };
 
       const response = await fetch(
@@ -109,7 +109,7 @@ export default function UpdateUsers() {
         );
       }
 
-      setRows((prevRows) => prevRows.filter((row) => row.id !== id));
+      setRows((prevRows) => prevRows.filter((row) => row.code !== code));
     } catch (error) {
       Swal.fire({
         title: "Error!",
@@ -137,20 +137,20 @@ export default function UpdateUsers() {
       let dataRows = [];
       for (let i = 0; i < data.users.length; i++) {
         dataRows.push({
-          id: data.users[i].id,
+          code: data.users[i].code,
           name: data.users[i].name,
           email: data.users[i].email,
           active: (
             <Switch
               Checked={data.users[i].isActive === 0 ? false : true}
               OnChange={() =>
-                activeUser(data.users[i].id, data.users[i].isActive)
+                activeUser(data.users[i].code, data.users[i].isActive)
               }
             />
           ),
           delete: (
             <FaTrashAlt
-              onClick={() => deleteUser(data.users[i].id)}
+              onClick={() => deleteUser(data.users[i].code)}
               style={{ cursor: "pointer" }}
             />
           ),

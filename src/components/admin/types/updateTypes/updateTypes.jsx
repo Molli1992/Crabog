@@ -126,7 +126,7 @@ export default function UpdateTypes() {
     }
   };
 
-  const fetchUsers = async () => {
+  const fetchTypes = async () => {
     try {
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_API_URL}/api/types/get`
@@ -179,7 +179,7 @@ export default function UpdateTypes() {
   };
 
   useEffect(() => {
-    fetchUsers();
+    fetchTypes();
   }, []);
 
   return (

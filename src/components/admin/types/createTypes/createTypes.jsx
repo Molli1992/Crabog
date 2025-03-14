@@ -83,7 +83,6 @@ export default function CreateTypes() {
           <Description value="Nombre" color="#192d2f" fontSize="18px" />
           <PrimaryInput
             value={typeName}
-            className={styles.loginInput}
             onChange={(e) => {
               setTypeName(e.target.value);
             }}

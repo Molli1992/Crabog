@@ -46,7 +46,7 @@ export default function Profile() {
       setLoader(true);
       try {
         const profileData = {
-          id: encodeURIComponent(user.id),
+          code: encodeURIComponent(user.code),
           name: encodeURIComponent(dataProfile.name),
           email: encodeURIComponent(dataProfile.email),
         };

@@ -42,7 +42,7 @@ export default function Dashboard() {
         `${
           process.env.NEXT_PUBLIC_API_URL
         }/api/users/getUser/${encodeURIComponent(
-          dataParsed.id
+          dataParsed.code
         )}/${encodeURIComponent(dataParsed.email)}`
       );
 
