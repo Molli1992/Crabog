@@ -116,7 +116,6 @@ export default function ResetPassword() {
           <Description value="Contraseña" color="#192d2f" fontSize="18px" />
           <PrimaryInput
             value={password.password}
-            className={styles.loginInput}
             onChange={(e) => {
               onChange(e);
             }}
@@ -133,7 +132,6 @@ export default function ResetPassword() {
           />
           <PrimaryInput
             value={password.repeatPassword}
-            className={styles.loginInput}
             onChange={(e) => {
               onChange(e);
             }}

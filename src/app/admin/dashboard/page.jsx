@@ -10,6 +10,10 @@ import userLoginStore from "@/zustand/userLoginStore";
 import Profile from "@/components/admin/users/profile/profile";
 import UpdateUsers from "@/components/admin/users/updateUser/updateUser";
 import PrimaryButton from "@/components/buttons/primaryButton";
+import UpdateTypes from "@/components/admin/types/updateTypes/updateTypes";
+import CreateTypes from "@/components/admin/types/createTypes/createTypes";
+import UpdateNews from "@/components/admin/news/updateNews/updateNews";
+import CreateNews from "@/components/admin/news/createNews/createNews";
 
 export default function Dashboard() {
   const navigate = useRouter();
@@ -191,6 +195,14 @@ export default function Dashboard() {
           {activeSection === "Perfil" ? <Profile /> : null}
 
           {activeSection === "Modificar usuarios" ? <UpdateUsers /> : null}
+
+          {activeSection === "Modificar generos" ? <UpdateTypes /> : null}
+
+          {activeSection === "Crear generos" ? <CreateTypes /> : null}
+
+          {activeSection === "Modificar noticias" ? <UpdateNews /> : null}
+
+          {activeSection === "Crear noticias" ? <CreateNews /> : null}
         </div>
       </div>
     );

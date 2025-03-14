@@ -1,20 +1,17 @@
-"use client";
 import React, { useState } from "react";
-import styles from "./resetPassword.module.css";
+import styles from "./createTypes.module.css";
 import Title from "@/components/texts/title/title";
 import Description from "@/components/texts/description/description";
-import Swal from "sweetalert2";
-import { useRouter } from "next/navigation";
-import PrimaryButton from "@/components/buttons/primaryButton";
 import PrimaryInput from "@/components/inputs/primaryInput";
+import PrimaryButton from "@/components/buttons/primaryButton";
+import Swal from "sweetalert2";
 
-export default function ResetPassword() {
-  const navigate = useRouter();
-  const [email, setEmail] = useState("");
+export default function CreateTypes() {
+  const [typeName, setTypeName] = useState("");
   const [loaderSumbit, setLoaderSubmit] = useState(false);
 
   const onSubmit = async () => {
-    if (!email) {
+    if (!typeName) {
       Swal.fire({
         title: "Info!",
         text: "Completar todos los campos!",
@@ -24,35 +21,33 @@ export default function ResetPassword() {
     } else {
       setLoaderSubmit(true);
       try {
-        const dataEmail = {
-          userEmail: encodeURIComponent(email),
+        const dataTypes = {
+          name: encodeURIComponent(typeName),
         };
 
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/emails/resetPassword`,
+          `${process.env.NEXT_PUBLIC_API_URL}/api/types/post`,
           {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
             },
-            body: JSON.stringify(dataEmail),
+            body: JSON.stringify(dataTypes),
           }
         );
 
         if (!response.ok) {
           const errorData = await response.json();
           throw new Error(
-            errorData.message || "Hubo un problema al enviar el email"
+            errorData.message || "Hubo un problema al crear el genero"
           );
         }
 
         const data = await response.json();
 
         Swal.fire({
-          title: "Revisa tu correo!",
-          text: data.message
-            ? data.message
-            : `Te enviamos un email a ${email} para restablecer tu contraseña`,
+          title: "Exito!",
+          text: data.message ? data.message : "Genero creado correctamente",
           icon: "success",
           confirmButtonText: "Ok",
         });
@@ -65,7 +60,7 @@ export default function ResetPassword() {
         });
       } finally {
         setLoaderSubmit(false);
-        setEmail("");
+        setTypeName("");
       }
     }
   };
@@ -77,19 +72,20 @@ export default function ResetPassword() {
           className={styles.containerElements}
           style={{ textAlign: "center" }}
         >
-          <Title value="Restablecer contraseña" color="#192d2f" />
+          <Title value="Crear nuevo genero" color="#192d2f" />
           <Description
-            value="Por favor ingresa tu email para restablecer tu contraseña"
+            value="Por favor ingresa el nombre del nuevo tipo de genero que quieres agregar para las noticias"
             color="#192d2f"
           />
         </div>
 
         <div className={styles.containerElements}>
-          <Description value="Email" color="#192d2f" fontSize="18px" />
+          <Description value="Nombre" color="#192d2f" fontSize="18px" />
           <PrimaryInput
-            value={email}
+            value={typeName}
+            className={styles.loginInput}
             onChange={(e) => {
-              setEmail(e.target.value);
+              setTypeName(e.target.value);
             }}
           />
         </div>
@@ -97,17 +93,9 @@ export default function ResetPassword() {
         <div className={styles.containerButtons}>
           <PrimaryButton
             OnClick={() => {
-              navigate.push("/admin/login");
-            }}
-            Value="Volver"
-            bgColor="blueviolet"
-          />
-
-          <PrimaryButton
-            OnClick={() => {
               onSubmit();
             }}
-            Value="Enviar"
+            Value="Crear"
             Loader={loaderSumbit}
           />
         </div>

@@ -8,6 +8,7 @@ export default function PrimaryButton({
   Value,
   bgColor,
   Width,
+  fontSize,
 }) {
   return (
     <Button
@@ -15,6 +16,7 @@ export default function PrimaryButton({
       style={{
         backgroundColor: bgColor ? bgColor : "",
         width: Width ? Width : "",
+        fontSize: fontSize ? fontSize : "",
       }}
       onClick={() => {
         OnClick();
