@@ -161,7 +161,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .container {
     padding: 50px 15px;
     gap: 35px;
@@ -187,8 +187,8 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 650px) {
   .titleNanElements {
-    font-size: 32px;
+    font-size: 34px;
   }
 }
