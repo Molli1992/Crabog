@@ -61,6 +61,9 @@ export default function BlogCard({ data, OnClick }) {
 
       translate();
     } else {
+      setTranslateType(data.type);
+      setTranslateTitle(data.title);
+      setTranslateDescription(data.description);
       setFormattedDate(data.date);
     }
   }, [language]);
@@ -74,12 +77,10 @@ export default function BlogCard({ data, OnClick }) {
   } else {
     return (
       <div className={styles.body} onClick={() => OnClick()}>
-        <button className={styles.button}>
-          {language !== "spanish" ? translateType : data.type}
-        </button>
+        <button className={styles.button}>{translateType}</button>
 
         <div className={styles.flexContainer} style={{ gap: "10px" }}>
-          <p>{language !== "spanish" ? formattedDate : data.date}</p>
+          <p>{formattedDate}</p>
           {"|"}
           <div className={styles.flexContainer} style={{ gap: "5px" }}>
             <FaEye className={styles.icon} />
@@ -87,12 +88,8 @@ export default function BlogCard({ data, OnClick }) {
           </div>
         </div>
 
-        <h1 className={styles.title}>
-          {language !== "spanish" ? translateTitle : data.title}
-        </h1>
-        <p className={styles.desc}>
-          {language !== "spanish" ? translateDescription : data.description}
-        </p>
+        <h1 className={styles.title}>{translateTitle}</h1>
+        <p className={styles.desc}>{translateDescription}</p>
       </div>
     );
   }
