@@ -75,6 +75,44 @@ export default function Blog() {
     totalPages = Math.ceil(filterArrayBlog.length / itemsPerPage);
   }
 
+  const onClickCard = async (link, id) => {
+    try {
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/news/addView`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ id: id }),
+        }
+      );
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(
+          errorData.message || "Hubo un problema al enviar el email"
+        );
+      }
+
+      const data = await response.json();
+
+      const updatedArray = arrayBlog.map((item) =>
+        item.id === data.news.id ? data.news : item
+      );
+      
+      const updatedFilterArray = filterArrayBlog.map((item) =>
+        item.id === data.news.id ? data.news : item
+      );
+
+      setArrayBlog(updatedArray);
+      setFilterArrayBlog(updatedFilterArray);
+      window.open(link, "_blank");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   const fetchNews = async () => {
     try {
       const response = await fetch(
@@ -152,7 +190,7 @@ export default function Blog() {
                     data={data}
                     key={data.id}
                     OnClick={() => {
-                      window.open(data.link, "_blank");
+                      onClickCard(data.link, data.id);
                     }}
                   />
                 );
