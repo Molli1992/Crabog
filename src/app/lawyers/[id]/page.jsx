@@ -201,7 +201,7 @@ export default function LawyersProfile() {
                     Array.isArray(item.desc) &&
                     item.desc.map((descItem) => {
                       return (
-                        <div key={`${index}-CV`}>
+                        <div key={`${index}-CV-${descItem.title}`}>
                           <h2 className={styles.serviceTitle}>
                             {descItem.title}
                           </h2>
