@@ -22,11 +22,20 @@ export const arrayLawyers = [
     linkedin: "",
     instagram: "",
     phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
+    email: "mcangueiro@crabog.com",
     cv: [
       {
         name: "Studies",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "Lawyer",
+            desc: "Faculty of Law and Social Sciences - University of Buenos Aires - March 25, 1985",
+          },
+          {
+            title: "Attorney",
+            desc: "Faculty of Law and Social Sciences - University of Buenos Aires - March 25, 1985",
+          },
+        ],
       },
       {
         name: "Work Experiencie",
@@ -423,11 +432,20 @@ export const arrayLawyersSpanish = [
     linkedin: "",
     instagram: "",
     phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
+    email: "mcangueiro@crabog.com",
     cv: [
       {
         name: "Estudios",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "Abogado",
+            desc: "Facultad de Derecho y Ciencias Sociales - Universidad de Buenos Aires - 25 de marzo 1985",
+          },
+          {
+            title: "Attorney",
+            desc: "Facultad de Derecho y Ciencias Sociales - Universidad de Buenos Aires - 25 de marzo 1985",
+          },
+        ],
       },
       {
         name: "Experiencia Laboral",
