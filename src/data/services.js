@@ -9,7 +9,7 @@ export const serviceList = [
     id: "serviceList-3",
     serviceName: "Insurance Law",
     serviceDescription:
-      "For over 15 years, we have been deeply familiar with the challenges of the insurance industry. Our highly qualified professionals possess extensive expertise in handling ongoing claims, litigation, and their financial impact on insurance companies. Leading insurance companies in the local market have entrusted us with managing their claims portfolios. Our services include corporate advisory and representation, the establishment of insurance entities and modifications to their legal structure, representation before the National Insurance Superintendency, the General Inspection of Justice, and various public administration bodies, as well as advisory services before consumer protection agencies.",
+      "Our highly qualified professionals possess extensive expertise in handling ongoing claims, litigation, and their financial impact on insurance companies. Leading insurance companies in the local market have entrusted us with managing their claims portfolios. Our services include corporate advisory and representation, the establishment of insurance entities and modifications to their legal structure, representation before the National Insurance Superintendency, the General Inspection of Justice, and various public administration bodies, as well as advisory services before consumer protection agencies.",
   },
   {
     id: "serviceList-4",
@@ -48,7 +48,7 @@ export const serviceListSpanish = [
     id: "serviceListSpanish-3",
     serviceName: "Derecho de Seguros",
     serviceDescription:
-      "Conocemos toda la problemática que plantea el negocio del Seguro desde hace ya 15 años. Contamos con profesionales altamente calificados y conocimientos profundizados para el tratamiento de siniestros en curso, juicios, como así también su impacto económico y consecuencias para las compañías aseguradoras. Reconocidas Compañías de Seguro del mercado local nos han confiado la gestión de su cartera de reclamos por siniestros. Entre nuestros servicios se incluyen asesoramiento y actuación societaria, constitución de entidades aseguradoras y modificación de su estructura jurídica, actuación ante la Superintendencia de Seguros de la Nación, la Inspección General de Justicia y diversos organismos públicos de la administración, así como también asesoramiento ante los organismos de Defensa del Consumidor.",
+      "Contamos con profesionales altamente calificados y conocimientos profundizados para el tratamiento de siniestros en curso, juicios, como así también su impacto económico y consecuencias para las compañías aseguradoras. Reconocidas Compañías de Seguro del mercado local nos han confiado la gestión de su cartera de reclamos por siniestros. Entre nuestros servicios se incluyen asesoramiento y actuación societaria, constitución de entidades aseguradoras y modificación de su estructura jurídica, actuación ante la Superintendencia de Seguros de la Nación, la Inspección General de Justicia y diversos organismos públicos de la administración, así como también asesoramiento ante los organismos de Defensa del Consumidor.",
   },
   {
     id: "serviceListSpanish-4",

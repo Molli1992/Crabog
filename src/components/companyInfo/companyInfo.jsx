@@ -40,8 +40,8 @@ export default function CompanyInfo() {
       name: language === "spanish" ? "Derecho de Seguros" : "Insurance Law",
       desc:
         language === "spanish"
-          ? "Conocemos toda la problemática que plantea el negocio del Seguro desde hace ya 15 años"
-          : "For over 15 years, we have been deeply familiar with the challenges of the insurance industry",
+          ? "Contamos con profesionales altamente calificados y conocimientos profundizados para el tratamiento de siniestros en curso, juicios y consecuencias para las compañías aseguradoras"
+          : "We have highly qualified professionals and in-depth knowledge for handling ongoing claims, lawsuits, and consequences for insurance companies.",
       Html: <FaShieldAlt className={styles.icons} />,
     },
 
