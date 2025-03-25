@@ -19,9 +19,13 @@
   gap: 30px;
 }
 
-.image {
-  width: 400px;
+.containerImg {
+  width: 500px;
   height: 70vh;
+  background-image: url("../../../public/aboutUs-img/Crabog-socios-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .containerItems {
@@ -42,14 +46,14 @@
   font-size: 40px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .body {
     padding: 75px 15px;
     gap: 30px;
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1150px) {
   .body {
     flex-direction: column;
     gap: 50px;
@@ -70,13 +74,13 @@
     width: 100%;
   }
 
-  .image {
+  .containerImg {
     height: 60vh;
   }
 }
 
-@media (max-width: 500px) {
-  .image {
+@media (max-width: 550px) {
+  .containerImg {
     width: 100%;
   }
 

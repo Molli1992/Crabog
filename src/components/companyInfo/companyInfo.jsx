@@ -1,6 +1,4 @@
 import styles from "./companyInfo.module.css";
-import Image from "next/image";
-import aboutUs2Img from "../../../public/aboutUs-img/aboutUs-2-img.jpg";
 import Title from "../texts/title/title";
 import Description from "../texts/description/description";
 import useLanguageStore from "@/zustand/useLanguageStore";
@@ -117,7 +115,7 @@ export default function CompanyInfo() {
       </div>
 
       <div className={styles.container}>
-        <Image src={aboutUs2Img} alt="Lawyer" className={styles.image} />
+        <div className={styles.containerImg} />
       </div>
 
       <div className={styles.container}>

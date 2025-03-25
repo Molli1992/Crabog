@@ -1,11 +1,5 @@
 export const serviceList = [
   {
-    id: "serviceList-1",
-    serviceName: "Complex Litigation",
-    serviceDescription:
-      "Our law firm takes pride in the recognition we have earned in the field of litigation, both in Commercial Law and highly complex Civil Law, as well as in corporate disputes, corporate restructurings, insolvency proceedings, and the recovery of credits granted by banking institutions. Our firms strong and strategic defense of our clients' interests has established us as one of the most respected firms in the market.",
-  },
-  {
     id: "serviceList-2",
     serviceName: "Corporate and Business Law",
     serviceDescription:
@@ -44,12 +38,6 @@ export const serviceList = [
 ];
 
 export const serviceListSpanish = [
-  {
-    id: "serviceListSpanish-1",
-    serviceName: "Litigios Complejos",
-    serviceDescription:
-      "Es orgullo de nuestro estudio de abogados, el reconocimiento adquirido en el área de litigios tanto dentro del Derecho Comercial como del Derecho Civil de alta complejidad, así como en conflictos societarios, reestructuraciones corporativas, concursos y quiebras y recupero de créditos otorgados por entidades bancarias. El perfil combativo en defensa de los intereses del cliente, han hecho que el Estudio sea uno de los más respetados del mercado.",
-  },
   {
     id: "serviceListSpanish-2",
     serviceName: "Derecho Corporativo y Empresario",
