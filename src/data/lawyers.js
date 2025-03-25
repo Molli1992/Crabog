@@ -141,55 +141,55 @@ export const arrayLawyers = [
     ],
   },
   {
-    id: "arrayLawyers-2",
-    img: LawyerIMG2,
-    name: "Dawson Timms",
-    experience: "Junior Lawyer",
-    linkedin: "",
-    instagram: "",
+    id: "arrayLawyers-4",
+    img: LawyerIMG4,
+    name: "Gabriela Inés Domínguez",
+    experience: "Asociada Senior",
+    linkedin:
+      "https://www.linkedin.com/in/gabriela-in%C3%A9s-dom%C3%ADnguez-bba04591/",
+    instagram: "https://www.instagram.com/gidominguez2/",
     phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
+    email: "gabriela.ines.dominguez@gmail.com",
     cv: [
       {
         name: "Studies",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
-      },
-      {
-        name: "Work Experiencie",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
-      },
-      {
-        name: "Languages",
         desc: [
           {
-            title: "English",
-            desc: "Advanced",
+            title:
+              "Pontifical Catholic University of Argentina Santa María de los Buenos Aires",
+            desc: "Master's Degree in Business and Economic Law - Mar 2016 / Dec 2017",
           },
           {
-            title: "Spanish",
-            desc: "Native",
+            title: "University of Buenos Aires - School of Law",
+            desc: "Lawyer - Diploma of Honor - Specialization in Business and Economic Law - Mar 2008 / Dec 2013",
           },
         ],
       },
-    ],
-  },
-  {
-    id: "arrayLawyers-4",
-    img: LawyerIMG4,
-    name: "Dawson Timms",
-    experience: "Junior Lawyer",
-    linkedin: "",
-    instagram: "",
-    phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
-    cv: [
       {
-        name: "Studies",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
-      },
-      {
-        name: "Work Experiencie",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        name: "Work Experience",
+        desc: [
+          {
+            title:
+              "Cangueiro Ruiz Abogados Law Firm (formerly Estudio PECRB) Senior Associate Lawyer - Feb 2014 / Present",
+            desc: `1. Legal advisory services for companies, with expertise in corporate law and insolvency proceedings.
+            2. Drafting of legal opinions in civil and commercial matters.
+            3. Advisory services and registrations in corporate matters before the Public Registries of Commerce.
+            4. Assistance in corporate reorganization processes.
+            5. Management of all types of judicial proceedings before National Civil and Commercial Courts, Federal Administrative Litigation Courts, and provincial jurisdictions.
+            6. Drafting of executive and ordinary lawsuits and overseeing the process until its conclusion, including the filing of ordinary and extraordinary appeals.
+            7. Coordination and daily monitoring of tasks carried out by junior lawyers and legal assistants.`,
+          },
+          {
+            title:
+              "PECRB Law Firm (now Cangueiro Ruiz Abogados) Legal Assistant / Paralegal - Jul 2011 / Feb 2014",
+            desc: `Legal representation before National Civil, Commercial, and Administrative Litigation Courts, as well as Civil and Commercial Courts in the Province of Buenos Aires. Drafting of procedural documents and follow-up of procedures before the General Inspectorate of Justice.`,
+          },
+          {
+            title:
+              "Instituto Sagrado Corazón de Barracas Administrative Assistant - Mar 2007 / Apr 2010",
+            desc: `1. Administrative tasks and banking procedures. 2. Preparation of contribution and service certifications, as well as administrative procedures before public administration entities.`,
+          },
+        ],
       },
       {
         name: "Languages",
@@ -536,6 +536,39 @@ export const arrayLawyers = [
       },
     ],
   },
+  {
+    id: "arrayLawyers-2",
+    img: LawyerIMG2,
+    name: "Dawson Timms",
+    experience: "Junior Lawyer",
+    linkedin: "",
+    instagram: "",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
+    cv: [
+      {
+        name: "Studies",
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+      },
+      {
+        name: "Work Experiencie",
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+      },
+      {
+        name: "Languages",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 // =========================================================================================================================================================
@@ -668,55 +701,58 @@ export const arrayLawyersSpanish = [
     ],
   },
   {
-    id: "arrayLawyers-2",
-    img: LawyerIMG2,
-    name: "Dawson Timms",
-    experience: "Abogada Junior",
-    linkedin: "",
-    instagram: "",
+    id: "arrayLawyers-4",
+    img: LawyerIMG4,
+    name: "Gabriela Inés Domínguez",
+    experience: "Asociada Senior",
+    linkedin:
+      "https://www.linkedin.com/in/gabriela-in%C3%A9s-dom%C3%ADnguez-bba04591/",
+    instagram: "https://www.instagram.com/gidominguez2/",
     phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
+    email: "gabriela.ines.dominguez@gmail.com",
     cv: [
       {
         name: "Estudios",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
-      },
-      {
-        name: "Experiencia Laboral",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
-      },
-      {
-        name: "Idiomas",
         desc: [
           {
-            title: "Inglés",
-            desc: "Avanzado",
+            title:
+              "Pontificia Universidad Católica Argentina Santa María de los Buenos Aires ",
+            desc: "Maestría en Derecho Empresario Económico - Mar 2016 / Dic 2017",
           },
           {
-            title: "Español",
-            desc: "Nativo",
+            title: "Universidad de Buenos Aires - Facultad de Derecho",
+            desc: "Abogada - Diploma de Honor - Orientación en Derecho Económico Empresarial - Mar 2008 / Dic 2013",
           },
         ],
       },
-    ],
-  },
-  {
-    id: "arrayLawyers-4",
-    img: LawyerIMG4,
-    name: "Dawson Timms",
-    experience: "Abogada Junior",
-    linkedin: "",
-    instagram: "",
-    phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
-    cv: [
-      {
-        name: "Estudios",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
-      },
       {
         name: "Experiencia Laboral",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title:
+              "Estudio Cangueiro Ruiz Abogados (antes Estudio PECRB) Abogada Asociada Senior  - Feb 2014 / actualidad",
+            desc: `1. Asesoramiento jurídico a empresas, con profundidad en materia societaria y de procesos concursales. 
+            2. Confección de Opiniones Legales en materia civil y comercial. 
+            3. Asesoramiento e inscripciones en materia societaria ante los Registros Públicos de Comercio. 
+            4. Colaboración en procesos de reorganización societaria. 
+            5. Seguimiento de todo tipo de procesos judiciales ante los Tribunales Civiles y Comerciales de la Justicia Nacional, Contencioso Administrativo Federal y de jurisdicciones provinciales. 
+            6. Redacción de demandas ejecutivas y ordinarias y seguimiento del proceso hasta su culminación, incluyendo la interposición de recursos ordinarios y extraordinarios. 
+            7. Coordinación y seguimiento diario de las tareas de procuradores y abogados junior.`,
+          },
+          {
+            title:
+              "Estudio PECRB (actualmente Estudio Cangueiro Ruiz Abogados) Procuradora/Paralegal - Jul 2011 / Feb 2014 ",
+            desc: `Procuración ante Tribunales Nacionales en lo Civil, Comercial y Contencioso
+                   Administrativo y ante Tribunales Civiles y Comerciales de la Provincia de
+                   Buenos Aires. Redacción de escritos de mero trámite y seguimiento de trámites ante la
+                   Inspección General de Justicia.`,
+          },
+          {
+            title:
+              "Instituto Sagrado Corazón de Barracas Ayudante de tareas administrativas - Mar 2007 / Abr 2010",
+            desc: `1. Tareas administrativas y trámites bancarios. 2. Confección de certificaciones de aportes y servicios y trámites ante organismos de la administración pública.`,
+          },
+        ],
       },
       {
         name: "Idiomas",
@@ -1033,6 +1069,39 @@ export const arrayLawyersSpanish = [
   {
     id: "arrayLawyers-14",
     img: LawyerIMG14,
+    name: "Dawson Timms",
+    experience: "Abogada Junior",
+    linkedin: "",
+    instagram: "",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
+    cv: [
+      {
+        name: "Estudios",
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+      },
+      {
+        name: "Experiencia Laboral",
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+      },
+      {
+        name: "Idiomas",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "arrayLawyers-2",
+    img: LawyerIMG2,
     name: "Dawson Timms",
     experience: "Abogada Junior",
     linkedin: "",

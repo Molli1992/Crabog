@@ -8,7 +8,7 @@ export default function CompanyInfo2() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.containerLeft}/>
+      <div className={styles.containerLeft} />
 
       <div className={styles.containerRight}>
         <div className={styles.containerTitle}>
@@ -28,16 +28,16 @@ export default function CompanyInfo2() {
           <Description
             value={
               language === "spanish"
-                ? "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!"
-                : " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!"
+                ? "Nuestra trayectoria nos ha permitido representar a clientes en disputas de gran envergadura, incluyendo litigios contractuales, responsabilidad civil, conflictos entre accionistas y ejecuciones judiciales de obligaciones financieras."
+                : "Our experience has allowed us to represent clients in high-profile disputes, including contractual litigation, civil liability cases, shareholder conflicts, and judicial enforcement of financial obligations."
             }
           />
 
           <Description
             value={
               language === "spanish"
-                ? "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!"
-                : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!"
+                ? "Contamos con un equipo altamente capacitado para diseñar estrategias legales innovadoras, anticipar contingencias y lograr resultados favorables en negociaciones y litigios, tanto en instancias judiciales como en procedimientos arbitrales. Nos destacamos por nuestra capacidad analítica, solidez argumentativa y compromiso absoluto con la defensa de los intereses de quienes confían en nuestros servicios."
+                : "We have a highly skilled team capable of designing innovative legal strategies, anticipating contingencies, and achieving favorable outcomes in negotiations and litigation, both in judicial proceedings and arbitration processes. We stand out for our analytical capacity, strong argumentation, and absolute commitment to defending the interests of those who trust our services."
             }
           />
         </div>
