@@ -52,8 +52,9 @@
 }
 
 .containerInfo {
+  width: 90%;
   position: absolute;
-  bottom: 50px;
+  bottom: 40px;
   display: flex;
   flex-direction: column;
   gap: 10px;
