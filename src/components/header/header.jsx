@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { MdArrowOutward } from "react-icons/md";
-import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaLinkedinIn, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiCloseLargeLine } from "react-icons/ri";
 import logoCrabog from "../../../public/logo_crabog.png";
@@ -75,61 +75,27 @@ export default function Header() {
           <MdArrowOutward className={styles.text} />
         </Link>
 
-        <div
-          className={styles.containerOpenLinks}
-          onMouseEnter={() => setShowLinksAboutsUs(true)}
-          onMouseLeave={() => setShowLinksAboutsUs(false)}
+        <Link
+          href="/aboutUs"
+          className={styles.containerText}
+          style={{ color: pathname === "/aboutUs" ? "#cc4643" : "#192d2f" }}
         >
-          <div
-            className={styles.containerText}
-            style={{
-              cursor: "default",
-              color:
-                pathname === "/aboutUs" || pathname === "/team"
-                  ? "#cc4643"
-                  : "#192d2f",
-            }}
-          >
-            <p className={styles.text}>
-              {language === "spanish" ? "Nuestra Esencia" : "Our essence"}
-            </p>
-            <MdArrowOutward className={styles.text} />
-          </div>
+          <p className={styles.text}>
+            {language === "spanish" ? "Nuestra Esencia" : "Our essence"}
+          </p>
+          <MdArrowOutward className={styles.text} />
+        </Link>
 
-          {showLinksAboutsUs && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 20 }}
-              transition={{ duration: 0.3, ease: "easeOut" }}
-              className={styles.opneLinks}
-            >
-              <Link
-                href="/team"
-                className={styles.containerText}
-                style={{
-                  color: pathname === "/team" ? "#cc4643" : "#192d2f",
-                }}
-              >
-                <p className={styles.textLink}>
-                  {language === "spanish" ? "Equipo" : "Team"}
-                </p>
-              </Link>
-
-              <Link
-                href="/aboutUs"
-                className={styles.containerText}
-                style={{
-                  color: pathname === "/aboutUs" ? "#cc4643" : "#192d2f",
-                }}
-              >
-                <p className={styles.textLink}>
-                  {language === "spanish" ? "Nuestra Esencia" : "Our essence"}
-                </p>
-              </Link>
-            </motion.div>
-          )}
-        </div>
+        <Link
+          href="/team"
+          className={styles.containerText}
+          style={{ color: pathname === "/team" ? "#cc4643" : "#192d2f" }}
+        >
+          <p className={styles.text}>
+            {language === "spanish" ? "Equipo" : "Team"}
+          </p>
+          <MdArrowOutward className={styles.text} />
+        </Link>
 
         <div
           className={styles.containerOpenLinks}
@@ -214,8 +180,20 @@ export default function Header() {
 
       <div
         className={styles.container}
-        style={{ width: "250px", borderLeft: "1px solid gray" }}
+        style={{ borderLeft: "1px solid gray" }}
       >
+        <div
+          className={styles.containerIcons}
+          style={{ borderRight: "1px solid gray" }}
+        >
+          <FaWhatsapp
+            className={styles.icons}
+            onClick={() => {
+              onClickOpenUrl("https://wa.me/5491138031129");
+            }}
+          />
+        </div>
+
         <div
           className={styles.containerIcons}
           style={{ borderRight: "1px solid gray" }}
@@ -359,6 +337,12 @@ export default function Header() {
           </Link>
 
           <div className={styles.containerSocialNetworks}>
+            <FaWhatsapp
+              className={styles.icons}
+              onClick={() => {
+                onClickOpenUrl("https://wa.me/5491138031129");
+              }}
+            />
             <FaLinkedinIn
               className={styles.icons}
               onClick={() => {

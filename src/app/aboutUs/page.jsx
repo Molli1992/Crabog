@@ -14,7 +14,7 @@ export default function AboutUs() {
     <div className={styles.body}>
       <HeroSection
         imgSrc={aboutUsImg}
-        title={language === "spanish" ? "Nostros" : "About Us"}
+        title={language === "spanish" ? "Nuestra Esencia" : "Our essence"}
       />
 
       <div className={styles.container}>

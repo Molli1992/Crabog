@@ -107,7 +107,7 @@ export default function Services() {
     <div className={styles.body}>
       <HeroSection
         imgSrc={serviceImg}
-        title={language === "spanish" ? "Servicios" : "Services"}
+        title={language === "spanish" ? "Areas de Practica" : "Practice Areas"}
       />
       <div className={styles.section}>
         <div className={`${styles.container} ${styles.containerImage}`}>
