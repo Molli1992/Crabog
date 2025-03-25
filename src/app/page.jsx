@@ -68,12 +68,12 @@ export default function Home() {
 
       <CompanyInfo2 />
 
-      <div className={styles.containerForm}>
-        <FormContact />
+      <div className={styles.container}>
+        <Lawyers />
       </div>
 
-      <div className={styles.container}>
-        <Lawyers backgroundColor="#192d2f" colorWhite={true} />
+      <div className={styles.containerForm}>
+        <FormContact />
       </div>
     </div>
   );
