@@ -21,8 +21,8 @@ export const arrayLawyers = [
     experience: "Partner",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Studies",
@@ -129,8 +129,8 @@ export const arrayLawyers = [
     experience: "Junior Lawyer",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "felipe.blaksley@hotmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Studies",
@@ -153,8 +153,8 @@ export const arrayLawyers = [
     experience: "Junior Lawyer",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Studies",
@@ -177,8 +177,8 @@ export const arrayLawyers = [
     experience: "Junior Lawyer",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Studies",
@@ -201,8 +201,8 @@ export const arrayLawyers = [
     experience: "Junior Lawyer",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Studies",
@@ -225,8 +225,8 @@ export const arrayLawyers = [
     experience: "Junior Lawyer",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Studies",
@@ -249,8 +249,8 @@ export const arrayLawyers = [
     experience: "Junior Lawyer",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Studies",
@@ -273,8 +273,8 @@ export const arrayLawyers = [
     experience: "Junior Lawyer",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Studies",
@@ -297,8 +297,8 @@ export const arrayLawyers = [
     experience: "Junior Lawyer",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Studies",
@@ -321,8 +321,8 @@ export const arrayLawyers = [
     experience: "Junior Lawyer",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Studies",
@@ -345,8 +345,8 @@ export const arrayLawyers = [
     experience: "Junior Lawyer",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Studies",
@@ -369,8 +369,8 @@ export const arrayLawyers = [
     experience: "Criminal lawyer",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Studies",
@@ -393,8 +393,8 @@ export const arrayLawyers = [
     experience: "Junior Lawyer",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Studies",
@@ -422,8 +422,8 @@ export const arrayLawyersSpanish = [
     experience: "Socio",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Estudios",
@@ -530,8 +530,8 @@ export const arrayLawyersSpanish = [
     experience: "Abogada Junior",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "felipe.blaksley@hotmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Estudios",
@@ -554,8 +554,8 @@ export const arrayLawyersSpanish = [
     experience: "Abogada Junior",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Estudios",
@@ -578,8 +578,8 @@ export const arrayLawyersSpanish = [
     experience: "Abogada Junior",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Estudios",
@@ -602,8 +602,8 @@ export const arrayLawyersSpanish = [
     experience: "Abogada Junior",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Estudios",
@@ -626,8 +626,8 @@ export const arrayLawyersSpanish = [
     experience: "Abogada Junior",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Estudios",
@@ -650,8 +650,8 @@ export const arrayLawyersSpanish = [
     experience: "Abogada Junior",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Estudios",
@@ -674,8 +674,8 @@ export const arrayLawyersSpanish = [
     experience: "Abogada Junior",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Estudios",
@@ -698,8 +698,8 @@ export const arrayLawyersSpanish = [
     experience: "Abogada Junior",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Estudios",
@@ -722,8 +722,8 @@ export const arrayLawyersSpanish = [
     experience: "Abogada Junior",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Estudios",
@@ -746,8 +746,8 @@ export const arrayLawyersSpanish = [
     experience: "Abogada Junior",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Estudios",
@@ -770,8 +770,8 @@ export const arrayLawyersSpanish = [
     experience: "Penalista",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Estudios",
@@ -794,8 +794,8 @@ export const arrayLawyersSpanish = [
     experience: "Abogada Junior",
     linkedin: "",
     instagram: "",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
     cv: [
       {
         name: "Estudios",
