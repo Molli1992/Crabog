@@ -137,7 +137,7 @@ export const arrayLawyersSpanish = [
     name: "Ignacio Rondoletti",
     experience: "Socio",
     linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
-    instagram: "https://www.instagram.com/gidominguez2/",
+    instagram: "https://www.instagram.com/ignaciorondoletti/",
     phone: "+54 911 4021-7000",
     email: "secretarias@crabog.com",
     cv: [
