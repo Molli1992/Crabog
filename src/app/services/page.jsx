@@ -10,15 +10,14 @@ import { FaShieldAlt } from "react-icons/fa";
 import Slider from "@/components/slider/slider";
 import serviceImg from "../../../public/services-img/img-con-logo-2.jpg";
 import librosImg from "../../../public/services-img/libros-img.jpeg";
-import imgSlider1 from "../../../public/services-img/img-slider-1.jpg";
-import imgSlider2 from "../../../public/services-img/img-slider-2.jpg";
-import imgSlider3 from "../../../public/services-img/img-slider-3.jpg";
-import imgSlider4 from "../../../public/services-img/img-slider-4.jpg";
-import imgSlider5 from "../../../public/services-img/img-slider-5.jpg";
-import imgSlider6 from "../../../public/services-img/img-slider-6.jpg";
-import imgSlider7 from "../../../public/services-img/img-slider-7.jpg";
 import Title from "@/components/texts/title/title";
 import Description from "@/components/texts/description/description";
+import imgSlider1 from "../../../public/services-img/img-slider-1.png";
+import imgSlider2 from "../../../public/services-img/img-slider-2.jpeg";
+import imgSlider3 from "../../../public/services-img/img-slider-3.jpg";
+import imgSlider4 from "../../../public/services-img/img-slider-4.webp";
+import imgSlider5 from "../../../public/services-img/img-slider-5.jpg";
+import imgSlider6 from "../../../public/services-img/img-slider-6.webp";
 
 export default function Services() {
   const { language } = useLanguageStore();
@@ -60,37 +59,31 @@ export default function Services() {
 
   const sliderData = [
     {
-      id: "services-slider-data-1",
+      id: "services-slider-data-3",
       img: imgSlider1,
-      desc:
-        language === "spanish" ? "Litigios Complejos" : "Complex Litigation",
+      desc: language === "spanish" ? "Derecho de Seguros" : "Insurance Law",
+    },
+    {
+      id: "services-slider-data-4",
+      img: imgSlider2,
+      desc: language === "spanish" ? "Derecho Penal" : "Criminal Law",
+    },
+    {
+      id: "services-slider-data-5",
+      img: imgSlider3,
+      desc: language === "spanish" ? "Derecho Laboral" : "Labor Law",
     },
     {
       id: "services-slider-data-2",
-      img: imgSlider2,
+      img: imgSlider4,
       desc:
         language === "spanish"
           ? "Derecho Corporativo y Empresario"
           : "Corporate and Business Law",
     },
     {
-      id: "services-slider-data-3",
-      img: imgSlider3,
-      desc: language === "spanish" ? "Derecho de Seguros" : "Insurance Law",
-    },
-    {
-      id: "services-slider-data-4",
-      img: imgSlider4,
-      desc: language === "spanish" ? "Derecho Penal" : "Criminal Law",
-    },
-    {
-      id: "services-slider-data-5",
-      img: imgSlider5,
-      desc: language === "spanish" ? "Derecho Laboral" : "Labor Law",
-    },
-    {
       id: "services-slider-data-6",
-      img: imgSlider6,
+      img: imgSlider5,
       desc:
         language === "spanish"
           ? "Derecho Bancario y Financiero"
@@ -98,7 +91,7 @@ export default function Services() {
     },
     {
       id: "services-slider-data-7",
-      img: imgSlider7,
+      img: imgSlider6,
       desc: language === "spanish" ? "Derecho Inmobiliario" : "Real Estate Law",
     },
   ];
