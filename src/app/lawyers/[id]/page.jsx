@@ -53,8 +53,6 @@ export default function LawyersProfile() {
 
   const onClickOpenUrl = (url) => {
     window.open(url, "_blank");
-
-    e.stopPropagation();
   };
 
   const onChangeFormData = (e) => {
@@ -266,21 +264,25 @@ export default function LawyersProfile() {
           </div>
 
           <div className={styles.flexContainer}>
-            <FaLinkedinIn
-              className={styles.icons}
-              style={{ color: "#192d2f", cursor: "pointer" }}
-              onClick={() => {
-                onClickOpenUrl(profileData[0].linkedin);
-              }}
-            />
+            {profileData[0].linkedin ? (
+              <FaLinkedinIn
+                className={styles.icons}
+                style={{ color: "#192d2f", cursor: "pointer" }}
+                onClick={() => {
+                  onClickOpenUrl(profileData[0].linkedin);
+                }}
+              />
+            ) : null}
 
-            <FaInstagram
-              className={styles.icons}
-              style={{ color: "#192d2f", cursor: "pointer" }}
-              onClick={() => {
-                onClickOpenUrl(profileData[0].instagram);
-              }}
-            />
+            {profileData[0].instagram ? (
+              <FaInstagram
+                className={styles.icons}
+                style={{ color: "#192d2f", cursor: "pointer" }}
+                onClick={() => {
+                  onClickOpenUrl(profileData[0].instagram);
+                }}
+              />
+            ) : null}
           </div>
         </div>
 

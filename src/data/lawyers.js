@@ -15,14 +15,38 @@ import LawyerIMG14 from "../../public/lawyers-img/imagen-abogado-14.jpg";
 
 export const arrayLawyers = [
   {
+    id: "arrayLawyers-3",
+    img: LawyerIMG3,
+    name: "Marcelo Cangueiro",
+    experience: "Partner",
+    linkedin: "",
+    instagram: "",
+    phone: "(54) 9 11 2458 6710",
+    email: "testemail@gmail.com",
+    cv: [
+      {
+        name: "Studies",
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+      },
+      {
+        name: "Work Experiencie",
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+      },
+      {
+        name: "Languages",
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+      },
+    ],
+  },
+  {
     id: "arrayLawyers-1",
     img: LawyerIMG1,
     name: "Marcelo J. Ruiz",
     experience: "Partner",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    linkedin: "https://www.linkedin.com/in/marcelo-ruiz-6858a26b/",
+    instagram: "https://www.instagram.com/marceloruiz65/",
+    phone: "+54 9 11-6783-9590",
+    email: "mruiz@crabog.com",
     cv: [
       {
         name: "Studies",
@@ -103,34 +127,10 @@ export const arrayLawyers = [
     img: LawyerIMG2,
     name: "Dawson Timms",
     experience: "Junior Lawyer",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "felipe.blaksley@hotmail.com",
-    cv: [
-      {
-        name: "Studies",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
-      },
-      {
-        name: "Work Experiencie",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
-      },
-      {
-        name: "Languages",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
-      },
-    ],
-  },
-  {
-    id: "arrayLawyers-3",
-    img: LawyerIMG3,
-    name: "Marcelo Cangueiro",
-    experience: "Partner",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
     cv: [
       {
         name: "Studies",
@@ -151,8 +151,8 @@ export const arrayLawyers = [
     img: LawyerIMG4,
     name: "Dawson Timms",
     experience: "Junior Lawyer",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -175,8 +175,8 @@ export const arrayLawyers = [
     img: LawyerIMG5,
     name: "Dawson Timms",
     experience: "Junior Lawyer",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -199,8 +199,8 @@ export const arrayLawyers = [
     img: LawyerIMG6,
     name: "Dawson Timms",
     experience: "Junior Lawyer",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -223,8 +223,8 @@ export const arrayLawyers = [
     img: LawyerIMG7,
     name: "Dawson Timms",
     experience: "Junior Lawyer",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -247,8 +247,8 @@ export const arrayLawyers = [
     img: LawyerIMG8,
     name: "Dawson Timms",
     experience: "Junior Lawyer",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -271,8 +271,8 @@ export const arrayLawyers = [
     img: LawyerIMG9,
     name: "Dawson Timms",
     experience: "Junior Lawyer",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -295,8 +295,8 @@ export const arrayLawyers = [
     img: LawyerIMG10,
     name: "Dawson Timms",
     experience: "Junior Lawyer",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -319,8 +319,8 @@ export const arrayLawyers = [
     img: LawyerIMG11,
     name: "Dawson Timms",
     experience: "Junior Lawyer",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -343,8 +343,8 @@ export const arrayLawyers = [
     img: LawyerIMG12,
     name: "Dawson Timms",
     experience: "Junior Lawyer",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -367,8 +367,8 @@ export const arrayLawyers = [
     img: LawyerIMG13,
     name: "Milagros Ruiz",
     experience: "Criminal lawyer",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -391,8 +391,8 @@ export const arrayLawyers = [
     img: LawyerIMG14,
     name: "Dawson Timms",
     experience: "Junior Lawyer",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -416,14 +416,38 @@ export const arrayLawyers = [
 
 export const arrayLawyersSpanish = [
   {
+    id: "arrayLawyers-3",
+    img: LawyerIMG3,
+    name: "Marcelo Cangueiro",
+    experience: "Socio",
+    linkedin: "",
+    instagram: "",
+    phone: "(54) 9 11 2458 6710",
+    email: "testemail@gmail.com",
+    cv: [
+      {
+        name: "Estudios",
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+      },
+      {
+        name: "Experiencia Laboral",
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+      },
+      {
+        name: "Idiomas",
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+      },
+    ],
+  },
+  {
     id: "arrayLawyers-1",
     img: LawyerIMG1,
     name: "Marcelo J. Ruiz",
     experience: "Socio",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
+    linkedin: "https://www.linkedin.com/in/marcelo-ruiz-6858a26b/",
+    instagram: "https://www.instagram.com/marceloruiz65/",
+    phone: "+54 9 11-6783-9590",
+    email: "mruiz@crabog.com",
     cv: [
       {
         name: "Estudios",
@@ -504,34 +528,10 @@ export const arrayLawyersSpanish = [
     img: LawyerIMG2,
     name: "Dawson Timms",
     experience: "Abogada Junior",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "felipe.blaksley@hotmail.com",
-    cv: [
-      {
-        name: "Estudios",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
-      },
-      {
-        name: "Experiencia Laboral",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
-      },
-      {
-        name: "Idiomas",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
-      },
-    ],
-  },
-  {
-    id: "arrayLawyers-3",
-    img: LawyerIMG3,
-    name: "Marcelo Cangueiro",
-    experience: "Socio",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
-    phone: "(54) 9 11 2458 6710",
-    email: "testemail@gmail.com",
     cv: [
       {
         name: "Estudios",
@@ -552,8 +552,8 @@ export const arrayLawyersSpanish = [
     img: LawyerIMG4,
     name: "Dawson Timms",
     experience: "Abogada Junior",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -576,8 +576,8 @@ export const arrayLawyersSpanish = [
     img: LawyerIMG5,
     name: "Dawson Timms",
     experience: "Abogada Junior",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -600,8 +600,8 @@ export const arrayLawyersSpanish = [
     img: LawyerIMG6,
     name: "Dawson Timms",
     experience: "Abogada Junior",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -624,8 +624,8 @@ export const arrayLawyersSpanish = [
     img: LawyerIMG7,
     name: "Dawson Timms",
     experience: "Abogada Junior",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -648,8 +648,8 @@ export const arrayLawyersSpanish = [
     img: LawyerIMG8,
     name: "Dawson Timms",
     experience: "Abogada Junior",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -672,8 +672,8 @@ export const arrayLawyersSpanish = [
     img: LawyerIMG9,
     name: "Dawson Timms",
     experience: "Abogada Junior",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -696,8 +696,8 @@ export const arrayLawyersSpanish = [
     img: LawyerIMG10,
     name: "Dawson Timms",
     experience: "Abogada Junior",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -720,8 +720,8 @@ export const arrayLawyersSpanish = [
     img: LawyerIMG11,
     name: "Dawson Timms",
     experience: "Abogada Junior",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -744,8 +744,8 @@ export const arrayLawyersSpanish = [
     img: LawyerIMG12,
     name: "Dawson Timms",
     experience: "Abogada Junior",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -768,8 +768,8 @@ export const arrayLawyersSpanish = [
     img: LawyerIMG13,
     name: "Milagros Ruiz",
     experience: "Penalista",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [
@@ -792,8 +792,8 @@ export const arrayLawyersSpanish = [
     img: LawyerIMG14,
     name: "Dawson Timms",
     experience: "Abogada Junior",
-    linkedin: "https://www.linkedin.com",
-    instagram: "https://www.instagram.com",
+    linkedin: "",
+    instagram: "",
     phone: "(54) 9 11 2458 6710",
     email: "testemail@gmail.com",
     cv: [

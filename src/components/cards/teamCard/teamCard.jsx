@@ -16,29 +16,33 @@ export default function TeamCard({ data, height }) {
       href={`/lawyers/${data.id}`}
       style={{ height: height }}
     >
-      <div
-        className={styles.containerIcons}
-        style={{ top: "20px", right: "10px" }}
-      >
-        <FaLinkedinIn
-          className={styles.icons}
-          onClick={(e) => {
-            onClickOpenUrl(e, data.linkedin);
-          }}
-        />
-      </div>
+      {data.linkedin ? (
+        <div
+          className={styles.containerIcons}
+          style={{ top: "20px", right: "10px" }}
+        >
+          <FaLinkedinIn
+            className={styles.icons}
+            onClick={(e) => {
+              onClickOpenUrl(e, data.linkedin);
+            }}
+          />
+        </div>
+      ) : null}
 
-      <div
-        className={styles.containerIcons}
-        style={{ top: "55px", right: "10px" }}
-      >
-        <FaInstagram
-          className={styles.icons}
-          onClick={(e) => {
-            onClickOpenUrl(e, data.instagram);
-          }}
-        />
-      </div>
+      {data.instagram ? (
+        <div
+          className={styles.containerIcons}
+          style={{ top: "55px", right: "10px" }}
+        >
+          <FaInstagram
+            className={styles.icons}
+            onClick={(e) => {
+              onClickOpenUrl(e, data.instagram);
+            }}
+          />
+        </div>
+      ) : null}
 
       <div
         className={styles.image}
