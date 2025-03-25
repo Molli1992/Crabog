@@ -19,7 +19,7 @@ export const arrayLawyers = [
     img: LawyerIMG3,
     name: "Marcelo Cangueiro",
     experience: "Partner",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/marcelo-cangueiro-01125964/",
     instagram: "",
     phone: "+54 911 4021-7000",
     email: "mcangueiro@crabog.com",
@@ -39,11 +39,20 @@ export const arrayLawyers = [
       },
       {
         name: "Work Experiencie",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: "Professional performance for supranational entities, public entities, and private companies. Lawyer contracted by the International Finance Corporation, the World Bank's arm for financing private companies, as well as other multilateral credit organizations. Lawyer contracted by the Province of Neuquén (State Attorney's Office) for advisory services and participation in commercial litigation processes before the National Judiciary in defense of the interests of the Province and its autonomous entities (Corporation Institute of Autonomous Mining of Neuquén – CORMINE – and the Autonomous Institute for Provincial Economic Development – IADEP). Lawyer for numerous national and international companies.",
       },
       {
         name: "Languages",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
       },
     ],
   },
@@ -151,7 +160,16 @@ export const arrayLawyers = [
       },
       {
         name: "Languages",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
       },
     ],
   },
@@ -175,7 +193,16 @@ export const arrayLawyers = [
       },
       {
         name: "Languages",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
       },
     ],
   },
@@ -199,7 +226,16 @@ export const arrayLawyers = [
       },
       {
         name: "Languages",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
       },
     ],
   },
@@ -223,7 +259,16 @@ export const arrayLawyers = [
       },
       {
         name: "Languages",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
       },
     ],
   },
@@ -247,7 +292,16 @@ export const arrayLawyers = [
       },
       {
         name: "Languages",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
       },
     ],
   },
@@ -271,7 +325,16 @@ export const arrayLawyers = [
       },
       {
         name: "Languages",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
       },
     ],
   },
@@ -295,7 +358,16 @@ export const arrayLawyers = [
       },
       {
         name: "Languages",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
       },
     ],
   },
@@ -319,7 +391,16 @@ export const arrayLawyers = [
       },
       {
         name: "Languages",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
       },
     ],
   },
@@ -343,7 +424,16 @@ export const arrayLawyers = [
       },
       {
         name: "Languages",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
       },
     ],
   },
@@ -367,7 +457,16 @@ export const arrayLawyers = [
       },
       {
         name: "Languages",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
       },
     ],
   },
@@ -391,7 +490,16 @@ export const arrayLawyers = [
       },
       {
         name: "Languages",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
       },
     ],
   },
@@ -415,7 +523,16 @@ export const arrayLawyers = [
       },
       {
         name: "Languages",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
       },
     ],
   },
@@ -429,7 +546,7 @@ export const arrayLawyersSpanish = [
     img: LawyerIMG3,
     name: "Marcelo Cangueiro",
     experience: "Socio",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/marcelo-cangueiro-01125964/",
     instagram: "",
     phone: "+54 911 4021-7000",
     email: "mcangueiro@crabog.com",
@@ -442,18 +559,27 @@ export const arrayLawyersSpanish = [
             desc: "Facultad de Derecho y Ciencias Sociales - Universidad de Buenos Aires - 25 de marzo 1985",
           },
           {
-            title: "Attorney",
+            title: "Procurador",
             desc: "Facultad de Derecho y Ciencias Sociales - Universidad de Buenos Aires - 25 de marzo 1985",
           },
         ],
       },
       {
         name: "Experiencia Laboral",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: "Actuación profesional para entes supranacionales, entes públicos y empresas privadas. Abogado contratado por International Finance Corporation, brazo del Banco Mundial para el financiamiento de empresas privadas, así como por otros organismos multilaterales de crédito. Abogado contratado por la Provincia de Neuquén (Fiscalía de Estado) para asesoramiento e intervención en procesos litigiosos comerciales en la Justicia Nacional, en defensa de los intereses de la Provincia y de entes autárquicos provinciales (Corporación Instituto Autárquico Minero de Neuquén - CORMINE -, Instituto Autárquico de Desarrollo Económico Provincial - IADEP). Abogado de numerosas empresas nacionales e internacionales.",
       },
       {
         name: "Idiomas",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
       },
     ],
   },
@@ -561,7 +687,16 @@ export const arrayLawyersSpanish = [
       },
       {
         name: "Idiomas",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
       },
     ],
   },
@@ -585,7 +720,16 @@ export const arrayLawyersSpanish = [
       },
       {
         name: "Idiomas",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
       },
     ],
   },
@@ -609,7 +753,16 @@ export const arrayLawyersSpanish = [
       },
       {
         name: "Idiomas",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
       },
     ],
   },
@@ -633,7 +786,16 @@ export const arrayLawyersSpanish = [
       },
       {
         name: "Idiomas",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
       },
     ],
   },
@@ -657,7 +819,16 @@ export const arrayLawyersSpanish = [
       },
       {
         name: "Idiomas",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
       },
     ],
   },
@@ -681,7 +852,16 @@ export const arrayLawyersSpanish = [
       },
       {
         name: "Idiomas",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
       },
     ],
   },
@@ -705,7 +885,16 @@ export const arrayLawyersSpanish = [
       },
       {
         name: "Idiomas",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
       },
     ],
   },
@@ -729,7 +918,16 @@ export const arrayLawyersSpanish = [
       },
       {
         name: "Idiomas",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
       },
     ],
   },
@@ -753,7 +951,16 @@ export const arrayLawyersSpanish = [
       },
       {
         name: "Idiomas",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
       },
     ],
   },
@@ -777,7 +984,16 @@ export const arrayLawyersSpanish = [
       },
       {
         name: "Idiomas",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
       },
     ],
   },
@@ -801,7 +1017,16 @@ export const arrayLawyersSpanish = [
       },
       {
         name: "Idiomas",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
       },
     ],
   },
@@ -825,7 +1050,16 @@ export const arrayLawyersSpanish = [
       },
       {
         name: "Idiomas",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quaerat, ipsum dolores rem quos fugit totam reprehenderit, commodi porro corrupti cupiditate error, optio nostrum repellendus tempora! Corporis, ratione aliquid!",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
       },
     ],
   },
