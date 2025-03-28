@@ -4,6 +4,7 @@ import LawyerIMG2 from "../../public/lawyers-img/imagen-abogado-2.jpg";
 import LawyerIMG5 from "../../public/lawyers-img/imagen-abogado-5.jpg";
 import LawyerIMG6 from "../../public/lawyers-img/imagen-abogado-6.jpg";
 import LawyerIMG8 from "../../public/lawyers-img/imagen-abogado-prueba-1.jpg";
+import LawyerIMG13 from "../../public/lawyers-img/imagen-abogado-13.jpg";
 import LawyerIMG14 from "../../public/lawyers-img/imagen-abogado-14.jpg";
 
 export const arrayLawyersSpanish = [
@@ -345,6 +346,66 @@ export const arrayLawyersSpanish = [
             title:
               "Instituto Sagrado Corazón de Barracas Ayudante de tareas administrativas - Mar 2007 / Abr 2010",
             desc: `1. Tareas administrativas y trámites bancarios. 2. Confección de certificaciones de aportes y servicios y trámites ante organismos de la administración pública.`,
+          },
+        ],
+      },
+      {
+        name: "Idiomas",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "arrayLawyers-13",
+    img: LawyerIMG13,
+    name: "Horacio Cangueiro",
+    experience: "Penalista",
+    linkedin: "https://www.linkedin.com/in/horacio-cangueiro-780b15177/",
+    instagram: "https://www.instagram.com/horicangueiro/",
+    phone: "+54 911 4021-7000",
+    email: "horaciocangueiro@gmail.com",
+    document: "/cvs/CV-HORACIO-CANGUEIRO.pdf",
+    cv: [
+      {
+        name: "Estudios",
+        desc: [
+          {
+            title: "Universidad de Buenos Aires - 2010 / 2015",
+            desc: "Carrera de Abogacia con orientaciones en Derecho Penal (2015) y Derecho Tributario (2016) Promedio: 8,30",
+          },
+          {
+            title: "Universidad Austral - 2019 / 2020",
+            desc: "Maestría en derecho Penal",
+          },
+          {
+            title: "Colegio Aula XXI - 2004 / 2008",
+            desc: "Bachiller con orientacion en Ciencias Sociales",
+          },
+        ],
+      },
+      {
+        name: "Experiencia Laboral",
+        desc: [
+          {
+            title: "Unidad de Información Financiera - 2016 / a la fecha",
+            desc: `Abogado querellante en Dirección de Litigios Penales ( Actividad procesal en todas las instancias - experiencia en Tribunal Oral (Alegato)`,
+          },
+          {
+            title: "Estudio Cangueiro Ruiz - 2012 / a la fecha",
+            desc: `Paralegal. Departamento de Seguros`,
+          },
+          {
+            title: "Estudio Cuneo Libarona - 2016",
+            desc: `Paralegal. Redacción de escritos penales y tributarios`,
           },
         ],
       },
@@ -726,7 +787,7 @@ export const arrayLawyers = [
     id: "arrayLawyers-8",
     img: LawyerIMG8,
     name: "Gabriela Domínguez",
-    experience: "Asociada Senior",
+    experience: "Senior Associate",
     linkedin:
       "https://www.linkedin.com/in/gabriela-in%C3%A9s-dom%C3%ADnguez-bba04591/",
     instagram: "https://www.instagram.com/gidominguez2/",
@@ -769,8 +830,68 @@ export const arrayLawyers = [
           },
           {
             title:
-              "Instituto Sagrado Corazón de Barracas Administrative Assistant - Mar 2007 / Apr 2010",
+              "Institute Sagrado Corazón de Barracas Administrative Assistant - Mar 2007 / Apr 2010",
             desc: `1. Administrative tasks and banking procedures. 2. Preparation of contribution and service certifications, as well as administrative procedures before public administration entities.`,
+          },
+        ],
+      },
+      {
+        name: "Languages",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "arrayLawyers-13",
+    img: LawyerIMG13,
+    name: "Horacio Cangueiro",
+    experience: "Criminal Lawyer",
+    linkedin: "https://www.linkedin.com/in/horacio-cangueiro-780b15177/",
+    instagram: "https://www.instagram.com/horicangueiro/",
+    phone: "+54 911 4021-7000",
+    email: "horaciocangueiro@gmail.com",
+    document: "/cvs/CV-HORACIO-CANGUEIRO.pdf",
+    cv: [
+      {
+        name: "Education",
+        desc: [
+          {
+            title: "University of Buenos Aires - 2010 / 2015",
+            desc: "Law degree with orientations in Criminal Law (2015) and Tax Law (2016) Average: 8.30",
+          },
+          {
+            title: "University Austral - 2019 / 2020",
+            desc: "Master's in Criminal Law",
+          },
+          {
+            title: "College Aula XXI - 2004 / 2008",
+            desc: "High School Diploma with orientation in Social Sciences",
+          },
+        ],
+      },
+      {
+        name: "Work Experience",
+        desc: [
+          {
+            title: "Financial Information Unit - 2016 / Present",
+            desc: "Plaintiff Lawyer in the Criminal Litigation Department (Procedural activity in all instances - experience in Oral Court (Closing Argument))",
+          },
+          {
+            title: "Cangueiro Ruiz Law Firm - 2012 / Present",
+            desc: "Paralegal. Insurance Department",
+          },
+          {
+            title: "Cuneo Libarona Law Firm - 2016",
+            desc: "Paralegal. Drafting of criminal and tax briefs",
           },
         ],
       },
@@ -793,7 +914,7 @@ export const arrayLawyers = [
     id: "arrayLawyers-14",
     img: LawyerIMG14,
     name: "Milagros Ruiz",
-    experience: "Penalista",
+    experience: "Criminal Lawyer",
     linkedin: "https://www.linkedin.com/in/milagros-ruiz-36493a357/",
     instagram: "https://www.instagram.com/miliruizz/",
     phone: "+54 911 4021-7000",
