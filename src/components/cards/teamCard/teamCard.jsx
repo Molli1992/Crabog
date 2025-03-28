@@ -20,13 +20,11 @@ export default function TeamCard({ data, height }) {
         <div
           className={styles.containerIcons}
           style={{ top: "20px", right: "10px" }}
+          onClick={(e) => {
+            onClickOpenUrl(e, data.linkedin);
+          }}
         >
-          <FaLinkedinIn
-            className={styles.icons}
-            onClick={(e) => {
-              onClickOpenUrl(e, data.linkedin);
-            }}
-          />
+          <FaLinkedinIn className={styles.icons} />
         </div>
       ) : null}
 
@@ -34,13 +32,11 @@ export default function TeamCard({ data, height }) {
         <div
           className={styles.containerIcons}
           style={{ top: "55px", right: "10px" }}
+          onClick={(e) => {
+            onClickOpenUrl(e, data.instagram);
+          }}
         >
-          <FaInstagram
-            className={styles.icons}
-            onClick={(e) => {
-              onClickOpenUrl(e, data.instagram);
-            }}
-          />
+          <FaInstagram className={styles.icons} />
         </div>
       ) : null}
 
