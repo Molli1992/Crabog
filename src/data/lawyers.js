@@ -4,6 +4,7 @@ import LawyerIMG2 from "../../public/lawyers-img/imagen-abogado-2.jpg";
 import LawyerIMG5 from "../../public/lawyers-img/imagen-abogado-5.jpg";
 import LawyerIMG6 from "../../public/lawyers-img/imagen-abogado-6.jpg";
 import LawyerIMG8 from "../../public/lawyers-img/imagen-abogado-prueba-1.jpg";
+import LawyerIMG12 from "../../public/lawyers-img/imagen-abogado-12.jpg";
 import LawyerIMG13 from "../../public/lawyers-img/imagen-abogado-13.jpg";
 import LawyerIMG14 from "../../public/lawyers-img/imagen-abogado-14.jpg";
 
@@ -346,6 +347,69 @@ export const arrayLawyersSpanish = [
             title:
               "Instituto Sagrado Corazón de Barracas Ayudante de tareas administrativas - Mar 2007 / Abr 2010",
             desc: `1. Tareas administrativas y trámites bancarios. 2. Confección de certificaciones de aportes y servicios y trámites ante organismos de la administración pública.`,
+          },
+        ],
+      },
+      {
+        name: "Idiomas",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "arrayLawyers-12",
+    img: LawyerIMG12,
+    name: "Maria Fernanda Cruz",
+    experience: "Penal y laboral",
+    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
+    instagram: "https://www.instagram.com/crabog_/",
+    phone: "+54 911 4021-7000",
+    email: "mcruz@crabog.com",
+    document: "/cvs/CV-MARIA-FERNANDA-CRUZ.doc",
+    cv: [
+      {
+        name: "Estudios",
+        desc: [
+          {
+            title: "Universidad de Buenos Aires - 2006",
+            desc: "Abogacía con orientación penal - Matricula Profesional del Colegio Público de Abogados de Capital Federal (T°95 F°874 CPACF) - Matricula Profesional del Colegio Público de Abogados de Quilmes.(T°VII F°240 C.A.Q) - Matricula Profesional Federal otorgada por la Cámara Federal de La Plata (T°604 F°662 C.F.A.LP)",
+          },
+        ],
+      },
+      {
+        name: "Experiencia Laboral",
+        desc: [
+          {
+            title:
+              "Estudio Jurídico Cangueiro / Ruiz Abogados - 2024 / actualidad",
+            desc: `Abogada especialista en derecho penal y laboral`,
+          },
+          {
+            title: "Unidad de Información Financiera - 2020 / 2023",
+            desc: `Av. De Mayo 757 C.A.B.A. Dirección de Litigios Penales. Tel: (011)3984-5000. Designación como titular del Departamento de Querellas dependiente de la Dirección de Litigios Penales.(Resolución UIF N°157/2023)`,
+          },
+          {
+            title: "Estado Nacional. Ministerio de Defensa - 2013 / 2020",
+            desc: `Estado Mayor General de la Armada. Dirección General de Asuntos Jurídicos de la Armada. Av. Comodoro Py 2055 Piso 8, C.A.B.A. Referencia: Dr. Marcelo S. Galli. Jefe de Asuntos Jurídicos de la Armada. 4317-2000 int. 2608`,
+          },
+          {
+            title:
+              "Asociada al Estudio Jurídico del Dr. Jorge Ricardo Fernández - 2011 / 2020",
+            desc: `Estudio Jurídico Especializado en Derecho Penal`,
+          },
+          {
+            title:
+              "Asociada al Estudio Jurídico del Dr. Fillia Julio Cesar - 2006 / 2013",
+            desc: ``,
           },
         ],
       },
@@ -832,6 +896,68 @@ export const arrayLawyers = [
             title:
               "Institute Sagrado Corazón de Barracas Administrative Assistant - Mar 2007 / Apr 2010",
             desc: `1. Administrative tasks and banking procedures. 2. Preparation of contribution and service certifications, as well as administrative procedures before public administration entities.`,
+          },
+        ],
+      },
+      {
+        name: "Languages",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "arrayLawyers-12",
+    img: LawyerIMG12,
+    name: "Maria Fernanda Cruz",
+    experience: "Criminal and Labor Lawyer",
+    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
+    instagram: "https://www.instagram.com/crabog_/",
+    phone: "+54 911 4021-7000",
+    email: "mcruz@crabog.com",
+    document: "/cvs/CV-MARIA-FERNANDA-CRUZ.doc",
+    cv: [
+      {
+        name: "Education",
+        desc: [
+          {
+            title: "University of Buenos Aires - 2006",
+            desc: "Law with a focus on criminal law - Professional Registration from the Public Bar Association of Capital Federal (T°95 F°874 CPACF) - Professional Registration from the Public Bar Association of Quilmes (T°VII F°240 C.A.Q) - Federal Professional Registration granted by the Federal Court of La Plata (T°604 F°662 C.F.A.LP)",
+          },
+        ],
+      },
+      {
+        name: "Work Experience",
+        desc: [
+          {
+            title: "Cangueiro / Ruiz Law Firm - 2024 / Present",
+            desc: "Lawyer specializing in criminal and labor law",
+          },
+          {
+            title: "Financial Information Unit - 2020 / 2023",
+            desc: "Av. De Mayo 757 C.A.B.A. Criminal Litigation Department. Tel: (011)3984-5000. Appointed head of the Complaints Department under the Criminal Litigation Department (UIF Resolution N°157/2023)",
+          },
+          {
+            title: "National Government. Ministry of Defense - 2013 / 2020",
+            desc: "General Staff of the Navy. General Directorate of Legal Affairs of the Navy. Av. Comodoro Py 2055 8th Floor, C.A.B.A. Reference: Dr. Marcelo S. Galli, Head of Legal Affairs of the Navy. 4317-2000 ext. 2608",
+          },
+          {
+            title:
+              "Associated with the Law Firm of Dr. Jorge Ricardo Fernández - 2011 / 2020",
+            desc: "Law Firm Specializing in Criminal Law",
+          },
+          {
+            title:
+              "Associated with the Law Firm of Dr. Fillia Julio Cesar - 2006 / 2013",
+            desc: "",
           },
         ],
       },
