@@ -4,6 +4,7 @@ import LawyerIMG2 from "../../public/lawyers-img/imagen-abogado-2.jpg";
 import LawyerIMG5 from "../../public/lawyers-img/imagen-abogado-5.jpg";
 import LawyerIMG6 from "../../public/lawyers-img/imagen-abogado-6.jpg";
 import LawyerIMG8 from "../../public/lawyers-img/imagen-abogado-prueba-1.jpg";
+import LawyerIMG14 from "../../public/lawyers-img/imagen-abogado-14.jpg";
 
 export const arrayLawyersSpanish = [
   {
@@ -56,7 +57,7 @@ export const arrayLawyersSpanish = [
     experience: "Socio",
     linkedin: "https://www.linkedin.com/in/marcelo-ruiz-6858a26b/",
     instagram: "https://www.instagram.com/marceloruiz65/",
-    phone: "+54 9 11-6783-9590",
+    phone: "+54 911 4021-7000",
     email: "mruiz@crabog.com",
     document: "/cvs/CV-MARCELO-RUIZ.pdf",
     cv: [
@@ -222,7 +223,7 @@ export const arrayLawyersSpanish = [
     experience: "Socio",
     linkedin: "https://www.linkedin.com/in/federico-durini-8b0133b/",
     instagram: "https://www.instagram.com/fdurini/",
-    phone: "+54 911 6054 6157",
+    phone: "+54 911 4021-7000",
     email: "fdurini@crabog.com",
     document: "/cvs/CV-FEDERICO-DURINI.pdf",
     cv: [
@@ -362,6 +363,75 @@ export const arrayLawyersSpanish = [
       },
     ],
   },
+  {
+    id: "arrayLawyers-14",
+    img: LawyerIMG14,
+    name: "Milagros Ruiz",
+    experience: "Penalista",
+    linkedin: "https://www.linkedin.com/in/milagros-ruiz-36493a357/",
+    instagram: "https://www.instagram.com/miliruizz/",
+    phone: "+54 911 4021-7000",
+    email: "milagrosruiz@crabog.com",
+    document: "/cvs/CV-MILAGROS-RUIZ.pdf",
+    cv: [
+      {
+        name: "Estudios",
+        desc: [
+          {
+            title: "Universidad de Belgrano - 2020 / 2024",
+            desc: "Abogada",
+          },
+          {
+            title: "Michael Ham Memorial College - 2006 / 2017",
+            desc: "Bachiller Bilingüe en Ciencias Sociales",
+          },
+        ],
+      },
+      {
+        name: "Experiencia Laboral",
+        desc: [
+          {
+            title:
+              "Cangueiro Ruiz Abogados - Unidad de Derecho Penal y Litigios Complejos - 2023 / a la fecha",
+            desc: `Cargo: Abogada Junior`,
+          },
+          {
+            title:
+              "Ministerio de Justicia de la Nación - Subsecretaría de Política Criminal - 2025 / a la fecha",
+            desc: `Cargo: Asesora Legal`,
+          },
+          {
+            title:
+              "Pasantía en el Área de Litigación Penal en el Estudío Jurídico Ius+Aequitas, Madrid, España - 2024",
+            desc: ``,
+          },
+          {
+            title:
+              "Fiscalía Nacional en lo Criminal y Correccional N°41 - Fiscal Dra. Silvana Russi - 2023",
+            desc: `Cargo: Escribiente Auxiliar`,
+          },
+          {
+            title:
+              "Fiscalía Nacional en lo Criminal y Correccional Federal N°4 - Fiscal Dr. Carlos Ernesto Stornelli - 2021 / 2023",
+            desc: `Cargo: Oficial`,
+          },
+        ],
+      },
+      {
+        name: "Idiomas",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 // =========================================================================================================================================================
@@ -417,7 +487,7 @@ export const arrayLawyers = [
     experience: "Partner",
     linkedin: "https://www.linkedin.com/in/marcelo-ruiz-6858a26b/",
     instagram: "https://www.instagram.com/marceloruiz65/",
-    phone: "+54 9 11-6783-9590",
+    phone: "+54 911 4021-7000",
     email: "mruiz@crabog.com",
     document: "/cvs/CV-MARCELO-RUIZ.pdf",
     cv: [
@@ -582,7 +652,7 @@ export const arrayLawyers = [
     experience: "Partner",
     linkedin: "https://www.linkedin.com/in/federico-durini-8b0133b/",
     instagram: "https://www.instagram.com/fdurini/",
-    phone: "+54 911 6054 6157",
+    phone: "+54 911 4021-7000",
     email: "fdurini@crabog.com",
     document: "/cvs/CV-FEDERICO-DURINI.pdf",
     cv: [
@@ -701,6 +771,75 @@ export const arrayLawyers = [
             title:
               "Instituto Sagrado Corazón de Barracas Administrative Assistant - Mar 2007 / Apr 2010",
             desc: `1. Administrative tasks and banking procedures. 2. Preparation of contribution and service certifications, as well as administrative procedures before public administration entities.`,
+          },
+        ],
+      },
+      {
+        name: "Languages",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "arrayLawyers-14",
+    img: LawyerIMG14,
+    name: "Milagros Ruiz",
+    experience: "Penalista",
+    linkedin: "https://www.linkedin.com/in/milagros-ruiz-36493a357/",
+    instagram: "https://www.instagram.com/miliruizz/",
+    phone: "+54 911 4021-7000",
+    email: "milagrosruiz@crabog.com",
+    document: "/cvs/CV-MILAGROS-RUIZ.pdf",
+    cv: [
+      {
+        name: "Education",
+        desc: [
+          {
+            title: "University of Belgrano - 2020 / 2024",
+            desc: "Lawyer",
+          },
+          {
+            title: "Michael Ham Memorial College - 2006 / 2017",
+            desc: "Bilingual High School Diploma in Social Sciences",
+          },
+        ],
+      },
+      {
+        name: "Work Experience",
+        desc: [
+          {
+            title:
+              "Cangueiro Ruiz Abogados - Criminal Law and Complex Litigation Unit - 2023 / Present",
+            desc: "Position: Junior Lawyer",
+          },
+          {
+            title:
+              "Ministry of Justice of the Nation - Subsecretariat of Criminal Policy - 2025 / Present",
+            desc: "Position: Legal Advisor",
+          },
+          {
+            title:
+              "Internship in Criminal Litigation Area at Ius+Aequitas Law Firm, Madrid, Spain - 2024",
+            desc: "",
+          },
+          {
+            title:
+              "National Criminal and Correctional Prosecutor's Office N°41 - Prosecutor Dr. Silvana Russi - 2023",
+            desc: "Position: Auxiliary Clerk",
+          },
+          {
+            title:
+              "National Criminal and Federal Correctional Prosecutor's Office N°4 - Prosecutor Dr. Carlos Ernesto Stornelli - 2021 / 2023",
+            desc: "Position: Officer",
           },
         ],
       },
