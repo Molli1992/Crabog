@@ -1,8 +1,9 @@
+//IMGS
 import LawyerIMG1 from "../../public/lawyers-img/imagen-abogado-1.jpg";
 import LawyerIMG2 from "../../public/lawyers-img/imagen-abogado-2.jpg";
-import LawyerIMG3 from "../../public/lawyers-img/imagen-abogado-3.jpg";
-import LawyerIMG4 from "../../public/lawyers-img/imagen-abogado-4.jpg";
-import LawyerIMG5 from "../../public/lawyers-img/imagen-abogado-prueba-1.jpg";
+import LawyerIMG5 from "../../public/lawyers-img/imagen-abogado-5.jpg";
+import LawyerIMG6 from "../../public/lawyers-img/imagen-abogado-6.jpg";
+import LawyerIMG8 from "../../public/lawyers-img/imagen-abogado-prueba-1.jpg";
 
 export const arrayLawyersSpanish = [
   {
@@ -14,6 +15,7 @@ export const arrayLawyersSpanish = [
     instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
     email: "mcangueiro@crabog.com",
+    document: "/cvs/CV-MARCELO-CANGUEIRO.doc",
     cv: [
       {
         name: "Estudios",
@@ -56,6 +58,7 @@ export const arrayLawyersSpanish = [
     instagram: "https://www.instagram.com/marceloruiz65/",
     phone: "+54 9 11-6783-9590",
     email: "mruiz@crabog.com",
+    document: "/cvs/CV-MARCELO-RUIZ.pdf",
     cv: [
       {
         name: "Estudios",
@@ -132,14 +135,15 @@ export const arrayLawyersSpanish = [
     ],
   },
   {
-    id: "arrayLawyers-3",
-    img: LawyerIMG3,
+    id: "arrayLawyers-5",
+    img: LawyerIMG5,
     name: "Ignacio Rondoletti",
     experience: "Socio",
     linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
     instagram: "https://www.instagram.com/ignaciorondoletti/",
     phone: "+54 911 4021-7000",
     email: "secretarias@crabog.com",
+    document: "/cvs/CV-IGNACIO-RONDOLETTI.docx",
     cv: [
       {
         name: "Estudios",
@@ -212,14 +216,15 @@ export const arrayLawyersSpanish = [
     ],
   },
   {
-    id: "arrayLawyers-4",
-    img: LawyerIMG4,
+    id: "arrayLawyers-6",
+    img: LawyerIMG6,
     name: "Federico Durini",
     experience: "Socio",
     linkedin: "https://www.linkedin.com/in/federico-durini-8b0133b/",
     instagram: "https://www.instagram.com/fdurini/",
     phone: "+54 911 6054 6157",
     email: "fdurini@crabog.com",
+    document: "/cvs/CV-FEDERICO-DURINI.pdf",
     cv: [
       {
         name: "Estudios",
@@ -288,15 +293,16 @@ export const arrayLawyersSpanish = [
     ],
   },
   {
-    id: "arrayLawyers-5",
-    img: LawyerIMG5,
-    name: "Gabriela Inés Domínguez",
+    id: "arrayLawyers-8",
+    img: LawyerIMG8,
+    name: "Gabriela Domínguez",
     experience: "Asociada Senior",
     linkedin:
       "https://www.linkedin.com/in/gabriela-in%C3%A9s-dom%C3%ADnguez-bba04591/",
     instagram: "https://www.instagram.com/gidominguez2/",
     phone: "+54 911 4021-7000",
     email: "gabriela.ines.dominguez@gmail.com",
+    document: "/cvs/CV-GABRIELA-DOMINGUEZ.pdf",
     cv: [
       {
         name: "Estudios",
@@ -370,6 +376,7 @@ export const arrayLawyers = [
     instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
     email: "mcangueiro@crabog.com",
+    document: "/cvs/CV-MARCELO-CANGUEIRO.doc",
     cv: [
       {
         name: "Education",
@@ -412,6 +419,7 @@ export const arrayLawyers = [
     instagram: "https://www.instagram.com/marceloruiz65/",
     phone: "+54 9 11-6783-9590",
     email: "mruiz@crabog.com",
+    document: "/cvs/CV-MARCELO-RUIZ.pdf",
     cv: [
       {
         name: "Education",
@@ -488,14 +496,15 @@ export const arrayLawyers = [
     ],
   },
   {
-    id: "arrayLawyers-3",
-    img: LawyerIMG3,
+    id: "arrayLawyers-5",
+    img: LawyerIMG5,
     name: "Ignacio Rondoletti",
     experience: "Partner",
     linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
     instagram: "https://www.instagram.com/ignaciorondoletti/",
     phone: "+54 911 4021-7000",
     email: "secretarias@crabog.com",
+    document: "/cvs/CV-IGNACIO-RONDOLETTI.docx",
     cv: [
       {
         name: "Education",
@@ -567,14 +576,15 @@ export const arrayLawyers = [
     ],
   },
   {
-    id: "arrayLawyers-4",
-    img: LawyerIMG4,
+    id: "arrayLawyers-6",
+    img: LawyerIMG6,
     name: "Federico Durini",
     experience: "Partner",
     linkedin: "https://www.linkedin.com/in/federico-durini-8b0133b/",
     instagram: "https://www.instagram.com/fdurini/",
     phone: "+54 911 6054 6157",
     email: "fdurini@crabog.com",
+    document: "/cvs/CV-FEDERICO-DURINI.pdf",
     cv: [
       {
         name: "Education",
@@ -643,15 +653,16 @@ export const arrayLawyers = [
     ],
   },
   {
-    id: "arrayLawyers-5",
-    img: LawyerIMG5,
-    name: "Gabriela Inés Domínguez",
+    id: "arrayLawyers-8",
+    img: LawyerIMG8,
+    name: "Gabriela Domínguez",
     experience: "Asociada Senior",
     linkedin:
       "https://www.linkedin.com/in/gabriela-in%C3%A9s-dom%C3%ADnguez-bba04591/",
     instagram: "https://www.instagram.com/gidominguez2/",
     phone: "+54 911 4021-7000",
     email: "gabriela.ines.dominguez@gmail.com",
+    document: "/cvs/CV-GABRIELA-DOMINGUEZ.pdf",
     cv: [
       {
         name: "Education",

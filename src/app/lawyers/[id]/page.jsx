@@ -18,6 +18,7 @@ import {
   TbArrowNarrowRightDashed,
   TbArrowNarrowLeftDashed,
 } from "react-icons/tb";
+import Link from "next/link";
 
 export default function LawyersProfile() {
   const { language } = useLanguageStore();
@@ -155,6 +156,16 @@ export default function LawyersProfile() {
     }
   };
 
+  const downloadCV = () => {
+    const fileName = profileData[0].document;
+    const link = document.createElement("a");
+    link.href = fileName;
+    link.download = fileName.split("/").pop();
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className={styles.body}>
       <HeroSection
@@ -246,7 +257,7 @@ export default function LawyersProfile() {
           </div>
 
           <div className={styles.flexContainer} style={{ marginTop: "0px" }}>
-            <FaPhoneVolume className={styles.icons} />
+            <FaPhoneVolume className={styles.iconsStatic} />
             <Description
               value={profileData[0].phone}
               color="#192d2f"
@@ -255,7 +266,7 @@ export default function LawyersProfile() {
           </div>
 
           <div className={styles.flexContainer}>
-            <MdEmail className={styles.icons} />
+            <MdEmail className={styles.iconsStatic} />
             <Description
               value={profileData[0].email}
               color="#192d2f"
@@ -264,10 +275,13 @@ export default function LawyersProfile() {
           </div>
 
           <div className={styles.flexContainer}>
+            <button className={styles.resumeButton} onClick={downloadCV}>
+              {language === "spanish" ? "Descargar CV" : "Download Resume"}
+            </button>
+
             {profileData[0].linkedin ? (
               <FaLinkedinIn
                 className={styles.icons}
-                style={{ color: "#192d2f", cursor: "pointer" }}
                 onClick={() => {
                   onClickOpenUrl(profileData[0].linkedin);
                 }}
@@ -277,7 +291,6 @@ export default function LawyersProfile() {
             {profileData[0].instagram ? (
               <FaInstagram
                 className={styles.icons}
-                style={{ color: "#192d2f", cursor: "pointer" }}
                 onClick={() => {
                   onClickOpenUrl(profileData[0].instagram);
                 }}
