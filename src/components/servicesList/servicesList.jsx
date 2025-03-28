@@ -62,7 +62,12 @@ export default function ServicesList() {
               className={styles.itemContainer}
               onClick={() => handleItemClick(index)}
             >
-              <div className={styles.itemList}>
+              <div
+                className={styles.itemList}
+                style={{
+                  color: selectedItemIndex === index ? "#cc4643" : "",
+                }}
+              >
                 <h1 className={styles.service}>{item.serviceName}</h1>
                 <div>
                   <MdArrowOutward className={styles.service} />
