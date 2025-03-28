@@ -4,6 +4,7 @@ import LawyerIMG2 from "../../public/lawyers-img/imagen-abogado-2.jpg";
 import LawyerIMG5 from "../../public/lawyers-img/imagen-abogado-5.jpg";
 import LawyerIMG6 from "../../public/lawyers-img/imagen-abogado-6.jpg";
 import LawyerIMG8 from "../../public/lawyers-img/imagen-abogado-prueba-1.jpg";
+import LawyerIMG10 from "../../public/lawyers-img/imagen-abogado-prueba-2.jpg";
 import LawyerIMG12 from "../../public/lawyers-img/imagen-abogado-12.jpg";
 import LawyerIMG13 from "../../public/lawyers-img/imagen-abogado-13.jpg";
 import LawyerIMG14 from "../../public/lawyers-img/imagen-abogado-14.jpg";
@@ -355,6 +356,85 @@ export const arrayLawyersSpanish = [
         desc: [
           {
             title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "arrayLawyers-10",
+    img: LawyerIMG10,
+    name: "Pedro Lucero Pavón",
+    experience: "Paralegal",
+    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
+    instagram: "https://www.instagram.com/crabog_/",
+    phone: "+54 911 4021-7000",
+    email: "pluceropavon@gmail.com",
+    document: "/cvs/CV-PEDRO-LUCERO.pdf",
+    cv: [
+      {
+        name: "Estudios",
+        desc: [
+          {
+            title: "Universidad Catolica Argentina - 2008 / 2013",
+            desc: "Abogado",
+          },
+          {
+            title: "Universidad Catolica Argentina - 2019 / 2020",
+            desc: "Posgrado en Derecho de Seguros",
+          },
+          {
+            title:
+              "Universidad Catolica Argentina - Director: Dr. Oscar Ameal - 2019 / 2020",
+            desc: "Maestría Derecho Civil Patrimonial",
+          },
+          {
+            title:
+              "Curso “Perspectivas de Compliance Regional, Federal y Global”",
+            desc: "Aprobado",
+          },
+          {
+            title: "Universidad de Buenos Aires - 2021",
+            desc: "Posgrado Responsabilidades Civiles Especiales",
+          },
+          {
+            title: "Ayudante de Segunda en Obligaciones Civiles y Comerciales",
+            desc: "Cátedra",
+          },
+          {
+            title:
+              "Facultad de Derecho y Ciencias Sociales - Universidad de Buenos Aires",
+            desc: "Dr. Leandro Vergara. Comisión 7049 - 7050 (JTP Dr. Pablo Diaz - Dr. Casiano Highton)",
+          },
+        ],
+      },
+      {
+        name: "Experiencia Laboral",
+        desc: [
+          {
+            title: "CANGUEIRO / RUIZ ABOGADOS - 2014 / Actualidad",
+            desc: `Av. De Mayo 757 C.A.B.A. Dirección de Litigios Penales. Tel: (011)3984-5000. Designación como titular del Departamento de Querellas dependiente de la Dirección de Litigios Penales.(Resolución UIF N°157/2023)`,
+          },
+          {
+            title: "Paralegal - CANGUEIRO / RUIZ ABOGADOS - 2012 / 2013",
+            desc: `1- Abogado en el área de litigios de los fueros Civil, Comercial, Labora / 2-  Redacción de contestación de demanda / 3- Interposición de recursos ordinarios, extraordinarios, queja ante la CSJN / 4- Elaboración de informes de riesgo judicial / 5- Redacción de acuerdos / 6- Asistencia a audiencia de mediación / 7- Asistencia a audiencia judiciales, apertura de prueba, testimoniales / 8- Asistencia a pericias contables`,
+          },
+        ],
+      },
+      {
+        name: "Idiomas",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Portugués",
             desc: "Avanzado",
           },
           {
@@ -904,6 +984,85 @@ export const arrayLawyers = [
         desc: [
           {
             title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "arrayLawyers-10",
+    img: LawyerIMG10,
+    name: "Pedro Lucero Pavón",
+    experience: "Paralegal Lawyer",
+    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
+    instagram: "https://www.instagram.com/crabog_/",
+    phone: "+54 911 4021-7000",
+    email: "pluceropavon@gmail.com",
+    document: "/cvs/CV-PEDRO-LUCERO.pdf",
+    cv: [
+      {
+        name: "Education",
+        desc: [
+          {
+            title: "Pontifical Catholic University of Argentina - 2008 / 2013",
+            desc: "Lawyer",
+          },
+          {
+            title: "Pontifical Catholic University of Argentina - 2019 / 2020",
+            desc: "Postgraduate in Insurance Law",
+          },
+          {
+            title:
+              "Pontifical Catholic University of Argentina - Director: Dr. Oscar Ameal - 2019 / 2020",
+            desc: "Master's in Civil Property Law",
+          },
+          {
+            title:
+              "Course “Perspectives of Regional, Federal, and Global Compliance”",
+            desc: "Passed",
+          },
+          {
+            title: "University of Buenos Aires - 2021",
+            desc: "Postgraduate in Special Civil Liabilities",
+          },
+          {
+            title: "Teaching Assistant in Civil and Commercial Obligations",
+            desc: "Department",
+          },
+          {
+            title:
+              "Faculty of Law and Social Sciences - University of Buenos Aires",
+            desc: "Dr. Leandro Vergara. Commission 7049 - 7050 (JTP Dr. Pablo Diaz - Dr. Casiano Highton)",
+          },
+        ],
+      },
+      {
+        name: "Work Experience",
+        desc: [
+          {
+            title: "CANGUEIRO / RUIZ ABOGADOS - 2014 / Present",
+            desc: "Av. De Mayo 757 C.A.B.A. Criminal Litigation Department. Tel: (011)3984-5000. Appointed head of the Complaints Department under the Criminal Litigation Department (UIF Resolution N°157/2023)",
+          },
+          {
+            title: "Paralegal - CANGUEIRO / RUIZ ABOGADOS - 2012 / 2013",
+            desc: "1- Lawyer in the litigation area of Civil, Commercial, Labor jurisdictions / 2- Drafting of answer to complaints / 3- Filing of ordinary, extraordinary appeals, and complaints before the Supreme Court of Justice / 4- Preparation of judicial risk reports / 5- Drafting of agreements / 6- Assistance in mediation hearings / 7- Assistance in judicial hearings, opening of evidence, testimonies / 8- Assistance in accounting expert assessments",
+          },
+        ],
+      },
+      {
+        name: "Languages",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Portuguese",
             desc: "Advanced",
           },
           {
