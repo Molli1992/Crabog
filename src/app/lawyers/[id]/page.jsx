@@ -158,26 +158,40 @@ export default function LawyersProfile() {
   };
 
   const downloadCV = () => {
-    const fileName = profileData[0].document;
-    const link = document.createElement("a");
-    link.href = fileName;
-    link.download = fileName.split("/").pop();
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    try {
+      const fileName = profileData[0].document;
+      const link = document.createElement("a");
+      link.href = fileName;
+      link.download = fileName.split("/").pop();
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
 
-    setToast({
-      visible: true,
-      title: language === "spanish" ? "CV" : "Resume",
-      description:
-        language === "spanish"
-          ? "Descargado correctamente"
-          : "Downloaded successfully",
-    });
+      setToast({
+        visible: true,
+        title: language === "spanish" ? "CV" : "Resume",
+        description:
+          language === "spanish"
+            ? "Descargado correctamente"
+            : "Downloaded successfully",
+      });
+    } catch (error) {
+      console.log(error);
 
-    setTimeout(() => {
-      clearToast();
-    }, "5000");
+      setToast({
+        visible: true,
+        title: language === "spanish" ? "Error" : "Error",
+        description:
+          language === "spanish"
+            ? "Descargando CV"
+            : "Downloading Resume",
+        error: true,
+      });
+    } finally {
+      setTimeout(() => {
+        clearToast();
+      }, "5000");
+    }
   };
 
   return (
