@@ -4,6 +4,7 @@ import LawyerIMG2 from "../../public/lawyers-img/imagen-abogado-2.jpg";
 import LawyerIMG4 from "../../public/lawyers-img/imagen-abogado-4.jpg";
 import LawyerIMG5 from "../../public/lawyers-img/imagen-abogado-prueba-1.jpg";
 import LawyerIMG6 from "../../public/lawyers-img/imagen-abogado-6.jpg";
+import LawyerIMG8 from "../../public/lawyers-img/imagen-abogado-prueba-2.jpg";
 import LawyerIMG9 from "../../public/lawyers-img/imagen-abogado-9.jpg";
 import LawyerIMG10 from "../../public/lawyers-img/imagen-abogado-10.jpg";
 import LawyerIMG11 from "../../public/lawyers-img/imagen-abogado-11.jpg";
@@ -37,7 +38,12 @@ export const arrayLawyersSpanish = [
       },
       {
         name: "Experiencia Laboral",
-        desc: "Actuación profesional para entes supranacionales, entes públicos y empresas privadas. Abogado contratado por International Finance Corporation, brazo del Banco Mundial para el financiamiento de empresas privadas, así como por otros organismos multilaterales de crédito. Abogado contratado por la Provincia de Neuquén (Fiscalía de Estado) para asesoramiento e intervención en procesos litigiosos comerciales en la Justicia Nacional, en defensa de los intereses de la Provincia y de entes autárquicos provinciales (Corporación Instituto Autárquico Minero de Neuquén - CORMINE -, Instituto Autárquico de Desarrollo Económico Provincial - IADEP). Abogado de numerosas empresas nacionales e internacionales.",
+        desc: [
+          {
+            title: "",
+            desc: "Actuación profesional para entes supranacionales, entes públicos y empresas privadas. Abogado contratado por International Finance Corporation, brazo del Banco Mundial para el financiamiento de empresas privadas, así como por otros organismos multilaterales de crédito. Abogado contratado por la Provincia de Neuquén (Fiscalía de Estado) para asesoramiento e intervención en procesos litigiosos comerciales en la Justicia Nacional, en defensa de los intereses de la Provincia y de entes autárquicos provinciales (Corporación Instituto Autárquico Minero de Neuquén - CORMINE -, Instituto Autárquico de Desarrollo Económico Provincial - IADEP). Abogado de numerosas empresas nacionales e internacionales.",
+          },
+        ],
       },
       {
         name: "Idiomas",
@@ -200,7 +206,12 @@ export const arrayLawyersSpanish = [
       },
       {
         name: "Experiencia Laboral",
-        desc: "Socia del Estudio “Cangueiro Ruiz Abogados” desde el 2007. Anteriormente socia del Estudio de Abogados “Pastoriza Eviner Cangueiro & Ruiz”, desde el año 2005 al presente. Anteriormente, me desempeñe junto al socio Marcelo Horacio Cangueiro desde el año 1991 hasta el año 2005, fecha en la que se produjo la fusion de “Cangueiro & Ruiz, Abogados” con el estudio “Pastoriza & Eviner”. Actualmente me desempeño en el area de litigios, y  tengo asignado el rol de “Socia admnistradora” en forma unipersonal.",
+        desc: [
+          {
+            title: "",
+            desc: "Socia del Estudio “Cangueiro Ruiz Abogados” desde el 2007. Anteriormente socia del Estudio de Abogados “Pastoriza Eviner Cangueiro & Ruiz”, desde el año 2005 al presente. Anteriormente, me desempeñe junto al socio Marcelo Horacio Cangueiro desde el año 1991 hasta el año 2005, fecha en la que se produjo la fusion de “Cangueiro & Ruiz, Abogados” con el estudio “Pastoriza & Eviner”. Actualmente me desempeño en el area de litigios, y  tengo asignado el rol de “Socia admnistradora” en forma unipersonal.",
+          },
+        ],
       },
       {
         name: "Idiomas",
@@ -359,6 +370,81 @@ export const arrayLawyersSpanish = [
           {
             title: "Frances",
             desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "arrayLawyers-8",
+    img: LawyerIMG8,
+    name: "Julian Akerman",
+    experience: "Asociado",
+    linkedin: "https://www.linkedin.com/in/julian-akerman-144266a0/",
+    instagram: "https://www.instagram.com/crabog_/",
+    phone: "+54 911 4021-7000",
+    email: "jakerman@crabog.com",
+    document: "/cvs/CV-JULIAN-AKERMAN.docx",
+    cv: [
+      {
+        name: "Estudios",
+        desc: [
+          {
+            title: "Abogado - Orientación Pública - Promedio final: 7.41",
+            desc: "Facultad de Derecho y Ciencias Sociales de la Universidad de Belgrano - 1994 / 2000",
+          },
+          {
+            title:
+              "Matriculado en el Colegio Público de Abogados de la Capital Federal",
+            desc: "(C.P.A.C.F. - T° 67, F° 813)",
+          },
+          {
+            title: "Postgrado en Derecho Societario",
+            desc: "Universidad de Buenos Aires - 2009 / 2010",
+          },
+          {
+            title: "Diplomatura en Derecho Deportivo",
+            desc: "Universidad Austral - 2022",
+          },
+        ],
+      },
+      {
+        name: "Experiencia Laboral",
+        desc: [
+          {
+            title: "Estudio CANGUEIRO & RUIZ - 2020 / actualidad",
+            desc: "Práctica General de Derecho Empresario. Derecho Societario - Comercial",
+          },
+          {
+            title:
+              "Cátedra de Ricardo A. Nissen. Adjunto a cargo Dr. Marcelo H. Cangueiro - Ayudante de 2° Categoría - 2002 / 2009",
+            desc: "Universidad de Buenos Aires - Sociedades Civiles y Comerciales",
+          },
+          {
+            title:
+              "Cátedra de Victor Zamenfeld - Ayudante de 2° Categoría - 2008 / 2010",
+            desc: "Universidad de Buenos Aires - Elementos del Derecho Comercial",
+          },
+        ],
+      },
+      {
+        name: "Idiomas",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Italiano",
+            desc: "Intermedio",
+          },
+          {
+            title: "Frances",
+            desc: "Intermedio",
           },
           {
             title: "Español",
@@ -761,7 +847,12 @@ export const arrayLawyers = [
       },
       {
         name: "Work Experiencie",
-        desc: "Professional performance for supranational entities, public entities, and private companies. Lawyer contracted by the International Finance Corporation, the World Bank's arm for financing private companies, as well as other multilateral credit organizations. Lawyer contracted by the Province of Neuquén (State Attorney's Office) for advisory services and participation in commercial litigation processes before the National Judiciary in defense of the interests of the Province and its autonomous entities (Corporation Institute of Autonomous Mining of Neuquén – CORMINE – and the Autonomous Institute for Provincial Economic Development – IADEP). Lawyer for numerous national and international companies.",
+        desc: [
+          {
+            title: "",
+            desc: "Professional performance for supranational entities, public entities, and private companies. Lawyer contracted by the International Finance Corporation, the World Bank's arm for financing private companies, as well as other multilateral credit organizations. Lawyer contracted by the Province of Neuquén (State Attorney's Office) for advisory services and participation in commercial litigation processes before the National Judiciary in defense of the interests of the Province and its autonomous entities (Corporation Institute of Autonomous Mining of Neuquén – CORMINE – and the Autonomous Institute for Provincial Economic Development – IADEP). Lawyer for numerous national and international companies.",
+          },
+        ],
       },
       {
         name: "Languages",
@@ -924,7 +1015,12 @@ export const arrayLawyers = [
       },
       {
         name: "Work Experience",
-        desc: "Partner at 'Cangueiro Ruiz Abogados' law firm since 2007. Previously, partner at 'Pastoriza Eviner Cangueiro & Ruiz' law firm from 2005 to present. Before that, I worked alongside partner Marcelo Horacio Cangueiro from 1991 until 2005, when 'Cangueiro & Ruiz, Abogados' merged with 'Pastoriza & Eviner' law firm. Currently, I work in the litigation department and hold the role of 'Managing Partner' individually.",
+        desc: [
+          {
+            title: "",
+            desc: "Partner at 'Cangueiro Ruiz Abogados' law firm since 2007. Previously, partner at 'Pastoriza Eviner Cangueiro & Ruiz' law firm from 2005 to present. Before that, I worked alongside partner Marcelo Horacio Cangueiro from 1991 until 2005, when 'Cangueiro & Ruiz, Abogados' merged with 'Pastoriza & Eviner' law firm. Currently, I work in the litigation department and hold the role of 'Managing Partner' individually.",
+          },
+        ],
       },
       {
         name: "Languages",
@@ -1079,6 +1175,81 @@ export const arrayLawyers = [
           {
             title: "French",
             desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "arrayLawyers-8",
+    img: LawyerIMG8,
+    name: "Julian Akerman",
+    experience: "Associate",
+    linkedin: "https://www.linkedin.com/in/julian-akerman-144266a0/",
+    instagram: "https://www.instagram.com/crabog_/",
+    phone: "+54 911 4021-7000",
+    email: "jakerman@crabog.com",
+    document: "/cvs/CV-JULIAN-AKERMAN.docx",
+    cv: [
+      {
+        name: "Education",
+        desc: [
+          {
+            title: "Lawyer - Public Orientation - Final GPA: 7.41",
+            desc: "Faculty of Law and Social Sciences, University of Belgrano - 1994 / 2000",
+          },
+          {
+            title:
+              "Registered at the Public Bar Association of the Federal Capital",
+            desc: "(C.P.A.C.F. - T° 67, F° 813)",
+          },
+          {
+            title: "Postgraduate Degree in Corporate Law",
+            desc: "University of Buenos Aires - 2009 / 2010",
+          },
+          {
+            title: "Diploma in Sports Law",
+            desc: "Austral University - 2022",
+          },
+        ],
+      },
+      {
+        name: "Work Experience",
+        desc: [
+          {
+            title: "CANGUEIRO & RUIZ Law Firm - 2020 / Present",
+            desc: "General Practice of Business Law. Corporate - Commercial Law",
+          },
+          {
+            title:
+              "Ricardo A. Nissen's Chair. Assistant in charge Dr. Marcelo H. Cangueiro - Second Category Assistant - 2002 / 2009",
+            desc: "University of Buenos Aires - Civil and Commercial Companies",
+          },
+          {
+            title:
+              "Victor Zamenfeld's Chair - Second Category Assistant - 2008 / 2010",
+            desc: "University of Buenos Aires - Elements of Commercial Law",
+          },
+        ],
+      },
+      {
+        name: "Languages",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Italian",
+            desc: "Intermediate",
+          },
+          {
+            title: "French",
+            desc: "Intermediate",
           },
           {
             title: "Spanish",

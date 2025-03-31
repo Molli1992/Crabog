@@ -182,9 +182,7 @@ export default function LawyersProfile() {
         visible: true,
         title: language === "spanish" ? "Error" : "Error",
         description:
-          language === "spanish"
-            ? "Descargando CV"
-            : "Downloading Resume",
+          language === "spanish" ? "Descargando CV" : "Downloading Resume",
         error: true,
       });
     } finally {
@@ -235,7 +233,6 @@ export default function LawyersProfile() {
                   </div>
 
                   {selectedItemIndex === index &&
-                    Array.isArray(item.desc) &&
                     item.desc.map((descItem) => {
                       return (
                         <div key={`${index}-CV-${descItem.title}`}>
@@ -248,10 +245,6 @@ export default function LawyersProfile() {
                         </div>
                       );
                     })}
-
-                  {selectedItemIndex === index && !Array.isArray(item.desc) ? (
-                    <p className={styles.serviceDescription}>{item.desc}</p>
-                  ) : null}
                 </div>
               ))}
 
