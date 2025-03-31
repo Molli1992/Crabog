@@ -1,6 +1,7 @@
 //IMGS
 import LawyerIMG1 from "../../public/lawyers-img/imagen-abogado-1.jpg";
 import LawyerIMG2 from "../../public/lawyers-img/imagen-abogado-2.jpg";
+import LawyerIMG4 from "../../public/lawyers-img/imagen-abogado-4.jpg";
 import LawyerIMG5 from "../../public/lawyers-img/imagen-abogado-prueba-1.jpg";
 import LawyerIMG6 from "../../public/lawyers-img/imagen-abogado-6.jpg";
 import LawyerIMG9 from "../../public/lawyers-img/imagen-abogado-9.jpg";
@@ -122,6 +123,84 @@ export const arrayLawyersSpanish = [
             desc: "Abogado Junior / 1991 - 1994",
           },
         ],
+      },
+      {
+        name: "Idiomas",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "arrayLawyers-4",
+    img: LawyerIMG4,
+    name: "Clementina Sanchez Farache",
+    experience: "Socia",
+    linkedin: "https://www.linkedin.com/in/cle-sanchez-farache-4a1465a6/",
+    instagram: "https://www.instagram.com/clementinasf/",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
+    document: "/cvs/CV-CLEMENTINA-SANCHEZ.doc",
+    cv: [
+      {
+        name: "Estudios",
+        desc: [
+          {
+            title: "Abogado",
+            desc: "Facultad de Derecho y Ciencias Sociales - Universidad de Buenos Aires - 26 de octubre 1995",
+          },
+          {
+            title:
+              "Posgrado en Derecho Procesal Profundizado, Universidad Notarial",
+            desc: "Especialista en Derecho Procesal Profundizado - Año 1998",
+          },
+          {
+            title: "Curso de Posgrado sobre Derecho Concursal Profundizado",
+            desc: "Universidad de Buenos Aires - año 1998",
+          },
+          {
+            title:
+              "Curso sobre “Pesificación - Creditos Hipotecarios - Leyes de Emergencia Económica ”",
+            desc: "Año 2002",
+          },
+          {
+            title:
+              "Seminario “La Reforma Societaria”, Universidad Austral. Expositores: Carlos Odriozola, Enrique Butty,  Jaime Luis Araya, etc.",
+            desc: "Octubre - Noviembre 2004",
+          },
+          {
+            title:
+              "Primer Simposio Internacional de Crimenes Economicos, organizado por la Universidad de Cambridge y  Universidad Notarial Argentina",
+            desc: "Noviembre 2004",
+          },
+          {
+            title:
+              "Jornadas Rioplatenses de Derecho - Comision de Derecho Comercial y Societario",
+            desc: "San Isidro - Octubre 2005",
+          },
+          {
+            title:
+              "Actualización en Derecho Concursal. Fundacion Fundación Inv. y Des. Cs. Jurídicas",
+            desc: "",
+          },
+          {
+            title:
+              "Jornada de Derecho Comercial en homenaje al profesor Juan A. Anich, Universidad de Buenos Aires, Facultad de Derecho",
+            desc: "28 de Junio de 2023",
+          },
+        ],
+      },
+      {
+        name: "Experiencia Laboral",
+        desc: "Socia del Estudio “Cangueiro Ruiz Abogados” desde el 2007. Anteriormente socia del Estudio de Abogados “Pastoriza Eviner Cangueiro & Ruiz”, desde el año 2005 al presente. Anteriormente, me desempeñe junto al socio Marcelo Horacio Cangueiro desde el año 1991 hasta el año 2005, fecha en la que se produjo la fusion de “Cangueiro & Ruiz, Abogados” con el estudio “Pastoriza & Eviner”. Actualmente me desempeño en el area de litigios, y  tengo asignado el rol de “Socia admnistradora” en forma unipersonal.",
       },
       {
         name: "Idiomas",
@@ -653,7 +732,7 @@ export const arrayLawyersSpanish = [
   },
 ];
 
-// =========================================================================================================================================================
+// English =========================================================================================================================================================
 
 export const arrayLawyers = [
   {
@@ -768,6 +847,84 @@ export const arrayLawyers = [
             desc: "Junior Lawyer / 1991 - 1994",
           },
         ],
+      },
+      {
+        name: "Languages",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "arrayLawyers-4",
+    img: LawyerIMG4,
+    name: "Clementina Sanchez Farache",
+    experience: "Partner",
+    linkedin: "https://www.linkedin.com/in/cle-sanchez-farache-4a1465a6/",
+    instagram: "https://www.instagram.com/clementinasf/",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
+    document: "/cvs/CV-CLEMENTINA-SANCHEZ.doc",
+    cv: [
+      {
+        name: "Education",
+        desc: [
+          {
+            title: "Lawyer",
+            desc: "Faculty of Law and Social Sciences - University of Buenos Aires - October 26, 1995",
+          },
+          {
+            title:
+              "Postgraduate Degree in Advanced Procedural Law, Notarial University",
+            desc: "Specialist in Advanced Procedural Law - Year 1998",
+          },
+          {
+            title: "Postgraduate Course on Advanced Bankruptcy Law",
+            desc: "University of Buenos Aires - Year 1998",
+          },
+          {
+            title:
+              "Course on 'Pesification - Mortgage Loans - Economic Emergency Laws'",
+            desc: "Year 2002",
+          },
+          {
+            title:
+              "Seminar 'The Corporate Law Reform', Austral University. Speakers: Carlos Odriozola, Enrique Butty, Jaime Luis Araya, etc.",
+            desc: "October - November 2004",
+          },
+          {
+            title:
+              "First International Symposium on Economic Crimes, organized by the University of Cambridge and Notarial University of Argentina",
+            desc: "November 2004",
+          },
+          {
+            title:
+              "Rio de la Plata Conferences on Law - Commercial and Corporate Law Commission",
+            desc: "San Isidro - October 2005",
+          },
+          {
+            title:
+              "Update on Bankruptcy Law. Foundation for Research and Development in Legal Sciences",
+            desc: "",
+          },
+          {
+            title:
+              "Commercial Law Conference in honor of Professor Juan A. Anich, University of Buenos Aires, Faculty of Law",
+            desc: "June 28, 2023",
+          },
+        ],
+      },
+      {
+        name: "Work Experience",
+        desc: "Partner at 'Cangueiro Ruiz Abogados' law firm since 2007. Previously, partner at 'Pastoriza Eviner Cangueiro & Ruiz' law firm from 2005 to present. Before that, I worked alongside partner Marcelo Horacio Cangueiro from 1991 until 2005, when 'Cangueiro & Ruiz, Abogados' merged with 'Pastoriza & Eviner' law firm. Currently, I work in the litigation department and hold the role of 'Managing Partner' individually.",
       },
       {
         name: "Languages",
