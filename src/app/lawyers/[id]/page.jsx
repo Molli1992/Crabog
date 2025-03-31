@@ -18,9 +18,10 @@ import {
   TbArrowNarrowRightDashed,
   TbArrowNarrowLeftDashed,
 } from "react-icons/tb";
-import Link from "next/link";
+import toastStore from "@/zustand/toastStore";
 
 export default function LawyersProfile() {
+  const { setToast, clearToast } = toastStore();
   const { language } = useLanguageStore();
   const params = useParams();
 
@@ -164,6 +165,19 @@ export default function LawyersProfile() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+
+    setToast({
+      visible: true,
+      title: language === "spanish" ? "CV" : "Resume",
+      description:
+        language === "spanish"
+          ? "Descargado correctamente"
+          : "Downloaded successfully",
+    });
+
+    setTimeout(() => {
+      clearToast();
+    }, "5000");
   };
 
   return (

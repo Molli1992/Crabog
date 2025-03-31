@@ -3,6 +3,7 @@ import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 import "primereact/resources/themes/lara-light-blue/theme.css";
 import "primereact/resources/primereact.min.css";
+import Toast from "@/components/toast/toast";
 
 export const metadata = {
   title: "Crabog",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
+        <Toast />
         {children}
         <Footer />
       </body>
