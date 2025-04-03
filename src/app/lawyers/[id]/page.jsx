@@ -296,9 +296,11 @@ export default function LawyersProfile() {
           </div>
 
           <div className={styles.flexContainer}>
-            <button className={styles.resumeButton} onClick={downloadCV}>
-              {language === "spanish" ? "Descargar CV" : "Download Resume"}
-            </button>
+            {profileData[0].document ? (
+              <button className={styles.resumeButton} onClick={downloadCV}>
+                {language === "spanish" ? "Descargar CV" : "Download Resume"}
+              </button>
+            ) : null}
 
             {profileData[0].linkedin ? (
               <FaLinkedinIn

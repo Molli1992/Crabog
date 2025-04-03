@@ -1,6 +1,7 @@
 //IMGS
 import LawyerIMG1 from "../../public/lawyers-img/imagen-abogado-1.jpg";
 import LawyerIMG2 from "../../public/lawyers-img/imagen-abogado-2.jpg";
+import LawyerIMG3 from "../../public/lawyers-img/imagen-abogado-3.jpg";
 import LawyerIMG4 from "../../public/lawyers-img/imagen-abogado-4.jpg";
 import LawyerIMG5 from "../../public/lawyers-img/imagen-abogado-5.jpg";
 import LawyerIMG6 from "../../public/lawyers-img/imagen-abogado-6.jpg";
@@ -127,6 +128,54 @@ export const arrayLawyersSpanish = [
           {
             title: "Cárdenas, Cassagne & Asociados",
             desc: "Abogado Junior / 1991 - 1994",
+          },
+        ],
+      },
+      {
+        name: "Idiomas",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "arrayLawyers-3",
+    img: LawyerIMG3,
+    name: "Fabián Cangueiro",
+    experience: "Socio",
+    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
+    instagram: "https://www.instagram.com/crabog_/",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
+    document: "",
+    cv: [
+      {
+        name: "Estudios",
+        desc: [
+          {
+            title: "Abogado",
+            desc: "Universidad de Buenos Aires, Facultad de Derecho",
+          },
+        ],
+      },
+      {
+        name: "Experiencia Laboral",
+        desc: [
+          {
+            title: "Plan Rombo S.A. hasta 1994",
+            desc: "",
+          },
+          {
+            title: "Socio Cangueiro Ruiz ABOGADOS desde 1995 hasta la fecha",
+            desc: "",
           },
         ],
       },
@@ -936,6 +985,54 @@ export const arrayLawyers = [
           {
             title: "Cárdenas, Cassagne & Associates",
             desc: "Junior Lawyer / 1991 - 1994",
+          },
+        ],
+      },
+      {
+        name: "Languages",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "arrayLawyers-3",
+    img: LawyerIMG3,
+    name: "Fabián Cangueiro",
+    experience: "Socio",
+    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
+    instagram: "https://www.instagram.com/crabog_/",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
+    document: "",
+    cv: [
+      {
+        name: "Education",
+        desc: [
+          {
+            title: "Lawyer",
+            desc: "University of Buenos Aires, Faculty of Law",
+          },
+        ],
+      },
+      {
+        name: "Work Experience",
+        desc: [
+          {
+            title: "Plan Rombo S.A. until 1994",
+            desc: "",
+          },
+          {
+            title: "Partner at Cangueiro Ruiz ABOGADOS from 1995 to present",
+            desc: "",
           },
         ],
       },
