@@ -2,13 +2,13 @@
 import LawyerIMG1 from "../../public/lawyers-img/imagen-abogado-1.jpg";
 import LawyerIMG2 from "../../public/lawyers-img/imagen-abogado-2.jpg";
 import LawyerIMG4 from "../../public/lawyers-img/imagen-abogado-4.jpg";
-import LawyerIMG5 from "../../public/lawyers-img/imagen-abogado-prueba-1.jpg";
+import LawyerIMG5 from "../../public/lawyers-img/imagen-abogado-5.jpg";
 import LawyerIMG6 from "../../public/lawyers-img/imagen-abogado-6.jpg";
-import LawyerIMG8 from "../../public/lawyers-img/imagen-abogado-prueba-2.jpg";
+import LawyerIMG8 from "../../public/lawyers-img/imagen-abogado-8.jpg";
 import LawyerIMG9 from "../../public/lawyers-img/imagen-abogado-9.jpg";
 import LawyerIMG10 from "../../public/lawyers-img/imagen-abogado-10.jpg";
 import LawyerIMG11 from "../../public/lawyers-img/imagen-abogado-11.jpg";
-import LawyerIMG12 from "../../public/lawyers-img/imagen-abogado-prueba-2.jpg";
+import LawyerIMG12 from "../../public/lawyers-img/imagen-abogado-12.jpg";
 import LawyerIMG15 from "../../public/lawyers-img/imagen-abogado-15.jpg";
 
 export const arrayLawyersSpanish = [
