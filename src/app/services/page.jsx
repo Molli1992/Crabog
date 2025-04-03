@@ -3,13 +3,8 @@ import styles from "./services.module.css";
 import HeroSection from "@/components/heroSection/heroSection";
 import useLanguageStore from "@/zustand/useLanguageStore";
 import ServicesList from "@/components/servicesList/servicesList";
-import Image from "next/image";
-import { FaHandshake } from "react-icons/fa";
-import { BsBank2 } from "react-icons/bs";
-import { FaShieldAlt } from "react-icons/fa";
 import Slider from "@/components/slider/slider";
 import serviceImg from "../../../public/services-img/img-con-logo-2.jpg";
-import librosImg from "../../../public/services-img/libros-img.jpeg";
 import Title from "@/components/texts/title/title";
 import Description from "@/components/texts/description/description";
 import imgSlider1 from "../../../public/services-img/img-slider-1.png";
@@ -21,41 +16,6 @@ import imgSlider6 from "../../../public/services-img/img-slider-6.webp";
 
 export default function Services() {
   const { language } = useLanguageStore();
-
-  const arrayList = [
-    {
-      id: "arrayList-b-1",
-      name: language === "spanish" ? "Derecho Laboral" : "Labor Law",
-      desc:
-        language === "spanish"
-          ? "Nuestro estudio de abogados cuenta con un Departamento de Derecho Laboral"
-          : "Our law firm has a dedicated Labor Law Department",
-      Html: <FaHandshake className={styles.icons} />,
-    },
-
-    {
-      id: "arrayList-b-2",
-      name:
-        language === "spanish"
-          ? "Derecho Bancario y Financiero"
-          : "Banking and Financial Law",
-      desc:
-        language === "spanish"
-          ? "Nuestro Estudio Jurídico cuenta con profesionales con vasta experiencia en las áreas de Derecho Bancario y Derecho Financiero"
-          : "Our law firm is staffed with professionals who have extensive experience in Banking and Financial Law",
-      Html: <BsBank2 className={styles.icons} />,
-    },
-
-    {
-      id: "arrayList-b-3",
-      name: language === "spanish" ? "Derecho de Seguros" : "Insurance Law",
-      desc:
-        language === "spanish"
-          ? "Conocemos toda la problemática que plantea el negocio del Seguro desde hace ya 15 años"
-          : "For over 15 years, we have been deeply familiar with the challenges of the insurance industry",
-      Html: <FaShieldAlt className={styles.icons} />,
-    },
-  ];
 
   const sliderData = [
     {
@@ -103,48 +63,48 @@ export default function Services() {
         title={language === "spanish" ? "Areas de Practica" : "Practice Areas"}
       />
       <div className={styles.section}>
-        <div className={`${styles.container} ${styles.containerImage}`}>
-          <Image src={librosImg} alt="Lawyer" className={styles.image} />
-        </div>
-
-        <div className={`${styles.container} ${styles.containerTitle}`}>
-          <Title
-            value={
-              language === "spanish"
-                ? "Comprometidos con la excelencia jurídica,"
-                : "Committed to legal excellence, "
-            }
-            span={
-              language === "spanish"
-                ? "enfocados en sus objetivos"
-                : "focused on your goals"
-            }
-          />
-
-          <Description
-            value={
-              language === "spanish"
-                ? "En un entorno legal cada vez más dinámico y desafiante, contar con el asesoramiento adecuado es clave para tomar decisiones estratégicas. Nuestro equipo de abogados se dedica a brindar un servicio personalizado y orientado al cliente, acompañando con soluciones legales eficientes, confiables y a la medida de sus necesidades."
-                : "In an increasingly dynamic and challenging legal environment, having the right advice is key to making strategic decisions. Our team of lawyers is committed to providing a personalized, client-oriented service, offering efficient, reliable, and tailored legal solutions to meet your needs."
-            }
-          />
-        </div>
-
         <div className={styles.container}>
-          {arrayList &&
-            arrayList.map((element) => {
-              return (
-                <div className={styles.item} key={element.id}>
-                  <div>{element.Html}</div>
+          <div className={styles.containerText}>
+            <Title
+              value={
+                language === "spanish"
+                  ? "Comprometidos con la excelencia jurídica,"
+                  : "Committed to legal excellence, "
+              }
+              span={
+                language === "spanish"
+                  ? "enfocados en sus objetivos"
+                  : "focused on your goals"
+              }
+            />
 
-                  <div>
-                    <Title fontSize="24px" value={element.name} />
-                    <Description value={element.desc} />
-                  </div>
-                </div>
-              );
-            })}
+            <Description
+              value={
+                language === "spanish"
+                  ? "En un entorno legal cada vez más dinámico y desafiante, contar con el asesoramiento adecuado es clave para tomar decisiones estratégicas. Nuestro equipo de abogados se dedica a brindar un servicio personalizado y orientado al cliente, acompañando con soluciones legales eficientes, confiables y a la medida de sus necesidades."
+                  : "In an increasingly dynamic and challenging legal environment, having the right advice is key to making strategic decisions. Our team of lawyers is committed to providing a personalized, client-oriented service, offering efficient, reliable, and tailored legal solutions to meet your needs."
+              }
+            />
+
+            <Description
+              value={
+                language === "spanish"
+                  ? "En un entorno legal cada vez más dinámico y desafiante, contar con el asesoramiento adecuado es clave para tomar decisiones estratégicas. Nuestro equipo de abogados se dedica a brindar un servicio personalizado y orientado al cliente, acompañando con soluciones legales eficientes, confiables y a la medida de sus necesidades."
+                  : "In an increasingly dynamic and challenging legal environment, having the right advice is key to making strategic decisions. Our team of lawyers is committed to providing a personalized, client-oriented service, offering efficient, reliable, and tailored legal solutions to meet your needs."
+              }
+            />
+
+            <Description
+              value={
+                language === "spanish"
+                  ? "En un entorno legal cada vez más dinámico y desafiante, contar con el asesoramiento adecuado es clave para tomar decisiones estratégicas. Nuestro equipo de abogados se dedica a brindar un servicio personalizado y orientado al cliente, acompañando con soluciones legales eficientes, confiables y a la medida de sus necesidades."
+                  : "In an increasingly dynamic and challenging legal environment, having the right advice is key to making strategic decisions. Our team of lawyers is committed to providing a personalized, client-oriented service, offering efficient, reliable, and tailored legal solutions to meet your needs."
+              }
+            />
+          </div>
         </div>
+
+        <div className={styles.image} />
       </div>
 
       <ServicesList />

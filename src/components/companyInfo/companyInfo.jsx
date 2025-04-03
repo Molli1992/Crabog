@@ -2,11 +2,13 @@ import styles from "./companyInfo.module.css";
 import Title from "../texts/title/title";
 import Description from "../texts/description/description";
 import useLanguageStore from "@/zustand/useLanguageStore";
-import { FaHandshake } from "react-icons/fa";
+import {
+  FaHandshake,
+  FaBalanceScale,
+  FaShieldAlt,
+  FaGavel,
+} from "react-icons/fa";
 import { FaBuildingColumns } from "react-icons/fa6";
-import { BsBank2 } from "react-icons/bs";
-import { FaShieldAlt } from "react-icons/fa";
-import { FaGavel } from "react-icons/fa";
 
 export default function CompanyInfo() {
   const { language } = useLanguageStore();
@@ -35,7 +37,7 @@ export default function CompanyInfo() {
         language === "spanish"
           ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
           : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      Html: <BsBank2 className={styles.icons} />,
+      Html: <FaBalanceScale className={styles.icons} />,
     },
 
     {
@@ -49,19 +51,6 @@ export default function CompanyInfo() {
     },
 
     {
-      id: "arrayList-a-4",
-      name:
-        language === "spanish"
-          ? "Derecho Bancario y Financiero"
-          : "Banking and Financial Law",
-      desc:
-        language === "spanish"
-          ? "Nuestro Estudio Jurídico cuenta con profesionales con vasta experiencia en las áreas de Derecho Bancario y Derecho Financiero."
-          : "Our law firm is staffed with professionals who have extensive experience in Banking and Financial Law.",
-      Html: <FaGavel className={styles.icons} />,
-    },
-
-    {
       id: "arrayList-a-5",
       name: language === "spanish" ? "Derecho de Seguros" : "Insurance Law",
       desc:
@@ -69,6 +58,17 @@ export default function CompanyInfo() {
           ? "Contamos con profesionales altamente calificados y conocimientos profundizados para el tratamiento del Derecho de seguros."
           : "We have highly qualified professionals with extensive expertise in Insurance Law.",
       Html: <FaBuildingColumns className={styles.icons} />,
+    },
+
+    {
+      id: "arrayList-a-4",
+      name:
+        language === "spanish" ? "Derecho Penal" : "Banking and Financial Law",
+      desc:
+        language === "spanish"
+          ? "Poseemos una Unidad de Compliance para brindarles a los distintos clientes un programa de integridad a medida que los exima o atenúe la eventual responsabilidad penal que pudiera tener."
+          : "We have a Compliance Unit dedicated to providing our clients with a customized integrity program that exempts or mitigates any potential criminal liability they may face.",
+      Html: <FaGavel className={styles.icons} />,
     },
   ];
 
