@@ -25,7 +25,7 @@ export default function Login() {
   };
 
   const onSubmit = async () => {
-    if (!login.email && login.password) {
+    if (!login.email || !login.password) {
       Swal.fire({
         title: "Info!",
         text: "Completar todos los campos!",
