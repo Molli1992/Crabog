@@ -5,6 +5,7 @@ import LawyerIMG3 from "../../public/lawyers-img/imagen-abogado-3.jpg";
 import LawyerIMG4 from "../../public/lawyers-img/imagen-abogado-4.jpg";
 import LawyerIMG5 from "../../public/lawyers-img/imagen-abogado-5.jpg";
 import LawyerIMG6 from "../../public/lawyers-img/imagen-abogado-6.jpg";
+import LawyerIMG7 from "../../public/lawyers-img/imagen-abogado-7.jpg";
 import LawyerIMG8 from "../../public/lawyers-img/imagen-abogado-8.jpg";
 import LawyerIMG9 from "../../public/lawyers-img/imagen-abogado-9.jpg";
 import LawyerIMG10 from "../../public/lawyers-img/imagen-abogado-10.jpg";
@@ -418,6 +419,54 @@ export const arrayLawyersSpanish = [
           },
           {
             title: "Frances",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "arrayLawyers-7",
+    img: LawyerIMG7,
+    name: "Juan A. Balbín",
+    experience: "Asociado",
+    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
+    instagram: "https://www.instagram.com/crabog_/",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
+    document: "",
+    cv: [
+      {
+        name: "Estudios",
+        desc: [
+          {
+            title: "Abogado, 1987",
+            desc: "Universidad de Buenos Aires, Facultad de Derecho ",
+          },
+        ],
+      },
+      {
+        name: "Experiencia Laboral",
+        desc: [
+          {
+            title: "Cangueiro Ruiz ABOGADOS",
+            desc: `Socio`,
+          },
+          {
+            title: "Colegio Público de Abogados de la Ciudad de Buenos Aires",
+            desc: ``,
+          },
+        ],
+      },
+      {
+        name: "Idiomas",
+        desc: [
+          {
+            title: "Inglés",
             desc: "Avanzado",
           },
           {
@@ -1007,7 +1056,7 @@ export const arrayLawyers = [
     id: "arrayLawyers-3",
     img: LawyerIMG3,
     name: "Fabián Cangueiro",
-    experience: "Socio",
+    experience: "Partner",
     linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
     instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
@@ -1271,6 +1320,54 @@ export const arrayLawyers = [
           },
           {
             title: "French",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "arrayLawyers-7",
+    img: LawyerIMG7,
+    name: "Juan A. Balbín",
+    experience: "Associate",
+    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
+    instagram: "https://www.instagram.com/crabog_/",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
+    document: "",
+    cv: [
+      {
+        name: "Education",
+        desc: [
+          {
+            title: "Lawyer, 1987",
+            desc: "University of Buenos Aires, Faculty of Law",
+          },
+        ],
+      },
+      {
+        name: "Work Experience",
+        desc: [
+          {
+            title: "Cangueiro Ruiz ABOGADOS",
+            desc: "Partner",
+          },
+          {
+            title: "Public Bar Association of the City of Buenos Aires",
+            desc: "",
+          },
+        ],
+      },
+      {
+        name: "Languages",
+        desc: [
+          {
+            title: "English",
             desc: "Advanced",
           },
           {
