@@ -111,21 +111,21 @@ export default function Services() {
           <Title
             value={
               language === "spanish"
-                ? "Nuestros abogados brindan servicios centrados en el cliente"
-                : "Our Lawyers Provide Customer Centric"
+                ? "Comprometidos con la excelencia jurídica,"
+                : "Committed to legal excellence, "
             }
             span={
               language === "spanish"
-                ? "a las corporaciones"
-                : "Advice to Corporations"
+                ? "enfocados en sus objetivos"
+                : "focused on your goals"
             }
           />
 
           <Description
             value={
               language === "spanish"
-                ? "En el panorama legal complejo y en constante cambio actual, tener un asesor legal confiable a su lado puede marcar la diferencia."
-                : "In todays complex and ever-changing legal landscape, having atrusted legal advisor by your side can make all the difference."
+                ? "En un entorno legal cada vez más dinámico y desafiante, contar con el asesoramiento adecuado es clave para tomar decisiones estratégicas. Nuestro equipo de abogados se dedica a brindar un servicio personalizado y orientado al cliente, acompañando con soluciones legales eficientes, confiables y a la medida de sus necesidades."
+                : "In an increasingly dynamic and challenging legal environment, having the right advice is key to making strategic decisions. Our team of lawyers is committed to providing a personalized, client-oriented service, offering efficient, reliable, and tailored legal solutions to meet your needs."
             }
           />
         </div>
@@ -154,13 +154,13 @@ export default function Services() {
           <Title
             value={
               language === "spanish"
-                ? "Además, los bufetes de abogados suelen contar con personal de apoyo,"
-                : "In addition, law firms typically have a support staff,"
+                ? "Contamos con profesionales altamente capacitados en diversas ramas del derecho, preparados para"
+                : "We have highly trained professionals in various branches of law,"
             }
             span={
               language === "spanish"
-                ? "incluidos asistentes legales y asistentes administrativos"
-                : "including paralegals and administrative assistants"
+                ? "ofrecer soluciones jurídicas sólidas, eficientes y personalizadas"
+                : "prepared to offer solid, efficient, and personalized legal solutions"
             }
           />
         </div>

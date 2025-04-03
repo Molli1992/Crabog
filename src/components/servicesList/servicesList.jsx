@@ -26,26 +26,26 @@ export default function ServicesList() {
           <Title
             value={
               language === "spanish"
-                ? "Los abogados están capacitados para analizar cuestiones legales y redactar"
-                : "Lawyers are trained to analyze legal issues and draft "
+                ? "Enfoque legal integral,"
+                : "Comprehensive legal approach,"
             }
             span={
-              language === "spanish" ? "documentos legales" : "legal documents"
+              language === "spanish"
+                ? "orientado a resultados"
+                : "results-oriented"
             }
             color="#192d2f"
           />
         </div>
 
-        <div className={styles.conatinerDescription}>
-          <Description
-            value={
-              language === "spanish"
-                ? "Uno de los principales beneficios de contratar un bufete de abogados es la experiencia y los conocimientos que aportan."
-                : "One of the primary benefits of hiring a law firm is the expertise and experience that they bring to the table."
-            }
-            color="#1d2939b8"
-          />
-        </div>
+        <Description
+          value={
+            language === "spanish"
+              ? "Abordamos cada caso con un enfoque interdisciplinario, combinando nuestras distintas áreas de práctica para brindar respuestas jurídicas integrales, sólidas y eficaces. Nuestro equipo está conformado por profesionales con experiencia en diversas ramas del derecho, lo que nos permite acompañar a nuestros clientes en una amplia gama de situaciones, desde la prevención de conflictos hasta la defensa de sus derechos en instancias judiciales y extrajudiciales. La excelencia técnica, la ética profesional y la cercanía con el cliente son pilares de nuestra forma de trabajar."
+              : "We approach each case with an interdisciplinary focus, combining our various practice areas to provide comprehensive, solid, and effective legal solutions. Our team consists of professionals with experience in different branches of law, enabling us to support our clients in a wide range of situations, from conflict prevention to the defense of their rights in both judicial and extrajudicial proceedings. Technical excellence, professional ethics, and close client relationships are the pillars of our work approach."
+          }
+          color="#1d2939b8"
+        />
 
         <Image
           src={serviceListImg}
