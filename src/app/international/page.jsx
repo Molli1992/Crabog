@@ -33,7 +33,7 @@ export default function International() {
             <Title
               value={
                 language === "spanish"
-                  ? "Proyección internacional y red estratégica de corresponsalía"
+                  ? "Proyección Internacional y Red Estratégica de Corresponsalía"
                   : "International Projection and Strategic Correspondence Network"
               }
               color="#192d2f"
