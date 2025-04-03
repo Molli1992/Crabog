@@ -645,17 +645,17 @@ export const arrayLawyersSpanish = [
         name: "Estudios",
         desc: [
           {
-            title: "Universidad de Belgrano - 2020 / 2024",
-            desc: "Abogada",
-          },
-          {
             title:
               "Actualmente cursando la Maestria en Derecho Penal en la Austral",
             desc: "",
           },
           {
+            title: "Universidad de Belgrano - 2020 / 2024",
+            desc: "Abogada",
+          },
+          {
             title: "Universidad Complutense de Madrid, España - Julio 2024",
-            desc: "Transnacional",
+            desc: "Especialización en Crimen Organizado y Terrorismo",
           },
           {
             title:
@@ -1547,17 +1547,17 @@ export const arrayLawyers = [
         name: "Education",
         desc: [
           {
-            title: "University of Belgrano - 2020 / 2024",
-            desc: "Lawyer",
-          },
-          {
             title:
               "Currently pursuing a Master's in Criminal Law at University Austral",
             desc: "",
           },
           {
+            title: "University of Belgrano - 2020 / 2024",
+            desc: "Lawyer",
+          },
+          {
             title: "Complutense University of Madrid, Spain - July 2024",
-            desc: "Transnational",
+            desc: "Specialization in Organized Crime and Terrorism",
           },
           {
             title:

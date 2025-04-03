@@ -7,7 +7,7 @@ export const serviceList = [
   },
   {
     id: "serviceListSpanish-1",
-    serviceName: "Corporate conflicts and complex litigation",
+    serviceName: "Corporate Conflicts and Complex Litigation",
     serviceDescription:
       "Our firm has a solid track record in resolving corporate disputes and complex litigation, representing partners, shareholders, directors, and companies in high-impact disputes related to corporate control, assembly challenges, partner exclusion, company dissolution, director liability, and contractual obligations. We combine rigorous technical expertise with a strategic business vision, allowing us to anticipate risks, design effective legal solutions, and protect our clients' interests in all instances, whether judicial or arbitral. Our approach is distinguished by strong legal arguments, professional commitment, and precise intervention, both in preventing and resolving complex disputes.",
   },
@@ -52,7 +52,7 @@ export const serviceListSpanish = [
   },
   {
     id: "serviceListSpanish-1",
-    serviceName: "Conflictos societarios y litigios complejos",
+    serviceName: "Conflictos Societarios y Litigios Complejos",
     serviceDescription:
       "Nuestro estudio cuenta con una sólida trayectoria en la resolución de conflictos societarios y litigios complejos, representando a socios, accionistas, directores y empresas en disputas de alto impacto vinculadas al control societario, impugnaciones asamblearias, exclusión de socios, disolución de sociedades, responsabilidad de administradores y obligaciones contractuales. Combinamos una preparación técnica rigurosa con una visión estratégica del negocio, lo que nos permite anticipar riesgos, diseñar soluciones jurídicas eficaces y proteger los intereses de nuestros clientes en todas las instancias, ya sea judiciales o arbitrales. Nuestro enfoque se distingue por la solidez argumentativa, el compromiso profesional y una intervención precisa tanto en la prevención como en la resolución de controversias complejas.",
   },

@@ -27,33 +27,24 @@ export default function International() {
         />
 
         <div className={styles.containerFlex}>
-          <div className={styles.containerLeft} />
+          <div className={styles.containerImg} />
 
-          <div className={styles.containerRight}>
+          <div className={styles.containerText}>
             <Title
               value={
                 language === "spanish"
-                  ? "CORRESPONSALIA Y PROYECCION INTERNACIONAL: CANGUEIRO RUIZ ABOGADOS"
-                  : "CORRESPONDENCE AND INTERNATIONAL PROJECTION: CANGUEIRO RUIZ ABOGADOS"
+                  ? "Proyección internacional y red estratégica de corresponsalía"
+                  : "International Projection and Strategic Correspondence Network"
               }
               color="#192d2f"
-              fontSize={"24px"}
+              fontSize={"32px"}
             />
 
             <Description
               value={
                 language === "spanish"
-                  ? "Cangueiro Ruiz Abogados posee una red de corresponsales litigantes de primer nivel a lo largo y ancho del país. Asimismo, cuenta con una sólida red de aliados estratégicos en el exterior, habiendo participado en litigios internacionales de alta complejidad, lo que le ha permitido desarrollar una visión integral del derecho y sus implicancias en diversas jurisdicciones."
-                  : "Cangueiro Ruiz Abogados has a network of top-tier litigating correspondents throughout the country. Additionally, it boasts a strong network of strategic allies abroad, having participated in highly complex international litigation, which has allowed it to develop a comprehensive vision of the law and its implications across various jurisdictions."
-              }
-              color="#192d2f"
-            />
-
-            <Description
-              value={
-                language === "spanish"
-                  ? "El Estudio mantiene alianzas con firmas legales de prestigio en América Latina, Europa y Estados Unidos, con quienes trabaja en conjunto en la estructuración de operaciones transnacionales, arbitrajes internacionales y la implementación de proyectos de inversión en la región. Nuestra capacidad de coordinar estrategias legales a nivel global nos permite ofrecer soluciones eficaces y adaptadas a los marcos normativos de cada país, asegurando a nuestros clientes una representación integral y de excelencia en asuntos de alcance internacional."
-                  : "The firm maintains partnerships with prestigious legal firms in Latin America, Europe, and the United States, working collaboratively on structuring cross-border transactions, international arbitrations, and implementing investment projects in the region. Our ability to coordinate legal strategies globally enables us to offer effective solutions tailored to each country's regulatory frameworks, ensuring our clients comprehensive and high-quality representation in international matters."
+                  ? "Cangueiro Ruiz Abogados ha construido una sólida proyección internacional a través de una red confiable y activa de corresponsales litigantes en todo el país, así como alianzas estratégicas con firmas legales de prestigio en América Latina, Europa y Estados Unidos. Esta red nos permite intervenir con eficacia en jurisdicciones diversas y brindar un servicio jurídico de excelencia en asuntos que trascienden fronteras."
+                  : "Cangueiro Ruiz Abogados has built a strong international presence through a reliable and active network of litigation correspondents across the country, as well as strategic alliances with prestigious law firms in Latin America, Europe, and the United States. This network enables us to operate effectively across various jurisdictions and provide top-tier legal services in matters that transcend borders."
               }
               color="#192d2f"
             />
@@ -61,8 +52,26 @@ export default function International() {
             <Description
               value={
                 language === "spanish"
-                  ? "Además, nuestra experiencia en asesoramiento jurídico internacional nos ha posicionado como un referente para empresas que buscan expandir sus operaciones fuera de sus fronteras, brindándoles soporte en temas regulatorios, comerciales y litigiosos en los mercados en los que operan."
-                  : "Moreover, our experience in international legal advisory services has positioned us as a key reference for companies looking to expand their operations beyond their borders, providing them with support in regulatory, commercial, and litigation matters in the markets where they operate."
+                  ? "Nuestra participación en litigios internacionales complejos, operaciones transnacionales, arbitrajes y procesos de recuperación de activos ha consolidado nuestra capacidad de diseñar estrategias legales adaptadas a marcos normativos diversos, entendiendo las particularidades culturales, comerciales y regulatorias de cada país. Trabajamos junto a estudios aliados en la estructuración de vehículos de inversión, cumplimiento regulatorio internacional, planificación contractual y resolución de controversias en ámbitos judiciales y arbitrales."
+                  : "Our involvement in complex international litigation, transnational operations, arbitration, and asset recovery processes has strengthened our ability to design legal strategies tailored to diverse regulatory frameworks. We understand the cultural, commercial, and regulatory nuances of each country, allowing us to work alongside allied firms in structuring investment vehicles, ensuring international regulatory compliance, drafting contractual agreements, and resolving disputes in both judicial and arbitral forums."
+              }
+              color="#192d2f"
+            />
+
+            <Description
+              value={
+                language === "spanish"
+                  ? "Acompañamos a empresas, inversores y particulares en su proceso de expansión internacional, brindando soporte integral en materia societaria, contractual, tributaria, regulatoria y litigiosa. Ya sea en la apertura de nuevas operaciones, la firma de acuerdos estratégicos o la resolución de disputas, nuestra intervención se distingue por su enfoque integral, su visión estratégica y su profundo conocimiento del derecho comparado y del entorno global."
+                  : "We support businesses, investors, and individuals in their international expansion, offering comprehensive guidance on corporate, contractual, tax, regulatory, and litigation matters. Whether assisting with new business ventures, negotiating strategic agreements, or resolving disputes, our approach is distinguished by its comprehensive perspective, strategic vision, and deep understanding of comparative law and the global legal landscape."
+              }
+              color="#192d2f"
+            />
+
+            <Description
+              value={
+                language === "spanish"
+                  ? "En Cangueiro Ruiz Abogados entendemos que el derecho internacional exige respuestas rápidas, coordinadas y técnicamente impecables. Por eso, articulamos nuestras capacidades locales con una mirada global, ofreciendo soluciones jurídicas a medida de cada desafío, y garantizando a nuestros clientes representación experta, cercana y eficaz en todos los contextos."
+                  : "At Cangueiro Ruiz Abogados, we recognize that international law demands swift, coordinated, and technically impeccable responses. That is why we integrate our local expertise with a global perspective, delivering customized legal solutions for every challenge and ensuring our clients receive expert, responsive, and effective representation in all contexts."
               }
               color="#192d2f"
             />

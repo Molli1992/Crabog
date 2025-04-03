@@ -74,16 +74,11 @@
   }
 }
 
-@media (max-width: 1000px) {
-  .section {
-    justify-content: center;
-    gap: 50px;
-  }
-}
-
-@media (max-width: 850px) {
+@media (max-width: 1200px) {
   .section {
     flex-direction: column;
+    justify-content: center;
+    gap: 50px;
   }
 
   .container {
