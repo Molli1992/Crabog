@@ -35,8 +35,8 @@ export default function CompanyInfo() {
           : "Corporate conflicts and complex litigation",
       desc:
         language === "spanish"
-          ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-          : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          ? "Nuestro estudio cuenta con una sólida trayectoria en la resolución de conflictos societarios y litigios complejos, representando a socios, accionistas, directores y empresas en disputas de alto impacto."
+          : "Our firm has a strong track record in resolving corporate conflicts and complex litigation, representing partners, shareholders, directors, and companies in high-impact disputes.",
       Html: <FaBalanceScale className={styles.icons} />,
     },
 
