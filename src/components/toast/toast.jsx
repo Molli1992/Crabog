@@ -33,7 +33,7 @@ export default function Toast() {
         <div className={styles.container}>
           <div className={styles.containerTitle}>
             {toast.info ? (
-              <GoInfo className={styles.icons} style={{ fontSize: "26px" }} />
+              <GoInfo className={styles.icons} />
             ) : toast.error ? (
               <CgCloseO className={styles.icons} />
             ) : (
