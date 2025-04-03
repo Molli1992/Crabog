@@ -6,16 +6,10 @@ export const serviceList = [
       "We have a highly qualified team providing advisory services on Corporate and Business Law matters, including commercial contracts, corporate law issues, shareholder agreements, corporate disputes, business collaborations, reorganizations, and mergers & acquisitions.",
   },
   {
-    id: "serviceList-3",
-    serviceName: "Insurance Law",
+    id: "serviceListSpanish-1",
+    serviceName: "Corporate conflicts and complex litigation",
     serviceDescription:
-      "Our highly qualified professionals possess extensive expertise in handling ongoing claims, litigation, and their financial impact on insurance companies. Leading insurance companies in the local market have entrusted us with managing their claims portfolios. Our services include corporate advisory and representation, the establishment of insurance entities and modifications to their legal structure, representation before the National Insurance Superintendency, the General Inspection of Justice, and various public administration bodies, as well as advisory services before consumer protection agencies.",
-  },
-  {
-    id: "serviceList-4",
-    serviceName: "Criminal Law",
-    serviceDescription:
-      "We have a highly qualified team providing advisory services on Criminal Law, Economic Criminal Law, and Tax Law matters. Our team specializes in defense strategies as well as initiating legal actions. Additionally, we have a Compliance Unit that offers tailored integrity programs to our clients, helping to mitigate or eliminate any potential criminal liability that their company and/or directors may face.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     id: "serviceList-5",
@@ -28,6 +22,18 @@ export const serviceList = [
     serviceName: "Banking and Financial Law",
     serviceDescription:
       "Our law firm is staffed with professionals who have extensive experience in Banking and Financial Law, including providing advisory services to banks, multilateral credit organizations, development agencies, foreign investment funds, and other providers of banking and non-banking financial services. We assist these entities by offering regulatory and compliance advice, as well as implementing their projects in Argentina and other countries in the region. Our team's experience includes project financing, syndicated loans, capital investments, and debt restructuring.",
+  },
+  {
+    id: "serviceList-3",
+    serviceName: "Insurance Law",
+    serviceDescription:
+      "Our highly qualified professionals possess extensive expertise in handling ongoing claims, litigation, and their financial impact on insurance companies. Leading insurance companies in the local market have entrusted us with managing their claims portfolios. Our services include corporate advisory and representation, the establishment of insurance entities and modifications to their legal structure, representation before the National Insurance Superintendency, the General Inspection of Justice, and various public administration bodies, as well as advisory services before consumer protection agencies.",
+  },
+  {
+    id: "serviceList-4",
+    serviceName: "Criminal Law",
+    serviceDescription:
+      "We have a highly qualified team providing advisory services on Criminal Law, Economic Criminal Law, and Tax Law matters. Our team specializes in defense strategies as well as initiating legal actions. Additionally, we have a Compliance Unit that offers tailored integrity programs to our clients, helping to mitigate or eliminate any potential criminal liability that their company and/or directors may face.",
   },
   {
     id: "serviceList-7",
@@ -45,16 +51,10 @@ export const serviceListSpanish = [
       "Tenemos un equipo altamente calificado para brindar asesoramiento sobre cuestiones de Derecho Corporativo y Derecho Empresario, incluyendo contratos comerciales, cuestiones de Derechos Societario, convenios de accionistas, conflictos societarios, colaboración empresaria, reorganizaciones y fusiones / adquisiciones.",
   },
   {
-    id: "serviceListSpanish-3",
-    serviceName: "Derecho de Seguros",
+    id: "serviceListSpanish-1",
+    serviceName: "Conflictos societarios y litigios complejos",
     serviceDescription:
-      "Contamos con profesionales altamente calificados y conocimientos profundizados para el tratamiento de siniestros en curso, juicios, como así también su impacto económico y consecuencias para las compañías aseguradoras. Reconocidas Compañías de Seguro del mercado local nos han confiado la gestión de su cartera de reclamos por siniestros. Entre nuestros servicios se incluyen asesoramiento y actuación societaria, constitución de entidades aseguradoras y modificación de su estructura jurídica, actuación ante la Superintendencia de Seguros de la Nación, la Inspección General de Justicia y diversos organismos públicos de la administración, así como también asesoramiento ante los organismos de Defensa del Consumidor.",
-  },
-  {
-    id: "serviceListSpanish-4",
-    serviceName: "Derecho Penal",
-    serviceDescription:
-      "Tenemos un equipo altamente calificado para brindar asesoramiento sobre cuestiones de Derecho Penal, Penal Económico y Tributario. Nuestro equipo se dedica a realizar defensas, como también a impulsar querellas. Además, poseemos una Unidad de Compliance para brindarles a los distintos clientes de la firma un programa de integridad a medida que los exima o atenúe la eventual responsabilidad penal que pudiera tener su empresa y/o sus directores.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     id: "serviceListSpanish-5",
@@ -67,6 +67,18 @@ export const serviceListSpanish = [
     serviceName: "Derecho Bancario y Financiero",
     serviceDescription:
       "Nuestro Estudio Jurídico cuenta con profesionales con vasta experiencia en las áreas de Derecho Bancario y Derecho Financiero, incluyendo el asesoramiento a Bancos, Organismos Multilaterales de Crédito, Agencias de Desarrollo, Fondos de Inversión extranjeros y demás prestadores de servicios financieros bancarios y no bancarios, a quienes asiste proveyendo asesoramiento regulatorio y de cumplimiento normativo, así como también implementando sus proyectos en la República Argentina y en países de la Región. La experiencia de nuestro equipo incluye implementación de financiamiento de proyectos, préstamos sindicados, inversiones de capital y reestructuraciones de pasivos.",
+  },
+  {
+    id: "serviceListSpanish-3",
+    serviceName: "Derecho de Seguros",
+    serviceDescription:
+      "Contamos con profesionales altamente calificados y conocimientos profundizados para el tratamiento de siniestros en curso, juicios, como así también su impacto económico y consecuencias para las compañías aseguradoras. Reconocidas Compañías de Seguro del mercado local nos han confiado la gestión de su cartera de reclamos por siniestros. Entre nuestros servicios se incluyen asesoramiento y actuación societaria, constitución de entidades aseguradoras y modificación de su estructura jurídica, actuación ante la Superintendencia de Seguros de la Nación, la Inspección General de Justicia y diversos organismos públicos de la administración, así como también asesoramiento ante los organismos de Defensa del Consumidor.",
+  },
+  {
+    id: "serviceListSpanish-4",
+    serviceName: "Derecho Penal",
+    serviceDescription:
+      "Tenemos un equipo altamente calificado para brindar asesoramiento sobre cuestiones de Derecho Penal, Penal Económico y Tributario. Nuestro equipo se dedica a realizar defensas, como también a impulsar querellas. Además, poseemos una Unidad de Compliance para brindarles a los distintos clientes de la firma un programa de integridad a medida que los exima o atenúe la eventual responsabilidad penal que pudiera tener su empresa y/o sus directores.",
   },
   {
     id: "serviceListSpanish-7",

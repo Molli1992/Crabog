@@ -635,7 +635,8 @@ export const arrayLawyersSpanish = [
     name: "Milagros Ruiz",
     experience: "Abogada",
     linkedin: "https://www.linkedin.com/in/milagros-ruiz-36493a357/",
-    instagram: "https://www.instagram.com/miliruizz/",
+    instagram:
+      "https://www.instagram.com/milagrosruizabog_/?igsh=NDJlMmQ5NXVkcGhv&utm_source=qr",
     phone: "+54 911 4021-7000",
     email: "milagrosruiz@crabog.com",
     document: "/cvs/CV-MILAGROS-RUIZ.pdf",
@@ -1536,7 +1537,8 @@ export const arrayLawyers = [
     name: "Milagros Ruiz",
     experience: "Lawyer",
     linkedin: "https://www.linkedin.com/in/milagros-ruiz-36493a357/",
-    instagram: "https://www.instagram.com/miliruizz/",
+    instagram:
+      "https://www.instagram.com/milagrosruizabog_/?igsh=NDJlMmQ5NXVkcGhv&utm_source=qr",
     phone: "+54 911 4021-7000",
     email: "milagrosruiz@crabog.com",
     document: "/cvs/CV-MILAGROS-RUIZ.pdf",

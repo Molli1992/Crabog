@@ -14,11 +14,14 @@ export default function CompanyInfo() {
   const arrayList = [
     {
       id: "arrayList-a-1",
-      name: language === "spanish" ? "Derecho Laboral" : "Labor Law",
+      name:
+        language === "spanish"
+          ? "Derecho Corporativo y Empresario"
+          : "Corporate and Business Law",
       desc:
         language === "spanish"
-          ? "Nuestro estudio de abogados cuenta con un Departamento de Derecho Laboral"
-          : "Our law firm has a dedicated Labor Law Department",
+          ? "Tenemos un equipo altamente calificado para brindar asesoramiento sobre cuestiones de Derecho Corporativo y Derecho Empresario."
+          : "We have a highly qualified team providing advisory services on Corporate and Business Law matters.",
       Html: <FaHandshake className={styles.icons} />,
     },
 
@@ -26,42 +29,45 @@ export default function CompanyInfo() {
       id: "arrayList-a-2",
       name:
         language === "spanish"
-          ? "Derecho Bancario y Financiero"
-          : "Banking and Financial Law",
+          ? "Conflictos societarios y litigios complejos"
+          : "Corporate conflicts and complex litigation",
       desc:
         language === "spanish"
-          ? "Nuestro Estudio Jurídico cuenta con profesionales con vasta experiencia en las áreas de Derecho Bancario y Derecho Financiero"
-          : "Our law firm is staffed with professionals who have extensive experience in Banking and Financial Law",
+          ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+          : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       Html: <BsBank2 className={styles.icons} />,
     },
 
     {
       id: "arrayList-a-3",
-      name: language === "spanish" ? "Derecho de Seguros" : "Insurance Law",
+      name: language === "spanish" ? "Derecho Laboral" : "Labor Law",
       desc:
         language === "spanish"
-          ? "Contamos con profesionales altamente calificados y conocimientos profundizados para el tratamiento de siniestros en curso, juicios y consecuencias para las compañías aseguradoras"
-          : "We have highly qualified professionals and in-depth knowledge for handling ongoing claims, lawsuits, and consequences for insurance companies.",
+          ? "Brindamos nuestros servicios de asesoramiento integral en materia de Derecho Laboral tanto a empresas como a particulares."
+          : "We provide comprehensive advisory services in Labor Law to both companies and individuals.",
       Html: <FaShieldAlt className={styles.icons} />,
     },
 
     {
       id: "arrayList-a-4",
-      name: language === "spanish" ? "Derecho Penal" : "Criminal Law",
+      name:
+        language === "spanish"
+          ? "Derecho Bancario y Financiero"
+          : "Banking and Financial Law",
       desc:
         language === "spanish"
-          ? "Tenemos un equipo altamente calificado para brindar asesoramiento sobre cuestiones de Derecho Penal"
-          : "We have a highly qualified team providing advisory services on Criminal Law",
+          ? "Nuestro Estudio Jurídico cuenta con profesionales con vasta experiencia en las áreas de Derecho Bancario y Derecho Financiero."
+          : "Our law firm is staffed with professionals who have extensive experience in Banking and Financial Law.",
       Html: <FaGavel className={styles.icons} />,
     },
 
     {
       id: "arrayList-a-5",
-      name: language === "spanish" ? "Derecho Inmobiliario" : "Real Estate Law",
+      name: language === "spanish" ? "Derecho de Seguros" : "Insurance Law",
       desc:
         language === "spanish"
-          ? "Asesoramos a empresas, inversores, desarrolladores, fiduciarias, constructoras y demás actores del mercado inmobiliario"
-          : "We advise companies, investors, developers, fiduciaries, construction companies, and other players in the real estate market",
+          ? "Contamos con profesionales altamente calificados y conocimientos profundizados para el tratamiento del Derecho de seguros."
+          : "We have highly qualified professionals with extensive expertise in Insurance Law.",
       Html: <FaBuildingColumns className={styles.icons} />,
     },
   ];
