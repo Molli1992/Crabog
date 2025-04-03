@@ -1,8 +1,14 @@
 import styles from "./teamCard.module.css";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import toastStore from "@/zustand/toastStore";
+import useLanguageStore from "@/zustand/useLanguageStore";
 
 export default function TeamCard({ data, height }) {
+  const { setToast, clearToast } = toastStore();
+  const { language } = useLanguageStore();
+  const router = useRouter();
+
   const onClickOpenUrl = (e, url) => {
     e.preventDefault();
     e.stopPropagation();
@@ -10,8 +16,33 @@ export default function TeamCard({ data, height }) {
     window.open(url, "_blank");
   };
 
+  const openProfile = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    if (data.cv) {
+      router.push(`/lawyers/${data.id}`);
+    } else {
+      setToast({
+        visible: true,
+        title: language === "spanish" ? "Perfil" : "Profile",
+        description:
+          language === "spanish"
+            ? "No contiene perfil"
+            : "It does not contain a profile",
+        error: false,
+        info: true,
+      });
+
+      setTimeout(() => {
+        clearToast();
+      }, "5000");
+    }
+  };
+
   return (
-    <Link
+    <div
+      onClick={(e) => openProfile(e)}
       className={styles.body}
       href={`/lawyers/${data.id}`}
       style={{ height: height }}
@@ -48,6 +79,6 @@ export default function TeamCard({ data, height }) {
           <p className={styles.cardName}>{data.name}</p>
         </div>
       </div>
-    </Link>
+    </div>
   );
 }

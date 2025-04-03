@@ -5,6 +5,7 @@ import toastStore from "@/zustand/toastStore";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { CgCloseO } from "react-icons/cg";
 import { IoMdClose } from "react-icons/io";
+import { GoInfo } from "react-icons/go";
 
 export default function Toast() {
   const toastRef = useRef(null);
@@ -31,11 +32,14 @@ export default function Toast() {
       <div className={`${styles.body} ${styles.fadeInUp}`} ref={toastRef}>
         <div className={styles.container}>
           <div className={styles.containerTitle}>
-            {toast.error ? (
+            {toast.info ? (
+              <GoInfo className={styles.icons} style={{ fontSize: "26px" }} />
+            ) : toast.error ? (
               <CgCloseO className={styles.icons} />
             ) : (
               <FaRegCheckCircle className={styles.icons} />
             )}
+
             <h1 className={styles.title}>{toast.title}</h1>
           </div>
 

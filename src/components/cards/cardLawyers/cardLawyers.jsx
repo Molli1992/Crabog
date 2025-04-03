@@ -2,9 +2,15 @@ import styles from "./cardLawyers.module.css";
 import Title from "@/components/texts/title/title";
 import Description from "@/components/texts/description/description";
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import Link from "next/link";
+import toastStore from "@/zustand/toastStore";
+import useLanguageStore from "@/zustand/useLanguageStore";
+import { useRouter } from "next/navigation";
 
 export default function CardLawyers({ data }) {
+  const { setToast, clearToast } = toastStore();
+  const { language } = useLanguageStore();
+  const router = useRouter();
+
   const onClickOpenUrl = (e, url) => {
     e.preventDefault();
     e.stopPropagation();
@@ -12,8 +18,32 @@ export default function CardLawyers({ data }) {
     window.open(url, "_blank");
   };
 
+  const openProfile = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    if (data.cv) {
+      router.push(`/lawyers/${data.id}`);
+    } else {
+      setToast({
+        visible: true,
+        title: language === "spanish" ? "Perfil" : "Profile",
+        description:
+          language === "spanish"
+            ? "No contiene perfil"
+            : "It does not contain a profile",
+        error: false,
+        info: true,
+      });
+
+      setTimeout(() => {
+        clearToast();
+      }, "5000");
+    }
+  };
+
   return (
-    <Link href={`/lawyers/${data.id}`} className={styles.cardLawyers}>
+    <div onClick={(e) => openProfile(e)} className={styles.cardLawyers}>
       <div
         className={styles.image}
         style={{ backgroundImage: `url('${data.img.src}')` }}
@@ -47,6 +77,6 @@ export default function CardLawyers({ data }) {
         <Title value={data.name} fontSize="24px" color="#192d2f" />
         <Description value={data.experience} color="#cc4643" />
       </div>
-    </Link>
+    </div>
   );
 }

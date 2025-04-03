@@ -12,6 +12,9 @@ import LawyerIMG10 from "../../public/lawyers-img/imagen-abogado-10.jpg";
 import LawyerIMG11 from "../../public/lawyers-img/imagen-abogado-11.jpg";
 import LawyerIMG12 from "../../public/lawyers-img/imagen-abogado-12.jpg";
 import LawyerIMG15 from "../../public/lawyers-img/imagen-abogado-15.jpg";
+import LawyerIMG16 from "../../public/lawyers-img/imagen-abogado-16.jpg";
+import LawyerIMG17 from "../../public/lawyers-img/imagen-abogado-17.jpg";
+import LawyerIMG18 from "../../public/lawyers-img/imagen-abogado-18.jpg";
 
 export const arrayLawyersSpanish = [
   {
@@ -915,6 +918,42 @@ export const arrayLawyersSpanish = [
       },
     ],
   },
+  {
+    id: "arrayLawyers-16",
+    img: LawyerIMG16,
+    name: "Franco Montana",
+    experience: "Paralegal",
+    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
+    instagram: "https://www.instagram.com/crabog_/",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
+    document: "",
+    cv: "",
+  },
+  {
+    id: "arrayLawyers-17",
+    img: LawyerIMG17,
+    name: "Juan Rapisarda",
+    experience: "Paralegal",
+    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
+    instagram: "https://www.instagram.com/crabog_/",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
+    document: "",
+    cv: "",
+  },
+  {
+    id: "arrayLawyers-18",
+    img: LawyerIMG18,
+    name: "Ana Ortiz",
+    experience: "Paralegal",
+    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
+    instagram: "https://www.instagram.com/crabog_/",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
+    document: "",
+    cv: "",
+  },
 ];
 
 // English =========================================================================================================================================================
@@ -1815,5 +1854,41 @@ export const arrayLawyers = [
         ],
       },
     ],
+  },
+  {
+    id: "arrayLawyers-16",
+    img: LawyerIMG16,
+    name: "Franco Montana",
+    experience: "legal assistant",
+    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
+    instagram: "https://www.instagram.com/crabog_/",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
+    document: "",
+    cv: "",
+  },
+  {
+    id: "arrayLawyers-17",
+    img: LawyerIMG17,
+    name: "Juan Rapisarda",
+    experience: "legal assistant",
+    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
+    instagram: "https://www.instagram.com/crabog_/",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
+    document: "",
+    cv: "",
+  },
+  {
+    id: "arrayLawyers-18",
+    img: LawyerIMG18,
+    name: "Ana Ortiz",
+    experience: "legal assistant",
+    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
+    instagram: "https://www.instagram.com/crabog_/",
+    phone: "+54 911 4021-7000",
+    email: "secretarias@crabog.com",
+    document: "",
+    cv: "",
   },
 ];
