@@ -3,16 +3,15 @@ import LawyerIMG1 from "../../public/lawyers-img/imagen-abogado-1.jpg";
 import LawyerIMG2 from "../../public/lawyers-img/imagen-abogado-2.jpg";
 import LawyerIMG3 from "../../public/lawyers-img/imagen-abogado-3.jpg";
 import LawyerIMG4 from "../../public/lawyers-img/imagen-abogado-4.jpg";
-import LawyerIMG5 from "../../public/lawyers-img/imagen-abogado-5.jpg";
+import LawyerIMG5 from "../../public/lawyers-img/imagen-abogado-5.png";
 import LawyerIMG6 from "../../public/lawyers-img/imagen-abogado-6.jpg";
 import LawyerIMG7 from "../../public/lawyers-img/imagen-abogado-7.jpg";
 import LawyerIMG8 from "../../public/lawyers-img/imagen-abogado-8.jpg";
 import LawyerIMG9 from "../../public/lawyers-img/imagen-abogado-9.jpg";
 import LawyerIMG10 from "../../public/lawyers-img/imagen-abogado-10.jpg";
 import LawyerIMG11 from "../../public/lawyers-img/imagen-abogado-11.jpg";
-import LawyerIMG12 from "../../public/lawyers-img/imagen-abogado-12.jpg";
+import LawyerIMG12 from "../../public/lawyers-img/imagen-abogado-12.png";
 import LawyerIMG15 from "../../public/lawyers-img/imagen-abogado-15.jpg";
-import LawyerIMG16 from "../../public/lawyers-img/imagen-abogado-16.jpg";
 import LawyerIMG17 from "../../public/lawyers-img/imagen-abogado-17.jpg";
 import LawyerIMG18 from "../../public/lawyers-img/imagen-abogado-18.jpg";
 
@@ -132,6 +131,75 @@ export const arrayLawyersSpanish = [
           {
             title: "Cárdenas, Cassagne & Asociados",
             desc: "Abogado Junior / 1991 - 1994",
+          },
+        ],
+      },
+      {
+        name: "Capacitaciones",
+        desc: [
+          {
+            title: "Jesus College, Cambridge University",
+            desc: "International Symposium on Economic Crime - 1997 / a la fecha",
+          },
+          {
+            title:
+              "James Shasha Institute, Universidad Hebrea de Jerusalem; Jerusalem",
+            desc: "“Entre la Guerra y la Diplomacia: Mediación, Negociación y Proceso de Paz en el conflicto de Medio Oriente” - 1997",
+          },
+          {
+            title: "International Bar Association, Londres",
+            desc: "Lockerbie Case - 1997",
+          },
+          {
+            title: "Brooking Institution, Washington DC",
+            desc: "Decisiones de USA en Política Económica Extranjera - 1994",
+          },
+          {
+            title: "Universidad Notarial Argentina, Buenos Aires",
+            desc: "Curso Intensivo de Derecho Corporativo - 1995",
+          },
+        ],
+      },
+      {
+        name: "Publicaciones",
+        desc: [
+          {
+            title:
+              "Journal: The Company Lawyer: “Criminal liability of legal entities in the Republic of Argentina” page 204",
+            desc: "United Kingdom - 2024",
+          },
+          {
+            title:
+              "Journal: The Company Lawyer: “Liability and Obligations of the Board of Directors of a Corporation Under Argentine Law” page 25",
+            desc: "United Kingdom - 2023",
+          },
+          {
+            title:
+              "Libro: “Butterworths International Guide to Money Laundering Law and Practice: Chapter 7 Argentina”",
+            desc: "United Kingdom - 2002",
+          },
+          {
+            title:
+              "Journal: Money Laundering Control: “The Hiding of Wealth: AN Argentine Perspective”",
+            desc: "United Kingdom - 2002",
+          },
+          {
+            title:
+              "Libro: MERCOSUR “Su Impacto legal, Administrativo y Financiero en la Argentina”",
+            desc: "Argentina - 2000",
+          },
+        ],
+      },
+      {
+        name: "Distinciones",
+        desc: [
+          {
+            title: "FREEMAN OF THE CITY OF LONDON",
+            desc: "Primer Argentino en ser distinguido por la Ciudad de Londres.",
+          },
+          {
+            title: "PRESIDENTE DE BELGRANO ATHLETIC CLUB",
+            desc: "2013 - 2019",
           },
         ],
       },
@@ -657,15 +725,6 @@ export const arrayLawyersSpanish = [
             desc: "Abogada",
           },
           {
-            title: "Universidad Complutense de Madrid, España - Julio 2024",
-            desc: "Especialización en Crimen Organizado y Terrorismo",
-          },
-          {
-            title:
-              "Jesus College, University of Cambridge, Reino Unido de Gran Bretaña - Asistente - Septiembre 2024",
-            desc: "Curso Intensivo para Abogados Lideres Chinos sobre Cuestiones Comerciales Transnacionales y Recupero de Activos",
-          },
-          {
             title: "Michael Ham Memorial College - 2006 / 2017",
             desc: "Bachiller Bilingüe en Ciencias Sociales",
           },
@@ -698,6 +757,40 @@ export const arrayLawyersSpanish = [
             title:
               "Fiscalía Nacional en lo Criminal y Correccional Federal N°4 - Fiscal Dr. Carlos Ernesto Stornelli - 2021 / 2023",
             desc: `Cargo: Oficial`,
+          },
+        ],
+      },
+      {
+        name: "Capacitaciones",
+        desc: [
+          {
+            title: "Universidad Complutense de Madrid, España - Julio 2024",
+            desc: "Especialización en Crimen Organizado y Terrorismo",
+          },
+          {
+            title:
+              "Jesus College, University of Cambridge, Reino Unido de Gran Bretaña - Asistente - Septiembre 2024",
+            desc: "Curso Intensivo para Abogados Lideres Chinos sobre Cuestiones Comerciales Transnacionales y Recupero de Activos",
+          },
+          {
+            title:
+              "International Symposium on Economic Crime, Jesus College, University of Cambridge, Reino Unido de Gran Bretaña",
+            desc: "Cargo: Clerck Asssitance - Secretariat 2014, 2015, 2016, 2017, 2018, 2019, 2022, 2023, 2024",
+          },
+          {
+            title:
+              "EF, Education First, Advanced English, Londres, Reino Unido de Gran Bretaña",
+            desc: "2016",
+          },
+        ],
+      },
+      {
+        name: "Actividades Academicas",
+        desc: [
+          {
+            title:
+              "Facultad de Derecho, Universidad de Buenos Aires - Profesora Asistente - Marzo 2024 / a la fecha",
+            desc: `Departamento de Derecho Penal y Criminología “Elementos de Derecho Penal y Procesal Penal” Cátedra Prof. Dr. Eugenio C. Sarrabayrouse y Dr. Mariano Borinsky.`,
           },
         ],
       },
@@ -919,18 +1012,6 @@ export const arrayLawyersSpanish = [
     ],
   },
   {
-    id: "arrayLawyers-16",
-    img: LawyerIMG16,
-    name: "Franco Montana",
-    experience: "Paralegal",
-    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
-    instagram: "https://www.instagram.com/crabog_/",
-    phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
-    document: "",
-    cv: "",
-  },
-  {
     id: "arrayLawyers-17",
     img: LawyerIMG17,
     name: "Juan Rapisarda",
@@ -1074,6 +1155,75 @@ export const arrayLawyers = [
           {
             title: "Cárdenas, Cassagne & Associates",
             desc: "Junior Lawyer / 1991 - 1994",
+          },
+        ],
+      },
+      {
+        name: "Trainings",
+        desc: [
+          {
+            title: "Jesus College, Cambridge University",
+            desc: "International Symposium on Economic Crime - 1997 / Present",
+          },
+          {
+            title:
+              "James Shasha Institute, Hebrew University of Jerusalem; Jerusalem",
+            desc: "“Between War and Diplomacy: Mediation, Negotiation, and the Peace Process in the Middle East Conflict” - 1997",
+          },
+          {
+            title: "International Bar Association, London",
+            desc: "Lockerbie Case - 1997",
+          },
+          {
+            title: "Brookings Institution, Washington DC",
+            desc: "U.S. Foreign Economic Policy Decisions - 1994",
+          },
+          {
+            title: "Argentine Notarial University, Buenos Aires",
+            desc: "Intensive Course in Corporate Law - 1995",
+          },
+        ],
+      },
+      {
+        name: "Publications",
+        desc: [
+          {
+            title:
+              "Journal: The Company Lawyer: “Criminal Liability of Legal Entities in the Republic of Argentina” page 204",
+            desc: "United Kingdom - 2024",
+          },
+          {
+            title:
+              "Journal: The Company Lawyer: “Liability and Obligations of the Board of Directors of a Corporation Under Argentine Law” page 25",
+            desc: "United Kingdom - 2023",
+          },
+          {
+            title:
+              "Book: “Butterworths International Guide to Money Laundering Law and Practice: Chapter 7 - Argentina”",
+            desc: "United Kingdom - 2002",
+          },
+          {
+            title:
+              "Journal: Money Laundering Control: “The Hiding of Wealth: An Argentine Perspective”",
+            desc: "United Kingdom - 2002",
+          },
+          {
+            title:
+              "Book: MERCOSUR “Its Legal, Administrative, and Financial Impact in Argentina”",
+            desc: "Argentina - 2000",
+          },
+        ],
+      },
+      {
+        name: "Honors & Distinctions",
+        desc: [
+          {
+            title: "FREEMAN OF THE CITY OF LONDON",
+            desc: "First Argentine to be honored by the City of London.",
+          },
+          {
+            title: "PRESIDENT OF BELGRANO ATHLETIC CLUB",
+            desc: "2013 - 2019",
           },
         ],
       },
@@ -1595,15 +1745,6 @@ export const arrayLawyers = [
             desc: "Lawyer",
           },
           {
-            title: "Complutense University of Madrid, Spain - July 2024",
-            desc: "Specialization in Organized Crime and Terrorism",
-          },
-          {
-            title:
-              "Jesus College, University of Cambridge, United Kingdom - Assistant - September 2024",
-            desc: "Intensive Course for Leading Chinese Lawyers on Transnational Commercial Issues and Asset Recovery",
-          },
-          {
             title: "Michael Ham Memorial College - 2006 / 2017",
             desc: "Bilingual Bachelor in Social Sciences",
           },
@@ -1636,6 +1777,40 @@ export const arrayLawyers = [
             title:
               "National Criminal and Federal Correctional Prosecutor's Office N°4 - Prosecutor Dr. Carlos Ernesto Stornelli - 2021 / 2023",
             desc: "Position: Officer",
+          },
+        ],
+      },
+      {
+        name: "Trainings",
+        desc: [
+          {
+            title: "Complutense University of Madrid, Spain - July 2024",
+            desc: "Specialization in Organized Crime and Terrorism",
+          },
+          {
+            title:
+              "Jesus College, University of Cambridge, United Kingdom - Assistant - September 2024",
+            desc: "Intensive Course for Leading Chinese Lawyers on Transnational Commercial Issues and Asset Recovery",
+          },
+          {
+            title:
+              "International Symposium on Economic Crime, Jesus College, University of Cambridge, United Kingdom",
+            desc: "Role: Clerk Assistance - Secretariat - 2014, 2015, 2016, 2017, 2018, 2019, 2022, 2023, 2024",
+          },
+          {
+            title:
+              "EF, Education First, Advanced English, London, United Kingdom",
+            desc: "2016",
+          },
+        ],
+      },
+      {
+        name: "Academic Activities",
+        desc: [
+          {
+            title:
+              "Faculty of Law, University of Buenos Aires - Assistant Professor - March 2024 / Present",
+            desc: `Department of Criminal Law and Criminology - “Elements of Criminal Law and Criminal Procedure” - Chair: Prof. Dr. Eugenio C. Sarrabayrouse and Dr. Mariano Borinsky.`,
           },
         ],
       },
@@ -1854,18 +2029,6 @@ export const arrayLawyers = [
         ],
       },
     ],
-  },
-  {
-    id: "arrayLawyers-16",
-    img: LawyerIMG16,
-    name: "Franco Montana",
-    experience: "legal assistant",
-    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
-    instagram: "https://www.instagram.com/crabog_/",
-    phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
-    document: "",
-    cv: "",
   },
   {
     id: "arrayLawyers-17",

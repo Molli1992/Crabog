@@ -1,8 +1,8 @@
 .body {
-  padding-bottom: 50px;
   cursor: pointer;
   position: relative;
   width: 100%;
+  background-color: #F0FFFF;
 }
 
 .image {
@@ -21,7 +21,7 @@
   padding: 30px 10px;
   display: flex;
   justify-content: center;
-  width: 70%;
+  width: 85%;
 }
 
 .cardName {

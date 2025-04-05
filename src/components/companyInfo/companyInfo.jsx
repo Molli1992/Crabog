@@ -31,7 +31,7 @@ export default function CompanyInfo() {
       id: "arrayList-a-2",
       name:
         language === "spanish"
-          ? "Conflictos societarios y litigios complejos"
+          ? "Conflictos Societarios y Litigios Complejos"
           : "Corporate conflicts and complex litigation",
       desc:
         language === "spanish"

@@ -142,6 +142,16 @@
   margin: 20px 0px;
 }
 
+.paginationIcons {
+  font-size: 42px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.paginationIcons:hover {
+  color: #cc4643;
+}
+
 .icons {
   font-size: 22px;
   cursor: pointer;

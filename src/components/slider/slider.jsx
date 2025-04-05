@@ -136,7 +136,15 @@ export default function Slider({
             arrayLawyers.map((data) => {
               return (
                 <SwiperSlide key={data.id} className={styles.centeredSlide}>
-                  <CardLawyers data={data} />
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      paddingBottom: "75px",
+                    }}
+                  >
+                    <CardLawyers data={data} />
+                  </div>
                 </SwiperSlide>
               );
             })}
@@ -162,10 +170,17 @@ export default function Slider({
                   justifyContent: "center",
                 }}
               >
-                <TeamCard
-                  data={data}
-                  height={index === activeIndex ? "80vh" : "60vh"}
-                />
+                <div
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                  }}
+                >
+                  <TeamCard
+                    data={data}
+                    height={index === activeIndex ? "80vh" : "60vh"}
+                  />
+                </div>
               </SwiperSlide>
             ))}
         </Swiper>

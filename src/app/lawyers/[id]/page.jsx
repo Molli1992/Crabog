@@ -259,8 +259,7 @@ export default function LawyersProfile() {
                     onClick={() =>
                       setCurrentPage((prev) => Math.max(prev - 1, 1))
                     }
-                    className={styles.icon}
-                    style={{ left: "0px" }}
+                    className={styles.paginationIcons}
                   />
                 )}
 
@@ -269,8 +268,7 @@ export default function LawyersProfile() {
                     onClick={() =>
                       setCurrentPage((prev) => Math.min(prev + 1, totalPages))
                     }
-                    className={styles.icon}
-                    style={{ right: "0px" }}
+                    className={styles.paginationIcons}
                   />
                 )}
               </div>

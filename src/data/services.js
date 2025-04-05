@@ -3,7 +3,7 @@ export const serviceList = [
     id: "serviceList-2",
     serviceName: "Corporate and Business Law",
     serviceDescription:
-      "We have a highly qualified team providing advisory services on Corporate and Business Law matters, including commercial contracts, corporate law issues, shareholder agreements, corporate disputes, business collaborations, reorganizations, and mergers & acquisitions.",
+      "We have a highly qualified team that provides comprehensive advice in Corporate and Business Law, supporting our clients at every stage of their business development. We assist both national and international companies in the structuring and execution of their commercial and corporate operations. Our services include the drafting and negotiation of commercial contracts, incorporation and reorganization of companies, preparation of shareholders’ agreements, resolution of corporate disputes, and the design of business collaboration structures. We also provide legal support in mergers and acquisitions, due diligence processes, and strategic planning. We stand out for offering practical, tailored solutions with a preventive approach, focused on enabling efficient and secure decision-making in today's business environment.",
   },
   {
     id: "serviceListSpanish-1",
@@ -15,7 +15,7 @@ export const serviceList = [
     id: "serviceList-5",
     serviceName: "Labor Law",
     serviceDescription:
-      "Our law firm has a dedicated Labor Law Department. We provide comprehensive advisory services in Labor Law to both companies and individuals.",
+      "Our firm has a Labor Law Department that provides comprehensive and strategic advice to both companies and workers. We offer solutions regarding hiring, dismissals, labor claims, individual and collective disputes, and representation before administrative and judicial bodies. We also conduct labor audits and develop internal policies to prevent contingencies. Our focus is on personalized attention, aimed at protecting our clients' rights and interests with commitment, efficiency, and professionalism.",
   },
   {
     id: "serviceList-6",
@@ -33,7 +33,7 @@ export const serviceList = [
     id: "serviceList-4",
     serviceName: "Criminal Law",
     serviceDescription:
-      "We have a highly qualified team providing advisory services on Criminal Law, Economic Criminal Law, and Tax Law matters. Our team specializes in defense strategies as well as initiating legal actions. Additionally, we have a Compliance Unit that offers tailored integrity programs to our clients, helping to mitigate or eliminate any potential criminal liability that their company and/or directors may face.",
+      "Our firm has a highly skilled Criminal Law team with extensive experience in the defense and representation of both individuals and legal entities in all types of criminal cases. We act both as defense attorneys and in the prosecution of private criminal complaints, intervening at every stage of the criminal process with commitment, strategic thinking, and technical rigor. We assist our clients in cases related to economic, financial, corporate, and tax crimes, as well as common and complex offenses, including crimes against individuals, public administration, sexual integrity, cybercrime, among others. Our practice is defined by a comprehensive approach that combines technical expertise with a deep understanding of the legal, institutional, and human context of each case. In addition, we have a dedicated Compliance Unit focused on prevention, which designs and implements tailored integrity programs. These programs aim not only to promote a culture of compliance within organizations but also to mitigate or exempt potential criminal liability for companies and their executives.",
   },
   {
     id: "serviceList-7",
@@ -48,7 +48,7 @@ export const serviceListSpanish = [
     id: "serviceListSpanish-2",
     serviceName: "Derecho Corporativo y Empresario",
     serviceDescription:
-      "Tenemos un equipo altamente calificado para brindar asesoramiento sobre cuestiones de Derecho Corporativo y Derecho Empresario, incluyendo contratos comerciales, cuestiones de Derechos Societario, convenios de accionistas, conflictos societarios, colaboración empresaria, reorganizaciones y fusiones / adquisiciones.",
+      "Contamos con un equipo altamente calificado para brindar asesoramiento integral en Derecho Corporativo y Empresario, acompañando a nuestros clientes en cada etapa del desarrollo de sus negocios. Asistimos tanto a empresas nacionales como internacionales en la estructuración y ejecución de sus operaciones comerciales y societarias. Nuestros servicios incluyen la redacción y negociación de contratos comerciales, constitución y reorganización de sociedades, elaboración de convenios de accionistas, resolución de conflictos societarios, y diseño de estructuras de colaboración empresaria. También brindamos asistencia legal en procesos de fusiones y adquisiciones, due diligence y planificación estratégica. Nos destacamos por ofrecer soluciones prácticas y a medida, con un enfoque preventivo, orientado a la toma de decisiones eficientes y seguras en el entorno empresarial actual.",
   },
   {
     id: "serviceListSpanish-1",
@@ -60,7 +60,7 @@ export const serviceListSpanish = [
     id: "serviceListSpanish-5",
     serviceName: "Derecho Laboral",
     serviceDescription:
-      "Nuestro estudio de abogados cuenta con un Departamento de Derecho Laboral. Brindamos nuestros servicios de asesoramiento integral en materia de Derecho Laboral tanto a empresas como a particulares.",
+      "Nuestro estudio cuenta con un Departamento de Derecho Laboral que ofrece asesoramiento integral y estratégico tanto a empresas como a trabajadores. Brindamos soluciones en temas de contrataciones, despidos, reclamos laborales, conflictos individuales y colectivos, y representación ante organismos administrativos y judiciales. También realizamos auditorías laborales y elaboramos políticas internas para prevenir contingencias. Nos enfocamos en una atención personalizada, orientada a proteger los derechos e intereses de nuestros clientes, con compromiso, eficiencia y profesionalismo.",
   },
   {
     id: "serviceListSpanish-6",
@@ -78,7 +78,7 @@ export const serviceListSpanish = [
     id: "serviceListSpanish-4",
     serviceName: "Derecho Penal",
     serviceDescription:
-      "Tenemos un equipo altamente calificado para brindar asesoramiento sobre cuestiones de Derecho Penal, Penal Económico y Tributario. Nuestro equipo se dedica a realizar defensas, como también a impulsar querellas. Además, poseemos una Unidad de Compliance para brindarles a los distintos clientes de la firma un programa de integridad a medida que los exima o atenúe la eventual responsabilidad penal que pudiera tener su empresa y/o sus directores.",
+      "Nuestro estudio cuenta con un equipo altamente capacitado en Derecho Penal, con amplia experiencia en la defensa y representación de personas físicas y jurídicas en todo tipo de causas penales. Actuamos tanto en calidad de defensores como en el impulso de querellas, interviniendo en todas las etapas del proceso penal con compromiso, estrategia y rigurosidad técnica. Asistimos a nuestros clientes en casos vinculados a delitos económicos, financieros, societarios y tributarios, como también en delitos comunes y complejos: delitos contra las personas, contra la administración pública, contra la integridad sexual, delitos informáticos, entre otros. Nuestra práctica se caracteriza por un enfoque integral, que combina el conocimiento técnico con una comprensión profunda del contexto jurídico, institucional y humano de cada caso. Además, contamos con una Unidad de Compliance orientada a la prevención, que diseña e implementa programas de integridad a medida. Estos programas buscan no solo promover una cultura de cumplimiento dentro de las organizaciones, sino también atenuar o eximir la eventual responsabilidad penal de las empresas y sus directivos.",
   },
   {
     id: "serviceListSpanish-7",
