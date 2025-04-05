@@ -256,18 +256,20 @@ export default function LawyersProfile() {
               >
                 {currentPage === 1 ? null : (
                   <TbArrowNarrowLeftDashed
-                    onClick={() =>
-                      setCurrentPage((prev) => Math.max(prev - 1, 1))
-                    }
+                    onClick={() => {
+                      setCurrentPage((prev) => Math.max(prev - 1, 1));
+                      setSelectedItemIndex(null);
+                    }}
                     className={styles.paginationIcons}
                   />
                 )}
 
                 {currentPage === totalPages ? null : (
                   <TbArrowNarrowRightDashed
-                    onClick={() =>
-                      setCurrentPage((prev) => Math.min(prev + 1, totalPages))
-                    }
+                    onClick={() => {
+                      setCurrentPage((prev) => Math.min(prev + 1, totalPages));
+                      setSelectedItemIndex(null);
+                    }}
                     className={styles.paginationIcons}
                   />
                 )}
