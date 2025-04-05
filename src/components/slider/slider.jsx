@@ -141,6 +141,9 @@ export default function Slider({
                       width: "100%",
                       height: "100%",
                       paddingBottom: "75px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
                     }}
                   >
                     <CardLawyers data={data} />
@@ -165,15 +168,16 @@ export default function Slider({
                 style={{
                   height: "85vh",
                   width: "100%",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
+                  paddingBottom: "50px",
                 }}
               >
                 <div
                   style={{
                     width: "100%",
                     height: "100%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
                   }}
                 >
                   <TeamCard
