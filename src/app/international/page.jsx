@@ -23,7 +23,7 @@ export default function International() {
               ? "RECONOCIMIENTO INTERNACIONAL"
               : "INTERNATIONAL RECOGNITION"
           }
-          color="#192d2f"
+          color="#cc4643"
         />
 
         <div className={styles.containerFlex}>
@@ -36,7 +36,7 @@ export default function International() {
                   ? "Proyección Internacional y Red Estratégica de Corresponsalía"
                   : "International Projection and Strategic Correspondence Network"
               }
-              color="#192d2f"
+              color="#cc4643"
               fontSize={"32px"}
             />
 
