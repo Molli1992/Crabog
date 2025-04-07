@@ -302,6 +302,82 @@ export const arrayLawyersSpanish = [
         ],
       },
       {
+        name: "Asociaciones",
+        desc: [
+          {
+            title: "Witan Hall College Inc. United Kingdom",
+            desc: "Director",
+          },
+          {
+            title: "Witan Hall College, Reading University, United Kingdom",
+            desc: "Member of the Board of Governors",
+          },
+          {
+            title:
+              "Colegio Público de Abogados de la Capital Federal, Buenos Aires",
+            desc: "Miembro",
+          },
+          {
+            title: "Society for Advance Legal Studies (“SALS”), United Kigdom",
+            desc: "Miembro Vitalicio",
+          },
+          {
+            title: "International Bar Association (“IBR”), Londres",
+            desc: "Miembro",
+          },
+          {
+            title: "LSE Law Society (“LSE”), Londres",
+            desc: "Miembro",
+          },
+          {
+            title: "Journal of Money Laundering Control, United Kingdom",
+            desc: "Member of the Editorial Board",
+          },
+          {
+            title:
+              "International Law Society, Stetson University, St.Petersburg, FL, U.S.A.",
+            desc: "Miembro",
+          },
+          {
+            title: "Belgrano Athletic Club, Buenos Aires",
+            desc: "Socio",
+          },
+          {
+            title: "East India Club, Londres",
+            desc: "Socio",
+          },
+          {
+            title: "Jockey Club",
+            desc: "Socio",
+          },
+          {
+            title: "Society of British-Argentine Lawyers, Londres",
+            desc: "Ex - Miembro",
+          },
+          {
+            title:
+              "The Royal Institute Of International Affairs (Chatam House), Londres",
+            desc: "Ex - Miembro",
+          },
+          {
+            title: "Anglo-Argentine Society, Londres",
+            desc: "Ex - Miembro",
+          },
+          {
+            title: "Club Argentino, Londres",
+            desc: "Ex - Miembro",
+          },
+          {
+            title: "Unión Argentina de Rugby",
+            desc: "Ex representante ante el Reino Unido",
+          },
+          {
+            title: "Unión de Rugby de Buenos Aires",
+            desc: "Ex Consejero",
+          },
+        ],
+      },
+      {
         name: "Idiomas",
         desc: [
           {
@@ -991,6 +1067,23 @@ export const arrayLawyersSpanish = [
         ],
       },
       {
+        name: "Asociaciones",
+        desc: [
+          {
+            title: "Belgrano Athletic Club, Buenos Aires",
+            desc: "Socia",
+          },
+          {
+            title: "Tortugas Country Club",
+            desc: "Socia",
+          },
+          {
+            title: "Jockey Club",
+            desc: "Socia",
+          },
+        ],
+      },
+      {
         name: "Idiomas",
         desc: [
           {
@@ -1496,6 +1589,82 @@ export const arrayLawyers = [
             title:
               "Faculty of Law, Pontifical Catholic University of Argentina - Assistant Professor, Commercial Law II Chair",
             desc: "1992 - 1994",
+          },
+        ],
+      },
+      {
+        name: "Associations",
+        desc: [
+          {
+            title: "Witan Hall College Inc., United Kingdom",
+            desc: "Director",
+          },
+          {
+            title: "Witan Hall College, Reading University, United Kingdom",
+            desc: "Member of the Board of Governors",
+          },
+          {
+            title:
+              "Public Bar Association of the Federal Capital, Buenos Aires",
+            desc: "Member",
+          },
+          {
+            title: "Society for Advanced Legal Studies (SALS), United Kingdom",
+            desc: "Lifetime Member",
+          },
+          {
+            title: "International Bar Association (IBA), London",
+            desc: "Member",
+          },
+          {
+            title: "LSE Law Society (LSE), London",
+            desc: "Member",
+          },
+          {
+            title: "Journal of Money Laundering Control, United Kingdom",
+            desc: "Member of the Editorial Board",
+          },
+          {
+            title:
+              "International Law Society, Stetson University, St. Petersburg, FL, U.S.A.",
+            desc: "Member",
+          },
+          {
+            title: "Belgrano Athletic Club, Buenos Aires",
+            desc: "Member",
+          },
+          {
+            title: "East India Club, London",
+            desc: "Member",
+          },
+          {
+            title: "Jockey Club",
+            desc: "Member",
+          },
+          {
+            title: "Society of British-Argentine Lawyers, London",
+            desc: "Former Member",
+          },
+          {
+            title:
+              "The Royal Institute of International Affairs (Chatham House), London",
+            desc: "Former Member",
+          },
+          {
+            title: "Anglo-Argentine Society, London",
+            desc: "Former Member",
+          },
+          {
+            title: "Argentine Club, London",
+            desc: "Former Member",
+          },
+          {
+            title: "Argentine Rugby Union",
+            desc: "Former Representative to the United Kingdom",
+          },
+          {
+            title: "Buenos Aires Rugby Union",
+            desc: "Former Counselor",
           },
         ],
       },
@@ -2181,6 +2350,23 @@ export const arrayLawyers = [
             title:
               "Faculty of Law, University of Buenos Aires - Assistant Professor - March 2024 / Present",
             desc: `Department of Criminal Law and Criminology - “Elements of Criminal Law and Criminal Procedure” - Chair: Prof. Dr. Eugenio C. Sarrabayrouse and Dr. Mariano Borinsky.`,
+          },
+        ],
+      },
+      {
+        name: "Associations",
+        desc: [
+          {
+            title: "Belgrano Athletic Club, Buenos Aires",
+            desc: "Member",
+          },
+          {
+            title: "Tortugas Country Club",
+            desc: "Member",
+          },
+          {
+            title: "Jockey Club",
+            desc: "Member",
           },
         ],
       },
