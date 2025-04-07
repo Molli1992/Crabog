@@ -11,9 +11,7 @@ import LawyerIMG9 from "../../public/lawyers-img/imagen-abogado-9.jpg";
 import LawyerIMG10 from "../../public/lawyers-img/imagen-abogado-10.jpg";
 import LawyerIMG11 from "../../public/lawyers-img/imagen-abogado-11.jpg";
 import LawyerIMG12 from "../../public/lawyers-img/imagen-abogado-12.png";
-import LawyerIMG15 from "../../public/lawyers-img/imagen-abogado-15.jpg";
-import LawyerIMG17 from "../../public/lawyers-img/imagen-abogado-17.jpg";
-import LawyerIMG18 from "../../public/lawyers-img/imagen-abogado-18.jpg";
+import LawyerIMG13 from "../../public/lawyers-img/imagen-abogado-13.jpg";
 
 export const arrayLawyersSpanish = [
   {
@@ -70,7 +68,7 @@ export const arrayLawyersSpanish = [
     name: "Marcelo J. Ruiz",
     experience: "Socio",
     linkedin: "https://www.linkedin.com/in/marcelo-ruiz-6858a26b/",
-    instagram: "https://www.instagram.com/marceloruiz65/",
+    instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
     email: "mruiz@crabog.com",
     document: "/cvs/CV-MARCELO-RUIZ.pdf",
@@ -226,7 +224,7 @@ export const arrayLawyersSpanish = [
     linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
     instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
+    email: "fcangueiro@crabog.com",
     document: "",
     cv: [
       {
@@ -272,9 +270,9 @@ export const arrayLawyersSpanish = [
     name: "Clementina Sanchez Farache",
     experience: "Socia",
     linkedin: "https://www.linkedin.com/in/cle-sanchez-farache-4a1465a6/",
-    instagram: "https://www.instagram.com/clementinasf/",
+    instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
+    email: "csanchezfarache@crabog.com",
     document: "/cvs/CV-CLEMENTINA-SANCHEZ.doc",
     cv: [
       {
@@ -356,9 +354,9 @@ export const arrayLawyersSpanish = [
     experience: "Asociada",
     linkedin:
       "https://www.linkedin.com/in/gabriela-in%C3%A9s-dom%C3%ADnguez-bba04591/",
-    instagram: "https://www.instagram.com/gidominguez2/",
+    instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
-    email: "gabriela.ines.dominguez@gmail.com",
+    email: "gdominguez@crabog.com",
     document: "/cvs/CV-GABRIELA-DOMINGUEZ.pdf",
     cv: [
       {
@@ -425,9 +423,9 @@ export const arrayLawyersSpanish = [
     name: "Ignacio Rondoletti",
     experience: "Asociado",
     linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
-    instagram: "https://www.instagram.com/ignaciorondoletti/",
+    instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
+    email: "irondoletti@crabog.com",
     document: "/cvs/CV-IGNACIO-RONDOLETTI.docx",
     cv: [
       {
@@ -508,7 +506,7 @@ export const arrayLawyersSpanish = [
     linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
     instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
+    email: "jbalbin@crabog.com",
     document: "",
     cv: [
       {
@@ -629,7 +627,7 @@ export const arrayLawyersSpanish = [
     name: "Federico Durini",
     experience: "Asociado",
     linkedin: "https://www.linkedin.com/in/federico-durini-8b0133b/",
-    instagram: "https://www.instagram.com/fdurini/",
+    instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
     email: "fdurini@crabog.com",
     document: "/cvs/CV-FEDERICO-DURINI.pdf",
@@ -815,9 +813,9 @@ export const arrayLawyersSpanish = [
     name: "Horacio Cangueiro",
     experience: "Abogado",
     linkedin: "https://www.linkedin.com/in/horacio-cangueiro-780b15177/",
-    instagram: "https://www.instagram.com/horicangueiro/",
+    instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
-    email: "horaciocangueiro@gmail.com",
+    email: "hcangueiro@crabog.com",
     document: "/cvs/CV-HORACIO-CANGUEIRO.pdf",
     cv: [
       {
@@ -877,7 +875,7 @@ export const arrayLawyersSpanish = [
     linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
     instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
-    email: "pluceropavon@gmail.com",
+    email: "plucero@crabog.com",
     document: "/cvs/CV-PEDRO-LUCERO.pdf",
     cv: [
       {
@@ -949,8 +947,8 @@ export const arrayLawyersSpanish = [
     ],
   },
   {
-    id: "arrayLawyers-15",
-    img: LawyerIMG15,
+    id: "arrayLawyers-13",
+    img: LawyerIMG13,
     name: "Maria Fernanda Cruz",
     experience: "Abogada",
     linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
@@ -1011,30 +1009,6 @@ export const arrayLawyersSpanish = [
       },
     ],
   },
-  {
-    id: "arrayLawyers-17",
-    img: LawyerIMG17,
-    name: "Juan Rapisarda",
-    experience: "Paralegal",
-    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
-    instagram: "https://www.instagram.com/crabog_/",
-    phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
-    document: "",
-    cv: "",
-  },
-  {
-    id: "arrayLawyers-18",
-    img: LawyerIMG18,
-    name: "Ana Ortiz",
-    experience: "Paralegal",
-    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
-    instagram: "https://www.instagram.com/crabog_/",
-    phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
-    document: "",
-    cv: "",
-  },
 ];
 
 // English =========================================================================================================================================================
@@ -1094,7 +1068,7 @@ export const arrayLawyers = [
     name: "Marcelo J. Ruiz",
     experience: "Partner",
     linkedin: "https://www.linkedin.com/in/marcelo-ruiz-6858a26b/",
-    instagram: "https://www.instagram.com/marceloruiz65/",
+    instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
     email: "mruiz@crabog.com",
     document: "/cvs/CV-MARCELO-RUIZ.pdf",
@@ -1250,7 +1224,7 @@ export const arrayLawyers = [
     linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
     instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
+    email: "fcangueiro@crabog.com",
     document: "",
     cv: [
       {
@@ -1296,9 +1270,9 @@ export const arrayLawyers = [
     name: "Clementina Sanchez Farache",
     experience: "Partner",
     linkedin: "https://www.linkedin.com/in/cle-sanchez-farache-4a1465a6/",
-    instagram: "https://www.instagram.com/clementinasf/",
+    instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
+    email: "csanchezfarache@crabog.com",
     document: "/cvs/CV-CLEMENTINA-SANCHEZ.doc",
     cv: [
       {
@@ -1380,9 +1354,9 @@ export const arrayLawyers = [
     experience: "Associate",
     linkedin:
       "https://www.linkedin.com/in/gabriela-in%C3%A9s-dom%C3%ADnguez-bba04591/",
-    instagram: "https://www.instagram.com/gidominguez2/",
+    instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
-    email: "gabriela.ines.dominguez@gmail.com",
+    email: "gdominguez@crabog.com",
     document: "/cvs/CV-GABRIELA-DOMINGUEZ.pdf",
     cv: [
       {
@@ -1446,9 +1420,9 @@ export const arrayLawyers = [
     name: "Ignacio Rondoletti",
     experience: "Associate",
     linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
-    instagram: "https://www.instagram.com/ignaciorondoletti/",
+    instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
+    email: "irondoletti@crabog.com",
     document: "/cvs/CV-IGNACIO-RONDOLETTI.docx",
     cv: [
       {
@@ -1528,7 +1502,7 @@ export const arrayLawyers = [
     linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
     instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
+    email: "jbalbin@crabog.com",
     document: "",
     cv: [
       {
@@ -1649,7 +1623,7 @@ export const arrayLawyers = [
     name: "Federico Durini",
     experience: "Associate",
     linkedin: "https://www.linkedin.com/in/federico-durini-8b0133b/",
-    instagram: "https://www.instagram.com/fdurini/",
+    instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
     email: "fdurini@crabog.com",
     document: "/cvs/CV-FEDERICO-DURINI.pdf",
@@ -1835,9 +1809,9 @@ export const arrayLawyers = [
     name: "Horacio Cangueiro",
     experience: "Lawyer",
     linkedin: "https://www.linkedin.com/in/horacio-cangueiro-780b15177/",
-    instagram: "https://www.instagram.com/horicangueiro/",
+    instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
-    email: "horaciocangueiro@gmail.com",
+    email: "hcangueiro@crabog.com",
     document: "/cvs/CV-HORACIO-CANGUEIRO.pdf",
     cv: [
       {
@@ -1897,7 +1871,7 @@ export const arrayLawyers = [
     linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
     instagram: "https://www.instagram.com/crabog_/",
     phone: "+54 911 4021-7000",
-    email: "pluceropavon@gmail.com",
+    email: "plucero@crabog.com",
     document: "/cvs/CV-PEDRO-LUCERO.pdf",
     cv: [
       {
@@ -1969,8 +1943,8 @@ export const arrayLawyers = [
     ],
   },
   {
-    id: "arrayLawyers-15",
-    img: LawyerIMG15,
+    id: "arrayLawyers-13",
+    img: LawyerIMG13,
     name: "Maria Fernanda Cruz",
     experience: "Lawyer",
     linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
@@ -2029,29 +2003,5 @@ export const arrayLawyers = [
         ],
       },
     ],
-  },
-  {
-    id: "arrayLawyers-17",
-    img: LawyerIMG17,
-    name: "Juan Rapisarda",
-    experience: "legal assistant",
-    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
-    instagram: "https://www.instagram.com/crabog_/",
-    phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
-    document: "",
-    cv: "",
-  },
-  {
-    id: "arrayLawyers-18",
-    img: LawyerIMG18,
-    name: "Ana Ortiz",
-    experience: "legal assistant",
-    linkedin: "https://www.linkedin.com/company/cangueiro-ruiz-abogados/",
-    instagram: "https://www.instagram.com/crabog_/",
-    phone: "+54 911 4021-7000",
-    email: "secretarias@crabog.com",
-    document: "",
-    cv: "",
   },
 ];

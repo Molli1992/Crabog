@@ -71,8 +71,8 @@ export default function Footer() {
             </p>
             <p className={styles.text} style={{ color: "#1d2939b8" }}>
               {language === "spanish"
-                ? "Lun a vie: 9hs a 18hs"
-                : "Mon-Fri: 9am - 6pm"}
+                ? "Lun a vie: 8hs a 20hs"
+                : "Mon-Fri: 8am - 8pm"}
             </p>
           </div>
         </div>

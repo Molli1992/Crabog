@@ -19,20 +19,20 @@ export default function Home() {
   const arrayImages = [homeImg1, homeImg2, homeImg3, homeImg4];
   const arrayTitles = [
     language === "spanish"
-      ? "Servicios jurídicos confiables y especializados"
-      : "Reliable and specialized legal services",
+      ? "Conocimientos Solidos y Especializados"
+      : "Solid and Specialized Knowledge",
 
     language === "spanish"
-      ? "Enfoque especial para cada caso"
-      : "Special approach for each case",
+      ? "Trabajo en Equipo y Coordinado"
+      : "Teamwork and Coordination",
 
     language === "spanish"
-      ? "Experiencia en la que puedes confiar"
-      : "Experience you can trust",
+      ? "Defensa Ferrea de los Intereses de Nuestros Clientes"
+      : "Strong Defense of Our Clients' Interests",
 
     language === "spanish"
-      ? "Abogado de confianza para tus necesidades"
-      : "Trusted lawyer for your needs",
+      ? "Abogado de Confianza para tus Necesidades"
+      : "Trusted Lawyer for Your Needs",
   ];
 
   useEffect(() => {

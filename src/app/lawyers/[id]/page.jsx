@@ -40,7 +40,7 @@ export default function LawyersProfile() {
 
   const [selectedItemIndex, setSelectedItemIndex] = useState(null);
 
-  const itemsPerPage = 3;
+  const itemsPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
