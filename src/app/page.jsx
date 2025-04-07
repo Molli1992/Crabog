@@ -4,9 +4,10 @@ import styles from "./page.module.css";
 import { motion } from "framer-motion";
 import useLanguageStore from "@/zustand/useLanguageStore";
 import homeImg1 from "../../public/home-img/foto-exterior-4.jpg";
-import homeImg2 from "../../public/home-img/foto-grupal.jpeg";
+import homeImg2 from "../../public/home-img/crabog-directorio.jpg";
 import homeImg3 from "../../public/home-img/foto-exterior-3.jpg";
 import homeImg4 from "../../public/home-img/foto-con-logo-1.jpg";
+import homeImg5 from "../../public/home-img/foto-grupal.jpeg";
 import FormContact from "@/components/formContact/formContact";
 import ServicesList from "@/components/servicesList/servicesList";
 import CompanyInfo from "@/components/companyInfo/companyInfo";
@@ -16,7 +17,7 @@ import CompanyInfo2 from "@/components/compnayInfo2/companyInfo2";
 export default function Home() {
   const { language } = useLanguageStore();
   const [currentIndex, setCurrentIndex] = useState(0);
-  const arrayImages = [homeImg1, homeImg2, homeImg3, homeImg4];
+  const arrayImages = [homeImg1, homeImg2, homeImg3, homeImg4, homeImg5];
   const arrayTitles = [
     language === "spanish"
       ? "Conocimientos Solidos y Especializados"
@@ -33,6 +34,8 @@ export default function Home() {
     language === "spanish"
       ? "Abogado de Confianza para tus Necesidades"
       : "Trusted Lawyer for Your Needs",
+
+    language === "spanish" ? "" : "",
   ];
 
   useEffect(() => {

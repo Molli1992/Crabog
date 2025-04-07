@@ -48,7 +48,7 @@ export const arrayLawyersSpanish = [
         ],
       },
       {
-        name: "Antecedentes Como Docente y Disertante",
+        name: "Actividades Academicas",
         desc: [
           {
             title:
@@ -113,7 +113,7 @@ export const arrayLawyersSpanish = [
         ],
       },
       {
-        name: "Antecedentes Cientificos",
+        name: "Publicaciones",
         desc: [
           {
             title:
@@ -283,6 +283,21 @@ export const arrayLawyersSpanish = [
           {
             title: "PRESIDENTE DE BELGRANO ATHLETIC CLUB",
             desc: "2013 - 2019",
+          },
+        ],
+      },
+      {
+        name: "Actividades Academicas",
+        desc: [
+          {
+            title:
+              "International Symposium on Economic Crime Jesus College, Cambridge University - Orador y Chariman",
+            desc: "1997 - a la fecha",
+          },
+          {
+            title:
+              "Facultad de Derecho, Universidad Cátolica Argentina Profesor Asistente - Cátedra Derecho Comercial II",
+            desc: "1992 - 1994",
           },
         ],
       },
@@ -1231,7 +1246,7 @@ export const arrayLawyers = [
         ],
       },
       {
-        name: "Teaching and Speaking Background",
+        name: "Academic Activities",
         desc: [
           {
             title:
@@ -1296,7 +1311,7 @@ export const arrayLawyers = [
         ],
       },
       {
-        name: "Scientific Background",
+        name: "Publications",
         desc: [
           {
             title:
@@ -1466,6 +1481,21 @@ export const arrayLawyers = [
           {
             title: "PRESIDENT OF BELGRANO ATHLETIC CLUB",
             desc: "2013 - 2019",
+          },
+        ],
+      },
+      {
+        name: "Academic Activities",
+        desc: [
+          {
+            title:
+              "International Symposium on Economic Crime, Jesus College, Cambridge University - Speaker and Chairman",
+            desc: "1997 - present",
+          },
+          {
+            title:
+              "Faculty of Law, Pontifical Catholic University of Argentina - Assistant Professor, Commercial Law II Chair",
+            desc: "1992 - 1994",
           },
         ],
       },
