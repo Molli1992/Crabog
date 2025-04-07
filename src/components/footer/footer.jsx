@@ -67,7 +67,10 @@ export default function Footer() {
           <LuAlarmClock className={styles.icons} />
           <div className={styles.containerText}>
             <p className={styles.text}>
-              {language === "spanish" ? "Horas de trabajo" : "Working Hours"}:
+              {language === "spanish"
+                ? "Horario de Atencion"
+                : "Business Hours"}
+              :
             </p>
             <p className={styles.text} style={{ color: "#1d2939b8" }}>
               {language === "spanish"

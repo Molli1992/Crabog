@@ -73,7 +73,7 @@ export default function Contact() {
         <div className={styles.item}>
           <LuAlarmClock className={styles.icons} />
           <h1 className={styles.itemTitle}>
-            {language === "spanish" ? "Horas de trabajo" : "Working Hours"}
+            {language === "spanish" ? "Horario de Atencion" : "Business Hours"}
           </h1>
           <p className={styles.itemText}>
             {language === "spanish"
