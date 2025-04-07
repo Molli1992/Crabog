@@ -38,6 +38,10 @@
 .desc {
   font-size: 16px;
   color: #1d2939b8;
+  text-align: justify;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 @media (max-width: 850px) {

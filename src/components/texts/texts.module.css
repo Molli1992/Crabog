@@ -12,6 +12,10 @@
   color: #ffffff82;
   font-size: 14px;
   line-height: 20px;
+  text-align: justify;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 @media (max-width: 650px) {

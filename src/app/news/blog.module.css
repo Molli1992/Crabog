@@ -89,6 +89,10 @@
 .aboutUs {
   color: #1d2939b8;
   font-size: 14px;
+  text-align: justify;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .button {
