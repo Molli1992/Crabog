@@ -418,6 +418,46 @@ export const arrayLawyersSpanish = [
         ],
       },
       {
+        name: "Actividad Academica",
+        desc: [
+          {
+            title:
+              "Profesora Titular “Nuevas estrategias en Concurso Preventivo y Quiebras” - UBA - Departamento de Derecho Económico Empresarial.",
+            desc: "",
+          },
+          {
+            title:
+              "Profesora en “Concursos y Quiebras”, Comisión Juan Antonio Anich, Cátedra Marcelo Gebhardt - UBA.",
+            desc: "",
+          },
+        ],
+      },
+      {
+        name: "Publicaciones",
+        desc: [
+          {
+            title:
+              "Co autora “SOCIEDADES”, Director : Marcelo Gebhardt. Editorial Astrea Año 2019",
+            desc: "",
+          },
+          {
+            title:
+              "Co autora “ CONCURSOS Y QUIEBRAS” Director: Marcelo Gebhardt- Editorial Astrea. Año 2020",
+            desc: "",
+          },
+        ],
+      },
+      {
+        name: "Membresias",
+        desc: [
+          {
+            title:
+              "Colegio Público de Abogados de la Ciudad Autónoma de Buenos Aires",
+            desc: "",
+          },
+        ],
+      },
+      {
         name: "Idiomas",
         desc: [
           {
@@ -484,6 +524,16 @@ export const arrayLawyersSpanish = [
             title:
               "Instituto Sagrado Corazón de Barracas Ayudante de tareas administrativas - Mar 2007 / Abr 2010",
             desc: `1. Tareas administrativas y trámites bancarios. 2. Confección de certificaciones de aportes y servicios y trámites ante organismos de la administración pública.`,
+          },
+        ],
+      },
+      {
+        name: "Membresias",
+        desc: [
+          {
+            title:
+              "Colegio Público de Abogados de la Ciudad Autónoma de Buenos Aires",
+            desc: "",
           },
         ],
       },
@@ -565,6 +615,30 @@ export const arrayLawyersSpanish = [
         ],
       },
       {
+        name: "Publicaciones",
+        desc: [
+          {
+            title:
+              "Revista Informe Asegurador, comentarios sobre fallos y jurisprudencia (2009-2012).",
+            desc: "",
+          },
+        ],
+      },
+      {
+        name: "Membresias",
+        desc: [
+          {
+            title:
+              "Colegio Público de Abogados de la Ciudad Autónoma de Buenos Aires",
+            desc: "",
+          },
+          {
+            title: "Belgrano Athletic Club",
+            desc: "",
+          },
+        ],
+      },
+      {
         name: "Idiomas",
         desc: [
           {
@@ -613,6 +687,16 @@ export const arrayLawyersSpanish = [
           {
             title: "Colegio Público de Abogados de la Ciudad de Buenos Aires",
             desc: ``,
+          },
+        ],
+      },
+      {
+        name: "Membresias",
+        desc: [
+          {
+            title:
+              "Colegio Público de Abogados de la Ciudad Autónoma de Buenos Aires",
+            desc: "",
           },
         ],
       },
@@ -765,6 +849,20 @@ export const arrayLawyersSpanish = [
           {
             title: "Bulló Tassi Estebenet Lipera Torassa Abogados",
             desc: `Asociado Senior desde 1998 hasta 2003. Desempeño en el Departamento de Derecho Bancario, Financiero, Mercado de Capitales y Fusiones y Adquisiciones del Estudio.`,
+          },
+        ],
+      },
+      {
+        name: "Membresias",
+        desc: [
+          {
+            title:
+              "Colegio Público de Abogados de la Ciudad Autónoma de Buenos Aires",
+            desc: "",
+          },
+          {
+            title: "Northwestern University - Alumni Club",
+            desc: "",
           },
         ],
       },
@@ -1503,6 +1601,46 @@ export const arrayLawyers = [
         ],
       },
       {
+        name: "Academic Activity",
+        desc: [
+          {
+            title:
+              'Full Professor of "New Strategies in Preventive Bankruptcy and Liquidation" - University of Buenos Aires (UBA) - Department of Business Economic Law.',
+            desc: "",
+          },
+          {
+            title:
+              'Professor of "Bankruptcy and Insolvency", Juan Antonio Anich Commission, Chair of Marcelo Gebhardt - UBA.',
+            desc: "",
+          },
+        ],
+      },
+      {
+        name: "Publications",
+        desc: [
+          {
+            title:
+              'Co-author of "CORPORATIONS", Director: Marcelo Gebhardt. Astrea Publishing House, 2019.',
+            desc: "",
+          },
+          {
+            title:
+              'Co-author of "BANKRUPTCY AND INSOLVENCY", Director: Marcelo Gebhardt. Astrea Publishing House, 2020.',
+            desc: "",
+          },
+        ],
+      },
+      {
+        name: "Memberships",
+        desc: [
+          {
+            title:
+              "Public Bar Association of the Autonomous City of Buenos Aires",
+            desc: "",
+          },
+        ],
+      },
+      {
         name: "Languages",
         desc: [
           {
@@ -1566,6 +1704,16 @@ export const arrayLawyers = [
             title:
               "Institute Sagrado Corazón de Barracas Administrative Assistant - Mar 2007 / Apr 2010",
             desc: `1. Administrative tasks and banking procedures. 2. Preparation of contribution and service certifications, as well as administrative procedures before public administration entities.`,
+          },
+        ],
+      },
+      {
+        name: "Memberships",
+        desc: [
+          {
+            title:
+              "Public Bar Association of the Autonomous City of Buenos Aires",
+            desc: "",
           },
         ],
       },
@@ -1646,6 +1794,30 @@ export const arrayLawyers = [
         ],
       },
       {
+        name: "Publications",
+        desc: [
+          {
+            title:
+              "Insurance Report Magazine, commentary on rulings and case law (2009 - 2012).",
+            desc: "",
+          },
+        ],
+      },
+      {
+        name: "Memberships",
+        desc: [
+          {
+            title:
+              "Public Bar Association of the Autonomous City of Buenos Aires",
+            desc: "",
+          },
+          {
+            title: "Belgrano Athletic Club",
+            desc: "",
+          },
+        ],
+      },
+      {
         name: "Languages",
         desc: [
           {
@@ -1693,6 +1865,16 @@ export const arrayLawyers = [
           },
           {
             title: "Public Bar Association of the City of Buenos Aires",
+            desc: "",
+          },
+        ],
+      },
+      {
+        name: "Memberships",
+        desc: [
+          {
+            title:
+              "Public Bar Association of the Autonomous City of Buenos Aires",
             desc: "",
           },
         ],
@@ -1846,6 +2028,20 @@ export const arrayLawyers = [
           {
             title: "Bulló Tassi Estebenet Lipera Torassa Abogados",
             desc: "Senior Associate from 1998 to 2003. Worked in the Banking, Financial, Capital Markets, and Mergers and Acquisitions Law Department of the firm.",
+          },
+        ],
+      },
+      {
+        name: "Memberships",
+        desc: [
+          {
+            title:
+              "Public Bar Association of the Autonomous City of Buenos Aires",
+            desc: "",
+          },
+          {
+            title: "Northwestern University - Alumni Club",
+            desc: "",
           },
         ],
       },
