@@ -1,6 +1,5 @@
 import styles from "./cardLawyers.module.css";
 import Title from "@/components/texts/title/title";
-import Description from "@/components/texts/description/description";
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import toastStore from "@/zustand/toastStore";
 import useLanguageStore from "@/zustand/useLanguageStore";
@@ -75,7 +74,7 @@ export default function CardLawyers({ data }) {
 
       <div className={styles.containerInfo}>
         <Title value={data.name} fontSize="24px" color="#192d2f" />
-        <Description value={data.experience} color="#cc4643" />
+        <p className={styles.description}>{data.experience}</p>
       </div>
     </div>
   );

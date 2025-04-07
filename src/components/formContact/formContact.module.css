@@ -8,6 +8,12 @@
   min-width: 750px;
 }
 
+.description {
+  color: #1f242c;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .containerInput {
   width: 100%;
   display: flex;

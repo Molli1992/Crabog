@@ -4,7 +4,6 @@ import useLanguageStore from "@/zustand/useLanguageStore";
 import Swal from "sweetalert2";
 import { ClipLoader } from "react-spinners";
 import Title from "@/components/texts/title/title";
-import Description from "@/components/texts/description/description";
 
 export default function FormContact() {
   const { language } = useLanguageStore();
@@ -127,14 +126,11 @@ export default function FormContact() {
         fontSize="36px"
       />
 
-      <Description
-        value={
-          language === "spanish"
-            ? "Complete este formulario y nuestros especialistas se comunicarán con usted en breve para una consulta detallada."
-            : "Fill out this form and our specialists will contact you shortly for detailed consultation."
-        }
-        color="#1f242c"
-      />
+      <p className={styles.description}>
+        {language === "spanish"
+          ? "Complete este formulario y nuestros especialistas se comunicarán con usted en breve para una consulta detallada."
+          : "Fill out this form and our specialists will contact you shortly for detailed consultation."}
+      </p>
 
       <div className={styles.containerInput}>
         <input
