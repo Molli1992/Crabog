@@ -30,6 +30,13 @@
   align-items: center;
 }
 
+.containerOpenLinks {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
 .opneLinks {
   background-color: #ffffff;
   width: 175px;
@@ -128,7 +135,7 @@
   gap: 20px;
 }
 
-@media (max-width: 1675px) {
+@media (max-width: 1500px) {
   .body {
     padding: 0px 20px;
   }
