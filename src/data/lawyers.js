@@ -15,139 +15,6 @@ import LawyerIMG13 from "../../public/lawyers-img/imagen-abogado-13.jpg";
 
 export const arrayLawyersSpanish = [
   {
-    id: "arrayLawyers-1",
-    img: LawyerIMG1,
-    name: "Marcelo Cangueiro",
-    experience: "Socio",
-    linkedin: "https://www.linkedin.com/in/marcelo-cangueiro-01125964/",
-    instagram: "https://www.instagram.com/crabog_/",
-    phone: "+54 911 4021-7000",
-    email: "mcangueiro@crabog.com",
-    document: "/cvs/CV-MARCELO-CANGUEIRO.doc",
-    cv: [
-      {
-        name: "Estudios",
-        desc: [
-          {
-            title: "Abogado",
-            desc: "Facultad de Derecho y Ciencias Sociales - Universidad de Buenos Aires - 25 de marzo 1985",
-          },
-          {
-            title: "Procurador",
-            desc: "Facultad de Derecho y Ciencias Sociales - Universidad de Buenos Aires - 25 de marzo 1985",
-          },
-        ],
-      },
-      {
-        name: "Experiencia Laboral",
-        desc: [
-          {
-            title: "",
-            desc: "Actuación profesional para entes supranacionales, entes públicos y empresas privadas. Abogado contratado por International Finance Corporation, brazo del Banco Mundial para el financiamiento de empresas privadas, así como por otros organismos multilaterales de crédito. Abogado contratado por la Provincia de Neuquén (Fiscalía de Estado) para asesoramiento e intervención en procesos litigiosos comerciales en la Justicia Nacional, en defensa de los intereses de la Provincia y de entes autárquicos provinciales (Corporación Instituto Autárquico Minero de Neuquén - CORMINE -, Instituto Autárquico de Desarrollo Económico Provincial - IADEP). Abogado de numerosas empresas nacionales e internacionales.",
-          },
-        ],
-      },
-      {
-        name: "Actividades Academicas",
-        desc: [
-          {
-            title:
-              "Profesor de la Cátedra de Derecho Comercial del Dr. Daniel Roque Vítolo en la Facultad de Ciencias Económicas de la Universidad de Belgrano, con cargo de Coordinador Docente desde el año 1992, legajo nro. 4491.",
-            desc: "",
-          },
-          {
-            title:
-              "Profesor de la Cátedra de Sociedades del Dr. Ricardo Augusto Nissen en la Facultad de Derecho de la Universidad de Belgrano, desde el año 1994, legajo 4491.",
-            desc: "",
-          },
-          {
-            title:
-              "Profesor de la Cátedra de Sociedades del Dr. Roberto A. Muguillo, Facultad de Derecho de la Universidad de Belgrano, con cargo desde el Año 2002.",
-            desc: "",
-          },
-          {
-            title:
-              "Profesor de la materia “Conflictos Societarios”, Cátedra del Dr. Roberto Muguillo en la Universidad de Buenos Aires.",
-            desc: "",
-          },
-          {
-            title:
-              "Profesor de la Cátedra de Derecho Comercial del Dr. Marcelo Castrogiovanni, de la Facultad de Derecho de la U.B.A.",
-            desc: "",
-          },
-          {
-            title:
-              "Profesor Invitado Universidad Notarial Argentina, Curso de especialización “Negocios Societarios”.",
-            desc: "",
-          },
-          {
-            title:
-              "Profesor Invitado Universidad Austral, Conferencia sobre “ Efectos del Acuerdo Homologado del Asegurador en relación a la obligación del asegurador en el seguro de responsabilidad civil”, Año 2002.",
-            desc: "",
-          },
-          {
-            title:
-              "Profesor de la materia Contratos Comerciales Cátedra Dr. Roberto Muguillo, Universidad de Buenos Aires.",
-            desc: "",
-          },
-          {
-            title:
-              "Profesor Invitado en FUNDESI para Jornada temas de Actualidad en Derecho Societario, año 2013 y 2014.",
-            desc: "",
-          },
-          {
-            title:
-              "Profesor Colaborador en la materia Estrategias en el Concurso preventivo y en la Quiebra” a cargo Dra. Clementina Sánchez Farache.",
-            desc: "",
-          },
-          {
-            title:
-              "Disertante invitado por el Instituto de Derecho Comercial de la Universidad F.A.S.T.A., Mar del Plata, Junio 2003. tema: Sociedades Irregulares o de Hecho. Problemática.",
-            desc: "",
-          },
-          {
-            title:
-              "Disertante invitado al Primer Simposio Internacional de Crímenes Económicos, organizado por la Universidad de Cambridge y Universidad Notarial Argentina, en Cambridge Noviembre 2004.",
-            desc: "",
-          },
-        ],
-      },
-      {
-        name: "Publicaciones",
-        desc: [
-          {
-            title:
-              "Autor del Artículo: ”Efectos del Acuerdo Homologado del Asegurado en relación a la obligación del Asegurador en el Seguro de Responsabilidad Civil”, Anuario de Derecho Concursal, 2001 – Año 1, Director Jorge Daniel Grispo, Editorial Ad-Hoc, año 2001.",
-            desc: "",
-          },
-          {
-            title:
-              "Autor del Artículo:”LA INSUFICIENCIA PATRIMONIAL FRENTE A LA INEFICACIA CONCURSAL”, Anuario de Derecho Concursal, 2002 – Año 2, Director Jorge Daniel Grispo, Editorial Ad-Hoc, año 2002.",
-            desc: "",
-          },
-          {
-            title:
-              "Co-autor en la redacción del capítulo dedicado al contrato de prenda comercial del libro CONTRATOS COMERCIALES del Dr. Daniel Roque Vítolo, de Editorial Ad-Hoc, año 1993.",
-            desc: "",
-          },
-        ],
-      },
-      {
-        name: "Idiomas",
-        desc: [
-          {
-            title: "Inglés",
-            desc: "Avanzado",
-          },
-          {
-            title: "Español",
-            desc: "Nativo",
-          },
-        ],
-      },
-    ],
-  },
-  {
     id: "arrayLawyers-2",
     img: LawyerIMG2,
     name: "Marcelo J. Ruiz",
@@ -374,6 +241,139 @@ export const arrayLawyersSpanish = [
           {
             title: "Unión de Rugby de Buenos Aires",
             desc: "Ex Consejero",
+          },
+        ],
+      },
+      {
+        name: "Idiomas",
+        desc: [
+          {
+            title: "Inglés",
+            desc: "Avanzado",
+          },
+          {
+            title: "Español",
+            desc: "Nativo",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "arrayLawyers-1",
+    img: LawyerIMG1,
+    name: "Marcelo Cangueiro",
+    experience: "Socio",
+    linkedin: "https://www.linkedin.com/in/marcelo-cangueiro-01125964/",
+    instagram: "https://www.instagram.com/crabog_/",
+    phone: "+54 911 4021-7000",
+    email: "mcangueiro@crabog.com",
+    document: "/cvs/CV-MARCELO-CANGUEIRO.doc",
+    cv: [
+      {
+        name: "Estudios",
+        desc: [
+          {
+            title: "Abogado",
+            desc: "Facultad de Derecho y Ciencias Sociales - Universidad de Buenos Aires - 25 de marzo 1985",
+          },
+          {
+            title: "Procurador",
+            desc: "Facultad de Derecho y Ciencias Sociales - Universidad de Buenos Aires - 25 de marzo 1985",
+          },
+        ],
+      },
+      {
+        name: "Experiencia Laboral",
+        desc: [
+          {
+            title: "",
+            desc: "Actuación profesional para entes supranacionales, entes públicos y empresas privadas. Abogado contratado por International Finance Corporation, brazo del Banco Mundial para el financiamiento de empresas privadas, así como por otros organismos multilaterales de crédito. Abogado contratado por la Provincia de Neuquén (Fiscalía de Estado) para asesoramiento e intervención en procesos litigiosos comerciales en la Justicia Nacional, en defensa de los intereses de la Provincia y de entes autárquicos provinciales (Corporación Instituto Autárquico Minero de Neuquén - CORMINE -, Instituto Autárquico de Desarrollo Económico Provincial - IADEP). Abogado de numerosas empresas nacionales e internacionales.",
+          },
+        ],
+      },
+      {
+        name: "Actividades Academicas",
+        desc: [
+          {
+            title:
+              "Profesor de la Cátedra de Derecho Comercial del Dr. Daniel Roque Vítolo en la Facultad de Ciencias Económicas de la Universidad de Belgrano, con cargo de Coordinador Docente desde el año 1992, legajo nro. 4491.",
+            desc: "",
+          },
+          {
+            title:
+              "Profesor de la Cátedra de Sociedades del Dr. Ricardo Augusto Nissen en la Facultad de Derecho de la Universidad de Belgrano, desde el año 1994, legajo 4491.",
+            desc: "",
+          },
+          {
+            title:
+              "Profesor de la Cátedra de Sociedades del Dr. Roberto A. Muguillo, Facultad de Derecho de la Universidad de Belgrano, con cargo desde el Año 2002.",
+            desc: "",
+          },
+          {
+            title:
+              "Profesor de la materia “Conflictos Societarios”, Cátedra del Dr. Roberto Muguillo en la Universidad de Buenos Aires.",
+            desc: "",
+          },
+          {
+            title:
+              "Profesor de la Cátedra de Derecho Comercial del Dr. Marcelo Castrogiovanni, de la Facultad de Derecho de la U.B.A.",
+            desc: "",
+          },
+          {
+            title:
+              "Profesor Invitado Universidad Notarial Argentina, Curso de especialización “Negocios Societarios”.",
+            desc: "",
+          },
+          {
+            title:
+              "Profesor Invitado Universidad Austral, Conferencia sobre “ Efectos del Acuerdo Homologado del Asegurador en relación a la obligación del asegurador en el seguro de responsabilidad civil”, Año 2002.",
+            desc: "",
+          },
+          {
+            title:
+              "Profesor de la materia Contratos Comerciales Cátedra Dr. Roberto Muguillo, Universidad de Buenos Aires.",
+            desc: "",
+          },
+          {
+            title:
+              "Profesor Invitado en FUNDESI para Jornada temas de Actualidad en Derecho Societario, año 2013 y 2014.",
+            desc: "",
+          },
+          {
+            title:
+              "Profesor Colaborador en la materia Estrategias en el Concurso preventivo y en la Quiebra” a cargo Dra. Clementina Sánchez Farache.",
+            desc: "",
+          },
+          {
+            title:
+              "Disertante invitado por el Instituto de Derecho Comercial de la Universidad F.A.S.T.A., Mar del Plata, Junio 2003. tema: Sociedades Irregulares o de Hecho. Problemática.",
+            desc: "",
+          },
+          {
+            title:
+              "Disertante invitado al Primer Simposio Internacional de Crímenes Económicos, organizado por la Universidad de Cambridge y Universidad Notarial Argentina, en Cambridge Noviembre 2004.",
+            desc: "",
+          },
+        ],
+      },
+      {
+        name: "Publicaciones",
+        desc: [
+          {
+            title:
+              "Autor del Artículo: ”Efectos del Acuerdo Homologado del Asegurado en relación a la obligación del Asegurador en el Seguro de Responsabilidad Civil”, Anuario de Derecho Concursal, 2001 – Año 1, Director Jorge Daniel Grispo, Editorial Ad-Hoc, año 2001.",
+            desc: "",
+          },
+          {
+            title:
+              "Autor del Artículo:”LA INSUFICIENCIA PATRIMONIAL FRENTE A LA INEFICACIA CONCURSAL”, Anuario de Derecho Concursal, 2002 – Año 2, Director Jorge Daniel Grispo, Editorial Ad-Hoc, año 2002.",
+            desc: "",
+          },
+          {
+            title:
+              "Co-autor en la redacción del capítulo dedicado al contrato de prenda comercial del libro CONTRATOS COMERCIALES del Dr. Daniel Roque Vítolo, de Editorial Ad-Hoc, año 1993.",
+            desc: "",
           },
         ],
       },
@@ -1306,139 +1306,6 @@ export const arrayLawyersSpanish = [
 
 export const arrayLawyers = [
   {
-    id: "arrayLawyers-1",
-    img: LawyerIMG1,
-    name: "Marcelo Cangueiro",
-    experience: "Partner",
-    linkedin: "https://www.linkedin.com/in/marcelo-cangueiro-01125964/",
-    instagram: "https://www.instagram.com/crabog_/",
-    phone: "+54 911 4021-7000",
-    email: "mcangueiro@crabog.com",
-    document: "/cvs/CV-MARCELO-CANGUEIRO.doc",
-    cv: [
-      {
-        name: "Education",
-        desc: [
-          {
-            title: "Lawyer",
-            desc: "Faculty of Law and Social Sciences - University of Buenos Aires - March 25, 1985",
-          },
-          {
-            title: "Attorney",
-            desc: "Faculty of Law and Social Sciences - University of Buenos Aires - March 25, 1985",
-          },
-        ],
-      },
-      {
-        name: "Work Experiencie",
-        desc: [
-          {
-            title: "",
-            desc: "Professional performance for supranational entities, public entities, and private companies. Lawyer contracted by the International Finance Corporation, the World Bank's arm for financing private companies, as well as other multilateral credit organizations. Lawyer contracted by the Province of Neuquén (State Attorney's Office) for advisory services and participation in commercial litigation processes before the National Judiciary in defense of the interests of the Province and its autonomous entities (Corporation Institute of Autonomous Mining of Neuquén – CORMINE – and the Autonomous Institute for Provincial Economic Development – IADEP). Lawyer for numerous national and international companies.",
-          },
-        ],
-      },
-      {
-        name: "Academic Activities",
-        desc: [
-          {
-            title:
-              "Professor in the Commercial Law Chair of Dr. Daniel Roque Vítolo at the Faculty of Economic Sciences of the University of Belgrano, serving as Teaching Coordinator since 1992, file no. 4491.",
-            desc: "",
-          },
-          {
-            title:
-              "Professor in the Corporate Law Chair of Dr. Ricardo Augusto Nissen at the Faculty of Law of the University of Belgrano since 1994, file no. 4491.",
-            desc: "",
-          },
-          {
-            title:
-              "Professor in the Corporate Law Chair of Dr. Roberto A. Muguillo at the Faculty of Law of the University of Belgrano, appointed since 2002.",
-            desc: "",
-          },
-          {
-            title:
-              "Professor of the course 'Corporate Conflicts', Chair of Dr. Roberto Muguillo at the University of Buenos Aires.",
-            desc: "",
-          },
-          {
-            title:
-              "Professor in the Commercial Law Chair of Dr. Marcelo Castrogiovanni at the Faculty of Law of the University of Buenos Aires.",
-            desc: "",
-          },
-          {
-            title:
-              "Guest Professor at the Argentine Notarial University, Specialization Course in 'Corporate Transactions'.",
-            desc: "",
-          },
-          {
-            title:
-              "Guest Professor at Austral University, Conference on 'Effects of the Court-Approved Agreement of the Insured on the Obligation of the Insurer in Civil Liability Insurance', 2002.",
-            desc: "",
-          },
-          {
-            title:
-              "Professor of the subject Commercial Contracts, Chair of Dr. Roberto Muguillo, University of Buenos Aires.",
-            desc: "",
-          },
-          {
-            title:
-              "Guest Professor at FUNDESI for Conferences on Current Issues in Corporate Law, 2013 and 2014.",
-            desc: "",
-          },
-          {
-            title:
-              "Collaborating Professor in the subject 'Strategies in Preventive Bankruptcy and Liquidation', chaired by Dr. Clementina Sánchez Farache.",
-            desc: "",
-          },
-          {
-            title:
-              "Guest Speaker at the Institute of Commercial Law of F.A.S.T.A. University, Mar del Plata, June 2003. Topic: Irregular or De Facto Companies. Issues.",
-            desc: "",
-          },
-          {
-            title:
-              "Guest Speaker at the First International Symposium on Economic Crimes, organized by the University of Cambridge and the Argentine Notarial University, in Cambridge, November 2004.",
-            desc: "",
-          },
-        ],
-      },
-      {
-        name: "Publications",
-        desc: [
-          {
-            title:
-              "Author of the article: 'Effects of the Court-Approved Agreement of the Insured on the Obligation of the Insurer in Civil Liability Insurance', Bankruptcy Law Yearbook, 2001 – Year 1, Director Jorge Daniel Grispo, Editorial Ad-Hoc, 2001.",
-            desc: "",
-          },
-          {
-            title:
-              "Author of the article: 'ASSET INSUFFICIENCY VERSUS BANKRUPTCY INEFFECTIVENESS', Bankruptcy Law Yearbook, 2002 – Year 2, Director Jorge Daniel Grispo, Editorial Ad-Hoc, 2002.",
-            desc: "",
-          },
-          {
-            title:
-              "Co-author of the chapter on the commercial pledge contract in the book COMMERCIAL CONTRACTS by Dr. Daniel Roque Vítolo, Editorial Ad-Hoc, 1993.",
-            desc: "",
-          },
-        ],
-      },
-      {
-        name: "Languages",
-        desc: [
-          {
-            title: "English",
-            desc: "Advanced",
-          },
-          {
-            title: "Spanish",
-            desc: "Native",
-          },
-        ],
-      },
-    ],
-  },
-  {
     id: "arrayLawyers-2",
     img: LawyerIMG2,
     name: "Marcelo J. Ruiz",
@@ -1665,6 +1532,139 @@ export const arrayLawyers = [
           {
             title: "Buenos Aires Rugby Union",
             desc: "Former Counselor",
+          },
+        ],
+      },
+      {
+        name: "Languages",
+        desc: [
+          {
+            title: "English",
+            desc: "Advanced",
+          },
+          {
+            title: "Spanish",
+            desc: "Native",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "arrayLawyers-1",
+    img: LawyerIMG1,
+    name: "Marcelo Cangueiro",
+    experience: "Partner",
+    linkedin: "https://www.linkedin.com/in/marcelo-cangueiro-01125964/",
+    instagram: "https://www.instagram.com/crabog_/",
+    phone: "+54 911 4021-7000",
+    email: "mcangueiro@crabog.com",
+    document: "/cvs/CV-MARCELO-CANGUEIRO.doc",
+    cv: [
+      {
+        name: "Education",
+        desc: [
+          {
+            title: "Lawyer",
+            desc: "Faculty of Law and Social Sciences - University of Buenos Aires - March 25, 1985",
+          },
+          {
+            title: "Attorney",
+            desc: "Faculty of Law and Social Sciences - University of Buenos Aires - March 25, 1985",
+          },
+        ],
+      },
+      {
+        name: "Work Experiencie",
+        desc: [
+          {
+            title: "",
+            desc: "Professional performance for supranational entities, public entities, and private companies. Lawyer contracted by the International Finance Corporation, the World Bank's arm for financing private companies, as well as other multilateral credit organizations. Lawyer contracted by the Province of Neuquén (State Attorney's Office) for advisory services and participation in commercial litigation processes before the National Judiciary in defense of the interests of the Province and its autonomous entities (Corporation Institute of Autonomous Mining of Neuquén – CORMINE – and the Autonomous Institute for Provincial Economic Development – IADEP). Lawyer for numerous national and international companies.",
+          },
+        ],
+      },
+      {
+        name: "Academic Activities",
+        desc: [
+          {
+            title:
+              "Professor in the Commercial Law Chair of Dr. Daniel Roque Vítolo at the Faculty of Economic Sciences of the University of Belgrano, serving as Teaching Coordinator since 1992, file no. 4491.",
+            desc: "",
+          },
+          {
+            title:
+              "Professor in the Corporate Law Chair of Dr. Ricardo Augusto Nissen at the Faculty of Law of the University of Belgrano since 1994, file no. 4491.",
+            desc: "",
+          },
+          {
+            title:
+              "Professor in the Corporate Law Chair of Dr. Roberto A. Muguillo at the Faculty of Law of the University of Belgrano, appointed since 2002.",
+            desc: "",
+          },
+          {
+            title:
+              "Professor of the course 'Corporate Conflicts', Chair of Dr. Roberto Muguillo at the University of Buenos Aires.",
+            desc: "",
+          },
+          {
+            title:
+              "Professor in the Commercial Law Chair of Dr. Marcelo Castrogiovanni at the Faculty of Law of the University of Buenos Aires.",
+            desc: "",
+          },
+          {
+            title:
+              "Guest Professor at the Argentine Notarial University, Specialization Course in 'Corporate Transactions'.",
+            desc: "",
+          },
+          {
+            title:
+              "Guest Professor at Austral University, Conference on 'Effects of the Court-Approved Agreement of the Insured on the Obligation of the Insurer in Civil Liability Insurance', 2002.",
+            desc: "",
+          },
+          {
+            title:
+              "Professor of the subject Commercial Contracts, Chair of Dr. Roberto Muguillo, University of Buenos Aires.",
+            desc: "",
+          },
+          {
+            title:
+              "Guest Professor at FUNDESI for Conferences on Current Issues in Corporate Law, 2013 and 2014.",
+            desc: "",
+          },
+          {
+            title:
+              "Collaborating Professor in the subject 'Strategies in Preventive Bankruptcy and Liquidation', chaired by Dr. Clementina Sánchez Farache.",
+            desc: "",
+          },
+          {
+            title:
+              "Guest Speaker at the Institute of Commercial Law of F.A.S.T.A. University, Mar del Plata, June 2003. Topic: Irregular or De Facto Companies. Issues.",
+            desc: "",
+          },
+          {
+            title:
+              "Guest Speaker at the First International Symposium on Economic Crimes, organized by the University of Cambridge and the Argentine Notarial University, in Cambridge, November 2004.",
+            desc: "",
+          },
+        ],
+      },
+      {
+        name: "Publications",
+        desc: [
+          {
+            title:
+              "Author of the article: 'Effects of the Court-Approved Agreement of the Insured on the Obligation of the Insurer in Civil Liability Insurance', Bankruptcy Law Yearbook, 2001 – Year 1, Director Jorge Daniel Grispo, Editorial Ad-Hoc, 2001.",
+            desc: "",
+          },
+          {
+            title:
+              "Author of the article: 'ASSET INSUFFICIENCY VERSUS BANKRUPTCY INEFFECTIVENESS', Bankruptcy Law Yearbook, 2002 – Year 2, Director Jorge Daniel Grispo, Editorial Ad-Hoc, 2002.",
+            desc: "",
+          },
+          {
+            title:
+              "Co-author of the chapter on the commercial pledge contract in the book COMMERCIAL CONTRACTS by Dr. Daniel Roque Vítolo, Editorial Ad-Hoc, 1993.",
+            desc: "",
           },
         ],
       },
