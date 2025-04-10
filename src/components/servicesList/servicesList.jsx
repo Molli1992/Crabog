@@ -47,11 +47,7 @@ export default function ServicesList() {
           color="#1d2939b8"
         />
 
-        <Image
-          src={serviceListImg}
-          alt="Legal building"
-          className={styles.image}
-        />
+        <div className={styles.image} />
       </div>
 
       <div className={styles.containerRight}>

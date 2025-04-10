@@ -30,6 +30,12 @@ export const serviceList = [
       "The Firm has extensive experience assisting companies and individuals across a broad range of industries and commerce. We provide advice to debtors, shareholders, creditors, and trustees on a variety of solutions aimed at debt restructuring, credit recovery, and guidance for bankruptcy trustees. We offer assistance to foreign creditors in recovering their claims. We have established relationships with American and European firms to support local creditors in recovering their claims abroad. Our professionals have proven professional and academic expertise in handling highly complex debt restructuring processes. The services we offer include: Legal guidance for filing bankruptcy and insolvency proceedings – Advice to creditors regarding actions derived from outstanding claims against insolvent or bankrupt debtors – Judicial or out-of-court assistance in debt restructuring – Legal support for third parties making claims against bankrupt and/or insolvent entities.",
   },
   {
+    id: "serviceList-8",
+    serviceName: "Insurance Law",
+    serviceDescription:
+      "Our highly qualified professionals possess extensive expertise in handling ongoing claims, litigation, and their financial impact on insurance companies. Leading insurance companies in the local market have entrusted us with managing their claims portfolios. Our services include corporate advisory and representation, the establishment of insurance entities and modifications to their legal structure, representation before the National Insurance Superintendency, the General Inspection of Justice, and various public administration bodies, as well as advisory services before consumer protection agencies.",
+  },
+  {
     id: "serviceList-4",
     serviceName: "Criminal Law",
     serviceDescription:
@@ -73,6 +79,12 @@ export const serviceListSpanish = [
     serviceName: "Concursos y Quiebras",
     serviceDescription:
       "El Estudio cuenta con una vasta experiencia en la asistencia de empresas y particulares de un amplio sector de la industria y el comercio. Brindamos asesoramiento a deudores, accionistas, acreedores, síndicos en una variedad de soluciones destinadas a la reestructuración de pasivos, recupero de créditos, y asesoramiento a Sindicaturas concursales. Ofrecemos asesoramiento a acreedores extranjeros en el recupero de sus créditos. Contamos con vínculos con estudios americanos y europeos para el asesoramiento de acreedores locales en el recupero de sus créditos en el exterior. Nuestros profesionales cuentan con una demostrada experiencia profesional y académica en el manejo de procesos de alta complejidad en materia de reestructuración de deuda. Los servicios que ofrecemos son los siguientes: Asesoramiento en el armado de presentaciones de concursos y quiebras - Asesoramiento a acreedores en las acciones derivadas de sus créditos a cobrar frente a deudores concursados o en quiebra - Asesoramiento judicial o extrajudicial en la reestructuración de pasivos -	Asesoramiento a terceros en reclamos contra fallidos y/o concursados.",
+  },
+  {
+    id: "serviceListSpanish-8",
+    serviceName: "Derecho de Seguros",
+    serviceDescription:
+      "Contamos con profesionales altamente calificados y conocimientos profundizados para el tratamiento de siniestros en curso, juicios, como así también su impacto económico y consecuencias para las compañías aseguradoras. Reconocidas Compañías de Seguro del mercado local nos han confiado la gestión de su cartera de reclamos por siniestros. Entre nuestros servicios se incluyen asesoramiento y actuación societaria, constitución de entidades aseguradoras y modificación de su estructura jurídica, actuación ante la Superintendencia de Seguros de la Nación, la Inspección General de Justicia y diversos organismos públicos de la administración, así como también asesoramiento ante los organismos de Defensa del Consumidor.",
   },
   {
     id: "serviceListSpanish-4",
