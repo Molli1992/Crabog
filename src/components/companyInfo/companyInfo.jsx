@@ -52,11 +52,14 @@ export default function CompanyInfo() {
 
     {
       id: "arrayList-a-5",
-      name: language === "spanish" ? "Derecho de Seguros" : "Insurance Law",
+      name:
+        language === "spanish"
+          ? "Concursos y Quiebras"
+          : "Bankruptcy and Insolvency Proceedings",
       desc:
         language === "spanish"
-          ? "Contamos con profesionales altamente calificados y conocimientos profundizados para el tratamiento del Derecho de seguros."
-          : "We have highly qualified professionals with extensive expertise in Insurance Law.",
+          ? "Brindamos asesoramiento a deudores, accionistas, acreedores, síndicos en una variedad de soluciones destinadas a la reestructuración de pasivos, recupero de créditos, y asesoramiento a Sindicaturas concursales."
+          : "We provide advice to debtors, shareholders, creditors, and trustees on a variety of solutions aimed at debt restructuring, credit recovery, and guidance for bankruptcy trustees.",
       Html: <FaBuildingColumns className={styles.icons} />,
     },
 
