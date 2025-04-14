@@ -73,10 +73,10 @@ export default function CreateTypes() {
           style={{ textAlign: "center" }}
         >
           <Title value="Crear nuevo genero" color="#192d2f" />
-          <Description
-            value="Por favor ingresa el nombre del nuevo tipo de genero que quieres agregar para las noticias"
-            color="#192d2f"
-          />
+          <p className={styles.text}>
+            Por favor ingresa el nombre del nuevo tipo de genero que quieres
+            agregar para las noticias
+          </p>
         </div>
 
         <div className={styles.containerElements}>

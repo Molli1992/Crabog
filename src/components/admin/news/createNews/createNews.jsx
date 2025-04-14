@@ -160,10 +160,9 @@ export default function CreateNews() {
             style={{ textAlign: "center" }}
           >
             <Title value="Crear nueva noticia" color="#192d2f" />
-            <Description
-              value="Por favor completa todos los campos para crear una nueva noticia"
-              color="#192d2f"
-            />
+            <p className={styles.text}>
+              Por favor completa todos los campos para crear una nueva noticia
+            </p>
           </div>
 
           <div className={styles.containerElements}>
