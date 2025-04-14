@@ -45,6 +45,7 @@
 
 .text {
   color: #192d2f;
+  font-size: 14px;
 }
 
 @media (max-width: 650px) {
