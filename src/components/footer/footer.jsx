@@ -89,7 +89,7 @@ export default function Footer() {
             className={styles.text}
             style={{ color: "#cc4643", cursor: "pointer" }}
             onClick={() =>
-              onClickOpenUrl("https://github.com/Molli1992/Crabog")
+              onClickOpenUrl("https://github.com/Molli1992")
             }
           >
             Github
