@@ -122,13 +122,10 @@ export default function Blog() {
       );
 
       const data = await response.json();
-      if (data) {
-        setArrayBlog(data.news);
-        setFilterArrayBlog(data.news);
-      } else {
-        setArrayBlog([]);
-        setFilterArrayBlog([]);
-      }
+
+      setArrayBlog(data.news);
+      setFilterArrayBlog(data.news);
+
     } catch (error) {
       Swal.fire({
         title: "Error!",
@@ -149,11 +146,8 @@ export default function Blog() {
       );
 
       const data = await response.json();
-      if (data.length) {
-        setArrayTypes([{ id: 0, name: "Todas" }, ...data.types]);
-      } else {
-        setArrayTypes([]);
-      }
+
+      setArrayTypes([{ id: 0, name: "Todas" }, ...data.types]);
     } catch (error) {
       Swal.fire({
         title: "Error!",
@@ -195,25 +189,6 @@ export default function Blog() {
 
         <div className={styles.containerLoader}>
           <ClipLoader color="#192d2f" size={100} />
-        </div>
-      </div>
-    )
-  }
-
-  if (arrayBlog.length === 0 && arrayTypes.length === 0 && filterArrayBlog.length === 0) {
-    return (
-      <div className={styles.body}>
-        <HeroSection
-          imgSrc={blogImg}
-          title={language === "spanish" ? "Noticias" : "News"}
-        />
-
-        <div className={styles.containerLoader} style={{textAlign: "center", padding: "10px"}}>
-          <h1 className={styles.titleNanElements}>
-            {language === "spanish"
-              ? "Nos encontramos sin noticias por el momento por favor revisar luego mas tarde."
-              : "We have no news at the moment, please check back later."}
-          </h1>
         </div>
       </div>
     )
